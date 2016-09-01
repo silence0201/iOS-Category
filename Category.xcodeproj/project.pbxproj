@@ -10,6 +10,8 @@
 		E85940A01D78492D00612600 /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = E859409F1D78492D00612600 /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940AC1D7849D000612600 /* UIButton+SIButtonBlock.h */; };
 		E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940AD1D7849D000612600 /* UIButton+SIButtonBlock.m */; };
+		E85940B31D784F5D00612600 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940B11D784F5D00612600 /* UIView+Frame.h */; };
+		E85940B41D784F5D00612600 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940B21D784F5D00612600 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		E85940A11D78492D00612600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E85940AC1D7849D000612600 /* UIButton+SIButtonBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+SIButtonBlock.h"; path = "BlockAction/UIButton+SIButtonBlock.h"; sourceTree = "<group>"; };
 		E85940AD1D7849D000612600 /* UIButton+SIButtonBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SIButtonBlock.m"; path = "BlockAction/UIButton+SIButtonBlock.m"; sourceTree = "<group>"; };
+		E85940B11D784F5D00612600 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "UIView+Frame/UIView+Frame.h"; sourceTree = "<group>"; };
+		E85940B21D784F5D00612600 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "UIView+Frame/UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		E85940B01D784E3300612600 /* UIView+Frame */ = {
 			isa = PBXGroup;
 			children = (
+				E85940B11D784F5D00612600 /* UIView+Frame.h */,
+				E85940B21D784F5D00612600 /* UIView+Frame.m */,
 			);
 			name = "UIView+Frame";
 			sourceTree = "<group>";
@@ -83,6 +89,7 @@
 			files = (
 				E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */,
 				E85940A01D78492D00612600 /* Category.h in Headers */,
+				E85940B31D784F5D00612600 /* UIView+Frame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85940B41D784F5D00612600 /* UIView+Frame.m in Sources */,
 				E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
