@@ -16,6 +16,8 @@
 		E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940B61D78548800612600 /* UIImageView+SIImageViewBlock.m */; };
 		E85940C01D785DED00612600 /* UILabel+SIReSize.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940BE1D785DED00612600 /* UILabel+SIReSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940C11D785DED00612600 /* UILabel+SIReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940BF1D785DED00612600 /* UILabel+SIReSize.m */; };
+		E85940C91D7864AB00612600 /* NSObject+Property.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940C71D7864AB00612600 /* NSObject+Property.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85940CA1D7864AB00612600 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940C81D7864AB00612600 /* NSObject+Property.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E85940B61D78548800612600 /* UIImageView+SIImageViewBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+SIImageViewBlock.m"; path = "BlockAction/UIImageView+SIImageViewBlock.m"; sourceTree = "<group>"; };
 		E85940BE1D785DED00612600 /* UILabel+SIReSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SIReSize.h"; sourceTree = "<group>"; };
 		E85940BF1D785DED00612600 /* UILabel+SIReSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SIReSize.m"; sourceTree = "<group>"; };
+		E85940C71D7864AB00612600 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		E85940C81D7864AB00612600 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		E859409E1D78492D00612600 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E85940C21D78621C00612600 /* NSObject+Property */,
 				E85940B91D785AF800612600 /* UILabel */,
 				E85940B01D784E3300612600 /* UIView+Frame */,
 				E85940A71D78495A00612600 /* BlockAction */,
@@ -100,6 +105,15 @@
 			name = UILabel;
 			sourceTree = "<group>";
 		};
+		E85940C21D78621C00612600 /* NSObject+Property */ = {
+			isa = PBXGroup;
+			children = (
+				E85940C71D7864AB00612600 /* NSObject+Property.h */,
+				E85940C81D7864AB00612600 /* NSObject+Property.m */,
+			);
+			name = "NSObject+Property";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -110,6 +124,7 @@
 				E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */,
 				E85940B71D78548800612600 /* UIImageView+SIImageViewBlock.h in Headers */,
 				E85940C01D785DED00612600 /* UILabel+SIReSize.h in Headers */,
+				E85940C91D7864AB00612600 /* NSObject+Property.h in Headers */,
 				E85940A01D78492D00612600 /* Category.h in Headers */,
 				E85940B31D784F5D00612600 /* UIView+Frame.h in Headers */,
 			);
@@ -185,6 +200,7 @@
 				E85940B41D784F5D00612600 /* UIView+Frame.m in Sources */,
 				E85940C11D785DED00612600 /* UILabel+SIReSize.m in Sources */,
 				E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */,
+				E85940CA1D7864AB00612600 /* NSObject+Property.m in Sources */,
 				E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +349,7 @@
 				E85940A61D78492D00612600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
