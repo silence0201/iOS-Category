@@ -14,12 +14,14 @@
 		E85940B41D784F5D00612600 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940B21D784F5D00612600 /* UIView+Frame.m */; };
 		E85940B71D78548800612600 /* UIImageView+SIImageViewBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940B51D78548800612600 /* UIImageView+SIImageViewBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940B61D78548800612600 /* UIImageView+SIImageViewBlock.m */; };
-		E85940C01D785DED00612600 /* UILabel+SIReSize.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940BE1D785DED00612600 /* UILabel+SIReSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E85940C11D785DED00612600 /* UILabel+SIReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940BF1D785DED00612600 /* UILabel+SIReSize.m */; };
 		E85940CD1D786B7D00612600 /* NSObject+Property.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940CB1D786B7D00612600 /* NSObject+Property.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940CE1D786B7D00612600 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940CC1D786B7D00612600 /* NSObject+Property.m */; };
-		E85940FB1D79BC3500612600 /* NSDictionary+Log.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940F91D79BC3500612600 /* NSDictionary+Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E85940FC1D79BC3500612600 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940FA1D79BC3500612600 /* NSDictionary+Log.m */; };
+		E85940FF1D79BD1800612600 /* NSArray+Log.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940FD1D79BD1800612600 /* NSArray+Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85941001D79BD1800612600 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940FE1D79BD1800612600 /* NSArray+Log.m */; };
+		E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */ = {isa = PBXBuildFile; fileRef = E85941011D79BD3F00612600 /* NSDictionary+Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85941041D79BD3F00612600 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E85941021D79BD3F00612600 /* NSDictionary+Log.m */; };
+		E85941071D79BD4D00612600 /* UILabel+SIReSize.h in Headers */ = {isa = PBXBuildFile; fileRef = E85941051D79BD4D00612600 /* UILabel+SIReSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85941081D79BD4D00612600 /* UILabel+SIReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E85941061D79BD4D00612600 /* UILabel+SIReSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +34,14 @@
 		E85940B21D784F5D00612600 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "UIView+Frame/UIView+Frame.m"; sourceTree = "<group>"; };
 		E85940B51D78548800612600 /* UIImageView+SIImageViewBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+SIImageViewBlock.h"; path = "BlockAction/UIImageView+SIImageViewBlock.h"; sourceTree = "<group>"; };
 		E85940B61D78548800612600 /* UIImageView+SIImageViewBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+SIImageViewBlock.m"; path = "BlockAction/UIImageView+SIImageViewBlock.m"; sourceTree = "<group>"; };
-		E85940BE1D785DED00612600 /* UILabel+SIReSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SIReSize.h"; sourceTree = "<group>"; };
-		E85940BF1D785DED00612600 /* UILabel+SIReSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SIReSize.m"; sourceTree = "<group>"; };
 		E85940CB1D786B7D00612600 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Property.h"; path = "NSObject+Property/NSObject+Property.h"; sourceTree = "<group>"; };
 		E85940CC1D786B7D00612600 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Property.m"; path = "NSObject+Property/NSObject+Property.m"; sourceTree = "<group>"; };
-		E85940F91D79BC3500612600 /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
-		E85940FA1D79BC3500612600 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		E85940FD1D79BD1800612600 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Log.h"; path = "Log/NSArray+Log.h"; sourceTree = "<group>"; };
+		E85940FE1D79BD1800612600 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Log.m"; path = "Log/NSArray+Log.m"; sourceTree = "<group>"; };
+		E85941011D79BD3F00612600 /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Log.h"; path = "Log/NSDictionary+Log.h"; sourceTree = "<group>"; };
+		E85941021D79BD3F00612600 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Log.m"; path = "Log/NSDictionary+Log.m"; sourceTree = "<group>"; };
+		E85941051D79BD4D00612600 /* UILabel+SIReSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+SIReSize.h"; path = "UILabel/UILabel+SIReSize.h"; sourceTree = "<group>"; };
+		E85941061D79BD4D00612600 /* UILabel+SIReSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+SIReSize.m"; path = "UILabel/UILabel+SIReSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,8 @@
 		E85940B91D785AF800612600 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				E85940BE1D785DED00612600 /* UILabel+SIReSize.h */,
-				E85940BF1D785DED00612600 /* UILabel+SIReSize.m */,
+				E85941051D79BD4D00612600 /* UILabel+SIReSize.h */,
+				E85941061D79BD4D00612600 /* UILabel+SIReSize.m */,
 			);
 			name = UILabel;
 			sourceTree = "<group>";
@@ -122,8 +126,10 @@
 		E85940F81D79BBFD00612600 /* Log */ = {
 			isa = PBXGroup;
 			children = (
-				E85940F91D79BC3500612600 /* NSDictionary+Log.h */,
-				E85940FA1D79BC3500612600 /* NSDictionary+Log.m */,
+				E85941011D79BD3F00612600 /* NSDictionary+Log.h */,
+				E85941021D79BD3F00612600 /* NSDictionary+Log.m */,
+				E85940FD1D79BD1800612600 /* NSArray+Log.h */,
+				E85940FE1D79BD1800612600 /* NSArray+Log.m */,
 			);
 			name = Log;
 			sourceTree = "<group>";
@@ -136,9 +142,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */,
+				E85940FF1D79BD1800612600 /* NSArray+Log.h in Headers */,
 				E85940B71D78548800612600 /* UIImageView+SIImageViewBlock.h in Headers */,
-				E85940C01D785DED00612600 /* UILabel+SIReSize.h in Headers */,
-				E85940FB1D79BC3500612600 /* NSDictionary+Log.h in Headers */,
+				E85941071D79BD4D00612600 /* UILabel+SIReSize.h in Headers */,
+				E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */,
 				E85940CD1D786B7D00612600 /* NSObject+Property.h in Headers */,
 				E85940A01D78492D00612600 /* Category.h in Headers */,
 				E85940B31D784F5D00612600 /* UIView+Frame.h in Headers */,
@@ -213,8 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85940B41D784F5D00612600 /* UIView+Frame.m in Sources */,
-				E85940FC1D79BC3500612600 /* NSDictionary+Log.m in Sources */,
-				E85940C11D785DED00612600 /* UILabel+SIReSize.m in Sources */,
+				E85941001D79BD1800612600 /* NSArray+Log.m in Sources */,
+				E85941081D79BD4D00612600 /* UILabel+SIReSize.m in Sources */,
+				E85941041D79BD3F00612600 /* NSDictionary+Log.m in Sources */,
 				E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */,
 				E85940CE1D786B7D00612600 /* NSObject+Property.m in Sources */,
 				E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */,
