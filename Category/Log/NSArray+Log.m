@@ -10,6 +10,12 @@
 
 @implementation NSArray (Log)
 
+/**
+ *  重新描述describtion方法
+ *
+ *
+ *  @return 重新生成的descrip
+ */
 - (NSString *)descriptionWithLocale:(id)locale{
     NSMutableString *str = [NSMutableString string];
     

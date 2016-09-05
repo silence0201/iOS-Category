@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  需要进行键转换
+ */
 @protocol KeyValue <NSObject>
 @optional
 /**
