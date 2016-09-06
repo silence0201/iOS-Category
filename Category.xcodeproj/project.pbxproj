@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E853BE3C1D7EFB2800A8F81A /* UILabel+Attributed.h in Headers */ = {isa = PBXBuildFile; fileRef = E853BE3A1D7EFB2800A8F81A /* UILabel+Attributed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */; };
+		E853BE401D7EFDC500A8F81A /* UIView+AnchorPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E853BE3E1D7EFDC400A8F81A /* UIView+AnchorPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E853BE411D7EFDC500A8F81A /* UIView+AnchorPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E853BE3F1D7EFDC500A8F81A /* UIView+AnchorPoint.m */; };
 		E85940A01D78492D00612600 /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = E859409F1D78492D00612600 /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940AC1D7849D000612600 /* UIButton+SIButtonBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940AD1D7849D000612600 /* UIButton+SIButtonBlock.m */; };
@@ -24,8 +28,6 @@
 		E85941081D79BD4D00612600 /* UILabel+SIReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E85941061D79BD4D00612600 /* UILabel+SIReSize.m */; };
 		E876D4F01D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = E876D4EE1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E876D4F11D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E876D4EF1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m */; };
-		E876D5211D7EAE12000A1AB1 /* UIView+AnchorPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E876D51F1D7EAE12000A1AB1 /* UIView+AnchorPoint.h */; };
-		E876D5221D7EAE12000A1AB1 /* UIView+AnchorPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E876D5201D7EAE12000A1AB1 /* UIView+AnchorPoint.m */; };
 		E8A52A8F1D7DBB7D00445DE8 /* NSString+SITrim.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A52A8D1D7DBB7D00445DE8 /* NSString+SITrim.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A52A901D7DBB7D00445DE8 /* NSString+SITrim.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */; };
 		E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E853BE3A1D7EFB2800A8F81A /* UILabel+Attributed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Attributed.h"; path = "UILabel/UILabel+Attributed.h"; sourceTree = "<group>"; };
+		E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Attributed.m"; path = "UILabel/UILabel+Attributed.m"; sourceTree = "<group>"; };
+		E853BE3E1D7EFDC400A8F81A /* UIView+AnchorPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AnchorPoint.h"; path = "UIView+Frame/UIView+AnchorPoint.h"; sourceTree = "<group>"; };
+		E853BE3F1D7EFDC500A8F81A /* UIView+AnchorPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnchorPoint.m"; path = "UIView+Frame/UIView+AnchorPoint.m"; sourceTree = "<group>"; };
 		E859409C1D78492D00612600 /* Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E859409F1D78492D00612600 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		E85940A11D78492D00612600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +58,6 @@
 		E85941061D79BD4D00612600 /* UILabel+SIReSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+SIReSize.m"; path = "UILabel/UILabel+SIReSize.m"; sourceTree = "<group>"; };
 		E876D4EE1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+SIRandomColor.h"; path = "UIColor/UIColor+SIRandomColor.h"; sourceTree = "<group>"; };
 		E876D4EF1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SIRandomColor.m"; path = "UIColor/UIColor+SIRandomColor.m"; sourceTree = "<group>"; };
-		E876D51F1D7EAE12000A1AB1 /* UIView+AnchorPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnchorPoint.h"; sourceTree = "<group>"; };
-		E876D5201D7EAE12000A1AB1 /* UIView+AnchorPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnchorPoint.m"; sourceTree = "<group>"; };
 		E8A52A8D1D7DBB7D00445DE8 /* NSString+SITrim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SITrim.h"; path = "NSString/NSString+SITrim.h"; sourceTree = "<group>"; };
 		E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SITrim.m"; path = "NSString/NSString+SITrim.m"; sourceTree = "<group>"; };
 		E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SIIsNull.h"; path = "NSString/NSString+SIIsNull.h"; sourceTree = "<group>"; };
@@ -117,10 +121,10 @@
 		E85940B01D784E3300612600 /* UIView+Frame */ = {
 			isa = PBXGroup;
 			children = (
+				E853BE3E1D7EFDC400A8F81A /* UIView+AnchorPoint.h */,
+				E853BE3F1D7EFDC500A8F81A /* UIView+AnchorPoint.m */,
 				E85940B11D784F5D00612600 /* UIView+Frame.h */,
 				E85940B21D784F5D00612600 /* UIView+Frame.m */,
-				E876D51F1D7EAE12000A1AB1 /* UIView+AnchorPoint.h */,
-				E876D5201D7EAE12000A1AB1 /* UIView+AnchorPoint.m */,
 			);
 			name = "UIView+Frame";
 			sourceTree = "<group>";
@@ -128,6 +132,8 @@
 		E85940B91D785AF800612600 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				E853BE3A1D7EFB2800A8F81A /* UILabel+Attributed.h */,
+				E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */,
 				E85941051D79BD4D00612600 /* UILabel+SIReSize.h */,
 				E85941061D79BD4D00612600 /* UILabel+SIReSize.m */,
 			);
@@ -184,9 +190,10 @@
 				E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */,
 				E85940FF1D79BD1800612600 /* NSArray+Log.h in Headers */,
 				E85940B71D78548800612600 /* UIImageView+SIImageViewBlock.h in Headers */,
-				E876D5211D7EAE12000A1AB1 /* UIView+AnchorPoint.h in Headers */,
 				E85941071D79BD4D00612600 /* UILabel+SIReSize.h in Headers */,
+				E853BE401D7EFDC500A8F81A /* UIView+AnchorPoint.h in Headers */,
 				E8A52A8F1D7DBB7D00445DE8 /* NSString+SITrim.h in Headers */,
+				E853BE3C1D7EFB2800A8F81A /* UILabel+Attributed.h in Headers */,
 				E876D4F01D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h in Headers */,
 				E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */,
 				E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */,
@@ -267,11 +274,12 @@
 				E8A52A901D7DBB7D00445DE8 /* NSString+SITrim.m in Sources */,
 				E85941001D79BD1800612600 /* NSArray+Log.m in Sources */,
 				E85941081D79BD4D00612600 /* UILabel+SIReSize.m in Sources */,
+				E853BE411D7EFDC500A8F81A /* UIView+AnchorPoint.m in Sources */,
 				E876D4F11D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m in Sources */,
 				E85941041D79BD3F00612600 /* NSDictionary+Log.m in Sources */,
 				E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */,
 				E85940CE1D786B7D00612600 /* NSObject+Property.m in Sources */,
-				E876D5221D7EAE12000A1AB1 /* UIView+AnchorPoint.m in Sources */,
+				E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */,
 				E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */,
 				E8A52A941D7DBCD300445DE8 /* NSString+SIIsNull.m in Sources */,
 			);
