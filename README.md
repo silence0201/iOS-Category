@@ -9,3 +9,4 @@ iOS 工具分类整理
 * `UIColor`:UIColor功能扩展
 * `UILabel`:UILabel功能扩展
 * `UIView+Frame`:UIView位置属性扩展
+* `Macro`:常用宏定义
