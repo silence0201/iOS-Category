@@ -11,6 +11,8 @@
 		E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */; };
 		E853BE401D7EFDC500A8F81A /* UIView+AnchorPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E853BE3E1D7EFDC400A8F81A /* UIView+AnchorPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E853BE411D7EFDC500A8F81A /* UIView+AnchorPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E853BE3F1D7EFDC500A8F81A /* UIView+AnchorPoint.m */; };
+		E85699921D94B45200E376A3 /* UIColor+colorWithHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = E85699901D94B45200E376A3 /* UIColor+colorWithHexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85699931D94B45200E376A3 /* UIColor+colorWithHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = E85699911D94B45200E376A3 /* UIColor+colorWithHexString.m */; };
 		E85940A01D78492D00612600 /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = E859409F1D78492D00612600 /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E85940AC1D7849D000612600 /* UIButton+SIButtonBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E85940AD1D7849D000612600 /* UIButton+SIButtonBlock.m */; };
@@ -40,6 +42,8 @@
 		E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Attributed.m"; path = "UILabel/UILabel+Attributed.m"; sourceTree = "<group>"; };
 		E853BE3E1D7EFDC400A8F81A /* UIView+AnchorPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AnchorPoint.h"; path = "UIView+Frame/UIView+AnchorPoint.h"; sourceTree = "<group>"; };
 		E853BE3F1D7EFDC500A8F81A /* UIView+AnchorPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnchorPoint.m"; path = "UIView+Frame/UIView+AnchorPoint.m"; sourceTree = "<group>"; };
+		E85699901D94B45200E376A3 /* UIColor+colorWithHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+colorWithHexString.h"; path = "UIColor/UIColor+colorWithHexString.h"; sourceTree = "<group>"; };
+		E85699911D94B45200E376A3 /* UIColor+colorWithHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+colorWithHexString.m"; path = "UIColor/UIColor+colorWithHexString.m"; sourceTree = "<group>"; };
 		E859409C1D78492D00612600 /* Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E859409F1D78492D00612600 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		E85940A11D78492D00612600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			children = (
 				E876D4EE1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h */,
 				E876D4EF1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m */,
+				E85699901D94B45200E376A3 /* UIColor+colorWithHexString.h */,
+				E85699911D94B45200E376A3 /* UIColor+colorWithHexString.m */,
 			);
 			name = UIColor;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 				E853BE401D7EFDC500A8F81A /* UIView+AnchorPoint.h in Headers */,
 				E8A52A8F1D7DBB7D00445DE8 /* NSString+SITrim.h in Headers */,
 				E853BE3C1D7EFB2800A8F81A /* UILabel+Attributed.h in Headers */,
+				E85699921D94B45200E376A3 /* UIColor+colorWithHexString.h in Headers */,
 				E876D4F01D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h in Headers */,
 				E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */,
 				E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */,
@@ -288,6 +295,7 @@
 				E876D4F11D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m in Sources */,
 				E85941041D79BD3F00612600 /* NSDictionary+Log.m in Sources */,
 				E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */,
+				E85699931D94B45200E376A3 /* UIColor+colorWithHexString.m in Sources */,
 				E85940CE1D786B7D00612600 /* NSObject+Property.m in Sources */,
 				E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */,
 				E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */,
