@@ -30,8 +30,10 @@
 		E85941081D79BD4D00612600 /* UILabel+SIReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E85941061D79BD4D00612600 /* UILabel+SIReSize.m */; };
 		E876D4F01D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h in Headers */ = {isa = PBXBuildFile; fileRef = E876D4EE1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E876D4F11D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E876D4EF1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m */; };
-		E88CB39D1DAA39C900172ABE /* Encode.h in Headers */ = {isa = PBXBuildFile; fileRef = E88CB39B1DAA39C900172ABE /* Encode.h */; };
+		E88CB39D1DAA39C900172ABE /* Encode.h in Headers */ = {isa = PBXBuildFile; fileRef = E88CB39B1DAA39C900172ABE /* Encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E88CB39E1DAA39C900172ABE /* Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CB39C1DAA39C900172ABE /* Encode.m */; };
+		E88CB3A21DAA42E100172ABE /* NSString+RegularJudement.h in Headers */ = {isa = PBXBuildFile; fileRef = E88CB3A01DAA42E100172ABE /* NSString+RegularJudement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E88CB3A31DAA42E100172ABE /* NSString+RegularJudement.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CB3A11DAA42E100172ABE /* NSString+RegularJudement.m */; };
 		E8A52A8F1D7DBB7D00445DE8 /* NSString+SITrim.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A52A8D1D7DBB7D00445DE8 /* NSString+SITrim.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A52A901D7DBB7D00445DE8 /* NSString+SITrim.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */; };
 		E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,6 +69,8 @@
 		E876D4EF1D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SIRandomColor.m"; path = "UIColor/UIColor+SIRandomColor.m"; sourceTree = "<group>"; };
 		E88CB39B1DAA39C900172ABE /* Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encode.h; sourceTree = "<group>"; };
 		E88CB39C1DAA39C900172ABE /* Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encode.m; sourceTree = "<group>"; };
+		E88CB3A01DAA42E100172ABE /* NSString+RegularJudement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularJudement.h"; sourceTree = "<group>"; };
+		E88CB3A11DAA42E100172ABE /* NSString+RegularJudement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularJudement.m"; sourceTree = "<group>"; };
 		E8A52A8D1D7DBB7D00445DE8 /* NSString+SITrim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SITrim.h"; path = "NSString/NSString+SITrim.h"; sourceTree = "<group>"; };
 		E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SITrim.m"; path = "NSString/NSString+SITrim.m"; sourceTree = "<group>"; };
 		E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SIIsNull.h"; path = "NSString/NSString+SIIsNull.h"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		E859409E1D78492D00612600 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E88CB39F1DAA42C900172ABE /* RegularJudement */,
 				E88CB39A1DAA39B100172ABE /* Encode */,
 				E84F0DF71D800A1600E39FCB /* Macro */,
 				E876D4ED1D7E8C47000A1AB1 /* UIColor */,
@@ -199,6 +204,15 @@
 			path = Encode;
 			sourceTree = "<group>";
 		};
+		E88CB39F1DAA42C900172ABE /* RegularJudement */ = {
+			isa = PBXGroup;
+			children = (
+				E88CB3A01DAA42E100172ABE /* NSString+RegularJudement.h */,
+				E88CB3A11DAA42E100172ABE /* NSString+RegularJudement.m */,
+			);
+			path = RegularJudement;
+			sourceTree = "<group>";
+		};
 		E8A52A881D7DBB4000445DE8 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +240,7 @@
 				E853BE3C1D7EFB2800A8F81A /* UILabel+Attributed.h in Headers */,
 				E85699921D94B45200E376A3 /* UIColor+colorWithHexString.h in Headers */,
 				E876D4F01D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h in Headers */,
+				E88CB3A21DAA42E100172ABE /* NSString+RegularJudement.h in Headers */,
 				E88CB39D1DAA39C900172ABE /* Encode.h in Headers */,
 				E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */,
 				E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */,
@@ -307,6 +322,7 @@
 				E8A52A901D7DBB7D00445DE8 /* NSString+SITrim.m in Sources */,
 				E85941001D79BD1800612600 /* NSArray+Log.m in Sources */,
 				E85941081D79BD4D00612600 /* UILabel+SIReSize.m in Sources */,
+				E88CB3A31DAA42E100172ABE /* NSString+RegularJudement.m in Sources */,
 				E853BE411D7EFDC500A8F81A /* UIView+AnchorPoint.m in Sources */,
 				E876D4F11D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m in Sources */,
 				E85941041D79BD3F00612600 /* NSDictionary+Log.m in Sources */,
