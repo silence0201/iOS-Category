@@ -38,6 +38,8 @@
 		E8A52A901D7DBB7D00445DE8 /* NSString+SITrim.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */; };
 		E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A52A941D7DBCD300445DE8 /* NSString+SIIsNull.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A52A921D7DBCD300445DE8 /* NSString+SIIsNull.m */; };
+		E8F0D2281DAA81C700718461 /* NSString+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F0D2261DAA81C700718461 /* NSString+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8F0D2291DAA81C700718461 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F0D2271DAA81C700718461 /* NSString+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SITrim.m"; path = "NSString/NSString+SITrim.m"; sourceTree = "<group>"; };
 		E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SIIsNull.h"; path = "NSString/NSString+SIIsNull.h"; sourceTree = "<group>"; };
 		E8A52A921D7DBCD300445DE8 /* NSString+SIIsNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SIIsNull.m"; path = "NSString/NSString+SIIsNull.m"; sourceTree = "<group>"; };
+		E8F0D2261DAA81C700718461 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "NSString/NSString+Extension.h"; sourceTree = "<group>"; };
+		E8F0D2271DAA81C700718461 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "NSString/NSString+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,8 @@
 				E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */,
 				E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */,
 				E8A52A921D7DBCD300445DE8 /* NSString+SIIsNull.m */,
+				E8F0D2261DAA81C700718461 /* NSString+Extension.h */,
+				E8F0D2271DAA81C700718461 /* NSString+Extension.m */,
 			);
 			name = NSString;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				E85699921D94B45200E376A3 /* UIColor+colorWithHexString.h in Headers */,
 				E876D4F01D7E8C7F000A1AB1 /* UIColor+SIRandomColor.h in Headers */,
 				E88CB3A21DAA42E100172ABE /* NSString+RegularJudement.h in Headers */,
+				E8F0D2281DAA81C700718461 /* NSString+Extension.h in Headers */,
 				E88CB39D1DAA39C900172ABE /* Encode.h in Headers */,
 				E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */,
 				E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */,
@@ -332,6 +339,7 @@
 				E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */,
 				E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */,
 				E8A52A941D7DBCD300445DE8 /* NSString+SIIsNull.m in Sources */,
+				E8F0D2291DAA81C700718461 /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
