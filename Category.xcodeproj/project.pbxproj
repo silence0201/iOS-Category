@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E83512411DAD23F3004E476D /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E835123F1DAD23F3004E476D /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E83512421DAD23F3004E476D /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E83512401DAD23F3004E476D /* UIImage+Extension.m */; };
 		E853BE3C1D7EFB2800A8F81A /* UILabel+Attributed.h in Headers */ = {isa = PBXBuildFile; fileRef = E853BE3A1D7EFB2800A8F81A /* UILabel+Attributed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */; };
 		E853BE401D7EFDC500A8F81A /* UIView+AnchorPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E853BE3E1D7EFDC400A8F81A /* UIView+AnchorPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E835123F1DAD23F3004E476D /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		E83512401DAD23F3004E476D /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		E84F0DF81D800A2900E39FCB /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = Macro/Macro.h; sourceTree = "<group>"; };
 		E853BE3A1D7EFB2800A8F81A /* UILabel+Attributed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Attributed.h"; path = "UILabel/UILabel+Attributed.h"; sourceTree = "<group>"; };
 		E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Attributed.m"; path = "UILabel/UILabel+Attributed.m"; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E835123E1DAD23E0004E476D /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				E835123F1DAD23F3004E476D /* UIImage+Extension.h */,
+				E83512401DAD23F3004E476D /* UIImage+Extension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		E84F0DF71D800A1600E39FCB /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +136,7 @@
 		E859409E1D78492D00612600 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E835123E1DAD23E0004E476D /* UIImage */,
 				E88E69301DABC74F00433771 /* NSDate */,
 				E88CB39F1DAA42C900172ABE /* RegularJudement */,
 				E88CB39A1DAA39B100172ABE /* Encode */,
@@ -263,6 +277,7 @@
 				E88CB3A21DAA42E100172ABE /* NSString+RegularJudement.h in Headers */,
 				E8F0D2281DAA81C700718461 /* NSString+Extension.h in Headers */,
 				E88CB39D1DAA39C900172ABE /* Encode.h in Headers */,
+				E83512411DAD23F3004E476D /* UIImage+Extension.h in Headers */,
 				E88E69331DABC76B00433771 /* NSDate+Extension.h in Headers */,
 				E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */,
 				E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */,
@@ -354,6 +369,7 @@
 				E85940CE1D786B7D00612600 /* NSObject+Property.m in Sources */,
 				E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */,
 				E85940B81D78548800612600 /* UIImageView+SIImageViewBlock.m in Sources */,
+				E83512421DAD23F3004E476D /* UIImage+Extension.m in Sources */,
 				E8A52A941D7DBCD300445DE8 /* NSString+SIIsNull.m in Sources */,
 				E8F0D2291DAA81C700718461 /* NSString+Extension.m in Sources */,
 			);

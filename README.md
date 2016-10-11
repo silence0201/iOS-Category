@@ -13,3 +13,4 @@ iOS 工具分类整理
 * `Encode`:runtime实现快速归档
 * `RegularJudement`:正则表达式
 * `NSDate`:时间功能扩展
+* `UIImage`:UIImage功能扩展
