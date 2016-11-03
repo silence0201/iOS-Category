@@ -38,6 +38,8 @@
 		E88CB3A31DAA42E100172ABE /* NSString+RegularJudement.m in Sources */ = {isa = PBXBuildFile; fileRef = E88CB3A11DAA42E100172ABE /* NSString+RegularJudement.m */; };
 		E88E69331DABC76B00433771 /* NSDate+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E88E69311DABC76B00433771 /* NSDate+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E88E69341DABC76B00433771 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E88E69321DABC76B00433771 /* NSDate+Extension.m */; };
+		E88FE00C1DCB67D6000388B6 /* NSData+CalendarExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E88FE00A1DCB67D6000388B6 /* NSData+CalendarExtension.h */; };
+		E88FE00D1DCB67D6000388B6 /* NSData+CalendarExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E88FE00B1DCB67D6000388B6 /* NSData+CalendarExtension.m */; };
 		E8A52A8F1D7DBB7D00445DE8 /* NSString+SITrim.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A52A8D1D7DBB7D00445DE8 /* NSString+SITrim.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A52A901D7DBB7D00445DE8 /* NSString+SITrim.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */; };
 		E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,6 +85,8 @@
 		E88CB3A11DAA42E100172ABE /* NSString+RegularJudement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularJudement.m"; sourceTree = "<group>"; };
 		E88E69311DABC76B00433771 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		E88E69321DABC76B00433771 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		E88FE00A1DCB67D6000388B6 /* NSData+CalendarExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CalendarExtension.h"; sourceTree = "<group>"; };
+		E88FE00B1DCB67D6000388B6 /* NSData+CalendarExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CalendarExtension.m"; sourceTree = "<group>"; };
 		E8A52A8D1D7DBB7D00445DE8 /* NSString+SITrim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SITrim.h"; path = "NSString/NSString+SITrim.h"; sourceTree = "<group>"; };
 		E8A52A8E1D7DBB7D00445DE8 /* NSString+SITrim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SITrim.m"; path = "NSString/NSString+SITrim.m"; sourceTree = "<group>"; };
 		E8A52A911D7DBCD300445DE8 /* NSString+SIIsNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SIIsNull.h"; path = "NSString/NSString+SIIsNull.h"; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 			children = (
 				E88E69311DABC76B00433771 /* NSDate+Extension.h */,
 				E88E69321DABC76B00433771 /* NSDate+Extension.m */,
+				E88FE00A1DCB67D6000388B6 /* NSData+CalendarExtension.h */,
+				E88FE00B1DCB67D6000388B6 /* NSData+CalendarExtension.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				E88CB39D1DAA39C900172ABE /* Encode.h in Headers */,
 				E83512411DAD23F3004E476D /* UIImage+Extension.h in Headers */,
 				E88E69331DABC76B00433771 /* NSDate+Extension.h in Headers */,
+				E88FE00C1DCB67D6000388B6 /* NSData+CalendarExtension.h in Headers */,
 				E8FD60F61DAE7BE500E78CB0 /* CocoaSecurity.h in Headers */,
 				E8A52A931D7DBCD300445DE8 /* NSString+SIIsNull.h in Headers */,
 				E85941031D79BD3F00612600 /* NSDictionary+Log.h in Headers */,
@@ -387,6 +394,7 @@
 				E8FD60F71DAE7BE500E78CB0 /* CocoaSecurity.m in Sources */,
 				E83512421DAD23F3004E476D /* UIImage+Extension.m in Sources */,
 				E8A52A941D7DBCD300445DE8 /* NSString+SIIsNull.m in Sources */,
+				E88FE00D1DCB67D6000388B6 /* NSData+CalendarExtension.m in Sources */,
 				E8F0D2291DAA81C700718461 /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
