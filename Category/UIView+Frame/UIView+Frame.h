@@ -19,4 +19,6 @@
 @property (nonatomic, assign) CGFloat centerY;
 @property (nonatomic, assign) CGPoint origin;
 
+- (void)removeAllSubviews ;
+
 @end

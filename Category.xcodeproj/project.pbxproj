@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E83512411DAD23F3004E476D /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E835123F1DAD23F3004E476D /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E83512421DAD23F3004E476D /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E83512401DAD23F3004E476D /* UIImage+Extension.m */; };
+		E83F015D1DD1FA29003D2EAF /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = E83F015B1DD1FA29003D2EAF /* Base64.h */; };
+		E83F015E1DD1FA29003D2EAF /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F015C1DD1FA29003D2EAF /* Base64.m */; };
 		E853BE3C1D7EFB2800A8F81A /* UILabel+Attributed.h in Headers */ = {isa = PBXBuildFile; fileRef = E853BE3A1D7EFB2800A8F81A /* UILabel+Attributed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E853BE3D1D7EFB2800A8F81A /* UILabel+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */; };
 		E853BE401D7EFDC500A8F81A /* UIView+AnchorPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E853BE3E1D7EFDC400A8F81A /* UIView+AnchorPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		E835123F1DAD23F3004E476D /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		E83512401DAD23F3004E476D /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		E83F015B1DD1FA29003D2EAF /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		E83F015C1DD1FA29003D2EAF /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		E84F0DF81D800A2900E39FCB /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = Macro/Macro.h; sourceTree = "<group>"; };
 		E853BE3A1D7EFB2800A8F81A /* UILabel+Attributed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Attributed.h"; path = "UILabel/UILabel+Attributed.h"; sourceTree = "<group>"; };
 		E853BE3B1D7EFB2800A8F81A /* UILabel+Attributed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Attributed.m"; path = "UILabel/UILabel+Attributed.m"; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 			children = (
 				E8FD60F41DAE7BE500E78CB0 /* CocoaSecurity.h */,
 				E8FD60F51DAE7BE500E78CB0 /* CocoaSecurity.m */,
+				E83F015B1DD1FA29003D2EAF /* Base64.h */,
+				E83F015C1DD1FA29003D2EAF /* Base64.m */,
 			);
 			path = CocoaSecurity;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85940AE1D7849D000612600 /* UIButton+SIButtonBlock.h in Headers */,
+				E83F015D1DD1FA29003D2EAF /* Base64.h in Headers */,
 				E85940FF1D79BD1800612600 /* NSArray+Log.h in Headers */,
 				E85940B71D78548800612600 /* UIImageView+SIImageViewBlock.h in Headers */,
 				E85941071D79BD4D00612600 /* UILabel+SIReSize.h in Headers */,
@@ -383,6 +390,7 @@
 				E85941081D79BD4D00612600 /* UILabel+SIReSize.m in Sources */,
 				E88CB3A31DAA42E100172ABE /* NSString+RegularJudement.m in Sources */,
 				E853BE411D7EFDC500A8F81A /* UIView+AnchorPoint.m in Sources */,
+				E83F015E1DD1FA29003D2EAF /* Base64.m in Sources */,
 				E876D4F11D7E8C7F000A1AB1 /* UIColor+SIRandomColor.m in Sources */,
 				E85941041D79BD3F00612600 /* NSDictionary+Log.m in Sources */,
 				E85940AF1D7849D000612600 /* UIButton+SIButtonBlock.m in Sources */,
