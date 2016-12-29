@@ -1,5 +1,5 @@
 //
-//  NSString+JSONValue.h
+//  NSString+QRcode.h
 //  Category
 //
 //  Created by 杨晴贺 on 29/12/2016.
@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface NSString (JSONValue)
+@interface NSString (QRcode)
 
-- (NSDictionary *) JSONDictionaryValue ;
-
-- (NSArray *)JSONArrayValue ;
+- (UIImage *)QRcode ;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  NSString+JSONValue.h
+//  NSObject+Aspect.h
 //  Category
 //
 //  Created by 杨晴贺 on 29/12/2016.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (JSONValue)
-
-- (NSDictionary *) JSONDictionaryValue ;
-
-- (NSArray *)JSONArrayValue ;
+@interface NSObject (Aspect)
 
 @end

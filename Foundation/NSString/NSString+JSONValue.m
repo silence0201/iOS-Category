@@ -21,4 +21,15 @@
     return jsonDict;
 }
 
+- (NSArray *)JSONArrayValue{
+    NSError *errorJson;
+    NSArray *jsonDict = [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&errorJson];
+    if (errorJson != nil) {
+#ifdef DEBUG
+        NSLog(@"fail to get dictioanry from JSON: %@, error: %@", self, errorJson);
+#endif
+    }
+    return jsonDict;
+}
+
 @end
