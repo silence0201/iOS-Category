@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (UUID)
+@interface NSString (AppInfo)
 
 + (NSString *)UUID ;
+
++ (NSString *)version;
+
++ (NSString *)build;
+
++ (NSString *)identifier;
+
++ (NSString *)currentLanguage;
+
++ (NSString *)deviceModel;
 
 @end
