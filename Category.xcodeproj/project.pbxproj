@@ -35,6 +35,8 @@
 		E83D08D91E17C77300C215BE /* NSNumber+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08D81E17C77300C215BE /* NSNumber+Round.m */; };
 		E83D08DC1E17C77E00C215BE /* NSNumber+Display.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08DB1E17C77E00C215BE /* NSNumber+Display.m */; };
 		E83D08E31E17D8B400C215BE /* NSURL+QueryDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08E21E17D8B400C215BE /* NSURL+QueryDictionary.m */; };
+		E83D08ED1E17EAFE00C215BE /* LogUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08EC1E17EAFE00C215BE /* LogUnicode.m */; };
+		E83D08F01E17F3EC00C215BE /* KKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08EF1E17F3EC00C215BE /* KKLog.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -118,6 +120,9 @@
 		E83D08DB1E17C77E00C215BE /* NSNumber+Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Display.m"; sourceTree = "<group>"; };
 		E83D08E11E17D8B400C215BE /* NSURL+QueryDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QueryDictionary.h"; sourceTree = "<group>"; };
 		E83D08E21E17D8B400C215BE /* NSURL+QueryDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QueryDictionary.m"; sourceTree = "<group>"; };
+		E83D08EC1E17EAFE00C215BE /* LogUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUnicode.m; sourceTree = "<group>"; };
+		E83D08EE1E17F3EC00C215BE /* KKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLog.h; sourceTree = "<group>"; };
+		E83D08EF1E17F3EC00C215BE /* KKLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLog.m; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -266,6 +271,16 @@
 			path = NSURL;
 			sourceTree = "<group>";
 		};
+		E83D08E41E17E4CD00C215BE /* NSLog */ = {
+			isa = PBXGroup;
+			children = (
+				E83D08EC1E17EAFE00C215BE /* LogUnicode.m */,
+				E83D08EE1E17F3EC00C215BE /* KKLog.h */,
+				E83D08EF1E17F3EC00C215BE /* KKLog.m */,
+			);
+			path = NSLog;
+			sourceTree = "<group>";
+		};
 		E88B479F1E15363E0074A53A = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +334,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E83D08E41E17E4CD00C215BE /* NSLog */,
 				E83D08E01E17D8B400C215BE /* NSURL */,
 				E83D08D31E17BE0300C215BE /* NSNumber */,
 				E83D08C01E17A9A100C215BE /* NSDictionary */,
@@ -535,8 +551,10 @@
 				E83D08BF1E17923900C215BE /* NSFileManager+Helper.m in Sources */,
 				E83D08CC1E17B1E300C215BE /* NSDictionary+URL.m in Sources */,
 				E83D08681E16A1A300C215BE /* NSObject+Runtime.m in Sources */,
+				E83D08ED1E17EAFE00C215BE /* LogUnicode.m in Sources */,
 				E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */,
 				E88B47CF1E153BAC0074A53A /* NSDate+Figure.m in Sources */,
+				E83D08F01E17F3EC00C215BE /* KKLog.m in Sources */,
 				E88B47E61E1545140074A53A /* NSString+Emoji.m in Sources */,
 				E88B47AD1E15363E0074A53A /* main.m in Sources */,
 				E88B47F91E154F630074A53A /* NSObject+Block.m in Sources */,
