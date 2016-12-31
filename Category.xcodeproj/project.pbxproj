@@ -20,6 +20,10 @@
 		E83D08811E16B54900C215BE /* NSData+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08801E16B54900C215BE /* NSData+Code.m */; };
 		E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08A61E175E3700C215BE /* NSData+Cache.m */; };
 		E83D08AB1E176CA600C215BE /* NSBundle+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08AA1E176CA600C215BE /* NSBundle+AppInfo.m */; };
+		E83D08AF1E17733A00C215BE /* NSArray+Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08AE1E17733A00C215BE /* NSArray+Plist.m */; };
+		E83D08B51E17768000C215BE /* NSArray+JSONEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08B41E17768000C215BE /* NSArray+JSONEncode.m */; };
+		E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08B71E1776CF00C215BE /* NSArray+Block.m */; };
+		E83D08BB1E177C9D00C215BE /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08BA1E177C9D00C215BE /* NSArray+SafeAccess.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -73,6 +77,14 @@
 		E83D08A61E175E3700C215BE /* NSData+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Cache.m"; sourceTree = "<group>"; };
 		E83D08A91E176CA600C215BE /* NSBundle+AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AppInfo.h"; sourceTree = "<group>"; };
 		E83D08AA1E176CA600C215BE /* NSBundle+AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AppInfo.m"; sourceTree = "<group>"; };
+		E83D08AD1E17733A00C215BE /* NSArray+Plist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Plist.h"; sourceTree = "<group>"; };
+		E83D08AE1E17733A00C215BE /* NSArray+Plist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Plist.m"; sourceTree = "<group>"; };
+		E83D08B31E17768000C215BE /* NSArray+JSONEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONEncode.h"; sourceTree = "<group>"; };
+		E83D08B41E17768000C215BE /* NSArray+JSONEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONEncode.m"; sourceTree = "<group>"; };
+		E83D08B61E1776CF00C215BE /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
+		E83D08B71E1776CF00C215BE /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
+		E83D08B91E177C9D00C215BE /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
+		E83D08BA1E177C9D00C215BE /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +168,21 @@
 			path = NSBundle;
 			sourceTree = "<group>";
 		};
+		E83D08AC1E17727600C215BE /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				E83D08AD1E17733A00C215BE /* NSArray+Plist.h */,
+				E83D08AE1E17733A00C215BE /* NSArray+Plist.m */,
+				E83D08B31E17768000C215BE /* NSArray+JSONEncode.h */,
+				E83D08B41E17768000C215BE /* NSArray+JSONEncode.m */,
+				E83D08B61E1776CF00C215BE /* NSArray+Block.h */,
+				E83D08B71E1776CF00C215BE /* NSArray+Block.m */,
+				E83D08B91E177C9D00C215BE /* NSArray+SafeAccess.h */,
+				E83D08BA1E177C9D00C215BE /* NSArray+SafeAccess.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
 		E88B479F1E15363E0074A53A = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +236,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E83D08AC1E17727600C215BE /* NSArray */,
 				E83D08A81E176C6400C215BE /* NSBundle */,
 				E83D08751E16AFDB00C215BE /* NSData */,
 				E88B47F61E154EF30074A53A /* NSObject */,
@@ -379,12 +407,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88B47B31E15363E0074A53A /* ViewController.m in Sources */,
+				E83D08BB1E177C9D00C215BE /* NSArray+SafeAccess.m in Sources */,
 				E88B47D41E1541660074A53A /* NSString+AppInfo.m in Sources */,
 				E83D086B1E16A53D00C215BE /* NSObject+Property.m in Sources */,
 				E83D085F1E16990D00C215BE /* NSObject+QuickCopy.m in Sources */,
 				E83D087B1E16B26D00C215BE /* NSData+Hash.m in Sources */,
 				E88B47FC1E1550040074A53A /* NSObject+GCD.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
+				E83D08B51E17768000C215BE /* NSArray+JSONEncode.m in Sources */,
 				E88B47F21E154C260074A53A /* NSString+Contains.m in Sources */,
 				E88B47E91E1548170074A53A /* NSString+MIME.m in Sources */,
 				E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */,
@@ -395,6 +425,7 @@
 				E83D087E1E16B40700C215BE /* NSData+Encrypt.m in Sources */,
 				E88B47EC1E1548CC0074A53A /* NSString+Path.m in Sources */,
 				E88B47FF1E1550A50074A53A /* NSObject+KVO.m in Sources */,
+				E83D08AF1E17733A00C215BE /* NSArray+Plist.m in Sources */,
 				E88B47D71E1541F10074A53A /* NSDate+Formatter.m in Sources */,
 				E83D08741E16AE4100C215BE /* NSString+PinYin.m in Sources */,
 				E83D085C1E16961600C215BE /* NSObject+Reflect.m in Sources */,
@@ -406,6 +437,7 @@
 				E88B47D01E153BAC0074A53A /* NSDate+Extension.m in Sources */,
 				E88B47C91E1538300074A53A /* NSTimer+Block.m in Sources */,
 				E83D08681E16A1A300C215BE /* NSObject+Runtime.m in Sources */,
+				E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */,
 				E88B47CF1E153BAC0074A53A /* NSDate+Figure.m in Sources */,
 				E88B47E61E1545140074A53A /* NSString+Emoji.m in Sources */,
 				E88B47AD1E15363E0074A53A /* main.m in Sources */,
