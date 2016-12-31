@@ -25,6 +25,12 @@
 		E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08B71E1776CF00C215BE /* NSArray+Block.m */; };
 		E83D08BB1E177C9D00C215BE /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08BA1E177C9D00C215BE /* NSArray+SafeAccess.m */; };
 		E83D08BF1E17923900C215BE /* NSFileManager+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08BE1E17923900C215BE /* NSFileManager+Helper.m */; };
+		E83D08C31E17AAF600C215BE /* NSDictionary+JSONEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08C21E17AAF600C215BE /* NSDictionary+JSONEncode.m */; };
+		E83D08C61E17AB4C00C215BE /* NSDictionary+Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08C51E17AB4C00C215BE /* NSDictionary+Plist.m */; };
+		E83D08C91E17AD0600C215BE /* NSDictionary+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08C81E17AD0600C215BE /* NSDictionary+Block.m */; };
+		E83D08CC1E17B1E300C215BE /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08CB1E17B1E300C215BE /* NSDictionary+URL.m */; };
+		E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08CE1E17B34300C215BE /* NSDictionary+Merge.m */; };
+		E83D08D21E17BA4400C215BE /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08D11E17BA4400C215BE /* NSDictionary+SafeAccess.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -88,6 +94,18 @@
 		E83D08BA1E177C9D00C215BE /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
 		E83D08BD1E17923900C215BE /* NSFileManager+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Helper.h"; sourceTree = "<group>"; };
 		E83D08BE1E17923900C215BE /* NSFileManager+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Helper.m"; sourceTree = "<group>"; };
+		E83D08C11E17AAF600C215BE /* NSDictionary+JSONEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONEncode.h"; sourceTree = "<group>"; };
+		E83D08C21E17AAF600C215BE /* NSDictionary+JSONEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONEncode.m"; sourceTree = "<group>"; };
+		E83D08C41E17AB4C00C215BE /* NSDictionary+Plist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Plist.h"; sourceTree = "<group>"; };
+		E83D08C51E17AB4C00C215BE /* NSDictionary+Plist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Plist.m"; sourceTree = "<group>"; };
+		E83D08C71E17AD0600C215BE /* NSDictionary+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Block.h"; sourceTree = "<group>"; };
+		E83D08C81E17AD0600C215BE /* NSDictionary+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Block.m"; sourceTree = "<group>"; };
+		E83D08CA1E17B1E300C215BE /* NSDictionary+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URL.h"; sourceTree = "<group>"; };
+		E83D08CB1E17B1E300C215BE /* NSDictionary+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URL.m"; sourceTree = "<group>"; };
+		E83D08CD1E17B34300C215BE /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		E83D08CE1E17B34300C215BE /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
+		E83D08D01E17BA4400C215BE /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
+		E83D08D11E17BA4400C215BE /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -195,6 +213,25 @@
 			path = NSFileManager;
 			sourceTree = "<group>";
 		};
+		E83D08C01E17A9A100C215BE /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				E83D08C11E17AAF600C215BE /* NSDictionary+JSONEncode.h */,
+				E83D08C21E17AAF600C215BE /* NSDictionary+JSONEncode.m */,
+				E83D08C41E17AB4C00C215BE /* NSDictionary+Plist.h */,
+				E83D08C51E17AB4C00C215BE /* NSDictionary+Plist.m */,
+				E83D08C71E17AD0600C215BE /* NSDictionary+Block.h */,
+				E83D08C81E17AD0600C215BE /* NSDictionary+Block.m */,
+				E83D08CA1E17B1E300C215BE /* NSDictionary+URL.h */,
+				E83D08CB1E17B1E300C215BE /* NSDictionary+URL.m */,
+				E83D08CD1E17B34300C215BE /* NSDictionary+Merge.h */,
+				E83D08CE1E17B34300C215BE /* NSDictionary+Merge.m */,
+				E83D08D01E17BA4400C215BE /* NSDictionary+SafeAccess.h */,
+				E83D08D11E17BA4400C215BE /* NSDictionary+SafeAccess.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
 		E88B479F1E15363E0074A53A = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +285,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E83D08C01E17A9A100C215BE /* NSDictionary */,
 				E83D08BC1E17922200C215BE /* NSFileManager */,
 				E83D08AC1E17727600C215BE /* NSArray */,
 				E83D08A81E176C6400C215BE /* NSBundle */,
@@ -422,10 +460,13 @@
 				E88B47B31E15363E0074A53A /* ViewController.m in Sources */,
 				E83D08BB1E177C9D00C215BE /* NSArray+SafeAccess.m in Sources */,
 				E88B47D41E1541660074A53A /* NSString+AppInfo.m in Sources */,
+				E83D08D21E17BA4400C215BE /* NSDictionary+SafeAccess.m in Sources */,
 				E83D086B1E16A53D00C215BE /* NSObject+Property.m in Sources */,
 				E83D085F1E16990D00C215BE /* NSObject+QuickCopy.m in Sources */,
 				E83D087B1E16B26D00C215BE /* NSData+Hash.m in Sources */,
+				E83D08C61E17AB4C00C215BE /* NSDictionary+Plist.m in Sources */,
 				E88B47FC1E1550040074A53A /* NSObject+GCD.m in Sources */,
+				E83D08C91E17AD0600C215BE /* NSDictionary+Block.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
 				E83D08B51E17768000C215BE /* NSArray+JSONEncode.m in Sources */,
 				E88B47F21E154C260074A53A /* NSString+Contains.m in Sources */,
@@ -433,6 +474,8 @@
 				E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */,
 				E83D08811E16B54900C215BE /* NSData+Code.m in Sources */,
 				E83D08651E169D7200C215BE /* NSObject+QuickAssociated.m in Sources */,
+				E83D08C31E17AAF600C215BE /* NSDictionary+JSONEncode.m in Sources */,
+				E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */,
 				E88B47F51E154D810074A53A /* NSString+QRcode.m in Sources */,
 				E83D08711E16A85400C215BE /* NSString+Regex.m in Sources */,
 				E83D087E1E16B40700C215BE /* NSData+Encrypt.m in Sources */,
@@ -450,6 +493,7 @@
 				E88B47D01E153BAC0074A53A /* NSDate+Extension.m in Sources */,
 				E88B47C91E1538300074A53A /* NSTimer+Block.m in Sources */,
 				E83D08BF1E17923900C215BE /* NSFileManager+Helper.m in Sources */,
+				E83D08CC1E17B1E300C215BE /* NSDictionary+URL.m in Sources */,
 				E83D08681E16A1A300C215BE /* NSObject+Runtime.m in Sources */,
 				E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */,
 				E88B47CF1E153BAC0074A53A /* NSDate+Figure.m in Sources */,
