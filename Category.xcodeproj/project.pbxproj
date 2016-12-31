@@ -24,6 +24,7 @@
 		E83D08B51E17768000C215BE /* NSArray+JSONEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08B41E17768000C215BE /* NSArray+JSONEncode.m */; };
 		E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08B71E1776CF00C215BE /* NSArray+Block.m */; };
 		E83D08BB1E177C9D00C215BE /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08BA1E177C9D00C215BE /* NSArray+SafeAccess.m */; };
+		E83D08BF1E17923900C215BE /* NSFileManager+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08BE1E17923900C215BE /* NSFileManager+Helper.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -85,6 +86,8 @@
 		E83D08B71E1776CF00C215BE /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
 		E83D08B91E177C9D00C215BE /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
 		E83D08BA1E177C9D00C215BE /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
+		E83D08BD1E17923900C215BE /* NSFileManager+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Helper.h"; sourceTree = "<group>"; };
+		E83D08BE1E17923900C215BE /* NSFileManager+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Helper.m"; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +186,15 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
+		E83D08BC1E17922200C215BE /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				E83D08BD1E17923900C215BE /* NSFileManager+Helper.h */,
+				E83D08BE1E17923900C215BE /* NSFileManager+Helper.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
 		E88B479F1E15363E0074A53A = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +248,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E83D08BC1E17922200C215BE /* NSFileManager */,
 				E83D08AC1E17727600C215BE /* NSArray */,
 				E83D08A81E176C6400C215BE /* NSBundle */,
 				E83D08751E16AFDB00C215BE /* NSData */,
@@ -436,6 +449,7 @@
 				E88B47EF1E154B3D0074A53A /* NSString+JSONValue.m in Sources */,
 				E88B47D01E153BAC0074A53A /* NSDate+Extension.m in Sources */,
 				E88B47C91E1538300074A53A /* NSTimer+Block.m in Sources */,
+				E83D08BF1E17923900C215BE /* NSFileManager+Helper.m in Sources */,
 				E83D08681E16A1A300C215BE /* NSObject+Runtime.m in Sources */,
 				E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */,
 				E88B47CF1E153BAC0074A53A /* NSDate+Figure.m in Sources */,

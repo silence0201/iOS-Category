@@ -20,4 +20,6 @@
 - (NSString*)appIconPath ;
 - (UIImage*)appIcon ;
 
++ (NSString *)localizedDisplayName;
+
 @end

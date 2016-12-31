@@ -53,4 +53,15 @@
     return appIcon;
 }
 
++ (NSString *)localizedDisplayName{
+    NSString * appName = [[[NSBundle mainBundle] localizedInfoDictionary] objectForKey:@"CFBundleDisplayName"];
+    if (!appName) {
+        appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    }
+    if (!appName) {
+        appName = @"";
+    }
+    return appName;
+}
+
 @end
