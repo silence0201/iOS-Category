@@ -31,6 +31,9 @@
 		E83D08CC1E17B1E300C215BE /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08CB1E17B1E300C215BE /* NSDictionary+URL.m */; };
 		E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08CE1E17B34300C215BE /* NSDictionary+Merge.m */; };
 		E83D08D21E17BA4400C215BE /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08D11E17BA4400C215BE /* NSDictionary+SafeAccess.m */; };
+		E83D08D61E17BE1A00C215BE /* NSNumber+Roman.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08D51E17BE1A00C215BE /* NSNumber+Roman.m */; };
+		E83D08D91E17C77300C215BE /* NSNumber+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08D81E17C77300C215BE /* NSNumber+Round.m */; };
+		E83D08DC1E17C77E00C215BE /* NSNumber+Display.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08DB1E17C77E00C215BE /* NSNumber+Display.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -106,6 +109,12 @@
 		E83D08CE1E17B34300C215BE /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
 		E83D08D01E17BA4400C215BE /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
 		E83D08D11E17BA4400C215BE /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
+		E83D08D41E17BE1A00C215BE /* NSNumber+Roman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Roman.h"; sourceTree = "<group>"; };
+		E83D08D51E17BE1A00C215BE /* NSNumber+Roman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Roman.m"; sourceTree = "<group>"; };
+		E83D08D71E17C77300C215BE /* NSNumber+Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Round.h"; sourceTree = "<group>"; };
+		E83D08D81E17C77300C215BE /* NSNumber+Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Round.m"; sourceTree = "<group>"; };
+		E83D08DA1E17C77E00C215BE /* NSNumber+Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Display.h"; sourceTree = "<group>"; };
+		E83D08DB1E17C77E00C215BE /* NSNumber+Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Display.m"; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -232,6 +241,19 @@
 			path = NSDictionary;
 			sourceTree = "<group>";
 		};
+		E83D08D31E17BE0300C215BE /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				E83D08D41E17BE1A00C215BE /* NSNumber+Roman.h */,
+				E83D08D51E17BE1A00C215BE /* NSNumber+Roman.m */,
+				E83D08D71E17C77300C215BE /* NSNumber+Round.h */,
+				E83D08D81E17C77300C215BE /* NSNumber+Round.m */,
+				E83D08DA1E17C77E00C215BE /* NSNumber+Display.h */,
+				E83D08DB1E17C77E00C215BE /* NSNumber+Display.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
 		E88B479F1E15363E0074A53A = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +307,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E83D08D31E17BE0300C215BE /* NSNumber */,
 				E83D08C01E17A9A100C215BE /* NSDictionary */,
 				E83D08BC1E17922200C215BE /* NSFileManager */,
 				E83D08AC1E17727600C215BE /* NSArray */,
@@ -465,6 +488,7 @@
 				E83D085F1E16990D00C215BE /* NSObject+QuickCopy.m in Sources */,
 				E83D087B1E16B26D00C215BE /* NSData+Hash.m in Sources */,
 				E83D08C61E17AB4C00C215BE /* NSDictionary+Plist.m in Sources */,
+				E83D08DC1E17C77E00C215BE /* NSNumber+Display.m in Sources */,
 				E88B47FC1E1550040074A53A /* NSObject+GCD.m in Sources */,
 				E83D08C91E17AD0600C215BE /* NSDictionary+Block.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
@@ -474,6 +498,7 @@
 				E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */,
 				E83D08811E16B54900C215BE /* NSData+Code.m in Sources */,
 				E83D08651E169D7200C215BE /* NSObject+QuickAssociated.m in Sources */,
+				E83D08D61E17BE1A00C215BE /* NSNumber+Roman.m in Sources */,
 				E83D08C31E17AAF600C215BE /* NSDictionary+JSONEncode.m in Sources */,
 				E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */,
 				E88B47F51E154D810074A53A /* NSString+QRcode.m in Sources */,
@@ -482,6 +507,7 @@
 				E88B47EC1E1548CC0074A53A /* NSString+Path.m in Sources */,
 				E88B47FF1E1550A50074A53A /* NSObject+KVO.m in Sources */,
 				E83D08AF1E17733A00C215BE /* NSArray+Plist.m in Sources */,
+				E83D08D91E17C77300C215BE /* NSNumber+Round.m in Sources */,
 				E88B47D71E1541F10074A53A /* NSDate+Formatter.m in Sources */,
 				E83D08741E16AE4100C215BE /* NSString+PinYin.m in Sources */,
 				E83D085C1E16961600C215BE /* NSObject+Reflect.m in Sources */,
