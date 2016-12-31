@@ -19,6 +19,7 @@
 		E83D087E1E16B40700C215BE /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D087D1E16B40700C215BE /* NSData+Encrypt.m */; };
 		E83D08811E16B54900C215BE /* NSData+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08801E16B54900C215BE /* NSData+Code.m */; };
 		E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08A61E175E3700C215BE /* NSData+Cache.m */; };
+		E83D08AB1E176CA600C215BE /* NSBundle+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08AA1E176CA600C215BE /* NSBundle+AppInfo.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -70,6 +71,8 @@
 		E83D08801E16B54900C215BE /* NSData+Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Code.m"; sourceTree = "<group>"; };
 		E83D08A51E175E3700C215BE /* NSData+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Cache.h"; sourceTree = "<group>"; };
 		E83D08A61E175E3700C215BE /* NSData+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Cache.m"; sourceTree = "<group>"; };
+		E83D08A91E176CA600C215BE /* NSBundle+AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AppInfo.h"; sourceTree = "<group>"; };
+		E83D08AA1E176CA600C215BE /* NSBundle+AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AppInfo.m"; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +147,15 @@
 			path = NSData;
 			sourceTree = "<group>";
 		};
+		E83D08A81E176C6400C215BE /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				E83D08A91E176CA600C215BE /* NSBundle+AppInfo.h */,
+				E83D08AA1E176CA600C215BE /* NSBundle+AppInfo.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
 		E88B479F1E15363E0074A53A = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +209,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E83D08A81E176C6400C215BE /* NSBundle */,
 				E83D08751E16AFDB00C215BE /* NSData */,
 				E88B47F61E154EF30074A53A /* NSObject */,
 				E88B47D11E1540D40074A53A /* NSString */,
@@ -385,6 +398,7 @@
 				E88B47D71E1541F10074A53A /* NSDate+Formatter.m in Sources */,
 				E83D08741E16AE4100C215BE /* NSString+PinYin.m in Sources */,
 				E83D085C1E16961600C215BE /* NSObject+Reflect.m in Sources */,
+				E83D08AB1E176CA600C215BE /* NSBundle+AppInfo.m in Sources */,
 				E88B47E31E1544050074A53A /* NSString+Size.m in Sources */,
 				E88B47DA1E1542740074A53A /* NSString+Hash.m in Sources */,
 				E88B48051E1557030074A53A /* NSObject+Aspect.m in Sources */,
