@@ -34,6 +34,7 @@
 		E83D08D61E17BE1A00C215BE /* NSNumber+Roman.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08D51E17BE1A00C215BE /* NSNumber+Roman.m */; };
 		E83D08D91E17C77300C215BE /* NSNumber+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08D81E17C77300C215BE /* NSNumber+Round.m */; };
 		E83D08DC1E17C77E00C215BE /* NSNumber+Display.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08DB1E17C77E00C215BE /* NSNumber+Display.m */; };
+		E83D08E31E17D8B400C215BE /* NSURL+QueryDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08E21E17D8B400C215BE /* NSURL+QueryDictionary.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -115,6 +116,8 @@
 		E83D08D81E17C77300C215BE /* NSNumber+Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Round.m"; sourceTree = "<group>"; };
 		E83D08DA1E17C77E00C215BE /* NSNumber+Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Display.h"; sourceTree = "<group>"; };
 		E83D08DB1E17C77E00C215BE /* NSNumber+Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Display.m"; sourceTree = "<group>"; };
+		E83D08E11E17D8B400C215BE /* NSURL+QueryDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QueryDictionary.h"; sourceTree = "<group>"; };
+		E83D08E21E17D8B400C215BE /* NSURL+QueryDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QueryDictionary.m"; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -254,6 +257,15 @@
 			path = NSNumber;
 			sourceTree = "<group>";
 		};
+		E83D08E01E17D8B400C215BE /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				E83D08E11E17D8B400C215BE /* NSURL+QueryDictionary.h */,
+				E83D08E21E17D8B400C215BE /* NSURL+QueryDictionary.m */,
+			);
+			path = NSURL;
+			sourceTree = "<group>";
+		};
 		E88B479F1E15363E0074A53A = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +319,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E83D08E01E17D8B400C215BE /* NSURL */,
 				E83D08D31E17BE0300C215BE /* NSNumber */,
 				E83D08C01E17A9A100C215BE /* NSDictionary */,
 				E83D08BC1E17922200C215BE /* NSFileManager */,
@@ -502,6 +515,7 @@
 				E83D08C31E17AAF600C215BE /* NSDictionary+JSONEncode.m in Sources */,
 				E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */,
 				E88B47F51E154D810074A53A /* NSString+QRcode.m in Sources */,
+				E83D08E31E17D8B400C215BE /* NSURL+QueryDictionary.m in Sources */,
 				E83D08711E16A85400C215BE /* NSString+Regex.m in Sources */,
 				E83D087E1E16B40700C215BE /* NSData+Encrypt.m in Sources */,
 				E88B47EC1E1548CC0074A53A /* NSString+Path.m in Sources */,
