@@ -38,6 +38,7 @@
 		E83D08ED1E17EAFE00C215BE /* LogUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08EC1E17EAFE00C215BE /* LogUnicode.m */; };
 		E83D08F01E17F3EC00C215BE /* KKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E83D08EF1E17F3EC00C215BE /* KKLog.m */; };
 		E850AE081E18F32D006355B6 /* NSNotificationCenter+Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE071E18F32D006355B6 /* NSNotificationCenter+Thread.m */; };
+		E850AE0B1E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE0A1E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.m */; };
 		E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */; };
 		E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101071E1810230012A833 /* NSKeyedUnarchiver+Key.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -128,6 +129,8 @@
 		E83D08EF1E17F3EC00C215BE /* KKLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLog.m; sourceTree = "<group>"; };
 		E850AE061E18F32D006355B6 /* NSNotificationCenter+Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Thread.h"; sourceTree = "<group>"; };
 		E850AE071E18F32D006355B6 /* NSNotificationCenter+Thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Thread.m"; sourceTree = "<group>"; };
+		E850AE091E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+AutoRemove.h"; sourceTree = "<group>"; };
+		E850AE0A1E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+AutoRemove.m"; sourceTree = "<group>"; };
 		E88101031E1806390012A833 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E88101061E1810230012A833 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -295,6 +298,8 @@
 			children = (
 				E850AE061E18F32D006355B6 /* NSNotificationCenter+Thread.h */,
 				E850AE071E18F32D006355B6 /* NSNotificationCenter+Thread.m */,
+				E850AE091E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.h */,
+				E850AE0A1E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.m */,
 			);
 			path = NSNotificationCenter;
 			sourceTree = "<group>";
@@ -561,6 +566,7 @@
 				E83D08D61E17BE1A00C215BE /* NSNumber+Roman.m in Sources */,
 				E83D08C31E17AAF600C215BE /* NSDictionary+JSONEncode.m in Sources */,
 				E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */,
+				E850AE0B1E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.m in Sources */,
 				E88B47F51E154D810074A53A /* NSString+QRcode.m in Sources */,
 				E83D08E31E17D8B400C215BE /* NSURL+QueryDictionary.m in Sources */,
 				E83D08711E16A85400C215BE /* NSString+Regex.m in Sources */,
