@@ -48,6 +48,9 @@
 		E850AE291E1941A7006355B6 /* UIApplication+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE281E1941A7006355B6 /* UIApplication+AppInfo.m */; };
 		E850AE2C1E194C3F006355B6 /* UIApplication+Authority.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE2B1E194C3F006355B6 /* UIApplication+Authority.m */; };
 		E850AE2F1E1950D3006355B6 /* UIApplication+KeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE2E1E1950D3006355B6 /* UIApplication+KeyboardFrame.m */; };
+		E850AE331E195592006355B6 /* UIFont+Traits.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE321E195592006355B6 /* UIFont+Traits.m */; };
+		E850AE361E19566F006355B6 /* UIFont+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE351E19566F006355B6 /* UIFont+Make.m */; };
+		E850AE391E195755006355B6 /* UIFont+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE381E195755006355B6 /* UIFont+Load.m */; };
 		E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */; };
 		E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101071E1810230012A833 /* NSKeyedUnarchiver+Key.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -158,6 +161,12 @@
 		E850AE2B1E194C3F006355B6 /* UIApplication+Authority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Authority.m"; sourceTree = "<group>"; };
 		E850AE2D1E1950D3006355B6 /* UIApplication+KeyboardFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+KeyboardFrame.h"; sourceTree = "<group>"; };
 		E850AE2E1E1950D3006355B6 /* UIApplication+KeyboardFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+KeyboardFrame.m"; sourceTree = "<group>"; };
+		E850AE311E195592006355B6 /* UIFont+Traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Traits.h"; sourceTree = "<group>"; };
+		E850AE321E195592006355B6 /* UIFont+Traits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Traits.m"; sourceTree = "<group>"; };
+		E850AE341E19566F006355B6 /* UIFont+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Make.h"; sourceTree = "<group>"; };
+		E850AE351E19566F006355B6 /* UIFont+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Make.m"; sourceTree = "<group>"; };
+		E850AE371E195755006355B6 /* UIFont+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Load.h"; sourceTree = "<group>"; };
+		E850AE381E195755006355B6 /* UIFont+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Load.m"; sourceTree = "<group>"; };
 		E88101031E1806390012A833 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E88101061E1810230012A833 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -370,6 +379,19 @@
 			path = UIApplication;
 			sourceTree = "<group>";
 		};
+		E850AE301E195585006355B6 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				E850AE311E195592006355B6 /* UIFont+Traits.h */,
+				E850AE321E195592006355B6 /* UIFont+Traits.m */,
+				E850AE341E19566F006355B6 /* UIFont+Make.h */,
+				E850AE351E19566F006355B6 /* UIFont+Make.m */,
+				E850AE371E195755006355B6 /* UIFont+Load.h */,
+				E850AE381E195755006355B6 /* UIFont+Load.m */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
 		E88100FF1E1805960012A833 /* NSArchiver */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +477,7 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E850AE301E195585006355B6 /* UIFont */,
 				E850AE261E194124006355B6 /* UIApplication */,
 				E850AE1C1E19295F006355B6 /* UIColor */,
 				E850AE0C1E19050C006355B6 /* UIDevice */,
@@ -652,7 +675,9 @@
 				E83D08D91E17C77300C215BE /* NSNumber+Round.m in Sources */,
 				E88B47D71E1541F10074A53A /* NSDate+Formatter.m in Sources */,
 				E83D08741E16AE4100C215BE /* NSString+PinYin.m in Sources */,
+				E850AE331E195592006355B6 /* UIFont+Traits.m in Sources */,
 				E83D085C1E16961600C215BE /* NSObject+Reflect.m in Sources */,
+				E850AE361E19566F006355B6 /* UIFont+Make.m in Sources */,
 				E83D08AB1E176CA600C215BE /* NSBundle+AppInfo.m in Sources */,
 				E88B47E31E1544050074A53A /* NSString+Size.m in Sources */,
 				E850AE1F1E192C02006355B6 /* UIColor+Colors.m in Sources */,
@@ -673,6 +698,7 @@
 				E88B47AD1E15363E0074A53A /* main.m in Sources */,
 				E88B47F91E154F630074A53A /* NSObject+Block.m in Sources */,
 				E83D08621E169A9200C215BE /* NSObject+QuickCode.m in Sources */,
+				E850AE391E195755006355B6 /* UIFont+Load.m in Sources */,
 				E850AE121E190673006355B6 /* UIDevice+Device.m in Sources */,
 				E850AE081E18F32D006355B6 /* NSNotificationCenter+Thread.m in Sources */,
 				E88B47DD1E15430B0074A53A /* NSString+URLEncode.m in Sources */,
