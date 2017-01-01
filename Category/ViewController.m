@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIDevice+CPU.h"
-#import "UIDevice+Disk.h"
+#import "UIColor+Make.h"
 
 @interface ViewController ()
 
@@ -18,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%f",[UIColor grayColor].red) ;
     
 }
 
