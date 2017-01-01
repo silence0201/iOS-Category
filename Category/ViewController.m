@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "NSKeyedArchiver+Key.h"
-#import "NSString+Path.h"
+#import "UIDevice+CPU.h"
+#import "UIDevice+Disk.h"
 
 @interface ViewController ()
 
@@ -18,10 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *array = @[@"1",@"2",@"3"] ;
-    NSString *path = [NSString filePathAtDocumentsWithFileName:@"baid"] ;
-    [NSKeyedArchiver archiveRootObject:array forKey:@"kk" WithFolderPath:path] ;
-    [NSKeyedArchiver removeArchiveForKey:@"kk"] ;
+    
 }
 
 
