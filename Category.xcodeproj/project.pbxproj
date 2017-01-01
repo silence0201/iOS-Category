@@ -45,6 +45,8 @@
 		E850AE1B1E1924F2006355B6 /* UIDevice+CPU.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE1A1E1924F2006355B6 /* UIDevice+CPU.m */; };
 		E850AE1F1E192C02006355B6 /* UIColor+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE1E1E192C02006355B6 /* UIColor+Colors.m */; };
 		E850AE221E1934D1006355B6 /* UIColor+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE211E1934D1006355B6 /* UIColor+Make.m */; };
+		E850AE291E1941A7006355B6 /* UIApplication+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE281E1941A7006355B6 /* UIApplication+AppInfo.m */; };
+		E850AE2C1E194C3F006355B6 /* UIApplication+Authority.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE2B1E194C3F006355B6 /* UIApplication+Authority.m */; };
 		E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */; };
 		E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101071E1810230012A833 /* NSKeyedUnarchiver+Key.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -149,6 +151,10 @@
 		E850AE1E1E192C02006355B6 /* UIColor+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colors.m"; sourceTree = "<group>"; };
 		E850AE201E1934D1006355B6 /* UIColor+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Make.h"; sourceTree = "<group>"; };
 		E850AE211E1934D1006355B6 /* UIColor+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Make.m"; sourceTree = "<group>"; };
+		E850AE271E1941A7006355B6 /* UIApplication+AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AppInfo.h"; sourceTree = "<group>"; };
+		E850AE281E1941A7006355B6 /* UIApplication+AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AppInfo.m"; sourceTree = "<group>"; };
+		E850AE2A1E194C3F006355B6 /* UIApplication+Authority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Authority.h"; sourceTree = "<group>"; };
+		E850AE2B1E194C3F006355B6 /* UIApplication+Authority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Authority.m"; sourceTree = "<group>"; };
 		E88101031E1806390012A833 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E88101061E1810230012A833 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -348,6 +354,17 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
+		E850AE261E194124006355B6 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				E850AE271E1941A7006355B6 /* UIApplication+AppInfo.h */,
+				E850AE281E1941A7006355B6 /* UIApplication+AppInfo.m */,
+				E850AE2A1E194C3F006355B6 /* UIApplication+Authority.h */,
+				E850AE2B1E194C3F006355B6 /* UIApplication+Authority.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		E88100FF1E1805960012A833 /* NSArchiver */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +450,7 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E850AE261E194124006355B6 /* UIApplication */,
 				E850AE1C1E19295F006355B6 /* UIColor */,
 				E850AE0C1E19050C006355B6 /* UIDevice */,
 			);
@@ -601,12 +619,14 @@
 				E83D08C61E17AB4C00C215BE /* NSDictionary+Plist.m in Sources */,
 				E83D08DC1E17C77E00C215BE /* NSNumber+Display.m in Sources */,
 				E88B47FC1E1550040074A53A /* NSObject+GCD.m in Sources */,
+				E850AE291E1941A7006355B6 /* UIApplication+AppInfo.m in Sources */,
 				E83D08C91E17AD0600C215BE /* NSDictionary+Block.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
 				E83D08B51E17768000C215BE /* NSArray+JSONEncode.m in Sources */,
 				E88B47F21E154C260074A53A /* NSString+Contains.m in Sources */,
 				E88B47E91E1548170074A53A /* NSString+MIME.m in Sources */,
 				E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */,
+				E850AE2C1E194C3F006355B6 /* UIApplication+Authority.m in Sources */,
 				E83D08811E16B54900C215BE /* NSData+Code.m in Sources */,
 				E850AE151E191DED006355B6 /* UIDevice+NetWork.m in Sources */,
 				E83D08651E169D7200C215BE /* NSObject+QuickAssociated.m in Sources */,
