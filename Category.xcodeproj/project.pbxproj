@@ -74,8 +74,10 @@
 		E850AE881E1A79E3006355B6 /* UIScreen+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE871E1A79E3006355B6 /* UIScreen+Info.m */; };
 		E850AE8C1E1A7F25006355B6 /* UILabel+ContenSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE8B1E1A7F25006355B6 /* UILabel+ContenSize.m */; };
 		E850AE8F1E1A7FED006355B6 /* UILabel+Space.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE8E1E1A7FED006355B6 /* UILabel+Space.m */; };
-		E850AE931E1A80E5006355B6 /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE921E1A80E5006355B6 /* UIControl+Block.m */; };
-		E850AE961E1A83DB006355B6 /* UIControl+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE951E1A83DB006355B6 /* UIControl+Delay.m */; };
+		E850AEB41E1A8B10006355B6 /* UIControl+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AEB01E1A8B10006355B6 /* UIControl+Delay.m */; };
+		E850AEBB1E1A8F21006355B6 /* UIControl+ALActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AEBA1E1A8F21006355B6 /* UIControl+ALActionBlocks.m */; };
+		E850AEBE1E1A8F32006355B6 /* UIGestureRecognizer+ALActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AEBD1E1A8F32006355B6 /* UIGestureRecognizer+ALActionBlocks.m */; };
+		E850AEC11E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AEC01E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.m */; };
 		E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */; };
 		E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101071E1810230012A833 /* NSKeyedUnarchiver+Key.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -238,10 +240,14 @@
 		E850AE8B1E1A7F25006355B6 /* UILabel+ContenSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ContenSize.m"; sourceTree = "<group>"; };
 		E850AE8D1E1A7FED006355B6 /* UILabel+Space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Space.h"; sourceTree = "<group>"; };
 		E850AE8E1E1A7FED006355B6 /* UILabel+Space.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Space.m"; sourceTree = "<group>"; };
-		E850AE911E1A80E5006355B6 /* UIControl+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Block.h"; sourceTree = "<group>"; };
-		E850AE921E1A80E5006355B6 /* UIControl+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Block.m"; sourceTree = "<group>"; };
-		E850AE941E1A83DB006355B6 /* UIControl+Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Delay.h"; sourceTree = "<group>"; };
-		E850AE951E1A83DB006355B6 /* UIControl+Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Delay.m"; sourceTree = "<group>"; };
+		E850AEAF1E1A8B10006355B6 /* UIControl+Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Delay.h"; sourceTree = "<group>"; };
+		E850AEB01E1A8B10006355B6 /* UIControl+Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Delay.m"; sourceTree = "<group>"; };
+		E850AEB91E1A8F21006355B6 /* UIControl+ALActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ALActionBlocks.h"; sourceTree = "<group>"; };
+		E850AEBA1E1A8F21006355B6 /* UIControl+ALActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ALActionBlocks.m"; sourceTree = "<group>"; };
+		E850AEBC1E1A8F32006355B6 /* UIGestureRecognizer+ALActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ALActionBlocks.h"; sourceTree = "<group>"; };
+		E850AEBD1E1A8F32006355B6 /* UIGestureRecognizer+ALActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+ALActionBlocks.m"; sourceTree = "<group>"; };
+		E850AEBF1E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ALActionBlocks.h"; sourceTree = "<group>"; };
+		E850AEC01E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ALActionBlocks.m"; sourceTree = "<group>"; };
 		E88101031E1806390012A833 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E88101061E1810230012A833 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -541,15 +547,33 @@
 			path = UILabel;
 			sourceTree = "<group>";
 		};
-		E850AE901E1A80D2006355B6 /* UIControl */ = {
+		E850AEA61E1A8AFF006355B6 /* UIBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
-				E850AE911E1A80E5006355B6 /* UIControl+Block.h */,
-				E850AE921E1A80E5006355B6 /* UIControl+Block.m */,
-				E850AE941E1A83DB006355B6 /* UIControl+Delay.h */,
-				E850AE951E1A83DB006355B6 /* UIControl+Delay.m */,
+				E850AEBF1E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.h */,
+				E850AEC01E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		E850AEA71E1A8B10006355B6 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				E850AEB91E1A8F21006355B6 /* UIControl+ALActionBlocks.h */,
+				E850AEBA1E1A8F21006355B6 /* UIControl+ALActionBlocks.m */,
+				E850AEAF1E1A8B10006355B6 /* UIControl+Delay.h */,
+				E850AEB01E1A8B10006355B6 /* UIControl+Delay.m */,
 			);
 			path = UIControl;
+			sourceTree = "<group>";
+		};
+		E850AEB51E1A8B2B006355B6 /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				E850AEBC1E1A8F32006355B6 /* UIGestureRecognizer+ALActionBlocks.h */,
+				E850AEBD1E1A8F32006355B6 /* UIGestureRecognizer+ALActionBlocks.m */,
+			);
+			path = UIGestureRecognizer;
 			sourceTree = "<group>";
 		};
 		E88100FF1E1805960012A833 /* NSArchiver */ = {
@@ -637,7 +661,9 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				E850AE901E1A80D2006355B6 /* UIControl */,
+				E850AEB51E1A8B2B006355B6 /* UIGestureRecognizer */,
+				E850AEA71E1A8B10006355B6 /* UIControl */,
+				E850AEA61E1A8AFF006355B6 /* UIBarButtonItem */,
 				E850AE891E1A7EAE006355B6 /* UILabel */,
 				E850AE851E1A794B006355B6 /* UIScreen */,
 				E850AE631E1A60D0006355B6 /* UIView */,
@@ -827,7 +853,6 @@
 				E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */,
 				E850AE4D1E1A44F7006355B6 /* UIImage+GIF.m in Sources */,
 				E850AE2F1E1950D3006355B6 /* UIApplication+KeyboardFrame.m in Sources */,
-				E850AE961E1A83DB006355B6 /* UIControl+Delay.m in Sources */,
 				E850AE8F1E1A7FED006355B6 /* UILabel+Space.m in Sources */,
 				E850AE2C1E194C3F006355B6 /* UIApplication+Authority.m in Sources */,
 				E850AE4A1E1A4495006355B6 /* UIImage+Merge.m in Sources */,
@@ -867,6 +892,7 @@
 				E850AE7B1E1A6EA8006355B6 /* UIView+Find.m in Sources */,
 				E88B47DA1E1542740074A53A /* NSString+Hash.m in Sources */,
 				E88B48051E1557030074A53A /* NSObject+Aspect.m in Sources */,
+				E850AEBE1E1A8F32006355B6 /* UIGestureRecognizer+ALActionBlocks.m in Sources */,
 				E850AE441E1A4099006355B6 /* UIImage+Capture.m in Sources */,
 				E88B47EF1E154B3D0074A53A /* NSString+JSONValue.m in Sources */,
 				E88B47D01E153BAC0074A53A /* NSDate+Extension.m in Sources */,
@@ -875,11 +901,13 @@
 				E83D08CC1E17B1E300C215BE /* NSDictionary+URL.m in Sources */,
 				E83D08681E16A1A300C215BE /* NSObject+Runtime.m in Sources */,
 				E83D08ED1E17EAFE00C215BE /* LogUnicode.m in Sources */,
+				E850AEB41E1A8B10006355B6 /* UIControl+Delay.m in Sources */,
 				E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */,
 				E850AE6C1E1A64FE006355B6 /* UIView+Animation.m in Sources */,
 				E88B47CF1E153BAC0074A53A /* NSDate+Figure.m in Sources */,
+				E850AEBB1E1A8F21006355B6 /* UIControl+ALActionBlocks.m in Sources */,
+				E850AEC11E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.m in Sources */,
 				E83D08F01E17F3EC00C215BE /* KKLog.m in Sources */,
-				E850AE931E1A80E5006355B6 /* UIControl+Block.m in Sources */,
 				E850AE811E1A7461006355B6 /* UIView+Constraints.m in Sources */,
 				E850AE181E1922FC006355B6 /* UIDevice+Disk.m in Sources */,
 				E88B47E61E1545140074A53A /* NSString+Emoji.m in Sources */,
