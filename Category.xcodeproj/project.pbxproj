@@ -61,6 +61,16 @@
 		E850AE5C1E1A52A1006355B6 /* UIImage+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE5B1E1A52A1006355B6 /* UIImage+Fix.m */; };
 		E850AE5F1E1A537C006355B6 /* UIImage+Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE5E1E1A537C006355B6 /* UIImage+Effect.m */; };
 		E850AE621E1A57E6006355B6 /* UIImage+Modify.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE611E1A57E6006355B6 /* UIImage+Modify.m */; };
+		E850AE661E1A60E6006355B6 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE651E1A60E6006355B6 /* UIView+Frame.m */; };
+		E850AE691E1A6401006355B6 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE681E1A6401006355B6 /* UIView+Screenshot.m */; };
+		E850AE6C1E1A64FE006355B6 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE6B1E1A64FE006355B6 /* UIView+Animation.m */; };
+		E850AE721E1A677B006355B6 /* UIView+DebugQuickLook.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE711E1A677B006355B6 /* UIView+DebugQuickLook.m */; };
+		E850AE751E1A683B006355B6 /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE741E1A683B006355B6 /* UIView+Border.m */; };
+		E850AE781E1A6E02006355B6 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE771E1A6E02006355B6 /* UIView+Toast.m */; };
+		E850AE7B1E1A6EA8006355B6 /* UIView+Find.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE7A1E1A6EA8006355B6 /* UIView+Find.m */; };
+		E850AE7E1E1A7122006355B6 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE7D1E1A7122006355B6 /* UIView+BlockGesture.m */; };
+		E850AE811E1A7461006355B6 /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE801E1A7461006355B6 /* UIView+Constraints.m */; };
+		E850AE841E1A7584006355B6 /* UIView+Radius.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE831E1A7584006355B6 /* UIView+Radius.m */; };
 		E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */; };
 		E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101071E1810230012A833 /* NSKeyedUnarchiver+Key.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -197,6 +207,26 @@
 		E850AE5E1E1A537C006355B6 /* UIImage+Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Effect.m"; sourceTree = "<group>"; };
 		E850AE601E1A57E5006355B6 /* UIImage+Modify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Modify.h"; sourceTree = "<group>"; };
 		E850AE611E1A57E6006355B6 /* UIImage+Modify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Modify.m"; sourceTree = "<group>"; };
+		E850AE641E1A60E6006355B6 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E850AE651E1A60E6006355B6 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E850AE671E1A6401006355B6 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		E850AE681E1A6401006355B6 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		E850AE6A1E1A64FE006355B6 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		E850AE6B1E1A64FE006355B6 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		E850AE701E1A677B006355B6 /* UIView+DebugQuickLook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DebugQuickLook.h"; sourceTree = "<group>"; };
+		E850AE711E1A677B006355B6 /* UIView+DebugQuickLook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DebugQuickLook.m"; sourceTree = "<group>"; };
+		E850AE731E1A683B006355B6 /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
+		E850AE741E1A683B006355B6 /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		E850AE761E1A6E02006355B6 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		E850AE771E1A6E02006355B6 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		E850AE791E1A6EA8006355B6 /* UIView+Find.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Find.h"; sourceTree = "<group>"; };
+		E850AE7A1E1A6EA8006355B6 /* UIView+Find.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Find.m"; sourceTree = "<group>"; };
+		E850AE7C1E1A7122006355B6 /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
+		E850AE7D1E1A7122006355B6 /* UIView+BlockGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
+		E850AE7F1E1A7461006355B6 /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
+		E850AE801E1A7461006355B6 /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
+		E850AE821E1A7584006355B6 /* UIView+Radius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Radius.h"; sourceTree = "<group>"; };
+		E850AE831E1A7584006355B6 /* UIView+Radius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Radius.m"; sourceTree = "<group>"; };
 		E88101031E1806390012A833 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E88101061E1810230012A833 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -449,6 +479,33 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		E850AE631E1A60D0006355B6 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E850AE761E1A6E02006355B6 /* UIView+Toast.h */,
+				E850AE771E1A6E02006355B6 /* UIView+Toast.m */,
+				E850AE641E1A60E6006355B6 /* UIView+Frame.h */,
+				E850AE651E1A60E6006355B6 /* UIView+Frame.m */,
+				E850AE671E1A6401006355B6 /* UIView+Screenshot.h */,
+				E850AE681E1A6401006355B6 /* UIView+Screenshot.m */,
+				E850AE6A1E1A64FE006355B6 /* UIView+Animation.h */,
+				E850AE6B1E1A64FE006355B6 /* UIView+Animation.m */,
+				E850AE701E1A677B006355B6 /* UIView+DebugQuickLook.h */,
+				E850AE711E1A677B006355B6 /* UIView+DebugQuickLook.m */,
+				E850AE731E1A683B006355B6 /* UIView+Border.h */,
+				E850AE741E1A683B006355B6 /* UIView+Border.m */,
+				E850AE791E1A6EA8006355B6 /* UIView+Find.h */,
+				E850AE7A1E1A6EA8006355B6 /* UIView+Find.m */,
+				E850AE7C1E1A7122006355B6 /* UIView+BlockGesture.h */,
+				E850AE7D1E1A7122006355B6 /* UIView+BlockGesture.m */,
+				E850AE7F1E1A7461006355B6 /* UIView+Constraints.h */,
+				E850AE801E1A7461006355B6 /* UIView+Constraints.m */,
+				E850AE821E1A7584006355B6 /* UIView+Radius.h */,
+				E850AE831E1A7584006355B6 /* UIView+Radius.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		E88100FF1E1805960012A833 /* NSArchiver */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +591,7 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E850AE631E1A60D0006355B6 /* UIView */,
 				E850AE3E1E1A3788006355B6 /* UIImage */,
 				E850AE301E195585006355B6 /* UIFont */,
 				E850AE261E194124006355B6 /* UIApplication */,
@@ -713,6 +771,7 @@
 				E83D08C91E17AD0600C215BE /* NSDictionary+Block.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
 				E83D08B51E17768000C215BE /* NSArray+JSONEncode.m in Sources */,
+				E850AE661E1A60E6006355B6 /* UIView+Frame.m in Sources */,
 				E88B47F21E154C260074A53A /* NSString+Contains.m in Sources */,
 				E88B47E91E1548170074A53A /* NSString+MIME.m in Sources */,
 				E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */,
@@ -723,10 +782,13 @@
 				E83D08811E16B54900C215BE /* NSData+Code.m in Sources */,
 				E850AE151E191DED006355B6 /* UIDevice+NetWork.m in Sources */,
 				E83D08651E169D7200C215BE /* NSObject+QuickAssociated.m in Sources */,
+				E850AE721E1A677B006355B6 /* UIView+DebugQuickLook.m in Sources */,
 				E83D08D61E17BE1A00C215BE /* NSNumber+Roman.m in Sources */,
 				E83D08C31E17AAF600C215BE /* NSDictionary+JSONEncode.m in Sources */,
 				E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */,
 				E850AE0B1E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.m in Sources */,
+				E850AE751E1A683B006355B6 /* UIView+Border.m in Sources */,
+				E850AE781E1A6E02006355B6 /* UIView+Toast.m in Sources */,
 				E88B47F51E154D810074A53A /* NSString+QRcode.m in Sources */,
 				E83D08E31E17D8B400C215BE /* NSURL+QueryDictionary.m in Sources */,
 				E83D08711E16A85400C215BE /* NSString+Regex.m in Sources */,
@@ -745,9 +807,11 @@
 				E850AE331E195592006355B6 /* UIFont+Traits.m in Sources */,
 				E83D085C1E16961600C215BE /* NSObject+Reflect.m in Sources */,
 				E850AE361E19566F006355B6 /* UIFont+Make.m in Sources */,
+				E850AE7E1E1A7122006355B6 /* UIView+BlockGesture.m in Sources */,
 				E83D08AB1E176CA600C215BE /* NSBundle+AppInfo.m in Sources */,
 				E88B47E31E1544050074A53A /* NSString+Size.m in Sources */,
 				E850AE1F1E192C02006355B6 /* UIColor+Colors.m in Sources */,
+				E850AE7B1E1A6EA8006355B6 /* UIView+Find.m in Sources */,
 				E88B47DA1E1542740074A53A /* NSString+Hash.m in Sources */,
 				E88B48051E1557030074A53A /* NSObject+Aspect.m in Sources */,
 				E850AE441E1A4099006355B6 /* UIImage+Capture.m in Sources */,
@@ -759,8 +823,10 @@
 				E83D08681E16A1A300C215BE /* NSObject+Runtime.m in Sources */,
 				E83D08ED1E17EAFE00C215BE /* LogUnicode.m in Sources */,
 				E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */,
+				E850AE6C1E1A64FE006355B6 /* UIView+Animation.m in Sources */,
 				E88B47CF1E153BAC0074A53A /* NSDate+Figure.m in Sources */,
 				E83D08F01E17F3EC00C215BE /* KKLog.m in Sources */,
+				E850AE811E1A7461006355B6 /* UIView+Constraints.m in Sources */,
 				E850AE181E1922FC006355B6 /* UIDevice+Disk.m in Sources */,
 				E88B47E61E1545140074A53A /* NSString+Emoji.m in Sources */,
 				E88B47AD1E15363E0074A53A /* main.m in Sources */,
@@ -771,7 +837,9 @@
 				E850AE081E18F32D006355B6 /* NSNotificationCenter+Thread.m in Sources */,
 				E88B47DD1E15430B0074A53A /* NSString+URLEncode.m in Sources */,
 				E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */,
+				E850AE841E1A7584006355B6 /* UIView+Radius.m in Sources */,
 				E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */,
+				E850AE691E1A6401006355B6 /* UIView+Screenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
