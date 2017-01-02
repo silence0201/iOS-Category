@@ -151,7 +151,6 @@ NSString* const x86_64_Sim  = @"x86_64";
     NSString *hardware = [NSString stringWithUTF8String:hw_machine];
     free(hw_machine);
     return hardware;
-
 }
 
 - (Hardware)hardware{

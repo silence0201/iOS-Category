@@ -71,6 +71,7 @@
 		E850AE7E1E1A7122006355B6 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE7D1E1A7122006355B6 /* UIView+BlockGesture.m */; };
 		E850AE811E1A7461006355B6 /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE801E1A7461006355B6 /* UIView+Constraints.m */; };
 		E850AE841E1A7584006355B6 /* UIView+Radius.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE831E1A7584006355B6 /* UIView+Radius.m */; };
+		E850AE881E1A79E3006355B6 /* UIScreen+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = E850AE871E1A79E3006355B6 /* UIScreen+Info.m */; };
 		E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */; };
 		E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E88101071E1810230012A833 /* NSKeyedUnarchiver+Key.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -227,6 +228,8 @@
 		E850AE801E1A7461006355B6 /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
 		E850AE821E1A7584006355B6 /* UIView+Radius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Radius.h"; sourceTree = "<group>"; };
 		E850AE831E1A7584006355B6 /* UIView+Radius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Radius.m"; sourceTree = "<group>"; };
+		E850AE861E1A79E3006355B6 /* UIScreen+Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Info.h"; sourceTree = "<group>"; };
+		E850AE871E1A79E3006355B6 /* UIScreen+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Info.m"; sourceTree = "<group>"; };
 		E88101031E1806390012A833 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E88101041E1806390012A833 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E88101061E1810230012A833 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -506,6 +509,15 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		E850AE851E1A794B006355B6 /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E850AE861E1A79E3006355B6 /* UIScreen+Info.h */,
+				E850AE871E1A79E3006355B6 /* UIScreen+Info.m */,
+			);
+			path = UIScreen;
+			sourceTree = "<group>";
+		};
 		E88100FF1E1805960012A833 /* NSArchiver */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +603,7 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E850AE851E1A794B006355B6 /* UIScreen */,
 				E850AE631E1A60D0006355B6 /* UIView */,
 				E850AE3E1E1A3788006355B6 /* UIImage */,
 				E850AE301E195585006355B6 /* UIFont */,
@@ -792,6 +805,7 @@
 				E88B47F51E154D810074A53A /* NSString+QRcode.m in Sources */,
 				E83D08E31E17D8B400C215BE /* NSURL+QueryDictionary.m in Sources */,
 				E83D08711E16A85400C215BE /* NSString+Regex.m in Sources */,
+				E850AE881E1A79E3006355B6 /* UIScreen+Info.m in Sources */,
 				E850AE1B1E1924F2006355B6 /* UIDevice+CPU.m in Sources */,
 				E850AE501E1A478F006355B6 /* UIImage+Compress.m in Sources */,
 				E83D087E1E16B40700C215BE /* NSData+Encrypt.m in Sources */,
