@@ -53,7 +53,7 @@
     CGSize size = CGSizeZero;
     
     if ([[UIScreen mainScreen] isEqual:self]) {
-        NSString *model = [UIDevice currentDevice].machineModel;
+        NSString *model = [self hardwareString];
         
         if ([model hasPrefix:@"iPhone"]) {
             if ([model isEqualToString:@"iPhone7,1"]) return CGSizeMake(1080, 1920);
