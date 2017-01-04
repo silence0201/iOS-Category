@@ -110,6 +110,9 @@
 		E88B47FC1E1550040074A53A /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47FB1E1550040074A53A /* NSObject+GCD.m */; };
 		E88B47FF1E1550A50074A53A /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47FE1E1550A50074A53A /* NSObject+KVO.m */; };
 		E88B48051E1557030074A53A /* NSObject+Aspect.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B48041E1557030074A53A /* NSObject+Aspect.m */; };
+		E8BB5AD71E1D387600E05E68 /* UIScrollView+Amplification.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BB5AD61E1D387600E05E68 /* UIScrollView+Amplification.m */; };
+		E8BB5ADA1E1D391300E05E68 /* UIScrollView+SimpleScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BB5AD91E1D391300E05E68 /* UIScrollView+SimpleScroll.m */; };
+		E8BB5ADD1E1D399500E05E68 /* UIScrollView+PageNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BB5ADC1E1D399500E05E68 /* UIScrollView+PageNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -316,6 +319,12 @@
 		E88B47FE1E1550A50074A53A /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 		E88B48031E1557030074A53A /* NSObject+Aspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Aspect.h"; sourceTree = "<group>"; };
 		E88B48041E1557030074A53A /* NSObject+Aspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Aspect.m"; sourceTree = "<group>"; };
+		E8BB5AD51E1D387600E05E68 /* UIScrollView+Amplification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Amplification.h"; sourceTree = "<group>"; };
+		E8BB5AD61E1D387600E05E68 /* UIScrollView+Amplification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Amplification.m"; sourceTree = "<group>"; };
+		E8BB5AD81E1D391300E05E68 /* UIScrollView+SimpleScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SimpleScroll.h"; sourceTree = "<group>"; };
+		E8BB5AD91E1D391300E05E68 /* UIScrollView+SimpleScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SimpleScroll.m"; sourceTree = "<group>"; };
+		E8BB5ADB1E1D399500E05E68 /* UIScrollView+PageNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PageNumber.h"; sourceTree = "<group>"; };
+		E8BB5ADC1E1D399500E05E68 /* UIScrollView+PageNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PageNumber.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -698,6 +707,7 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E8BB5AD41E1D37D200E05E68 /* UIScrollView */,
 				E850AEC51E1A9106006355B6 /* UIButton */,
 				E850AEB51E1A8B2B006355B6 /* UIGestureRecognizer */,
 				E850AEA71E1A8B10006355B6 /* UIControl */,
@@ -794,6 +804,19 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		E8BB5AD41E1D37D200E05E68 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E8BB5AD51E1D387600E05E68 /* UIScrollView+Amplification.h */,
+				E8BB5AD61E1D387600E05E68 /* UIScrollView+Amplification.m */,
+				E8BB5AD81E1D391300E05E68 /* UIScrollView+SimpleScroll.h */,
+				E8BB5AD91E1D391300E05E68 /* UIScrollView+SimpleScroll.m */,
+				E8BB5ADB1E1D399500E05E68 /* UIScrollView+PageNumber.h */,
+				E8BB5ADC1E1D399500E05E68 /* UIScrollView+PageNumber.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -888,10 +911,12 @@
 				E850AE661E1A60E6006355B6 /* UIView+Frame.m in Sources */,
 				E88B47F21E154C260074A53A /* NSString+Contains.m in Sources */,
 				E88B47E91E1548170074A53A /* NSString+MIME.m in Sources */,
+				E8BB5ADA1E1D391300E05E68 /* UIScrollView+SimpleScroll.m in Sources */,
 				E83D08A71E175E3700C215BE /* NSData+Cache.m in Sources */,
 				E850AE4D1E1A44F7006355B6 /* UIImage+GIF.m in Sources */,
 				E850AE2F1E1950D3006355B6 /* UIApplication+KeyboardFrame.m in Sources */,
 				E850AE8F1E1A7FED006355B6 /* UILabel+Space.m in Sources */,
+				E8BB5ADD1E1D399500E05E68 /* UIScrollView+PageNumber.m in Sources */,
 				E850AE2C1E194C3F006355B6 /* UIApplication+Authority.m in Sources */,
 				E850AECB1E1A9165006355B6 /* UIButton+Block.m in Sources */,
 				E850AE4A1E1A4495006355B6 /* UIImage+Merge.m in Sources */,
@@ -944,6 +969,7 @@
 				E850AEB41E1A8B10006355B6 /* UIControl+Delay.m in Sources */,
 				E850AECE1E1A9236006355B6 /* UIButton+CountDown.m in Sources */,
 				E83D08B81E1776CF00C215BE /* NSArray+Block.m in Sources */,
+				E8BB5AD71E1D387600E05E68 /* UIScrollView+Amplification.m in Sources */,
 				E850AE6C1E1A64FE006355B6 /* UIView+Animation.m in Sources */,
 				E88B47CF1E153BAC0074A53A /* NSDate+Figure.m in Sources */,
 				E850AEC81E1A9131006355B6 /* UIButton+BackgroundColor.m in Sources */,
