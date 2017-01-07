@@ -19,23 +19,23 @@
 * [NSURL](Classes/Foundation/NSURL):URL查询转化
 
 ####UIKit
-* [UIApplication](Classes/UIKit/UIApplication)
-* [UIBarButtonItem](Classes/UIKit/UIBarButtonItem)
-* [UIButton](Classes/UIKit/UIButton)
-* [UIColor](Classes/UIKit/UIColor)
-* [UIControl](Classes/UIKit/UIControl)
-* [UIDevice](Classes/UIKit/UIDevice)
-* [UIFont](Classes/UIKit/UIFont)
-* [UIGestureRecognizer](Classes/UIKit/UIGestureRecognizer)
-* [UIImage](Classes/UIKit/UIImage)
-* [UILabel](Classes/UIKit/UILabel)
-* [UINavigationController](Classes/UIKit/UINavigationController)
-* [UIScreen](Classes/UIKit/UIScreen)
-* [UIScrollView](Classes/UIKit/UIScrollView)
-* [UITableView](Classes/UIKit/UITableView)
-* [UIView](Classes/UIKit/UIView)
-* [UIViewController](Classes/UIKit/UIViewController)
-* [UINavigationBar](Classes/UIKit/UINavigationBar)
+* [UIApplication](Classes/UIKit/UIApplication):App相关信息获取,权限判断,键盘Frame
+* [UIBarButtonItem](Classes/UIKit/UIBarButtonItem):Block封装操作
+* [UIButton](Classes/UIKit/UIButton):设置背景,Block封装操作,点击相应范围处理,倒计时快速实现, Indicator快速添加
+* [UIColor](Classes/UIKit/UIColor):增添更多颜色,颜色操作
+* [UIControl](Classes/UIKit/UIControl):Block封装,设置延时相应
+* [UIDevice](Classes/UIKit/UIDevice):CPU信息获取,存储信息获取,网络信息获取,设备信息获取
+* [UIFont](Classes/UIKit/UIFont):加载字体方法封装,字体快速创建,字体特征获取
+* [UIGestureRecognizer](Classes/UIKit/UIGestureRecognizer):手势Block封装
+* [UIImage](Classes/UIKit/UIImage):截屏,用颜色构造方法,压缩,加效果,Fix,Gif,导出,合并,修改,旋转
+* [UILabel](Classes/UIKit/UILabel):获取内容Size,设置间距
+* [UINavigationController](Classes/UIKit/UINavigationController):Stack管理, Transitions添加
+* [UIScreen](Classes/UIKit/UIScreen):屏幕信息获取
+* [UIScrollView](Classes/UIKit/UIScrollView):下拉放大效果,PageNumber快速获取,滚动实现
+* [UITableView](Classes/UIKit/UITableView):设置Cell样式,修改数据源
+* [UIView](Classes/UIKit/UIView):快速添加动画,Block封装,灵活的添加border,快速获取约束信息,快速寻找,Frame便捷操作,圆角设置,截屏, Toast
+* [UIViewController](Classes/UIKit/UIViewController):快速Alert,PopView, TopWarningView
+* [UINavigationBar](Classes/UIKit/UINavigationBar):快速设置简单的外观
 
 ##使用说明
 
