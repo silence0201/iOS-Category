@@ -6,7 +6,8 @@
 //  Copyright © 2017 silence. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef SIFoundation_h
+#define SIFoundation_h
 
 #import "NSNotificationCenter+Thread.h"
 #import "NSNotificationCenter+AutoRemove.h"
@@ -73,4 +74,5 @@
 
 #import "NSTimer+Block.h"
 
+#endif
 

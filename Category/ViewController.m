@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SIFoundation.h"
-#import "SIUIKit.h"
+#import "SICategory.h"
 
 @interface ViewController ()
 

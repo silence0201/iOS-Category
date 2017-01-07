@@ -6,6 +6,9 @@
 //  Copyright © 2017 silence. All rights reserved.
 //
 
+#ifndef SIUIKit_h
+#define SIUIKit_h
+
 #import "UINavigationBar+Appear.h"
 
 #import "UINavigationController+Transitions.h"
@@ -79,3 +82,4 @@
 #import "UIDevice+Disk.h"
 #import "UIDevice+CPU.h"
 
+#endif
