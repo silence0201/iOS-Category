@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SIFoundation.h"
+#import "SIUIKit.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@",[NSString build]) ;
+    NSLog(@"%f",[UIColor redColor].red) ;
     
 }
 

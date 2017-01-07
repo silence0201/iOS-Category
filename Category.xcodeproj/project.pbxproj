@@ -120,7 +120,6 @@
 		E8E944EA1E20EBE300EE98B0 /* UITableView+CellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944E91E20EBE300EE98B0 /* UITableView+CellStyle.m */; };
 		E8E944EE1E20EF5A00EE98B0 /* UINavigationController+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944ED1E20EF5A00EE98B0 /* UINavigationController+Transitions.m */; };
 		E8E944F11E20FC3100EE98B0 /* UINavigationController+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944F01E20FC3100EE98B0 /* UINavigationController+Stack.m */; };
-		E8E944F41E20FF0600EE98B0 /* UINavigationController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944F31E20FF0600EE98B0 /* UINavigationController+Block.m */; };
 		E8E944F81E21019900EE98B0 /* UINavigationBar+Appear.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944F71E21019900EE98B0 /* UINavigationBar+Appear.m */; };
 /* End PBXBuildFile section */
 
@@ -348,11 +347,10 @@
 		E8E944ED1E20EF5A00EE98B0 /* UINavigationController+Transitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Transitions.m"; sourceTree = "<group>"; };
 		E8E944EF1E20FC3100EE98B0 /* UINavigationController+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Stack.h"; sourceTree = "<group>"; };
 		E8E944F01E20FC3100EE98B0 /* UINavigationController+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Stack.m"; sourceTree = "<group>"; };
-		E8E944F21E20FF0600EE98B0 /* UINavigationController+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Block.h"; sourceTree = "<group>"; };
-		E8E944F31E20FF0600EE98B0 /* UINavigationController+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Block.m"; sourceTree = "<group>"; };
 		E8E944F61E21019900EE98B0 /* UINavigationBar+Appear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Appear.h"; sourceTree = "<group>"; };
 		E8E944F71E21019900EE98B0 /* UINavigationBar+Appear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Appear.m"; sourceTree = "<group>"; };
 		E8E944FC1E2105A000EE98B0 /* SIFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFoundation.h; sourceTree = "<group>"; };
+		E8E944FF1E2108A600EE98B0 /* SIUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIUIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -714,6 +712,7 @@
 		E88B47C41E15379B0074A53A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E8E944FC1E2105A000EE98B0 /* SIFoundation.h */,
 				E850AE051E18F2B3006355B6 /* NSNotificationCenter */,
 				E88100FF1E1805960012A833 /* NSArchiver */,
 				E83D08E41E17E4CD00C215BE /* NSLog */,
@@ -728,7 +727,6 @@
 				E88B47D11E1540D40074A53A /* NSString */,
 				E88B47CA1E153BAC0074A53A /* NSDate */,
 				E88B47C61E1538070074A53A /* NSTimer */,
-				E8E944FC1E2105A000EE98B0 /* SIFoundation.h */,
 			);
 			path = Foundation;
 			sourceTree = SOURCE_ROOT;
@@ -736,6 +734,7 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E8E944FF1E2108A600EE98B0 /* SIUIKit.h */,
 				E8E944F51E21012300EE98B0 /* UINavigationBar */,
 				E8E944EB1E20EF2C00EE98B0 /* UINavigationController */,
 				E8E944E11E20E77100EE98B0 /* UITableView */,
@@ -881,8 +880,6 @@
 				E8E944ED1E20EF5A00EE98B0 /* UINavigationController+Transitions.m */,
 				E8E944EF1E20FC3100EE98B0 /* UINavigationController+Stack.h */,
 				E8E944F01E20FC3100EE98B0 /* UINavigationController+Stack.m */,
-				E8E944F21E20FF0600EE98B0 /* UINavigationController+Block.h */,
-				E8E944F31E20FF0600EE98B0 /* UINavigationController+Block.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -1060,7 +1057,6 @@
 				E850AEC11E1A8F4E006355B6 /* UIBarButtonItem+ALActionBlocks.m in Sources */,
 				E83D08F01E17F3EC00C215BE /* KKLog.m in Sources */,
 				E850AE811E1A7461006355B6 /* UIView+Constraints.m in Sources */,
-				E8E944F41E20FF0600EE98B0 /* UINavigationController+Block.m in Sources */,
 				E850AE181E1922FC006355B6 /* UIDevice+Disk.m in Sources */,
 				E88B47E61E1545140074A53A /* NSString+Emoji.m in Sources */,
 				E88B47AD1E15363E0074A53A /* main.m in Sources */,
