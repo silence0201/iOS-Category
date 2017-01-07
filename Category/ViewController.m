@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIColor+Make.h"
+#import "SIFoundation.h"
 
 @interface ViewController ()
 
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%f",[UIColor grayColor].red) ;
+    NSLog(@"%@",[NSString build]) ;
     
 }
 

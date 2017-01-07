@@ -352,6 +352,7 @@
 		E8E944F31E20FF0600EE98B0 /* UINavigationController+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Block.m"; sourceTree = "<group>"; };
 		E8E944F61E21019900EE98B0 /* UINavigationBar+Appear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Appear.h"; sourceTree = "<group>"; };
 		E8E944F71E21019900EE98B0 /* UINavigationBar+Appear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Appear.m"; sourceTree = "<group>"; };
+		E8E944FC1E2105A000EE98B0 /* SIFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFoundation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -727,6 +728,7 @@
 				E88B47D11E1540D40074A53A /* NSString */,
 				E88B47CA1E153BAC0074A53A /* NSDate */,
 				E88B47C61E1538070074A53A /* NSTimer */,
+				E8E944FC1E2105A000EE98B0 /* SIFoundation.h */,
 			);
 			path = Foundation;
 			sourceTree = SOURCE_ROOT;
