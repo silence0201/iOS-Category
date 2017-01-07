@@ -116,6 +116,8 @@
 		E8BB5AE11E1D3AE100E05E68 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BB5AE01E1D3AE100E05E68 /* UIViewController+Alert.m */; };
 		E8BB5AE41E1D3BA000E05E68 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BB5AE31E1D3BA000E05E68 /* UIViewController+MJPopupViewController.m */; };
 		E8BB5AE71E1D3C7B00E05E68 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BB5AE61E1D3C7B00E05E68 /* UIViewController+TopBarMessage.m */; };
+		E8E944E41E20E80200EE98B0 /* UITableView+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944E31E20E80200EE98B0 /* UITableView+Update.m */; };
+		E8E944EA1E20EBE300EE98B0 /* UITableView+CellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944E91E20EBE300EE98B0 /* UITableView+CellStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -334,6 +336,10 @@
 		E8BB5AE31E1D3BA000E05E68 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
 		E8BB5AE51E1D3C7B00E05E68 /* UIViewController+TopBarMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopBarMessage.h"; sourceTree = "<group>"; };
 		E8BB5AE61E1D3C7B00E05E68 /* UIViewController+TopBarMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopBarMessage.m"; sourceTree = "<group>"; };
+		E8E944E21E20E80200EE98B0 /* UITableView+Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Update.h"; sourceTree = "<group>"; };
+		E8E944E31E20E80200EE98B0 /* UITableView+Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Update.m"; sourceTree = "<group>"; };
+		E8E944E81E20EBE300EE98B0 /* UITableView+CellStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CellStyle.h"; sourceTree = "<group>"; };
+		E8E944E91E20EBE300EE98B0 /* UITableView+CellStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CellStyle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -716,6 +722,7 @@
 		E88B47C51E1537A10074A53A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E8E944E11E20E77100EE98B0 /* UITableView */,
 				E8BB5ADE1E1D3ACD00E05E68 /* UIViewController */,
 				E8BB5AD41E1D37D200E05E68 /* UIScrollView */,
 				E850AEC51E1A9106006355B6 /* UIButton */,
@@ -840,6 +847,17 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		E8E944E11E20E77100EE98B0 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				E8E944E21E20E80200EE98B0 /* UITableView+Update.h */,
+				E8E944E31E20E80200EE98B0 /* UITableView+Update.m */,
+				E8E944E81E20EBE300EE98B0 /* UITableView+CellStyle.h */,
+				E8E944E91E20EBE300EE98B0 /* UITableView+CellStyle.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -930,6 +948,7 @@
 				E850AE291E1941A7006355B6 /* UIApplication+AppInfo.m in Sources */,
 				E83D08C91E17AD0600C215BE /* NSDictionary+Block.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
+				E8E944E41E20E80200EE98B0 /* UITableView+Update.m in Sources */,
 				E83D08B51E17768000C215BE /* NSArray+JSONEncode.m in Sources */,
 				E850AE661E1A60E6006355B6 /* UIView+Frame.m in Sources */,
 				E88B47F21E154C260074A53A /* NSString+Contains.m in Sources */,
@@ -949,6 +968,7 @@
 				E83D08651E169D7200C215BE /* NSObject+QuickAssociated.m in Sources */,
 				E850AE721E1A677B006355B6 /* UIView+DebugQuickLook.m in Sources */,
 				E83D08D61E17BE1A00C215BE /* NSNumber+Roman.m in Sources */,
+				E8E944EA1E20EBE300EE98B0 /* UITableView+CellStyle.m in Sources */,
 				E83D08C31E17AAF600C215BE /* NSDictionary+JSONEncode.m in Sources */,
 				E83D08CF1E17B34300C215BE /* NSDictionary+Merge.m in Sources */,
 				E850AE0B1E18FCA6006355B6 /* NSNotificationCenter+AutoRemove.m in Sources */,
