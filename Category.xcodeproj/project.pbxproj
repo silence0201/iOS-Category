@@ -121,6 +121,7 @@
 		E8E944EE1E20EF5A00EE98B0 /* UINavigationController+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944ED1E20EF5A00EE98B0 /* UINavigationController+Transitions.m */; };
 		E8E944F11E20FC3100EE98B0 /* UINavigationController+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944F01E20FC3100EE98B0 /* UINavigationController+Stack.m */; };
 		E8E944F41E20FF0600EE98B0 /* UINavigationController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944F31E20FF0600EE98B0 /* UINavigationController+Block.m */; };
+		E8E944F81E21019900EE98B0 /* UINavigationBar+Appear.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E944F71E21019900EE98B0 /* UINavigationBar+Appear.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -349,6 +350,8 @@
 		E8E944F01E20FC3100EE98B0 /* UINavigationController+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Stack.m"; sourceTree = "<group>"; };
 		E8E944F21E20FF0600EE98B0 /* UINavigationController+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Block.h"; sourceTree = "<group>"; };
 		E8E944F31E20FF0600EE98B0 /* UINavigationController+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Block.m"; sourceTree = "<group>"; };
+		E8E944F61E21019900EE98B0 /* UINavigationBar+Appear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Appear.h"; sourceTree = "<group>"; };
+		E8E944F71E21019900EE98B0 /* UINavigationBar+Appear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Appear.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -885,6 +888,8 @@
 		E8E944F51E21012300EE98B0 /* UINavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				E8E944F61E21019900EE98B0 /* UINavigationBar+Appear.h */,
+				E8E944F71E21019900EE98B0 /* UINavigationBar+Appear.m */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -1067,6 +1072,7 @@
 				E88B47DD1E15430B0074A53A /* NSString+URLEncode.m in Sources */,
 				E850AED71E1A94FF006355B6 /* UIButton+Submitting.m in Sources */,
 				E88101051E1806390012A833 /* NSKeyedArchiver+Key.m in Sources */,
+				E8E944F81E21019900EE98B0 /* UINavigationBar+Appear.m in Sources */,
 				E8BB5AE41E1D3BA000E05E68 /* UIViewController+MJPopupViewController.m in Sources */,
 				E850AE841E1A7584006355B6 /* UIView+Radius.m in Sources */,
 				E88101081E1810230012A833 /* NSKeyedUnarchiver+Key.m in Sources */,
