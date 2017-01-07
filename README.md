@@ -43,6 +43,20 @@
 所有的分类独立,可以按照需求进行导入 
 如果想要全部导入只需要将`Classes`中文件拉入项目中即可
 
+####Pod导入
+使用全部功能
+
+	pod 'SICategory', '~> 1.0'
+	
+只是用`UIKit`相关分类
+	
+	pod 'SICategory/SIUIKit', '~> 1.0'
+	
+只是用`Foundation`相关分类
+
+	pod 'SICategory/SIFoundation', '~> 1.0'
+	
+
 ###使用
 导入头文件:
 
