@@ -20,6 +20,7 @@
 
 ####UIKit
 * [UIApplication](Classes/UIKit/UIApplication):App相关信息获取,权限判断,键盘Frame
+* [UITabBarController](Classes/UIKit/UITabBarController):UITabBar隐藏
 * [UIBarButtonItem](Classes/UIKit/UIBarButtonItem):Block封装操作
 * [UIButton](Classes/UIKit/UIButton):设置背景,Block封装操作,点击相应范围处理,倒计时快速实现, Indicator快速添加
 * [UIColor](Classes/UIKit/UIColor):增添更多颜色,颜色操作
