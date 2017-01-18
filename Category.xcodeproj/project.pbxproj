@@ -121,6 +121,7 @@
 		E8E946661E210B6D00EE98B0 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945F81E210B6D00EE98B0 /* UIViewController+Alert.m */; };
 		E8E946671E210B6D00EE98B0 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945FA1E210B6D00EE98B0 /* UIViewController+MJPopupViewController.m */; };
 		E8E946681E210B6D00EE98B0 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945FC1E210B6D00EE98B0 /* UIViewController+TopBarMessage.m */; };
+		E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -352,6 +353,8 @@
 		E8E945FB1E210B6D00EE98B0 /* UIViewController+TopBarMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopBarMessage.h"; sourceTree = "<group>"; };
 		E8E945FC1E210B6D00EE98B0 /* UIViewController+TopBarMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopBarMessage.m"; sourceTree = "<group>"; };
 		E8E946691E210B8300EE98B0 /* SICategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SICategory.h; sourceTree = "<group>"; };
+		E8EB94311E2F1253000E4480 /* UINavigationController+Hide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Hide.h"; sourceTree = "<group>"; };
+		E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Hide.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -822,6 +825,8 @@
 		E8E945CD1E210B6D00EE98B0 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				E8EB94311E2F1253000E4480 /* UINavigationController+Hide.h */,
+				E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */,
 				E8E945CE1E210B6D00EE98B0 /* UINavigationController+Stack.h */,
 				E8E945CF1E210B6D00EE98B0 /* UINavigationController+Stack.m */,
 				E8E945D01E210B6D00EE98B0 /* UINavigationController+Transitions.h */,
@@ -1022,6 +1027,7 @@
 				E8E946481E210B6D00EE98B0 /* UIImage+Color.m in Sources */,
 				E8E945FE1E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.m in Sources */,
 				E8E946271E210B6D00EE98B0 /* NSString+JSONValue.m in Sources */,
+				E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */,
 				E88B47B31E15363E0074A53A /* ViewController.m in Sources */,
 				E8E946191E210B6D00EE98B0 /* NSObject+Aspect.m in Sources */,
 				E8E9461E1E210B6D00EE98B0 /* NSObject+QuickAssociated.m in Sources */,
