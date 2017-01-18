@@ -11,8 +11,11 @@
 
 #import "UINavigationBar+Appear.h"
 
+#import "UITabBarController+Hide.h"
+
 #import "UINavigationController+Transitions.h"
 #import "UINavigationController+Stack.h"
+#import "UINavigationController+Hide.h"
 
 #import "UITableView+Update.h"
 #import "UITableView+CellStyle.h"

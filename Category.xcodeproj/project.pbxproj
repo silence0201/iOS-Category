@@ -122,6 +122,7 @@
 		E8E946671E210B6D00EE98B0 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945FA1E210B6D00EE98B0 /* UIViewController+MJPopupViewController.m */; };
 		E8E946681E210B6D00EE98B0 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945FC1E210B6D00EE98B0 /* UIViewController+TopBarMessage.m */; };
 		E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */; };
+		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -355,6 +356,8 @@
 		E8E946691E210B8300EE98B0 /* SICategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SICategory.h; sourceTree = "<group>"; };
 		E8EB94311E2F1253000E4480 /* UINavigationController+Hide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Hide.h"; sourceTree = "<group>"; };
 		E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Hide.m"; sourceTree = "<group>"; };
+		E8EB94381E2F1445000E4480 /* UITabBarController+Hide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Hide.h"; sourceTree = "<group>"; };
+		E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Hide.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -654,6 +657,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E9457B1E210B6D00EE98B0 /* SIUIKit.h */,
+				E8EB94341E2F12FC000E4480 /* UITabBarController */,
 				E8E9457C1E210B6D00EE98B0 /* UIApplication */,
 				E8E945831E210B6D00EE98B0 /* UIBarButtonItem */,
 				E8E945861E210B6D00EE98B0 /* UIButton */,
@@ -908,6 +912,15 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		E8EB94341E2F12FC000E4480 /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E8EB94381E2F1445000E4480 /* UITabBarController+Hide.h */,
+				E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -986,6 +999,7 @@
 				E8E946161E210B6D00EE98B0 /* NSNumber+Display.m in Sources */,
 				E8E946621E210B6D00EE98B0 /* UIView+Frame.m in Sources */,
 				E8E9465E1E210B6D00EE98B0 /* UIView+Border.m in Sources */,
+				E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */,
 				E8E946341E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.m in Sources */,
 				E8E946611E210B6D00EE98B0 /* UIView+Find.m in Sources */,
 				E8E946001E210B6D00EE98B0 /* NSArray+JSONEncode.m in Sources */,
