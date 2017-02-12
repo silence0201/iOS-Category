@@ -70,7 +70,7 @@
 + (NSString *)stringFromDate:(NSDate *)date ;
 
 /**两者间的天数*/
-+ (NSInteger)getDaytoDay:(NSDate *)today beforDay:(NSDate *)beforday ;
++ (NSInteger)getDayNumbertoDay:(NSDate *)today beforDay:(NSDate *)beforday ;
 
 /**通过数字返回星期几*/
 + (NSString *)getWeekStringFromInteger:(NSInteger)week ;

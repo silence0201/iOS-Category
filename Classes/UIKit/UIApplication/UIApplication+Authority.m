@@ -15,13 +15,15 @@
 
 @implementation UIApplication (Authority)
 
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (BOOL)isAccessToLocationData{
     if([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized){
         return YES ;
     }
     return NO ;
 }
+#pragma clang diagnostic pop
 
 - (BOOL)isAccessToAddressBook{
     if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized) {

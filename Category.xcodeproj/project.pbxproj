@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -126,6 +127,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
+		E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Hash.m"; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -539,6 +542,8 @@
 			children = (
 				E8E945331E210B6D00EE98B0 /* NSFileManager+Helper.h */,
 				E8E945341E210B6D00EE98B0 /* NSFileManager+Helper.m */,
+				E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */,
+				E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */,
 			);
 			path = NSFileManager;
 			sourceTree = "<group>";
@@ -1075,6 +1080,7 @@
 				E8E946541E210B6D00EE98B0 /* UINavigationController+Stack.m in Sources */,
 				E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */,
 				E8E9462F1E210B6D00EE98B0 /* NSTimer+Block.m in Sources */,
+				E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */,
 				E8E946201E210B6D00EE98B0 /* NSObject+QuickCopy.m in Sources */,
 				E8E9462D1E210B6D00EE98B0 /* NSString+Size.m in Sources */,
 				E8E9462C1E210B6D00EE98B0 /* NSString+Regex.m in Sources */,

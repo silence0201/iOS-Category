@@ -7,7 +7,8 @@
 //
 
 #import "NSDate+Figure.h"
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @implementation NSDate (Figure)
 
 // 计算这个月有多少天
@@ -181,7 +182,7 @@
     return destDateString;
 }
 
-// 两个日历之间相差多少月
+// 两个日历之间相差多少天
 + (NSInteger)getDayNumbertoDay:(NSDate *)today beforDay:(NSDate *)beforday {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [calendar components:NSDayCalendarUnit fromDate:today toDate:beforday options:0];
@@ -218,3 +219,4 @@
     return str_week;
 }
 @end
+#pragma clang diagnostic pop

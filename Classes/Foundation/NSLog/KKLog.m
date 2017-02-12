@@ -38,7 +38,8 @@ static dispatch_queue_t k_operationQueue;
 @end
 
 
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @implementation KKLog
 
 + (NSDate *)nowBeijingTime{
@@ -62,7 +63,6 @@ static dispatch_queue_t k_operationQueue;
 + (NSString*)KKLogFormatPrefix:(KKLogLevel)logLevel{
     return [NSString stringWithFormat:@"[%@] ", [KKLog KKStringFromLogLevel:logLevel]];
 }
-
 
 + (void)logIntial{
     if (!logFilePath){
@@ -326,4 +326,6 @@ static dispatch_queue_t k_operationQueue;
 
 
 @end
+
+#pragma clang diagnostic pop
 
