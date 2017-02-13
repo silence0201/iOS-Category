@@ -16,6 +16,9 @@
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
+		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
+		E8DD4B521E51C598008B6BDF /* UIColor+FPBrandColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */; };
+		E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */; };
 		E8E945FD1E210B6D00EE98B0 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945061E210B6D00EE98B0 /* NSKeyedArchiver+Key.m */; };
 		E8E945FE1E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945081E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.m */; };
 		E8E945FF1E210B6D00EE98B0 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9450B1E210B6D00EE98B0 /* NSArray+Block.m */; };
@@ -78,7 +81,6 @@
 		E8E946381E210B6D00EE98B0 /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9458E1E210B6D00EE98B0 /* UIButton+CountDown.m */; };
 		E8E946391E210B6D00EE98B0 /* UIButton+Indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945901E210B6D00EE98B0 /* UIButton+Indicator.m */; };
 		E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945921E210B6D00EE98B0 /* UIButton+Submitting.m */; };
-		E8E9463B1E210B6D00EE98B0 /* UIColor+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945951E210B6D00EE98B0 /* UIColor+Colors.m */; };
 		E8E9463C1E210B6D00EE98B0 /* UIColor+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945971E210B6D00EE98B0 /* UIColor+Make.m */; };
 		E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9459A1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m */; };
 		E8E9463E1E210B6D00EE98B0 /* UIControl+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9459C1E210B6D00EE98B0 /* UIControl+Delay.m */; };
@@ -156,6 +158,12 @@
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DD4B451E51C29F008B6BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringColorTests.m; sourceTree = "<group>"; };
+		E8DD4B4D1E51C51F008B6BDF /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors.h"; sourceTree = "<group>"; };
+		E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
+		E8DD4B501E51C598008B6BDF /* UIColor+FPBrandColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FPBrandColor.h"; sourceTree = "<group>"; };
+		E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FPBrandColor.m"; sourceTree = "<group>"; };
+		E8DD4B531E51C63E008B6BDF /* UIColor+CSSColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CSSColors.h"; sourceTree = "<group>"; };
+		E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CSSColors.m"; sourceTree = "<group>"; };
 		E8E945051E210B6D00EE98B0 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E8E945061E210B6D00EE98B0 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E8E945071E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -281,8 +289,6 @@
 		E8E945901E210B6D00EE98B0 /* UIButton+Indicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Indicator.m"; sourceTree = "<group>"; };
 		E8E945911E210B6D00EE98B0 /* UIButton+Submitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Submitting.h"; sourceTree = "<group>"; };
 		E8E945921E210B6D00EE98B0 /* UIButton+Submitting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Submitting.m"; sourceTree = "<group>"; };
-		E8E945941E210B6D00EE98B0 /* UIColor+Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colors.h"; sourceTree = "<group>"; };
-		E8E945951E210B6D00EE98B0 /* UIColor+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colors.m"; sourceTree = "<group>"; };
 		E8E945961E210B6D00EE98B0 /* UIColor+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Make.h"; sourceTree = "<group>"; };
 		E8E945971E210B6D00EE98B0 /* UIColor+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Make.m"; sourceTree = "<group>"; };
 		E8E945991E210B6D00EE98B0 /* UIControl+ALActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ALActionBlocks.h"; sourceTree = "<group>"; };
@@ -765,10 +771,14 @@
 		E8E945931E210B6D00EE98B0 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				E8E945941E210B6D00EE98B0 /* UIColor+Colors.h */,
-				E8E945951E210B6D00EE98B0 /* UIColor+Colors.m */,
 				E8E945961E210B6D00EE98B0 /* UIColor+Make.h */,
 				E8E945971E210B6D00EE98B0 /* UIColor+Make.m */,
+				E8DD4B4D1E51C51F008B6BDF /* UIColor+FlatColors.h */,
+				E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */,
+				E8DD4B501E51C598008B6BDF /* UIColor+FPBrandColor.h */,
+				E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */,
+				E8DD4B531E51C63E008B6BDF /* UIColor+CSSColors.h */,
+				E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -1084,6 +1094,7 @@
 				E8E946121E210B6D00EE98B0 /* KKLog.m in Sources */,
 				E8E946071E210B6D00EE98B0 /* NSData+Hash.m in Sources */,
 				E8E946011E210B6D00EE98B0 /* NSArray+Plist.m in Sources */,
+				E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */,
 				E8E946431E210B6D00EE98B0 /* UIFont+Load.m in Sources */,
 				E8E946231E210B6D00EE98B0 /* NSString+AppInfo.m in Sources */,
 				E8E9463C1E210B6D00EE98B0 /* UIColor+Make.m in Sources */,
@@ -1097,10 +1108,10 @@
 				E8E946281E210B6D00EE98B0 /* NSString+MIME.m in Sources */,
 				E8E946171E210B6D00EE98B0 /* NSNumber+Roman.m in Sources */,
 				E8E946531E210B6D00EE98B0 /* UINavigationBar+Appear.m in Sources */,
+				E8DD4B521E51C598008B6BDF /* UIColor+FPBrandColor.m in Sources */,
 				E8E946061E210B6D00EE98B0 /* NSData+Encrypt.m in Sources */,
 				E8E946391E210B6D00EE98B0 /* UIButton+Indicator.m in Sources */,
 				E8E946501E210B6D00EE98B0 /* UIImage+Rotate.m in Sources */,
-				E8E9463B1E210B6D00EE98B0 /* UIColor+Colors.m in Sources */,
 				E8E9462B1E210B6D00EE98B0 /* NSString+QRcode.m in Sources */,
 				E8E946561E210B6D00EE98B0 /* UIScreen+Info.m in Sources */,
 				E8E9465A1E210B6D00EE98B0 /* UITableView+CellStyle.m in Sources */,
@@ -1147,6 +1158,7 @@
 				E8E9463E1E210B6D00EE98B0 /* UIControl+Delay.m in Sources */,
 				E8E9464E1E210B6D00EE98B0 /* UIImage+Merge.m in Sources */,
 				E8E9464B1E210B6D00EE98B0 /* UIImage+Fix.m in Sources */,
+				E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */,
 				E8E946541E210B6D00EE98B0 /* UINavigationController+Stack.m in Sources */,
 				E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */,
 				E8E9462F1E210B6D00EE98B0 /* NSTimer+Block.m in Sources */,

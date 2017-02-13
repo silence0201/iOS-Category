@@ -77,8 +77,10 @@
 #import "UIApplication+Authority.h"
 #import "UIApplication+KeyboardFrame.h"
 
-#import "UIColor+Colors.h"
 #import "UIColor+Make.h"
+#import "UIColor+FlatColors.h"
+#import "UIColor+FPBrandColor.h"
+#import "UIColor+CSSColors.h"
 
 #import "UIDevice+Device.h"
 #import "UIDevice+NetWork.h"
