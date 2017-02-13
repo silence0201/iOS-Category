@@ -15,6 +15,7 @@
 		E88B47B81E15363E0074A53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B71E15363E0074A53A /* Assets.xcassets */; };
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
+		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8E945FD1E210B6D00EE98B0 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945061E210B6D00EE98B0 /* NSKeyedArchiver+Key.m */; };
 		E8E945FE1E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945081E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.m */; };
 		E8E945FF1E210B6D00EE98B0 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9450B1E210B6D00EE98B0 /* NSArray+Block.m */; };
@@ -127,6 +128,16 @@
 		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E8DD4B461E51C29F008B6BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E88B47A01E15363E0074A53A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E88B47A71E15363E0074A53A;
+			remoteInfo = Category;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
 		E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Hash.m"; sourceTree = "<group>"; };
@@ -142,6 +153,9 @@
 		E88B47BC1E15363E0074A53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
+		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DD4B451E51C29F008B6BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringColorTests.m; sourceTree = "<group>"; };
 		E8E945051E210B6D00EE98B0 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E8E945061E210B6D00EE98B0 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E8E945071E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -374,6 +388,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8DD4B3E1E51C29F008B6BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -381,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				E88B47AA1E15363E0074A53A /* Category */,
+				E8DD4B421E51C29F008B6BDF /* CategoryTests */,
 				E88B47A91E15363E0074A53A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -389,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				E88B47A81E15363E0074A53A /* Category.app */,
+				E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -424,6 +447,15 @@
 				E88B47BC1E15363E0074A53A /* Info.plist */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		E8DD4B421E51C29F008B6BDF /* CategoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8DD4B451E51C29F008B6BDF /* Info.plist */,
+				E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */,
+			);
+			path = CategoryTests;
 			sourceTree = "<group>";
 		};
 		E8E945021E210B6D00EE98B0 /* Classes */ = {
@@ -951,6 +983,24 @@
 			productReference = E88B47A81E15363E0074A53A /* Category.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E8DD4B401E51C29F008B6BDF /* CategoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DD4B481E51C29F008B6BDF /* Build configuration list for PBXNativeTarget "CategoryTests" */;
+			buildPhases = (
+				E8DD4B3D1E51C29F008B6BDF /* Sources */,
+				E8DD4B3E1E51C29F008B6BDF /* Frameworks */,
+				E8DD4B3F1E51C29F008B6BDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8DD4B471E51C29F008B6BDF /* PBXTargetDependency */,
+			);
+			name = CategoryTests;
+			productName = CategoryTests;
+			productReference = E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -964,6 +1014,12 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = UKBBWVJH59;
 						ProvisioningStyle = Automatic;
+					};
+					E8DD4B401E51C29F008B6BDF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UKBBWVJH59;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E88B47A71E15363E0074A53A;
 					};
 				};
 			};
@@ -981,6 +1037,7 @@
 			projectRoot = "";
 			targets = (
 				E88B47A71E15363E0074A53A /* Category */,
+				E8DD4B401E51C29F008B6BDF /* CategoryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -993,6 +1050,13 @@
 				E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */,
 				E88B47B81E15363E0074A53A /* Assets.xcassets in Resources */,
 				E88B47B61E15363E0074A53A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DD4B3F1E51C29F008B6BDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,7 +1185,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8DD4B3D1E51C29F008B6BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8DD4B471E51C29F008B6BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E88B47A71E15363E0074A53A /* Category */;
+			targetProxy = E8DD4B461E51C29F008B6BDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E88B47B41E15363E0074A53A /* Main.storyboard */ = {
@@ -1259,6 +1339,32 @@
 			};
 			name = Release;
 		};
+		E8DD4B491E51C29F008B6BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = CategoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.CategoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Category.app/Category";
+			};
+			name = Debug;
+		};
+		E8DD4B4A1E51C29F008B6BDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UKBBWVJH59;
+				INFOPLIST_FILE = CategoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.CategoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Category.app/Category";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1279,6 +1385,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E8DD4B481E51C29F008B6BDF /* Build configuration list for PBXNativeTarget "CategoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DD4B491E51C29F008B6BDF /* Debug */,
+				E8DD4B4A1E51C29F008B6BDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
