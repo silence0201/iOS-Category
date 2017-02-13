@@ -227,14 +227,12 @@ static __strong NSRegularExpression *hexadecimalStringRegex;
         lowercaseKey = [key lowercaseString];
         value = [colors objectForKey:key];
         if ([value isKindOfClass:[UIColor class]]){
-            [updatedDic setObject:value
-                           forKey:lowercaseKey];
+            [updatedDic setObject:value forKey:lowercaseKey];
             [colorsCache removeObjectForKey:lowercaseKey];
         }else if ([value isKindOfClass:[NSString class]]){
             color = [value representedColor];
             if (color){
-                [updatedDic setObject:color
-                               forKey:lowercaseKey];
+                [updatedDic setObject:color forKey:lowercaseKey];
                 [colorsCache removeObjectForKey:lowercaseKey];
             }
         }
