@@ -31,6 +31,7 @@
 #import "NSDictionary+SafeAccess.h"
 
 #import "NSFileManager+Helper.h"
+#import "NSFileManager+Hash.h"
 
 #import "NSArray+Plist.h"
 #import "NSArray+JSONEncode.h"
@@ -67,6 +68,7 @@
 #import "NSString+QRcode.h"
 #import "NSString+Regex.h"
 #import "NSString+PinYin.h"
+#import "NSString+Color.h"
 
 #import "NSDate+Figure.h"
 #import "NSDate+Extension.h"
