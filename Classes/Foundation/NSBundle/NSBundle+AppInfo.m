@@ -31,10 +31,6 @@
     return bundleIdentifier;
 }
 
-+ (UInt32)versionNumber{
-    return CFBundleGetVersionNumber(CFBundleGetMainBundle());
-}
-
 + (NSString*)version{
     CFStringRef ver = CFBundleGetValueForInfoDictionaryKey(CFBundleGetMainBundle(), kCFBundleVersionKey);
     return (__bridge_transfer NSString*)ver;

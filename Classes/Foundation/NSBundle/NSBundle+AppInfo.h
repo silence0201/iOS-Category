@@ -11,15 +11,47 @@
 @class UIImage ;
 @interface NSBundle (AppInfo)
 
+/**
+ Bundle Name
+
+ @return BundleName
+ */
 + (NSString *)bundleName ;
+
+/**
+ Bundle Identifier
+
+ @return BundleIdentifier
+ */
 + (NSString *)bundleIdentifier ;
 
-+ (UInt32)versionNumber ;
+/**
+ 版本信息
+
+ @return Version String
+ */
 + (NSString *)version ;
 
+
+/**
+ Icon路径
+
+ @return icon路径
+ */
 - (NSString*)appIconPath ;
+
+/**
+ app的icon
+
+ @return icon image对象
+ */
 - (UIImage*)appIcon ;
 
+/**
+ Localized Display Name
+
+ @return LocalizedDisplayName
+ */
 + (NSString *)localizedDisplayName;
 
 @end

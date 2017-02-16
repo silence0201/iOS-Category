@@ -19,6 +19,7 @@
     [super viewDidLoad];
     NSLog(@"%@",[NSString build]) ;
     NSLog(@"%f",[UIColor redColor].red) ;
+    NSLog(@"%@",[NSBundle version]) ;
     
 }
 

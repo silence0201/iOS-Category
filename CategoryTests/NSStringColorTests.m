@@ -21,6 +21,7 @@
 }
 
 - (void)testColorNameNonSuffixed{
+    
     XCTAssertNotNil([@"red" representedColor], @"red should return a color");
 }
 
