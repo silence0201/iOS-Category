@@ -20,7 +20,8 @@
     NSLog(@"%@",[NSString build]) ;
     NSLog(@"%f",[UIColor redColor].red) ;
     NSLog(@"%@",[NSBundle version]) ;
-    
+    NSString *Str = @"测试" ;
+    NSLog(@"%@",[Str pinyin]) ;
 }
 
 

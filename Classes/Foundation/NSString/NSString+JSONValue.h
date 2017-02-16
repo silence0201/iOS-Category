@@ -10,8 +10,10 @@
 
 @interface NSString (JSONValue)
 
-- (NSDictionary *) JSONDictionaryValue ;
+/// JSON String 转换为字典
+- (NSDictionary *)JSONDictionaryValue ;
 
+/// JSON String 转换为数组
 - (NSArray *)JSONArrayValue ;
 
 @end

@@ -68,18 +68,14 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
     // traverse pixe
     int pixelNum = imageWidth * imageHeight;
     uint32_t* pCurPtr = rgbImageBuf;
-    for (int i = 0; i < pixelNum; i++, pCurPtr++)
-    {
-        if ((*pCurPtr & 0xFFFFFF00) < 0x99999900)
-        {
+    for (int i = 0; i < pixelNum; i++, pCurPtr++){
+        if ((*pCurPtr & 0xFFFFFF00) < 0x99999900){
             // change color
             uint8_t* ptr = (uint8_t*)pCurPtr;
             ptr[3] = red; //0~255
             ptr[2] = green;
             ptr[1] = blue;
-        }
-        else
-        {
+        }else{
             uint8_t* ptr = (uint8_t*)pCurPtr;
             ptr[0] = 0;
         }

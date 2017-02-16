@@ -11,6 +11,11 @@
 
 @interface NSString (QRcode)
 
+/**
+ String的二维码信息
+
+ @return String的二维码图片
+ */
 - (UIImage *)QRcode ;
 
 @end

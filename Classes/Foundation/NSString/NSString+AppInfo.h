@@ -10,16 +10,50 @@
 
 @interface NSString (AppInfo)
 
+/**
+ UUID
+
+ @return UUID String
+ */
 + (NSString *)UUID ;
 
+
+/**
+ version 1.0
+
+ @return version
+ */
 + (NSString *)version;
 
+
+/**
+ build Version 13
+
+ @return build Version
+ */
 + (NSString *)build;
 
+
+/**
+ identifier
+
+ @return identifier
+ */
 + (NSString *)identifier;
 
+/**
+ currentLanguage
+
+ @return currentLanguage
+ */
 + (NSString *)currentLanguage;
 
+
+/**
+ 设备信息
+
+ @return 设备信息String
+ */
 + (NSString *)deviceModel;
 
 @end
