@@ -34,13 +34,17 @@
 
 @interface NSMutableArray (SafeAccess)
 
+/// 删除第一个对象
 - (void)removeFirstObject;
 
+/// pop第一个对象
 - (id)popFirstObject;
+/// pop最后一个对象
 - (id)popLastObject;
 
-
+/// 向前加入对象
 - (void)prependObject:(id)anObject;
+/// 向前加入数组
 - (void)prependObjects:(NSArray *)objects;
 
 - (void)appendObject:(id)anObject;
@@ -56,7 +60,9 @@
 -(void)appendChar:(char)c;
 -(void)appendFloat:(float)i;
 
+/// 反转对象顺序
 - (void)reverse;
+/// 随机打乱对象顺序
 - (void)shuffle;
 
 @end

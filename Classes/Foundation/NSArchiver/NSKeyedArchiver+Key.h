@@ -33,13 +33,13 @@
  移除归档对象
 
  @param key Key
- @param path 自定义路径信息
+ @param path 自定义路径信息,全路径信息
  @return 是否移除成功
  */
 + (BOOL)removeArchiveForKey:(NSString *)key WithFolderPath:(NSString *)path;
 
 /**
- 移除归档对象
+ 移除归档对象,默认移除到Document/DefaultArchive目录中
 
  @param key Key
  @return 是否移除成功
@@ -57,7 +57,7 @@
 + (BOOL)archiveExistsForKey:(NSString *)key WithFolderPath:(NSString *)path;
 
 /**
- 是否存在归档信息
+ 是否存在归档信息,默认读取到Document/DefaultArchive目录中
 
  @param key Key
  @return 是否存在归档

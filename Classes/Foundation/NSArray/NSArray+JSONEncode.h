@@ -10,7 +10,18 @@
 
 @interface NSArray (JSONEncode)
 
+/**
+ 转换为JSON
+
+ @return JSON Sting
+ */
 - (NSString *)jsonStringEncoded;
+
+/**
+ 返回格式化后JSON
+
+ @return 格式化后的JSON String
+ */
 - (NSString *)jsonPrettyStringEncoded;
 
 @end
