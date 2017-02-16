@@ -10,6 +10,13 @@
 
 @interface UIButton (BackgroundColor)
 
+
+/**
+ 给按钮设置背景颜色
+
+ @param backgroundColor Color
+ @param state 按钮的状态
+ */
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 
 @end

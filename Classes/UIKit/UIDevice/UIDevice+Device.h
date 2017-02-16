@@ -116,19 +116,19 @@ typedef enum {
 
 @interface UIDevice (Device)
 
-@property (nonatomic,readonly) BOOL isPad;
-@property (nonatomic,readonly) BOOL isSimulator;
-@property (nonatomic,readonly) BOOL isJailbroken;
-@property (nonatomic,readonly) BOOL isRetina;
-@property (nonatomic,readonly) BOOL hasCamera ;
-@property (nonatomic,readonly) BOOL canCallPhone ;
+@property (nonatomic,readonly) BOOL isPad;    /// 设备是否为iPad
+@property (nonatomic,readonly) BOOL isSimulator;  /// 设备是否为虚拟机
+@property (nonatomic,readonly) BOOL isJailbroken;  /// 设备是否越狱
+@property (nonatomic,readonly) BOOL isRetina;   /// 设备是否为Retina屏
+@property (nonatomic,readonly) BOOL hasCamera ;  /// 设备是否有照相机
+@property (nonatomic,readonly) BOOL canCallPhone ;  /// 设备是否能打电话
 
-@property (nonatomic,readonly) NSDate *systemUptime ;
+@property (nonatomic,readonly) NSDate *systemUptime ;  /// 设备启动时间
 
-@property (nonatomic,readonly) NSString *hardwareString ;
-@property (nonatomic,readonly) Hardware hardware ;
-@property (nonatomic,readonly) NSString *hardwareDesc ;
+@property (nonatomic,readonly) NSString *hardwareString ;  /// 设备描述信息
+@property (nonatomic,readonly) Hardware hardware ;   /// 设备类型
+@property (nonatomic,readonly) NSString *hardwareDesc ;   /// 设备简单描述
 
-@property (nonatomic,readonly) DeviceFamily deviceFamily ;
+@property (nonatomic,readonly) DeviceFamily deviceFamily ;   /// 设备Family
 
 @end

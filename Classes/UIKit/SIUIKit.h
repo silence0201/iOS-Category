@@ -40,8 +40,6 @@
 #import "UIControl+ALActionBlocks.h"
 #import "UIControl+Delay.h"
 
-#import "UIBarButtonItem+ALActionBlocks.h"
-
 #import "UILabel+ContenSize.h"
 #import "UILabel+Space.h"
 
