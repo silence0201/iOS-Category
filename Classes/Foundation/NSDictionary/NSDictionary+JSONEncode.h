@@ -10,7 +10,19 @@
 
 @interface NSDictionary (JSONEncode)
 
+/**
+ JSON String Encoded
+
+ @return JSON String
+ */
 - (nullable NSString *)jsonStringEncoded;
+
+
+/**
+ JSON PrettyString Encoded
+
+ @return JSON Pretty String
+ */
 - (nullable NSString *)jsonPrettyStringEncoded;
 
 @end
