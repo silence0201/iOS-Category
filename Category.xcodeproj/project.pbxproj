@@ -1405,6 +1405,7 @@
 				E8DD4B4A1E51C29F008B6BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

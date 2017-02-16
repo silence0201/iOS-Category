@@ -53,7 +53,9 @@
 /**协议列表*/
 + (NSDictionary *)protocolList;
 
+/**是否包含某个属性*/
 - (BOOL)hasPropertyForKey:(NSString*)key;
+/**是否包含某个变量*/
 - (BOOL)hasIvarForKey:(NSString*)key;
 
 @end
