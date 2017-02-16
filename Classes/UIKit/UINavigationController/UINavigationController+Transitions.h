@@ -10,7 +10,21 @@
 
 @interface UINavigationController (Transitions)
 
+/**
+ Push With Transitions
+
+ @param controller Controller
+ @param transition Transitions
+ */
 - (void)pushViewController:(UIViewController *)controller withTransition:(UIViewAnimationTransition)transition;
+
+
+/**
+ Pop With Transitions
+
+ @param transition Transitions
+ @return Transitions
+ */
 - (UIViewController *)popViewControllerWithTransition:(UIViewAnimationTransition)transition;
 
 @end
