@@ -175,6 +175,17 @@
 		E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FPBrandColor.m"; sourceTree = "<group>"; };
 		E8DD4B531E51C63E008B6BDF /* UIColor+CSSColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CSSColors.h"; sourceTree = "<group>"; };
 		E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CSSColors.m"; sourceTree = "<group>"; };
+		E8E8A4881E55CD0800E64E54 /* SIViewMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIViewMacros.h; sourceTree = "<group>"; };
+		E8E8A4891E55CD4C00E64E54 /* SIUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUtilsMacros.h; sourceTree = "<group>"; };
+		E8E8A48A1E55CDAE00E64E54 /* SIShortcutsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIShortcutsMacros.h; sourceTree = "<group>"; };
+		E8E8A48B1E55CE0B00E64E54 /* SISharedInstanceMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISharedInstanceMacro.h; sourceTree = "<group>"; };
+		E8E8A48C1E55CE5800E64E54 /* SIMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMaths.h; sourceTree = "<group>"; };
+		E8E8A48D1E55CE7D00E64E54 /* SILogMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILogMacros.h; sourceTree = "<group>"; };
+		E8E8A48E1E55CEB000E64E54 /* SIFRCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIFRCMacros.h; sourceTree = "<group>"; };
+		E8E8A48F1E55CEEA00E64E54 /* SIDevices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIDevices.h; sourceTree = "<group>"; };
+		E8E8A4901E55CF1200E64E54 /* SICoreGraphicsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SICoreGraphicsMacros.h; sourceTree = "<group>"; };
+		E8E8A4911E55CF3400E64E54 /* SIARCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIARCMacros.h; sourceTree = "<group>"; };
+		E8E8A4921E55CF5800E64E54 /* SIMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMacros.h; sourceTree = "<group>"; };
 		E8E945051E210B6D00EE98B0 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E8E945061E210B6D00EE98B0 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E8E945071E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -471,9 +482,28 @@
 			path = CategoryTests;
 			sourceTree = "<group>";
 		};
+		E8E8A4871E55CCA400E64E54 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				E8E8A4881E55CD0800E64E54 /* SIViewMacros.h */,
+				E8E8A4891E55CD4C00E64E54 /* SIUtilsMacros.h */,
+				E8E8A48A1E55CDAE00E64E54 /* SIShortcutsMacros.h */,
+				E8E8A48B1E55CE0B00E64E54 /* SISharedInstanceMacro.h */,
+				E8E8A48C1E55CE5800E64E54 /* SIMaths.h */,
+				E8E8A48D1E55CE7D00E64E54 /* SILogMacros.h */,
+				E8E8A48E1E55CEB000E64E54 /* SIFRCMacros.h */,
+				E8E8A48F1E55CEEA00E64E54 /* SIDevices.h */,
+				E8E8A4901E55CF1200E64E54 /* SICoreGraphicsMacros.h */,
+				E8E8A4911E55CF3400E64E54 /* SIARCMacros.h */,
+				E8E8A4921E55CF5800E64E54 /* SIMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
 		E8E945021E210B6D00EE98B0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E8E8A4871E55CCA400E64E54 /* Macros */,
 				E8E945031E210B6D00EE98B0 /* Foundation */,
 				E8E9457A1E210B6D00EE98B0 /* UIKit */,
 				E8E946691E210B8300EE98B0 /* SICategory.h */,
