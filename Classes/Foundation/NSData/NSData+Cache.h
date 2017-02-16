@@ -10,10 +10,20 @@
 
 @interface NSData (Cache)
 
-/** 根据key保存到磁盘里缓存起来 */
+/**
+ 根据key保存到磁盘里缓存起来
+
+ @param key Key
+ */
 - (void)saveDataCacheWithKey:(NSString *)key;
 
-/** 根据key取出缓存data */
+
+/**
+ 根据key取出缓存data
+
+ @param key Key
+ @return 对象数据
+ */
 + (NSData *)getDataCacheWithKey:(NSString *)key;
 
 @end
