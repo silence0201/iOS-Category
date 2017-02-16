@@ -10,8 +10,29 @@
 
 @interface UILabel (ContenSize)
 
+
+/**
+ Content的Size
+
+ @param width 限制宽度
+ @return Size
+ */
 - (CGSize)contentSizeForWidth:(CGFloat)width;
+
+
+/**
+ Content Size
+
+ @return Size
+ */
 - (CGSize)contentSize;
+
+
+/**
+ 是否被截断
+
+ @return 是否被截断
+ */
 - (BOOL)isTruncated;
 
 @end
