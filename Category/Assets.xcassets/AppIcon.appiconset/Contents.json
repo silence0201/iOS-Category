@@ -94,13 +94,6 @@
       "idiom" : "ipad",
       "filename" : "AppIcon83.5x83.5@2x~ipad.png",
       "scale" : "2x"
-    },
-    {
-      "size" : "20x20",
-      "idiom" : "ipad",
-      "filename" : "AppIcon40x40~ipad.png",
-      "unassigned" : true,
-      "scale" : "2x"
     }
   ],
   "info" : {

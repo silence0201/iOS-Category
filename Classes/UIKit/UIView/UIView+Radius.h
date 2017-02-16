@@ -20,6 +20,6 @@
 @property (assign,nonatomic) NSInteger borderWidth;
 @property (strong,nonatomic) UIColor  *borderColor;
 
-- (void)setLayerShadow:(nullable UIColor*)color offset:(CGSize)offset radius:(CGFloat)radius;
+- (void)setLayerShadow:(UIColor*)color offset:(CGSize)offset radius:(CGFloat)radius;
 
 @end

@@ -11,13 +11,12 @@
 
 @implementation UIGestureRecognizer (ALActionBlocks)
 
-
-- (instancetype)initWithBlock:(ALActionBlock)actionBlock {
-    UIGestureRecognizer *gestureRecognizer = [[[self class] alloc] init];
-    [gestureRecognizer setBlock:actionBlock];
-    return gestureRecognizer;
++ (instancetype)gestureRecognizerWithBlock:(ALActionBlock)actionBlock{
+    if (!actionBlock) return nil ;
+    UIGestureRecognizer *gestureRecognizer = [[UIGestureRecognizer alloc]init] ;
+    [gestureRecognizer setBlock:actionBlock] ;
+    return gestureRecognizer ;
 }
-
 
 - (void)setBlock:(ALActionBlock)actionBlock {
     NSMutableArray *actionBlocksArray = [self actionBlocksArray];

@@ -10,20 +10,19 @@
 
 @interface UIImage (Effect)
 
-- (nullable UIImage *)imageByTintColor:(UIColor *)color;
+- (UIImage *)imageByTintColor:(UIColor *)color;
 
-- (nullable UIImage *)imageByGrayscale;
-- (nullable UIImage *)imageByBlurSoft;
-- (nullable UIImage *)imageByBlurLight;
-- (nullable UIImage *)imageByBlurExtraLight;
-- (nullable UIImage *)imageByBlurDark;
-- (nullable UIImage *)imageByBlurWithTint:(UIColor *)tintColor;
+- (UIImage *)imageByGrayscale;
+- (UIImage *)imageByBlurSoft;
+- (UIImage *)imageByBlurLight;
+- (UIImage *)imageByBlurExtraLight;
+- (UIImage *)imageByBlurDark;
+- (UIImage *)imageByBlurWithTint:(UIColor *)tintColor;
 
-- (nullable
-   UIImage *)imageByBlurRadius:(CGFloat)blurRadius
-                              tintColor:(nullable UIColor *)tintColor
-                               tintMode:(CGBlendMode)tintBlendMode
-                             saturation:(CGFloat)saturation
-                              maskImage:(nullable UIImage *)maskImage;
+- (UIImage *)imageByBlurRadius:(CGFloat)blurRadius
+                     tintColor:(UIColor *)tintColor
+                      tintMode:(CGBlendMode)tintBlendMode
+                    saturation:(CGFloat)saturation
+                     maskImage:(UIImage *)maskImage;
 
 @end

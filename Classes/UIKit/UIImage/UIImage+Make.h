@@ -10,6 +10,12 @@
 
 @interface UIImage (Make)
 
+/**
+ 由Pdf生成图片
+
+ @param dataOrPath PDF Data或Path'
+ @return Image
+ */
 + (UIImage *)imageWithPDF:(id)dataOrPath ;
 + (UIImage *)imageWithPDF:(id)dataOrPath size:(CGSize)size;
 + (UIImage *)imageWithPDF:(id)dataOrPath resize:(BOOL)resize size:(CGSize)size ;

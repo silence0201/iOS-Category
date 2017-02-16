@@ -11,7 +11,7 @@
 
 @interface UIGestureRecognizer (ALActionBlocks)
 
-- (instancetype)initWithBlock:(ALActionBlock)actionBlock;
++ (instancetype)gestureRecognizerWithBlock:(ALActionBlock)actionBlock;
 - (void)setBlock:(ALActionBlock)actionBlock;
 
 @end

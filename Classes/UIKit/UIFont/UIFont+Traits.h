@@ -10,7 +10,7 @@
 
 @interface UIFont (Traits)
 
-@property (nonatomic, readonly) BOOL isBold;
+@property (nonatomic, readonly) BOOL isBold;    
 @property (nonatomic, readonly) BOOL isItalic;
 @property (nonatomic, readonly) BOOL isMonoSpace;
 @property (nonatomic, readonly) BOOL isColorGlyphs;
