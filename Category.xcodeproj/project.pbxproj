@@ -74,7 +74,6 @@
 		E8E946311E210B6D00EE98B0 /* UIApplication+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9457E1E210B6D00EE98B0 /* UIApplication+AppInfo.m */; };
 		E8E946321E210B6D00EE98B0 /* UIApplication+Authority.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945801E210B6D00EE98B0 /* UIApplication+Authority.m */; };
 		E8E946331E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945821E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m */; };
-		E8E946341E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945851E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.m */; };
 		E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945881E210B6D00EE98B0 /* UIButton+BackgroundColor.m */; };
 		E8E946361E210B6D00EE98B0 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9458A1E210B6D00EE98B0 /* UIButton+Block.m */; };
 		E8E946371E210B6D00EE98B0 /* UIButton+ClickEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9458C1E210B6D00EE98B0 /* UIButton+ClickEdgeInsets.m */; };
@@ -275,8 +274,6 @@
 		E8E945801E210B6D00EE98B0 /* UIApplication+Authority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Authority.m"; sourceTree = "<group>"; };
 		E8E945811E210B6D00EE98B0 /* UIApplication+KeyboardFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+KeyboardFrame.h"; sourceTree = "<group>"; };
 		E8E945821E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+KeyboardFrame.m"; sourceTree = "<group>"; };
-		E8E945841E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ALActionBlocks.h"; sourceTree = "<group>"; };
-		E8E945851E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ALActionBlocks.m"; sourceTree = "<group>"; };
 		E8E945871E210B6D00EE98B0 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
 		E8E945881E210B6D00EE98B0 /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
 		E8E945891E210B6D00EE98B0 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
@@ -707,7 +704,6 @@
 				E8E9457B1E210B6D00EE98B0 /* SIUIKit.h */,
 				E8EB94341E2F12FC000E4480 /* UITabBarController */,
 				E8E9457C1E210B6D00EE98B0 /* UIApplication */,
-				E8E945831E210B6D00EE98B0 /* UIBarButtonItem */,
 				E8E945861E210B6D00EE98B0 /* UIButton */,
 				E8E945931E210B6D00EE98B0 /* UIColor */,
 				E8E945981E210B6D00EE98B0 /* UIControl */,
@@ -738,15 +734,6 @@
 				E8E945821E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m */,
 			);
 			path = UIApplication;
-			sourceTree = "<group>";
-		};
-		E8E945831E210B6D00EE98B0 /* UIBarButtonItem */ = {
-			isa = PBXGroup;
-			children = (
-				E8E945841E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.h */,
-				E8E945851E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.m */,
-			);
-			path = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
 		E8E945861E210B6D00EE98B0 /* UIButton */ = {
@@ -1084,7 +1071,6 @@
 				E8E946621E210B6D00EE98B0 /* UIView+Frame.m in Sources */,
 				E8E9465E1E210B6D00EE98B0 /* UIView+Border.m in Sources */,
 				E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */,
-				E8E946341E210B6D00EE98B0 /* UIBarButtonItem+ALActionBlocks.m in Sources */,
 				E8E946611E210B6D00EE98B0 /* UIView+Find.m in Sources */,
 				E8E946001E210B6D00EE98B0 /* NSArray+JSONEncode.m in Sources */,
 				E8E946361E210B6D00EE98B0 /* UIButton+Block.m in Sources */,
