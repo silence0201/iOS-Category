@@ -116,7 +116,6 @@
 		E8E9465D1E210B6D00EE98B0 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945E51E210B6D00EE98B0 /* UIView+BlockGesture.m */; };
 		E8E9465E1E210B6D00EE98B0 /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945E71E210B6D00EE98B0 /* UIView+Border.m */; };
 		E8E9465F1E210B6D00EE98B0 /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945E91E210B6D00EE98B0 /* UIView+Constraints.m */; };
-		E8E946601E210B6D00EE98B0 /* UIView+DebugQuickLook.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945EB1E210B6D00EE98B0 /* UIView+DebugQuickLook.m */; };
 		E8E946611E210B6D00EE98B0 /* UIView+Find.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945ED1E210B6D00EE98B0 /* UIView+Find.m */; };
 		E8E946621E210B6D00EE98B0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945EF1E210B6D00EE98B0 /* UIView+Frame.m */; };
 		E8E946631E210B6D00EE98B0 /* UIView+Radius.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945F11E210B6D00EE98B0 /* UIView+Radius.m */; };
@@ -358,8 +357,6 @@
 		E8E945E71E210B6D00EE98B0 /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
 		E8E945E81E210B6D00EE98B0 /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
 		E8E945E91E210B6D00EE98B0 /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
-		E8E945EA1E210B6D00EE98B0 /* UIView+DebugQuickLook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DebugQuickLook.h"; sourceTree = "<group>"; };
-		E8E945EB1E210B6D00EE98B0 /* UIView+DebugQuickLook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DebugQuickLook.m"; sourceTree = "<group>"; };
 		E8E945EC1E210B6D00EE98B0 /* UIView+Find.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Find.h"; sourceTree = "<group>"; };
 		E8E945ED1E210B6D00EE98B0 /* UIView+Find.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Find.m"; sourceTree = "<group>"; };
 		E8E945EE1E210B6D00EE98B0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -922,8 +919,6 @@
 				E8E945E71E210B6D00EE98B0 /* UIView+Border.m */,
 				E8E945E81E210B6D00EE98B0 /* UIView+Constraints.h */,
 				E8E945E91E210B6D00EE98B0 /* UIView+Constraints.m */,
-				E8E945EA1E210B6D00EE98B0 /* UIView+DebugQuickLook.h */,
-				E8E945EB1E210B6D00EE98B0 /* UIView+DebugQuickLook.m */,
 				E8E945EC1E210B6D00EE98B0 /* UIView+Find.h */,
 				E8E945ED1E210B6D00EE98B0 /* UIView+Find.m */,
 				E8E945EE1E210B6D00EE98B0 /* UIView+Frame.h */,
@@ -1102,7 +1097,6 @@
 				E8E946561E210B6D00EE98B0 /* UIScreen+Info.m in Sources */,
 				E8E9465A1E210B6D00EE98B0 /* UITableView+CellStyle.m in Sources */,
 				E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */,
-				E8E946601E210B6D00EE98B0 /* UIView+DebugQuickLook.m in Sources */,
 				E8E946411E210B6D00EE98B0 /* UIDevice+Disk.m in Sources */,
 				E8E946261E210B6D00EE98B0 /* NSString+Hash.m in Sources */,
 				E8E9464F1E210B6D00EE98B0 /* UIImage+Modify.m in Sources */,

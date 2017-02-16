@@ -10,8 +10,11 @@
 
 @interface UIView (Screenshot)
 
+///  截取当前View
 - (nullable UIImage *)snapshotImage;
+
 - (nullable UIImage *)snapshotImageAfterScreenUpdates:(BOOL)afterUpdates;
+/// 截取当前View为PDF
 - (nullable NSData *)snapshotPDF;
 
 @end

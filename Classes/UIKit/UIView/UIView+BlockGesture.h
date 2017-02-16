@@ -12,7 +12,9 @@ typedef void (^GestureActionBlock)(UIGestureRecognizer *gestureRecoginzer);
 
 @interface UIView (BlockGesture)
 
+/// 添加点击手势
 - (void)addTapActionWithBlock:(GestureActionBlock)block;
+/// 添加长按手势
 - (void)addLongPressActionWithBlock:(GestureActionBlock)block;
 
 @end

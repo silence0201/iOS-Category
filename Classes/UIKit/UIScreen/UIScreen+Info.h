@@ -10,10 +10,17 @@
 
 @interface UIScreen (Info)
 
-+ (BOOL)isRetina;
-+ (CGFloat)screenScale;
++ (BOOL)isRetina;   /// 是否是Retina屏幕
++ (CGFloat)screenScale;   /// 屏幕缩放比例
 
-+ (CGRect)screenBounds;
++ (CGRect)screenBounds;  /// 屏幕的bounds
+
+/**
+ 屏幕的Bounds
+
+ @param interfaceOrientation interfaceOrientation
+ @return Bounds
+ */
 + (CGRect)screenBoundsForInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
 
 @property (nonatomic, readonly) CGSize sizeInPixel;
