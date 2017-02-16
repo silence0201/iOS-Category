@@ -15,21 +15,24 @@
 @property (nonatomic,readonly) NSString *appBuild ;
 @property (nonatomic,readonly) NSString *appBundleID ;
 
-
+/// applicationSize
 - (NSString *)applicationSizeAsString;
 - (int)applicationSizeSizeInBytes ;
 
+/// documentsFolderSize
 - (NSString *)documentsFolderSizeAsString;
 - (int)documentsFolderSizeInBytes;
 
+/// cacheFolderSize
 - (NSString *)cacheFolderSizeAsString;
 - (int)cacheFolderSizeInBytes;
 
+/// libraryFolderSize
 - (NSString *)libraryFolderSizeAsString;
 - (int)libraryFolderSizeInBytes;
 
 + (BOOL)isAppExtension;
-+ (nullable UIApplication *)sharedExtensionApplication;
++ (UIApplication *)sharedExtensionApplication;
 
 
 @end

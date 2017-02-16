@@ -10,6 +10,6 @@
 
 @interface UIApplication (KeyboardFrame)
 
-@property (nonatomic,readonly) CGRect keyboardFrame ;
+@property (nonatomic,readonly) CGRect keyboardFrame ; /// 键盘的Frame
 
 @end
