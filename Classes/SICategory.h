@@ -12,5 +12,6 @@
 #import "SIFoundation.h"
 #import "SIUIKit.h"
 #import "SIMacros.h"
+#import "EXTObjc.h"
 
 #endif
