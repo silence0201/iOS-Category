@@ -15,6 +15,8 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@",[NSString build]) ;
@@ -22,6 +24,7 @@
     NSLog(@"%@",[NSBundle version]) ;
     NSString *Str = @"测试" ;
     NSLog(@"%@",[Str pinyin]) ;
+    
 }
 
 
