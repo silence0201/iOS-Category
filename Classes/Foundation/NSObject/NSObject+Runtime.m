@@ -39,4 +39,38 @@
     return YES;
 }
 
++ (BOOL)swizzleClassMethod:(SEL)originalSelector withBlock:(id)block {
+    Class class = object_getClass(self) ;
+    Method originalMethod = class_getInstanceMethod(class, originalSelector) ;
+    if(!originalMethod) return NO ;
+    
+    IMP implementation = imp_implementationWithBlock(block) ;
+    SEL swizzledSelector = [self tempSel:method_getNumberOfArguments(originalMethod)] ;
+    class_addMethod(class, swizzledSelector, implementation, method_getTypeEncoding(originalMethod)) ;
+    Method  newMethod = class_getInstanceMethod(class, swizzledSelector) ;
+    method_exchangeImplementations(originalMethod, newMethod) ;
+    return YES ;
+}
+
++ (BOOL)swizzleInstanceMethod:(SEL)originalSelector withBlock:(id)block{
+    Method originalMethod = class_getInstanceMethod(self, originalSelector) ;
+    if(!originalSelector) return NO ;
+    IMP implementation = imp_implementationWithBlock(block) ;
+    SEL swizzledSelector = [self tempSel:method_getNumberOfArguments(originalMethod)] ;
+    class_addMethod(self, swizzledSelector, implementation, method_getTypeEncoding(originalMethod)) ;
+    Method  newMethod = class_getInstanceMethod(self, swizzledSelector) ;
+    method_exchangeImplementations(originalMethod, newMethod) ;
+    return YES ;
+}
+
++ (SEL)tempSel:(NSInteger)count{
+    NSTimeInterval timeInterval = [[NSDate alloc] timeIntervalSince1970];
+    NSString *timeString = [NSString stringWithFormat:@"%.0f",timeInterval];
+    NSMutableString *str = [NSMutableString stringWithFormat:@"_tmp_swizzle_%@",timeString] ;
+    for (NSInteger i = 0 ; i < count; i++) {
+        [str appendString:@":"] ;
+    }
+    return  NSSelectorFromString([NSString stringWithFormat:@"_tmp_swizzle_%@",str]) ;
+}
+
 @end

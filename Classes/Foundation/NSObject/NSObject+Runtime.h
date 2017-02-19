@@ -30,4 +30,23 @@
  */
 + (BOOL)swizzleClassMethod:(SEL)originalSel with:(SEL)newSel;
 
+
+/**
+ Block交换实例方法
+
+ @param originalSelector 原始的SEL
+ @param block 新的SEL的Block
+ @return 是否交换成功
+ */
++ (BOOL)swizzleClassMethod:(SEL)originalSelector withBlock:(id)block;
+
+/**
+ Block交换类方法
+
+ @param originalSelector 原始的SEL
+ @param block 新的SEL的Block
+ @return 是否交换成功
+ */
++ (BOOL)swizzleInstanceMethod:(SEL)originalSelector withBlock:(id)block;
+
 @end
