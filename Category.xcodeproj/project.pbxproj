@@ -40,6 +40,8 @@
 		E8E8A50D1E56D6E100E64E54 /* EXTScopeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4FD1E56D6E100E64E54 /* EXTScopeTest.m */; };
 		E8E8A50E1E56D6E100E64E54 /* EXTSelectorCheckingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4FF1E56D6E100E64E54 /* EXTSelectorCheckingTest.m */; };
 		E8E8A50F1E56D6E100E64E54 /* EXTSynthesizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A5011E56D6E100E64E54 /* EXTSynthesizeTest.m */; };
+		E8E8A5531E594ABA00E64E54 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A5521E594ABA00E64E54 /* NSObject+Parse.m */; };
+		E8E8A5591E594E1900E64E54 /* NSArray+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A5581E594E1900E64E54 /* NSArray+Compare.m */; };
 		E8E945FD1E210B6D00EE98B0 /* NSKeyedArchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945061E210B6D00EE98B0 /* NSKeyedArchiver+Key.m */; };
 		E8E945FE1E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945081E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.m */; };
 		E8E945FF1E210B6D00EE98B0 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9450B1E210B6D00EE98B0 /* NSArray+Block.m */; };
@@ -254,6 +256,10 @@
 		E8E8A4FF1E56D6E100E64E54 /* EXTSelectorCheckingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSelectorCheckingTest.m; sourceTree = "<group>"; };
 		E8E8A5001E56D6E100E64E54 /* EXTSynthesizeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTSynthesizeTest.h; sourceTree = "<group>"; };
 		E8E8A5011E56D6E100E64E54 /* EXTSynthesizeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTSynthesizeTest.m; sourceTree = "<group>"; };
+		E8E8A5511E594ABA00E64E54 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
+		E8E8A5521E594ABA00E64E54 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		E8E8A5571E594E1900E64E54 /* NSArray+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Compare.h"; sourceTree = "<group>"; };
+		E8E8A5581E594E1900E64E54 /* NSArray+Compare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Compare.m"; sourceTree = "<group>"; };
 		E8E945051E210B6D00EE98B0 /* NSKeyedArchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+Key.h"; sourceTree = "<group>"; };
 		E8E945061E210B6D00EE98B0 /* NSKeyedArchiver+Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+Key.m"; sourceTree = "<group>"; };
 		E8E945071E210B6D00EE98B0 /* NSKeyedUnarchiver+Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+Key.h"; sourceTree = "<group>"; };
@@ -766,6 +772,8 @@
 				E8E9450F1E210B6D00EE98B0 /* NSArray+Plist.m */,
 				E8E945101E210B6D00EE98B0 /* NSArray+SafeAccess.h */,
 				E8E945111E210B6D00EE98B0 /* NSArray+SafeAccess.m */,
+				E8E8A5571E594E1900E64E54 /* NSArray+Compare.h */,
+				E8E8A5581E594E1900E64E54 /* NSArray+Compare.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -894,6 +902,8 @@
 				E8E945571E210B6D00EE98B0 /* NSObject+Reflect.m */,
 				E8E945581E210B6D00EE98B0 /* NSObject+Runtime.h */,
 				E8E945591E210B6D00EE98B0 /* NSObject+Runtime.m */,
+				E8E8A5511E594ABA00E64E54 /* NSObject+Parse.h */,
+				E8E8A5521E594ABA00E64E54 /* NSObject+Parse.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1336,6 +1346,7 @@
 				E8E946431E210B6D00EE98B0 /* UIFont+Load.m in Sources */,
 				E8E946231E210B6D00EE98B0 /* NSString+AppInfo.m in Sources */,
 				E8E9463C1E210B6D00EE98B0 /* UIColor+Make.m in Sources */,
+				E8E8A5591E594E1900E64E54 /* NSArray+Compare.m in Sources */,
 				E8E946661E210B6D00EE98B0 /* UIViewController+Alert.m in Sources */,
 				E8E946181E210B6D00EE98B0 /* NSNumber+Round.m in Sources */,
 				E8E946031E210B6D00EE98B0 /* NSBundle+AppInfo.m in Sources */,
@@ -1386,6 +1397,7 @@
 				E8E946021E210B6D00EE98B0 /* NSArray+SafeAccess.m in Sources */,
 				E8E9461D1E210B6D00EE98B0 /* NSObject+Property.m in Sources */,
 				E8E9461F1E210B6D00EE98B0 /* NSObject+QuickCode.m in Sources */,
+				E8E8A5531E594ABA00E64E54 /* NSObject+Parse.m in Sources */,
 				E8E9461C1E210B6D00EE98B0 /* NSObject+KVO.m in Sources */,
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
