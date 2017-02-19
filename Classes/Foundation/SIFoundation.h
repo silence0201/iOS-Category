@@ -37,6 +37,7 @@
 #import "NSArray+JSONEncode.h"
 #import "NSArray+Block.h"
 #import "NSArray+SafeAccess.h"
+#import "NSArray+Contains.h"
 
 #import "NSBundle+AppInfo.h"
 
