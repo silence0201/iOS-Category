@@ -152,6 +152,7 @@
 		E8FF5EB01E5B244F00859425 /* AuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */; };
 		E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */; };
 		E8FF5EB61E5B250200859425 /* SITouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB51E5B250200859425 /* SITouchIDManager.m */; };
+		E8FF5EB91E5B342500859425 /* SIBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -485,6 +486,8 @@
 		E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeyboardShortcutManager.m; sourceTree = "<group>"; };
 		E8FF5EB41E5B250200859425 /* SITouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITouchIDManager.h; sourceTree = "<group>"; };
 		E8FF5EB51E5B250200859425 /* SITouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITouchIDManager.m; sourceTree = "<group>"; };
+		E8FF5EB71E5B342500859425 /* SIBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBluetoothManager.h; sourceTree = "<group>"; };
+		E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBluetoothManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1238,6 +1241,8 @@
 				E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */,
 				E8FF5EB41E5B250200859425 /* SITouchIDManager.h */,
 				E8FF5EB51E5B250200859425 /* SITouchIDManager.m */,
+				E8FF5EB71E5B342500859425 /* SIBluetoothManager.h */,
+				E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1389,6 +1394,7 @@
 				E8E946561E210B6D00EE98B0 /* UIScreen+Info.m in Sources */,
 				E8E9465A1E210B6D00EE98B0 /* UITableView+CellStyle.m in Sources */,
 				E8E8A4DC1E56A43900E64E54 /* EXTNil.m in Sources */,
+				E8FF5EB91E5B342500859425 /* SIBluetoothManager.m in Sources */,
 				E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */,
 				E8E946411E210B6D00EE98B0 /* UIDevice+Disk.m in Sources */,
 				E8E946261E210B6D00EE98B0 /* NSString+Hash.m in Sources */,
