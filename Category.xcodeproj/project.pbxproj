@@ -149,6 +149,8 @@
 		E8E946681E210B6D00EE98B0 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945FC1E210B6D00EE98B0 /* UIViewController+TopBarMessage.m */; };
 		E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */; };
 		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
+		E8FF5EB01E5B244F00859425 /* AuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */; };
+		E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -476,6 +478,10 @@
 		E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Hide.m"; sourceTree = "<group>"; };
 		E8EB94381E2F1445000E4480 /* UITabBarController+Hide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Hide.h"; sourceTree = "<group>"; };
 		E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Hide.m"; sourceTree = "<group>"; };
+		E8FF5EAE1E5B244F00859425 /* AuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationManager.h; sourceTree = "<group>"; };
+		E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationManager.m; sourceTree = "<group>"; };
+		E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardShortcutManager.h; sourceTree = "<group>"; };
+		E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeyboardShortcutManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -719,6 +725,7 @@
 		E8E945021E210B6D00EE98B0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E8FF5EAD1E5B241100859425 /* Manager */,
 				E8E8A4B61E56A0DD00E64E54 /* EXTObj */,
 				E8E8A4871E55CCA400E64E54 /* Macros */,
 				E8E945031E210B6D00EE98B0 /* Foundation */,
@@ -1219,6 +1226,17 @@
 			path = UITabBarController;
 			sourceTree = "<group>";
 		};
+		E8FF5EAD1E5B241100859425 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */,
+				E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */,
+				E8FF5EAE1E5B244F00859425 /* AuthorizationManager.h */,
+				E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1328,6 +1346,7 @@
 				E8E946651E210B6D00EE98B0 /* UIView+Toast.m in Sources */,
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
+				E8FF5EB01E5B244F00859425 /* AuthorizationManager.m in Sources */,
 				E8E946161E210B6D00EE98B0 /* NSNumber+Display.m in Sources */,
 				E8E946621E210B6D00EE98B0 /* UIView+Frame.m in Sources */,
 				E8E9465E1E210B6D00EE98B0 /* UIView+Border.m in Sources */,
@@ -1349,6 +1368,7 @@
 				E8E946661E210B6D00EE98B0 /* UIViewController+Alert.m in Sources */,
 				E8E946181E210B6D00EE98B0 /* NSNumber+Round.m in Sources */,
 				E8E946031E210B6D00EE98B0 /* NSBundle+AppInfo.m in Sources */,
+				E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */,
 				E8E946461E210B6D00EE98B0 /* UIGestureRecognizer+ALActionBlocks.m in Sources */,
 				E8E946291E210B6D00EE98B0 /* NSString+Path.m in Sources */,
 				E8E946511E210B6D00EE98B0 /* UILabel+ContenSize.m in Sources */,
