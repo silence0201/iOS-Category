@@ -11,10 +11,12 @@
 extern NSInteger const kTouchIDErrorUnvailable;
 extern NSInteger const kTouchIDErrorUnAllow;
 
+
+@interface SITouchIDManager : NSObject
+
 typedef BOOL(^TouchIDAllowBlock)(SITouchIDManager *);
 typedef void(^PassSuccessBlock)(SITouchIDManager *);
 typedef void(^PassFailBlock)(SITouchIDManager *,NSError *);
-@interface SITouchIDManager : NSObject
 
 + (instancetype)sharedManager ;
 
