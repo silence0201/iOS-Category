@@ -11,9 +11,6 @@
 extern NSInteger const kTouchIDErrorUnvailable;
 extern NSInteger const kTouchIDErrorUnAllow;
 
-@class SITouchIDManager ;
-
-
 typedef BOOL(^TouchIDAllowBlock)(SITouchIDManager *);
 typedef void(^PassSuccessBlock)(SITouchIDManager *);
 typedef void(^PassFailBlock)(SITouchIDManager *,NSError *);
