@@ -60,7 +60,7 @@
 }
 
 /// 单例
-+ (instancetype)sharedInstance{
++ (instancetype)sharedManager{
     static AuthorizationManager *manager = nil ;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger,SIAuthorizationType) {
 
     @return 对象
  */
-+ (instancetype)sharedInstance ;
++ (instancetype)sharedManager ;
 
 
 /**

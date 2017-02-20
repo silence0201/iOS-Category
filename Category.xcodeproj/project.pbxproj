@@ -151,6 +151,7 @@
 		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
 		E8FF5EB01E5B244F00859425 /* AuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */; };
 		E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */; };
+		E8FF5EB61E5B250200859425 /* SITouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB51E5B250200859425 /* SITouchIDManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -482,6 +483,8 @@
 		E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationManager.m; sourceTree = "<group>"; };
 		E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardShortcutManager.h; sourceTree = "<group>"; };
 		E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeyboardShortcutManager.m; sourceTree = "<group>"; };
+		E8FF5EB41E5B250200859425 /* SITouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITouchIDManager.h; sourceTree = "<group>"; };
+		E8FF5EB51E5B250200859425 /* SITouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITouchIDManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1233,6 +1236,8 @@
 				E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */,
 				E8FF5EAE1E5B244F00859425 /* AuthorizationManager.h */,
 				E8FF5EAF1E5B244F00859425 /* AuthorizationManager.m */,
+				E8FF5EB41E5B250200859425 /* SITouchIDManager.h */,
+				E8FF5EB51E5B250200859425 /* SITouchIDManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1433,6 +1438,7 @@
 				E8E946541E210B6D00EE98B0 /* UINavigationController+Stack.m in Sources */,
 				E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */,
 				E8E9462F1E210B6D00EE98B0 /* NSTimer+Block.m in Sources */,
+				E8FF5EB61E5B250200859425 /* SITouchIDManager.m in Sources */,
 				E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */,
 				E8E8A4D91E56A41F00E64E54 /* EXTSafeCategory.m in Sources */,
 				E8E946201E210B6D00EE98B0 /* NSObject+QuickCopy.m in Sources */,
