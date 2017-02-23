@@ -6,7 +6,7 @@
 //  Copyright © 2017 Silence. All rights reserved.
 //
 
-#import "AuthorizationManager.h"
+#import "SIAuthorizationManager.h"
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <CoreLocation/CoreLocation.h>
@@ -50,18 +50,18 @@
 
 @end
 
-@interface AuthorizationManager ()<CLLocationManagerDelegate>
+@interface SIAuthorizationManager ()<CLLocationManagerDelegate>
 
 @end
 
-@implementation AuthorizationManager{
+@implementation SIAuthorizationManager{
     NSString *_appDisplayName ;
     CLLocationManager *_locationManager ;
 }
 
 /// 单例
 + (instancetype)sharedManager{
-    static AuthorizationManager *manager = nil ;
+    static SIAuthorizationManager *manager = nil ;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [[self alloc]init] ;

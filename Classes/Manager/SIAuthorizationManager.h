@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger,SIAuthorizationType) {
     SIAuthorizationTypeCamera          /// 相机
 };
 
-@interface AuthorizationManager : NSObject
+@interface SIAuthorizationManager : NSObject
 
 
 /**
