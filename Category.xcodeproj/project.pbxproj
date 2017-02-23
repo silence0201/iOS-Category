@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
+		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -181,6 +182,8 @@
 /* Begin PBXFileReference section */
 		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
 		E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Hash.m"; sourceTree = "<group>"; };
+		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
+		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1243,6 +1246,8 @@
 				E8FF5EB51E5B250200859425 /* SITouchIDManager.m */,
 				E8FF5EB71E5B342500859425 /* SIBluetoothManager.h */,
 				E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */,
+				E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */,
+				E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1401,6 +1406,7 @@
 				E8E9464F1E210B6D00EE98B0 /* UIImage+Modify.m in Sources */,
 				E8E946091E210B6D00EE98B0 /* NSDate+Figure.m in Sources */,
 				E8E9462A1E210B6D00EE98B0 /* NSString+PinYin.m in Sources */,
+				E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */,
 				E8E946591E210B6D00EE98B0 /* UIScrollView+SimpleScroll.m in Sources */,
 				E8E8A4E01E56A4A400E64E54 /* EXTConcreteProtocol.m in Sources */,
 				E8E946251E210B6D00EE98B0 /* NSString+Emoji.m in Sources */,
