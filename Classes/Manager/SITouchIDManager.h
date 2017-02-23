@@ -18,6 +18,9 @@ typedef BOOL(^TouchIDAllowBlock)(SITouchIDManager *);
 typedef void(^PassSuccessBlock)(SITouchIDManager *);
 typedef void(^PassFailBlock)(SITouchIDManager *,NSError *);
 
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
+
 + (instancetype)sharedManager ;
 
 - (void)tryToPass;

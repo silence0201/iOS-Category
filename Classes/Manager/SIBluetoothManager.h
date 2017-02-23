@@ -46,7 +46,7 @@ typedef enum:NSUInteger {
 
 @property (weak, nonatomic) id<SIBluetoothManagerDelegate> delegate;
 
-
+/// 单例
 + (instancetype)sharedManager;
 
 /// 获取蓝牙状态
