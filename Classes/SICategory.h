@@ -13,5 +13,6 @@
 #import "SIUIKit.h"
 #import "SIMacros.h"
 #import "EXTObjc.h"
+#import "SIManager.h"
 
 #endif

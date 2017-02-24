@@ -494,6 +494,7 @@
 		E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIIAppPurchaseManager.m; sourceTree = "<group>"; };
 		E8FB93821E607CE700B77407 /* SIAppVersionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAppVersionManager.h; sourceTree = "<group>"; };
 		E8FB93831E607CE700B77407 /* SIAppVersionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAppVersionManager.m; sourceTree = "<group>"; };
+		E8FB93851E6080C100B77407 /* SIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIManager.h; sourceTree = "<group>"; };
 		E8FF5EAE1E5B244F00859425 /* SIAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAuthorizationManager.h; sourceTree = "<group>"; };
 		E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAuthorizationManager.m; sourceTree = "<group>"; };
 		E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardShortcutManager.h; sourceTree = "<group>"; };
@@ -1275,6 +1276,7 @@
 				E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */,
 				E8FB93821E607CE700B77407 /* SIAppVersionManager.h */,
 				E8FB93831E607CE700B77407 /* SIAppVersionManager.m */,
+				E8FB93851E6080C100B77407 /* SIManager.h */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
