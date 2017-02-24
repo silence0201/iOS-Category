@@ -151,6 +151,8 @@
 		E8E946681E210B6D00EE98B0 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945FC1E210B6D00EE98B0 /* UIViewController+TopBarMessage.m */; };
 		E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */; };
 		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
+		E8FB937E1E606D3600B77407 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FB937D1E606D3600B77407 /* StoreKit.framework */; };
+		E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */; };
 		E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */; };
 		E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */; };
 		E8FF5EB61E5B250200859425 /* SITouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB51E5B250200859425 /* SITouchIDManager.m */; };
@@ -486,6 +488,9 @@
 		E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Hide.m"; sourceTree = "<group>"; };
 		E8EB94381E2F1445000E4480 /* UITabBarController+Hide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Hide.h"; sourceTree = "<group>"; };
 		E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Hide.m"; sourceTree = "<group>"; };
+		E8FB937D1E606D3600B77407 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E8FB937F1E606D5C00B77407 /* SIIAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIIAppPurchaseManager.h; sourceTree = "<group>"; };
+		E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIIAppPurchaseManager.m; sourceTree = "<group>"; };
 		E8FF5EAE1E5B244F00859425 /* SIAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAuthorizationManager.h; sourceTree = "<group>"; };
 		E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAuthorizationManager.m; sourceTree = "<group>"; };
 		E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardShortcutManager.h; sourceTree = "<group>"; };
@@ -501,6 +506,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FB937E1E606D3600B77407 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +526,7 @@
 				E88B47AA1E15363E0074A53A /* Category */,
 				E8DD4B421E51C29F008B6BDF /* CategoryTests */,
 				E88B47A91E15363E0074A53A /* Products */,
+				E8FB937C1E606D3600B77407 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1238,6 +1245,14 @@
 			path = UITabBarController;
 			sourceTree = "<group>";
 		};
+		E8FB937C1E606D3600B77407 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB937D1E606D3600B77407 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8FF5EAD1E5B241100859425 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1253,6 +1268,8 @@
 				E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */,
 				E83F13131E5F141200A43EBB /* SIKeyboardManager.h */,
 				E83F13141E5F141200A43EBB /* SIKeyboardManager.m */,
+				E8FB937F1E606D5C00B77407 /* SIIAppPurchaseManager.h */,
+				E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1443,6 +1460,7 @@
 				E8E9461C1E210B6D00EE98B0 /* NSObject+KVO.m in Sources */,
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
+				E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */,
 				E8E946081E210B6D00EE98B0 /* NSDate+Extension.m in Sources */,
 				E8E946631E210B6D00EE98B0 /* UIView+Radius.m in Sources */,
 				E8E946241E210B6D00EE98B0 /* NSString+Contains.m in Sources */,
