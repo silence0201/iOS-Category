@@ -15,4 +15,5 @@
 #import "SIMediatorManager.h"
 #import "SIIAppPurchaseManager.h"
 #import "SIBluetoothManager.h"
+#import "SIDownloadManager.h"
 

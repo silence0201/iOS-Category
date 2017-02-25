@@ -10,6 +10,7 @@
 		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
+		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -190,6 +191,8 @@
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
 		E83F13141E5F141200A43EBB /* SIKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeyboardManager.m; sourceTree = "<group>"; };
+		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
+		E87504A01E618D870097F41E /* SIDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDownloadManager.m; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1277,6 +1280,8 @@
 				E8FB93821E607CE700B77407 /* SIAppVersionManager.h */,
 				E8FB93831E607CE700B77407 /* SIAppVersionManager.m */,
 				E8FB93851E6080C100B77407 /* SIManager.h */,
+				E875049F1E618D870097F41E /* SIDownloadManager.h */,
+				E87504A01E618D870097F41E /* SIDownloadManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1388,6 +1393,7 @@
 			files = (
 				E8E8A4D61E56A3EB00E64E54 /* EXTScope.m in Sources */,
 				E8E946651E210B6D00EE98B0 /* UIView+Toast.m in Sources */,
+				E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */,
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
 				E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */,
