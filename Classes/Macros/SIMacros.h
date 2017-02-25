@@ -9,15 +9,18 @@
 #ifndef SIMacros_h
 #define SIMacros_h
 
-#import "SIViewMacros.h"
-#import "SIUtilsMacros.h"
-#import "SIShortcutsMacros.h"
+#import "SIViewMacro.h"
+#import "SIUtilsMacro.h"
+#import "SIShortcutsMacro.h"
 #import "SISharedInstanceMacro.h"
-#import "SIMaths.h"
-#import "SILogMacros.h"
-#import "SIFRCMacros.h"
-#import "SIDevices.h"
-#import "SICoreGraphicsMacros.h"
-#import "SIARCMacros.h"
+#import "SIMathMacro.h"
+#import "SILogMacro.h"
+#import "SIFRCMacro.h"
+#import "SIDevice.h"
+#import "SICoreGraphicsMacro.h"
+#import "SIARCMacro.h"
+#import "SIRuntimeMacro.h"
+#import "SIColorMacro.h"
+#import "SICollectionMacro.h"
 
 #endif /* SIMacros_h */

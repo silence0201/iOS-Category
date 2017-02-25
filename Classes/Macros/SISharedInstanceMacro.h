@@ -6,11 +6,10 @@
 //  Copyright © 2017 silence. All rights reserved.
 //
 
-/** Shared instances **/
-// Shared instance class declaration
+// 单例类声明
 #define SHARED_INSTANCE_PROTO + (instancetype)sharedInstance;
 
-// Shared instance class implementation
+// 单例类实现
 #define SHARED_INSTANCE_IMPL \
 + (instancetype)sharedInstance {	return sharedInstance; }
 

@@ -38,27 +38,27 @@
 #define GON_LOGGER NSLog
 #endif
 
-// Improved log macro
+// 重新定义日志输出
 #define GONLog(msg, ...)                                        GON_LOGGER(@"%@|%s|%d> %@", [[self class] description], sel_getName(_cmd), __LINE__, [NSString stringWithFormat:(msg), ##__VA_ARGS__]);
 
-// log view macro
+// 打印View层级
 #define LOG_VIEW(view)                                          GON_LOGGER(@"%@", [view recursiveDescription]);
 
-// To string macros
+// 转换为字符串
 #define FRAME_TO_STRING(frame)                                  [NSString stringWithFormat:@"%f %f %f %f", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height]
 #define RECT_TO_STRING(rect)                                    FRAME_TO_STRING(rect)
 #define POINT_TO_STRING(point)                                  [NSString stringWithFormat:@"%f %f", point.x, point.y]
 #define SIZE_TO_STRING(size)                                    [NSString stringWithFormat:@"%f %f", size.width, size.height]
 #define OBJ_TO_STRING(obj)                                      [obj description]
 
-// Log macros
+// 打印Frame
 #define LOG_FRAME(frame)                                        GON_LOGGER(@"%@", FRAME_TO_STRING(frame))
 #define LOG_RECT(rect)                                          GON_LOGGER(@"%@", RECT_TO_STRING(rect))
 #define LOG_POINT(point)                                        GON_LOGGER(@"%@", POINT_TO_STRING(point))
 #define LOG_SIZE(size)                                          GON_LOGGER(@"%@", SIZE_TO_STRING(size))
 #define LOG_OBJ(obj)                                            GON_LOGGER(@"%@", OBJ_TO_STRING(obj))
 
-// Data to String
+// 将Date转换为String
 #define DATA_TO_STR(data, dataEnc)                              GON_LOGGER(@"%@", [[NSString alloc] initWithData:data encoding:dataEnc])
 
 #define DATA_TO_UTF8_STRING(data)                               DATA_TO_STR(data, NSUTF8StringEncoding)
