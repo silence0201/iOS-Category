@@ -372,7 +372,6 @@ static NSRecursiveLock *_lock;
     return _downloadInfoArray;
 }
 
-#pragma mark - 私有方法
 
 #pragma mark - 公共方法
 - (SIDownloadInfo *)download:(NSString *)url toDestinationPath:(NSString *)destinationPath progress:(SIDownloadProgressChangeBlock)progress state:(SIDownloadStateChangeBlock)state
