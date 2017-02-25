@@ -200,6 +200,7 @@
 		E87504B11E61B0570097F41E /* SIWarningMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIWarningMacro.h; sourceTree = "<group>"; };
 		E87504B41E61B44F0097F41E /* SINotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINotificationMacro.h; sourceTree = "<group>"; };
 		E87504B71E61B4E40097F41E /* SIExceptionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIExceptionMacro.h; sourceTree = "<group>"; };
+		E87504BA1E61B66A0097F41E /* SIAutoLayoutMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAutoLayoutMacro.h; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -641,6 +642,7 @@
 				E87504B41E61B44F0097F41E /* SINotificationMacro.h */,
 				E87504B71E61B4E40097F41E /* SIExceptionMacro.h */,
 				E8E8A4921E55CF5800E64E54 /* SIMacros.h */,
+				E87504BA1E61B66A0097F41E /* SIAutoLayoutMacro.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";

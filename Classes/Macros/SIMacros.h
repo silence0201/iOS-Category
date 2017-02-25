@@ -26,5 +26,6 @@
 #import "SIWarningMacro.h"
 #import "SINotificationMacro.h"
 #import "SIExceptionMacro.h"
+#import "SIAutoLayoutMacro.h"
 
 #endif /* SIMacros_h */
