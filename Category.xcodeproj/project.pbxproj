@@ -196,6 +196,10 @@
 		E87504A51E61AA770097F41E /* SIRuntimeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIRuntimeMacro.h; sourceTree = "<group>"; };
 		E87504A81E61AB320097F41E /* SIColorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIColorMacro.h; sourceTree = "<group>"; };
 		E87504AB1E61AB980097F41E /* SICollectionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICollectionMacro.h; sourceTree = "<group>"; };
+		E87504AE1E61AE1A0097F41E /* SIGCDMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIGCDMacro.h; sourceTree = "<group>"; };
+		E87504B11E61B0570097F41E /* SIWarningMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIWarningMacro.h; sourceTree = "<group>"; };
+		E87504B41E61B44F0097F41E /* SINotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINotificationMacro.h; sourceTree = "<group>"; };
+		E87504B71E61B4E40097F41E /* SIExceptionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIExceptionMacro.h; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -632,6 +636,10 @@
 				E87504A51E61AA770097F41E /* SIRuntimeMacro.h */,
 				E87504A81E61AB320097F41E /* SIColorMacro.h */,
 				E87504AB1E61AB980097F41E /* SICollectionMacro.h */,
+				E87504AE1E61AE1A0097F41E /* SIGCDMacro.h */,
+				E87504B11E61B0570097F41E /* SIWarningMacro.h */,
+				E87504B41E61B44F0097F41E /* SINotificationMacro.h */,
+				E87504B71E61B4E40097F41E /* SIExceptionMacro.h */,
 				E8E8A4921E55CF5800E64E54 /* SIMacros.h */,
 			);
 			path = Macros;

@@ -22,5 +22,9 @@
 #import "SIRuntimeMacro.h"
 #import "SIColorMacro.h"
 #import "SICollectionMacro.h"
+#import "SIGCDMacro.h"
+#import "SIWarningMacro.h"
+#import "SINotificationMacro.h"
+#import "SIExceptionMacro.h"
 
 #endif /* SIMacros_h */

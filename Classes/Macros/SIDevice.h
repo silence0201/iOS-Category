@@ -6,8 +6,10 @@
 //  Copyright © 2017 silence. All rights reserved.
 //
 
-// 屏幕类型
+// 屏幕信息
 #define IS_RETINA_SCREEN()                          (MAIN_SCREEN.scale > 1.0)
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
 // 设备类型
 #define IS_IPHONE()         (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
