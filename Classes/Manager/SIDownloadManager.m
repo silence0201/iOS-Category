@@ -309,7 +309,7 @@ static NSRecursiveLock *_lock;
 
 + (void)initialize
 {
-    _totalFileSizesFile = [[NSString stringWithFormat:@"%@/%@", SIDownloadRootDir, @"MJDownloadFileSizes.plist".MD5] prependCaches];
+    _totalFileSizesFile = [[NSString stringWithFormat:@"%@/%@", SIDownloadRootDir, @"SIDownloadFileSizes.plist".MD5] prependCaches];
     
     _totalFileSizes = [NSMutableDictionary dictionaryWithContentsOfFile:_totalFileSizesFile];
     if (_totalFileSizes == nil) {
