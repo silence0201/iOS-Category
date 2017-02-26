@@ -59,7 +59,7 @@ libextobjc currently includes the following features:
  * **EXTNil, which is like `NSNull`, but behaves much more closely to actual `nil`** (i.e., doesn't crash when sent unrecognized messages).
  * **Lots of extensions** and additional functionality built on top of `<objc/runtime.h>`, including extremely customizable method injection, reflection upon object properties, and various functions to extend class hierarchy checks and method lookups.
 
- ### [Manager](Classes/Manager)
+### [Manager](Classes/Manager)
  * [SIKeyboardShortcutManager](Classes/Manager/SIKeyboardShortcutManager.h):虚拟机快捷键管理
  * [SIAuthorizationManager](Classes/Manager/SIAuthorizationManager.h):认证管理
  * [SITouchIDManager](Classes/Manager/SITouchIDManager.h):TouchID管理
