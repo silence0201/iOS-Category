@@ -229,7 +229,7 @@
 		E8E8A48C1E55CE5800E64E54 /* SIMathMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMathMacro.h; sourceTree = "<group>"; };
 		E8E8A48D1E55CE7D00E64E54 /* SILogMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILogMacro.h; sourceTree = "<group>"; };
 		E8E8A48E1E55CEB000E64E54 /* SIFRCMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIFRCMacro.h; sourceTree = "<group>"; };
-		E8E8A48F1E55CEEA00E64E54 /* SIDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIDevice.h; sourceTree = "<group>"; };
+		E8E8A48F1E55CEEA00E64E54 /* SIDeviceMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIDeviceMacro.h; sourceTree = "<group>"; };
 		E8E8A4901E55CF1200E64E54 /* SICoreGraphicsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SICoreGraphicsMacro.h; sourceTree = "<group>"; };
 		E8E8A4911E55CF3400E64E54 /* SIARCMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIARCMacro.h; sourceTree = "<group>"; };
 		E8E8A4921E55CF5800E64E54 /* SIMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMacros.h; sourceTree = "<group>"; };
@@ -631,7 +631,7 @@
 				E8E8A48C1E55CE5800E64E54 /* SIMathMacro.h */,
 				E8E8A48D1E55CE7D00E64E54 /* SILogMacro.h */,
 				E8E8A48E1E55CEB000E64E54 /* SIFRCMacro.h */,
-				E8E8A48F1E55CEEA00E64E54 /* SIDevice.h */,
+				E8E8A48F1E55CEEA00E64E54 /* SIDeviceMacro.h */,
 				E8E8A4901E55CF1200E64E54 /* SICoreGraphicsMacro.h */,
 				E8E8A4911E55CF3400E64E54 /* SIARCMacro.h */,
 				E87504A51E61AA770097F41E /* SIRuntimeMacro.h */,

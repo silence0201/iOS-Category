@@ -16,7 +16,7 @@
 #import "SIMathMacro.h"
 #import "SILogMacro.h"
 #import "SIFRCMacro.h"
-#import "SIDevice.h"
+#import "SIDeviceMacro.h"
 #import "SICoreGraphicsMacro.h"
 #import "SIARCMacro.h"
 #import "SIRuntimeMacro.h"

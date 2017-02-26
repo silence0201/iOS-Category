@@ -70,6 +70,26 @@ libextobjc currently includes the following features:
  * [SIAppVersionManager](Classes/Manager/SIAppVersionManager.h):版本管理
  * [SIDownloadManager](Classes/Manager/SIDownloadManager.h):下载管理
 
+### [Macros](Classes/Macros)
+* [SIWarningMacro](Classes/Macros/SIWarningMacro.h) : 忽略⚠️
+* [SIViewMacro](Classes/Macros/SIViewMacro.h):ViewMacro
+* [SIUtilsMacro](Classes/Macros/SIUtilsMacro.h): UtilsMacro
+* [SIShortcutsMacro](Classes/Macros/SIShortcutsMacro.h):ShortcutsMacro
+* [SISharedInstanceMacro](Classes/Macros/SISharedInstanceMacro.h):SharedInstanceMacro
+* [SIMathMacro](Classes/Macros/SIMathMacro.h):SIMathMacro
+* [SILogMacro](Classes/Macros/SILogMacro.h):LogMacro
+* [SIFRCMacro](Classes/Macros/SIFRCMacro.h):FRCMacro
+* [SIDeviceMacro](Classes/Macros/SIDeviceMacro.h):DeviceMacro
+* [SICoreGraphicsMacro](Classes/Macros/SICoreGraphicsMacro.h):CoreGraphicsMacro
+* [SIARCMacro](Classes/Macros/SIARCMacro.h):ARCMacro
+* [SIRuntimeMacro](Classes/Macros/SIRuntimeMacro):RuntimeMacro
+* [SIColorMacro](Classes/Macros/SIColorMacro.h):ColorMacro
+* [SICollectionMacro](Classes/Macros/SICollectionMacro):CollectionMacro
+* [SIGCDMacro](Classes/Macros/SIGCDMacro.h):GCDMacro
+* [SINotificationMacro](Classes/Macros/SINotificationMacro.h):NotificationMacro
+* [SIExceptionMacro](Classes/Macros/SIExceptionMacro.h):ExceptionMacro
+* [SIAutoLayoutMacro](Classes/Macros/SIAutoLayoutMacro.h):AutoLayoutMacro
+
 ##使用说明
 
 ####手工导入
