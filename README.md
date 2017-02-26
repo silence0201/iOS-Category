@@ -139,5 +139,18 @@ libextobjc currently includes the following features:
 
 	#import "SIUIKit.h"
 	
+使用`EXTObjc`部分:
+
+	#import "EXTObjc.h"
+	
+使用`SIManager`部分
+
+	#import "SIManager.h"
+	
+使用`SIMacros`部分:
+
+	#import "SIMacros.h"
+	
+	
 ##iOS-Category
 iOS-Category is available under the MIT license. See the LICENSE file for more info.
