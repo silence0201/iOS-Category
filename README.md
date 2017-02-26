@@ -81,13 +81,24 @@ libextobjc currently includes the following features:
 
 	pod 'SICategory', '~> 1.0'
 	
-只是用`UIKit`相关分类
+只使用`UIKit`相关分类
 	
 	pod 'SICategory/SIUIKit', '~> 1.0'
 	
-只是用`Foundation`相关分类
+只使用`Foundation`相关分类
 
 	pod 'SICategory/SIFoundation', '~> 1.0'
+	
+只使用`EXTObj `
+
+	pod 'SICategory/EXTObj', '~> 1.0'
+	
+只使用`Manager `
+
+	pod 'SICategory/Manager', '~> 1.0'
+	
+
+
 	
 
 ###使用
