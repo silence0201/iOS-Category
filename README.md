@@ -117,6 +117,9 @@ libextobjc currently includes the following features:
 
 	pod 'SICategory/Manager', '~> 1.0'
 	
+只使用`SIMacros `
+
+	pod 'SICategory/SIMacros', '~> 1.0'
 
 
 	
