@@ -8,7 +8,7 @@
 功能强大的iOS开发分类
 
 主要包括一下内容:
-####Foundation
+#### [Foundation](Classes/Foundation)
 * [NSArchiver](Classes/Foundation/NSArchiver):利用key实现快速归档和解档
 * [NSArray](Classes/Foundation/NSArray):数组的Block操作,JSON解析,Plist解析,安全访问
 * [NSBundle](Classes/Foundation/NSBundle):快速获取与App相关的信息
@@ -24,7 +24,7 @@
 * [NSTimer](Classes/Foundation/NSTimer):Block方法封装
 * [NSURL](Classes/Foundation/NSURL):URL查询转化
 
-####UIKit
+#### [UIKit](Classes/UIKit)
 * [UIApplication](Classes/UIKit/UIApplication):App相关信息获取,权限判断,键盘Frame
 * [UITabBarController](Classes/UIKit/UITabBarController):UITabBar隐藏
 * [UIBarButtonItem](Classes/UIKit/UIBarButtonItem):Block封装操作
@@ -43,6 +43,32 @@
 * [UIView](Classes/UIKit/UIView):快速添加动画,Block封装,灵活的添加border,快速获取约束信息,快速寻找,Frame便捷操作,圆角设置,截屏, Toast
 * [UIViewController](Classes/UIKit/UIViewController):快速Alert,PopView, TopWarningView
 * [UINavigationBar](Classes/UIKit/UINavigationBar):快速设置简单的外观
+
+### [EXTObj](Classes/EXTObj)
+libextobjc currently includes the following features:
+
+ * **Safe categories**, using EXTSafeCategory, for adding methods to a class without overwriting anything already there (identifying conflicts for you).
+ * **Concrete protocols**, using EXTConcreteProtocol, for providing default implementations of the methods in a protocol.
+ * **Simpler and safer key paths**, using EXTKeyPathCoding, which automatically checks key paths at compile-time.
+ * **Compile-time checking of selectors** to ensure that an object declares a given selector, using EXTSelectorChecking.
+ * **Easier use of weak variables in blocks**, using `@weakify`, `@unsafeify`, and `@strongify` from the EXTScope module.
+ * **Scope-based resource cleanup**, using `@onExit` in the EXTScope module, for automatically cleaning up manually-allocated memory, file handles, locks, etc., at the end of a scope.
+ * **Algebraic data types** generated completely at compile-time, defined using EXTADT.
+ * **Synthesized properties for categories**, using EXTSynthesize.
+ * **Block-based coroutines**, using EXTCoroutine.
+ * **EXTNil, which is like `NSNull`, but behaves much more closely to actual `nil`** (i.e., doesn't crash when sent unrecognized messages).
+ * **Lots of extensions** and additional functionality built on top of `<objc/runtime.h>`, including extremely customizable method injection, reflection upon object properties, and various functions to extend class hierarchy checks and method lookups.
+
+ ### [Manager](Classes/Manager)
+ * [SIKeyboardShortcutManager](Classes/Manager/SIKeyboardShortcutManager.h):虚拟机快捷键管理
+ * [SIAuthorizationManager](Classes/Manager/SIAuthorizationManager.h):认证管理
+ * [SITouchIDManager](Classes/Manager/SITouchIDManager.h):TouchID管理
+ * [SIBluetoothManager](Classes/Manager/SIBluetoothManager.h):蓝牙信息管理
+ * [SIMediatorManager](Classes/Manager/SIMediatorManager.h):中间层管理
+ * [SIKeyboardManager](Classes/Manager/SIKeyboardManager.h):键盘管理
+ * [SIIAppPurchaseManager](Classes/Manager/SIIAppPurchaseManager.h):内购管理
+ * [SIAppVersionManager](Classes/Manager/SIAppVersionManager.h):版本管理
+ * [SIDownloadManager](Classes/Manager/SIDownloadManager.h):下载管理
 
 ##使用说明
 
