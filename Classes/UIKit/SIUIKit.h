@@ -54,6 +54,7 @@
 #import "UIView+BlockGesture.h"
 #import "UIView+Constraints.h"
 #import "UIView+Radius.h"
+#import "UIView+ViewController.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"
