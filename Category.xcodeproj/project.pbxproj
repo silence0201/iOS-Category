@@ -25,6 +25,7 @@
 		E8DD4B521E51C598008B6BDF /* UIColor+FPBrandColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */; };
 		E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */; };
 		E8E2836B1E781B6F006815EA /* NSString+AttributedBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */; };
+		E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836D1E782C53006815EA /* UIImage+Video.m */; };
 		E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4C71E56A2DF00E64E54 /* EXTRuntimeExtensions.m */; };
 		E8E8A4CC1E56A33500E64E54 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CB1E56A33500E64E54 /* NSMethodSignature+EXT.m */; };
 		E8E8A4CF1E56A36200E64E54 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CE1E56A36200E64E54 /* NSInvocation+EXT.m */; };
@@ -231,6 +232,8 @@
 		E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CSSColors.m"; sourceTree = "<group>"; };
 		E8E283691E781B6F006815EA /* NSString+AttributedBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedBuilder.h"; sourceTree = "<group>"; };
 		E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedBuilder.m"; sourceTree = "<group>"; };
+		E8E2836C1E782C53006815EA /* UIImage+Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Video.h"; sourceTree = "<group>"; };
+		E8E2836D1E782C53006815EA /* UIImage+Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Video.m"; sourceTree = "<group>"; };
 		E8E8A4881E55CD0800E64E54 /* SIViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIViewMacro.h; sourceTree = "<group>"; };
 		E8E8A4891E55CD4C00E64E54 /* SIUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUtilsMacro.h; sourceTree = "<group>"; };
 		E8E8A48A1E55CDAE00E64E54 /* SIShortcutsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIShortcutsMacro.h; sourceTree = "<group>"; };
@@ -1172,6 +1175,8 @@
 				E8E945C21E210B6D00EE98B0 /* UIImage+Modify.m */,
 				E8E945C31E210B6D00EE98B0 /* UIImage+Rotate.h */,
 				E8E945C41E210B6D00EE98B0 /* UIImage+Rotate.m */,
+				E8E2836C1E782C53006815EA /* UIImage+Video.h */,
+				E8E2836D1E782C53006815EA /* UIImage+Video.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1471,6 +1476,7 @@
 				E8DD4B521E51C598008B6BDF /* UIColor+FPBrandColor.m in Sources */,
 				E8E946061E210B6D00EE98B0 /* NSData+Encrypt.m in Sources */,
 				E8E946391E210B6D00EE98B0 /* UIButton+Indicator.m in Sources */,
+				E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */,
 				E8E946501E210B6D00EE98B0 /* UIImage+Rotate.m in Sources */,
 				E8E9462B1E210B6D00EE98B0 /* NSString+QRcode.m in Sources */,
 				E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */,

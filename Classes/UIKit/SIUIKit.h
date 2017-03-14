@@ -66,6 +66,7 @@
 #import "UIImage+Fix.h"
 #import "UIImage+Effect.h"
 #import "UIImage+Modify.h"
+#import "UIImage+Video.h"
 
 #import "UIFont+Traits.h"
 #import "UIFont+Make.h"

@@ -25,6 +25,8 @@
     NSString *Str = @"测试" ;
     NSLog(@"%@",[Str pinyin]) ;
     
+    UIImage *image = [UIImage imageWithVideo:@"http://baobab.wdjcdn.com/1455782903700jy.mp4"] ;
+    
 }
 
 
