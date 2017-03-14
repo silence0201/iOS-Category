@@ -26,6 +26,7 @@
 		E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */; };
 		E8E2836B1E781B6F006815EA /* NSString+AttributedBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */; };
 		E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836D1E782C53006815EA /* UIImage+Video.m */; };
+		E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */; };
 		E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4C71E56A2DF00E64E54 /* EXTRuntimeExtensions.m */; };
 		E8E8A4CC1E56A33500E64E54 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CB1E56A33500E64E54 /* NSMethodSignature+EXT.m */; };
 		E8E8A4CF1E56A36200E64E54 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CE1E56A36200E64E54 /* NSInvocation+EXT.m */; };
@@ -234,6 +235,8 @@
 		E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedBuilder.m"; sourceTree = "<group>"; };
 		E8E2836C1E782C53006815EA /* UIImage+Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Video.h"; sourceTree = "<group>"; };
 		E8E2836D1E782C53006815EA /* UIImage+Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Video.m"; sourceTree = "<group>"; };
+		E8E283701E782F05006815EA /* NSUserDefaults+iCloudSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+iCloudSync.h"; sourceTree = "<group>"; };
+		E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+iCloudSync.m"; sourceTree = "<group>"; };
 		E8E8A4881E55CD0800E64E54 /* SIViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIViewMacro.h; sourceTree = "<group>"; };
 		E8E8A4891E55CD4C00E64E54 /* SIUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUtilsMacro.h; sourceTree = "<group>"; };
 		E8E8A48A1E55CDAE00E64E54 /* SIShortcutsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIShortcutsMacro.h; sourceTree = "<group>"; };
@@ -642,6 +645,15 @@
 			path = CategoryTests;
 			sourceTree = "<group>";
 		};
+		E8E2836F1E782EE7006815EA /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				E8E283701E782F05006815EA /* NSUserDefaults+iCloudSync.h */,
+				E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
 		E8E8A4871E55CCA400E64E54 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
@@ -801,6 +813,7 @@
 		E8E945031E210B6D00EE98B0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E8E2836F1E782EE7006815EA /* NSUserDefaults */,
 				E8E945041E210B6D00EE98B0 /* NSArchiver */,
 				E8E945091E210B6D00EE98B0 /* NSArray */,
 				E8E945121E210B6D00EE98B0 /* NSBundle */,
@@ -1549,6 +1562,7 @@
 				E8E946451E210B6D00EE98B0 /* UIFont+Traits.m in Sources */,
 				E8E946301E210B6D00EE98B0 /* NSURL+QueryDictionary.m in Sources */,
 				E8E946331E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m in Sources */,
+				E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */,
 				E8E9460B1E210B6D00EE98B0 /* NSDictionary+Block.m in Sources */,
 				E8E8A55C1E59508500E64E54 /* NSArray+Contains.m in Sources */,
 				E8E9463F1E210B6D00EE98B0 /* UIDevice+CPU.m in Sources */,

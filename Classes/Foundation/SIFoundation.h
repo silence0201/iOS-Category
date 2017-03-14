@@ -79,5 +79,7 @@
 
 #import "NSTimer+Block.h"
 
+#import "NSUserDefaults+iCloudSync.h"
+
 #endif
 
