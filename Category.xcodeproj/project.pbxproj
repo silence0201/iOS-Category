@@ -27,6 +27,7 @@
 		E8E2836B1E781B6F006815EA /* NSString+AttributedBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */; };
 		E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836D1E782C53006815EA /* UIImage+Video.m */; };
 		E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */; };
+		E8E283751E78302B006815EA /* NSTimer+Pause.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E283741E78302B006815EA /* NSTimer+Pause.m */; };
 		E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4C71E56A2DF00E64E54 /* EXTRuntimeExtensions.m */; };
 		E8E8A4CC1E56A33500E64E54 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CB1E56A33500E64E54 /* NSMethodSignature+EXT.m */; };
 		E8E8A4CF1E56A36200E64E54 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CE1E56A36200E64E54 /* NSInvocation+EXT.m */; };
@@ -237,6 +238,8 @@
 		E8E2836D1E782C53006815EA /* UIImage+Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Video.m"; sourceTree = "<group>"; };
 		E8E283701E782F05006815EA /* NSUserDefaults+iCloudSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+iCloudSync.h"; sourceTree = "<group>"; };
 		E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+iCloudSync.m"; sourceTree = "<group>"; };
+		E8E283731E78302B006815EA /* NSTimer+Pause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Pause.h"; sourceTree = "<group>"; };
+		E8E283741E78302B006815EA /* NSTimer+Pause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Pause.m"; sourceTree = "<group>"; };
 		E8E8A4881E55CD0800E64E54 /* SIViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIViewMacro.h; sourceTree = "<group>"; };
 		E8E8A4891E55CD4C00E64E54 /* SIUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUtilsMacro.h; sourceTree = "<group>"; };
 		E8E8A48A1E55CDAE00E64E54 /* SIShortcutsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIShortcutsMacro.h; sourceTree = "<group>"; };
@@ -1031,6 +1034,8 @@
 			children = (
 				E8E945741E210B6D00EE98B0 /* NSTimer+Block.h */,
 				E8E945751E210B6D00EE98B0 /* NSTimer+Block.m */,
+				E8E283731E78302B006815EA /* NSTimer+Pause.h */,
+				E8E283741E78302B006815EA /* NSTimer+Pause.m */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";
@@ -1535,6 +1540,7 @@
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
 				E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */,
+				E8E283751E78302B006815EA /* NSTimer+Pause.m in Sources */,
 				E8E946081E210B6D00EE98B0 /* NSDate+Extension.m in Sources */,
 				E8E946631E210B6D00EE98B0 /* UIView+Radius.m in Sources */,
 				E8E946241E210B6D00EE98B0 /* NSString+Contains.m in Sources */,
