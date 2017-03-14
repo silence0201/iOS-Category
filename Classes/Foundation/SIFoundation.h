@@ -78,6 +78,7 @@
 #import "NSDate+Formatter.h"
 
 #import "NSTimer+Block.h"
+#import "NSTimer+Pause.h"
 
 #import "NSUserDefaults+iCloudSync.h"
 
