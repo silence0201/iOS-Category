@@ -18,6 +18,7 @@
 		E854CE401E7D53A600AD9F13 /* NSData+DataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE3F1E7D53A600AD9F13 /* NSData+DataCache.m */; };
 		E854CE431E7D549A00AD9F13 /* NSString+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE421E7D549A00AD9F13 /* NSString+XML.m */; };
 		E854CE461E7D558200AD9F13 /* NSDictionary+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE451E7D558200AD9F13 /* NSDictionary+XML.m */; };
+		E854CE4A1E7D570500AD9F13 /* NSIndexPath+Offset.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE491E7D570500AD9F13 /* NSIndexPath+Offset.m */; };
 		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -220,6 +221,8 @@
 		E854CE421E7D549A00AD9F13 /* NSString+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XML.m"; sourceTree = "<group>"; };
 		E854CE441E7D558200AD9F13 /* NSDictionary+XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XML.h"; sourceTree = "<group>"; };
 		E854CE451E7D558200AD9F13 /* NSDictionary+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XML.m"; sourceTree = "<group>"; };
+		E854CE481E7D570500AD9F13 /* NSIndexPath+Offset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Offset.h"; sourceTree = "<group>"; };
+		E854CE491E7D570500AD9F13 /* NSIndexPath+Offset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Offset.m"; sourceTree = "<group>"; };
 		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
 		E87504A01E618D870097F41E /* SIDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDownloadManager.m; sourceTree = "<group>"; };
 		E87504A51E61AA770097F41E /* SIRuntimeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIRuntimeMacro.h; sourceTree = "<group>"; };
@@ -574,6 +577,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E854CE471E7D56F000AD9F13 /* NSIndexPath */ = {
+			isa = PBXGroup;
+			children = (
+				E854CE481E7D570500AD9F13 /* NSIndexPath+Offset.h */,
+				E854CE491E7D570500AD9F13 /* NSIndexPath+Offset.m */,
+			);
+			path = NSIndexPath;
+			sourceTree = "<group>";
+		};
 		E876E9FA1E75806000129BAF /* UISlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -837,6 +849,7 @@
 		E8E945031E210B6D00EE98B0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E854CE471E7D56F000AD9F13 /* NSIndexPath */,
 				E8E2836F1E782EE7006815EA /* NSUserDefaults */,
 				E8E945041E210B6D00EE98B0 /* NSArchiver */,
 				E8E945091E210B6D00EE98B0 /* NSArray */,
@@ -1586,6 +1599,7 @@
 				E8E945FF1E210B6D00EE98B0 /* NSArray+Block.m in Sources */,
 				E8E9461A1E210B6D00EE98B0 /* NSObject+Block.m in Sources */,
 				E8E946221E210B6D00EE98B0 /* NSObject+Runtime.m in Sources */,
+				E854CE4A1E7D570500AD9F13 /* NSIndexPath+Offset.m in Sources */,
 				E8E9463E1E210B6D00EE98B0 /* UIControl+Delay.m in Sources */,
 				E8E9464E1E210B6D00EE98B0 /* UIImage+Merge.m in Sources */,
 				E854CE461E7D558200AD9F13 /* NSDictionary+XML.m in Sources */,

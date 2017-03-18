@@ -89,5 +89,7 @@
 
 #import "NSUserDefaults+iCloudSync.h"
 
+#import "NSIndexPath+Offset.h"
+
 #endif
 
