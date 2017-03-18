@@ -10,6 +10,7 @@
 #define SIUIKit_h
 
 #import "UINavigationBar+Appear.h"
+#import "UINavigationBar+Awesome.h"
 
 #import "UITabBarController+Hide.h"
 

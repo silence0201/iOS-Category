@@ -28,6 +28,7 @@
 		E854CE661E7D615700AD9F13 /* UIFont+TTF.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE651E7D615700AD9F13 /* UIFont+TTF.m */; };
 		E854CE691E7D620E00AD9F13 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE681E7D620E00AD9F13 /* UIApplication+Permissions.m */; };
 		E854CE6C1E7D642A00AD9F13 /* UIControl+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE6B1E7D642A00AD9F13 /* UIControl+Sound.m */; };
+		E854CE6F1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE6E1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m */; };
 		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -250,6 +251,8 @@
 		E854CE681E7D620E00AD9F13 /* UIApplication+Permissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Permissions.m"; sourceTree = "<group>"; };
 		E854CE6A1E7D642A00AD9F13 /* UIControl+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Sound.h"; sourceTree = "<group>"; };
 		E854CE6B1E7D642A00AD9F13 /* UIControl+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Sound.m"; sourceTree = "<group>"; };
+		E854CE6D1E7D65DF00AD9F13 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		E854CE6E1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
 		E87504A01E618D870097F41E /* SIDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDownloadManager.m; sourceTree = "<group>"; };
 		E87504A51E61AA770097F41E /* SIRuntimeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIRuntimeMacro.h; sourceTree = "<group>"; };
@@ -1332,6 +1335,8 @@
 			children = (
 				E8E945CB1E210B6D00EE98B0 /* UINavigationBar+Appear.h */,
 				E8E945CC1E210B6D00EE98B0 /* UINavigationBar+Appear.m */,
+				E854CE6D1E7D65DF00AD9F13 /* UINavigationBar+Awesome.h */,
+				E854CE6E1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -1664,6 +1669,7 @@
 				E8E9461F1E210B6D00EE98B0 /* NSObject+QuickCode.m in Sources */,
 				E8E8A5531E594ABA00E64E54 /* NSObject+Parse.m in Sources */,
 				E8E9461C1E210B6D00EE98B0 /* NSObject+KVO.m in Sources */,
+				E854CE6F1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m in Sources */,
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
 				E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */,
