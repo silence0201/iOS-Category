@@ -39,6 +39,7 @@
 
 #import "UIControl+ALActionBlocks.h"
 #import "UIControl+Delay.h"
+#import "UIControl+Sound.h"
 
 #import "UILabel+ContenSize.h"
 #import "UILabel+Space.h"
@@ -82,6 +83,7 @@
 #import "UIColor+FlatColors.h"
 #import "UIColor+FPBrandColor.h"
 #import "UIColor+CSSColors.h"
+
 
 #import "UIDevice+Device.h"
 #import "UIDevice+NetWork.h"
