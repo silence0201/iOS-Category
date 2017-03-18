@@ -72,6 +72,7 @@
 #import "NSString+PinYin.h"
 #import "NSString+Color.h"
 #import "NSString+AttributedBuilder.h"
+#import "NSString+Trims.h"
 
 #import "NSDate+Figure.h"
 #import "NSDate+Extension.h"
