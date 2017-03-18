@@ -31,6 +31,8 @@
 		E854CE6F1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE6E1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m */; };
 		E854CE731E7D673900AD9F13 /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE721E7D673900AD9F13 /* UIWindow+Hierarchy.m */; };
 		E854CE761E7D67FA00AD9F13 /* UIButton+ImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE751E7D67FA00AD9F13 /* UIButton+ImagePosition.m */; };
+		E854CE7A1E7D692900AD9F13 /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE791E7D692900AD9F13 /* UITextField+Select.m */; };
+		E854CE7D1E7D699500AD9F13 /* UITextField+InputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */; };
 		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -259,6 +261,10 @@
 		E854CE721E7D673900AD9F13 /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
 		E854CE741E7D67FA00AD9F13 /* UIButton+ImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImagePosition.h"; sourceTree = "<group>"; };
 		E854CE751E7D67FA00AD9F13 /* UIButton+ImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImagePosition.m"; sourceTree = "<group>"; };
+		E854CE781E7D692900AD9F13 /* UITextField+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Select.h"; sourceTree = "<group>"; };
+		E854CE791E7D692900AD9F13 /* UITextField+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Select.m"; sourceTree = "<group>"; };
+		E854CE7B1E7D699500AD9F13 /* UITextField+InputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+InputLimit.h"; sourceTree = "<group>"; };
+		E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+InputLimit.m"; sourceTree = "<group>"; };
 		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
 		E87504A01E618D870097F41E /* SIDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDownloadManager.m; sourceTree = "<group>"; };
 		E87504A51E61AA770097F41E /* SIRuntimeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIRuntimeMacro.h; sourceTree = "<group>"; };
@@ -658,6 +664,17 @@
 				E854CE721E7D673900AD9F13 /* UIWindow+Hierarchy.m */,
 			);
 			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		E854CE771E7D68E500AD9F13 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				E854CE781E7D692900AD9F13 /* UITextField+Select.h */,
+				E854CE791E7D692900AD9F13 /* UITextField+Select.m */,
+				E854CE7B1E7D699500AD9F13 /* UITextField+InputLimit.h */,
+				E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 		E876E9FA1E75806000129BAF /* UISlider */ = {
@@ -1182,6 +1199,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E9457B1E210B6D00EE98B0 /* SIUIKit.h */,
+				E854CE771E7D68E500AD9F13 /* UITextField */,
 				E854CE701E7D672000AD9F13 /* UIWindow */,
 				E876E9FA1E75806000129BAF /* UISlider */,
 				E8EB94341E2F12FC000E4480 /* UITabBarController */,
@@ -1614,6 +1632,7 @@
 				E8E9464D1E210B6D00EE98B0 /* UIImage+Make.m in Sources */,
 				E8E946121E210B6D00EE98B0 /* KKLog.m in Sources */,
 				E8E946071E210B6D00EE98B0 /* NSData+Hash.m in Sources */,
+				E854CE7D1E7D699500AD9F13 /* UITextField+InputLimit.m in Sources */,
 				E8E946011E210B6D00EE98B0 /* NSArray+Plist.m in Sources */,
 				E8FB93841E607CE700B77407 /* SIAppVersionManager.m in Sources */,
 				E854CE691E7D620E00AD9F13 /* UIApplication+Permissions.m in Sources */,
@@ -1670,6 +1689,7 @@
 				E8E9462E1E210B6D00EE98B0 /* NSString+URLEncode.m in Sources */,
 				E8E946321E210B6D00EE98B0 /* UIApplication+Authority.m in Sources */,
 				E8E946521E210B6D00EE98B0 /* UILabel+Space.m in Sources */,
+				E854CE7A1E7D692900AD9F13 /* UITextField+Select.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
 				E8E9460F1E210B6D00EE98B0 /* NSDictionary+SafeAccess.m in Sources */,
 				E8E9461B1E210B6D00EE98B0 /* NSObject+GCD.m in Sources */,
