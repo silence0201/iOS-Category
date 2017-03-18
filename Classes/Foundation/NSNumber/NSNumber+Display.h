@@ -11,9 +11,9 @@
 @interface NSNumber (Display)
 
 /// 显示指定精读
-- (NSString*)displayNumberWithDigit:(NSInteger)digit;
+- (NSString *)displayNumberWithDigit:(NSInteger)digit;
 
 /// 显示百分比
-- (NSString*)displayPercentageWithDigit:(NSInteger)digit;
+- (NSString *)displayPercentageWithDigit:(NSInteger)digit;
 
 @end

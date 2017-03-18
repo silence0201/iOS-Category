@@ -91,5 +91,7 @@
 
 #import "NSIndexPath+Offset.h"
 
+#import "NSFileHandle+ReadLine.h"
+
 #endif
 
