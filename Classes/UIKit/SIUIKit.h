@@ -91,4 +91,6 @@
 #import "UIDevice+Disk.h"
 #import "UIDevice+CPU.h"
 
+#import "UIWindow+Hierarchy.h"
+
 #endif
