@@ -80,6 +80,8 @@
 #import "NSString+Trims.h"
 #import "NSString+XML.h"
 
+#import "NSURLRequest+Params.h"
+
 #import "NSDate+Figure.h"
 #import "NSDate+Extension.h"
 #import "NSDate+Formatter.h"
