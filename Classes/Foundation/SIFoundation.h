@@ -45,6 +45,7 @@
 #import "NSData+Encrypt.h"
 #import "NSData+Code.h"
 #import "NSData+Cache.h"
+#import "NSData+Base64.h"
 
 #import "NSObject+Property.h"
 #import "NSObject+Block.h"
