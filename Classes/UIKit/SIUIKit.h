@@ -35,6 +35,7 @@
 #import "UIButton+Indicator.h"
 #import "UIButton+ClickEdgeInsets.h"
 #import "UIButton+Submitting.h"
+#import "UIButton+ImagePosition.h"
 
 #import "UIGestureRecognizer+ALActionBlocks.h"
 
