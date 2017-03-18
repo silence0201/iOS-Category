@@ -71,6 +71,7 @@
 #import "UIFont+Traits.h"
 #import "UIFont+Make.h"
 #import "UIFont+Load.h"
+#import "UIFont+TTF.h"
 
 #import "UIApplication+AppInfo.h"
 #import "UIApplication+Authority.h"
