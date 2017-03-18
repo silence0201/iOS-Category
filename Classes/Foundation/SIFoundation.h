@@ -29,6 +29,7 @@
 #import "NSDictionary+URL.h"
 #import "NSDictionary+Merge.h"
 #import "NSDictionary+SafeAccess.h"
+#import "NSDictionary+XML.h"
 
 #import "NSFileManager+Helper.h"
 #import "NSFileManager+Hash.h"
