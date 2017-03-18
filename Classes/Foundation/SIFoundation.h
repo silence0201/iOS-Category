@@ -77,6 +77,7 @@
 #import "NSString+Color.h"
 #import "NSString+AttributedBuilder.h"
 #import "NSString+Trims.h"
+#import "NSString+XML.h"
 
 #import "NSDate+Figure.h"
 #import "NSDate+Extension.h"
