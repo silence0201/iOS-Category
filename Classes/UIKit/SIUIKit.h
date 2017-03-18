@@ -76,6 +76,7 @@
 #import "UIApplication+AppInfo.h"
 #import "UIApplication+Authority.h"
 #import "UIApplication+KeyboardFrame.h"
+#import "UIApplication+Permissions.h"
 
 #import "UIColor+Make.h"
 #import "UIColor+FlatColors.h"
