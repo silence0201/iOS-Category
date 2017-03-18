@@ -48,6 +48,7 @@
 #import "NSData+Base64.h"
 #import "NSData+Gzip.h"
 #import "NSData+APNSToken.h"
+#import "NSData+DataCache.h"
 
 #import "NSObject+Property.h"
 #import "NSObject+Block.h"
