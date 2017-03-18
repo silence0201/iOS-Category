@@ -81,6 +81,7 @@
 #import "NSString+XML.h"
 
 #import "NSURLRequest+Params.h"
+#import "NSURLRequest+Upload.h"
 
 #import "NSDate+Figure.h"
 #import "NSDate+Extension.h"
