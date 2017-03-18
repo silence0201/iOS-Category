@@ -83,6 +83,8 @@
 #import "NSURLRequest+Params.h"
 #import "NSURLRequest+Upload.h"
 
+#import "NSURLSession+SynchronousTask.h"
+
 #import "NSDate+Figure.h"
 #import "NSDate+Extension.h"
 #import "NSDate+Formatter.h"
