@@ -31,12 +31,12 @@ typedef enum {
 
 @interface UIApplication (Permissions)
 
--(SIPermissionAccess)jk_hasAccessToBluetoothLE;
--(SIPermissionAccess)jk_hasAccessToCalendar;
--(SIPermissionAccess)jk_hasAccessToContacts;
--(SIPermissionAccess)jk_hasAccessToLocation;
--(SIPermissionAccess)jk_hasAccessToPhotos;
--(SIPermissionAccess)jk_hasAccessToReminders;
+-(SIPermissionAccess)hasAccessToBluetoothLE;
+-(SIPermissionAccess)hasAccessToCalendar;
+-(SIPermissionAccess)hasAccessToContacts;
+-(SIPermissionAccess)hasAccessToLocation;
+-(SIPermissionAccess)hasAccessToPhotos;
+-(SIPermissionAccess)hasAccessToReminders;
 
 #pragma mark --- Request permission with callback
 -(void)requestAccessToCalendarWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied;
