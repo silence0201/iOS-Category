@@ -46,6 +46,7 @@
 		E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F11E81720C00E9D69C /* UIColor+Random.m */; };
 		E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F41E81751E00E9D69C /* UITableView+iOS7Style.m */; };
 		E8B122F91E81760900E9D69C /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */; };
+		E8B122FC1E81768300E9D69C /* UIResponder+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -302,6 +303,8 @@
 		E8B122F41E81751E00E9D69C /* UITableView+iOS7Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+iOS7Style.m"; sourceTree = "<group>"; };
 		E8B122F71E81760900E9D69C /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
+		E8B122FA1E81768300E9D69C /* UIResponder+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Chain.h"; sourceTree = "<group>"; };
+		E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Chain.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -760,6 +763,8 @@
 			children = (
 				E8B122F71E81760900E9D69C /* UIResponder+FirstResponder.h */,
 				E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */,
+				E8B122FA1E81768300E9D69C /* UIResponder+Chain.h */,
+				E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */,
 			);
 			path = UIResponder;
 			sourceTree = "<group>";
@@ -1719,6 +1724,7 @@
 				E88B47B31E15363E0074A53A /* ViewController.m in Sources */,
 				E8E946191E210B6D00EE98B0 /* NSObject+Aspect.m in Sources */,
 				E8E9461E1E210B6D00EE98B0 /* NSObject+QuickAssociated.m in Sources */,
+				E8B122FC1E81768300E9D69C /* UIResponder+Chain.m in Sources */,
 				E8E9462E1E210B6D00EE98B0 /* NSString+URLEncode.m in Sources */,
 				E8E946321E210B6D00EE98B0 /* UIApplication+Authority.m in Sources */,
 				E8E946521E210B6D00EE98B0 /* UILabel+Space.m in Sources */,
