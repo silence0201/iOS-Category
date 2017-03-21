@@ -86,6 +86,7 @@
 #import "UIColor+FlatColors.h"
 #import "UIColor+FPBrandColor.h"
 #import "UIColor+CSSColors.h"
+#import "UIColor+Random.h"
 
 #import "UITextField+PlaceHolder.h"
 #import "UITextField+Select.h"
