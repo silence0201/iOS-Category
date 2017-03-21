@@ -45,6 +45,7 @@
 		E8B122EF1E81706300E9D69C /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EE1E81706300E9D69C /* UITextField+PlaceHolder.m */; };
 		E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F11E81720C00E9D69C /* UIColor+Random.m */; };
 		E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F41E81751E00E9D69C /* UITableView+iOS7Style.m */; };
+		E8B122F91E81760900E9D69C /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -299,6 +300,8 @@
 		E8B122F11E81720C00E9D69C /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
 		E8B122F31E81751E00E9D69C /* UITableView+iOS7Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+iOS7Style.h"; sourceTree = "<group>"; };
 		E8B122F41E81751E00E9D69C /* UITableView+iOS7Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+iOS7Style.m"; sourceTree = "<group>"; };
+		E8B122F71E81760900E9D69C /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
+		E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -750,6 +753,15 @@
 				E88B47BC1E15363E0074A53A /* Info.plist */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		E8B122F61E8175EC00E9D69C /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				E8B122F71E81760900E9D69C /* UIResponder+FirstResponder.h */,
+				E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */,
+			);
+			path = UIResponder;
 			sourceTree = "<group>";
 		};
 		E8DD4B421E51C29F008B6BDF /* CategoryTests */ = {
@@ -1213,6 +1225,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E9457B1E210B6D00EE98B0 /* SIUIKit.h */,
+				E8B122F61E8175EC00E9D69C /* UIResponder */,
 				E854CE771E7D68E500AD9F13 /* UITextField */,
 				E854CE701E7D672000AD9F13 /* UIWindow */,
 				E876E9FA1E75806000129BAF /* UISlider */,
@@ -1795,6 +1808,7 @@
 				E8E946471E210B6D00EE98B0 /* UIImage+Capture.m in Sources */,
 				E8E946581E210B6D00EE98B0 /* UIScrollView+PageNumber.m in Sources */,
 				E854CE5D1E7D5CFC00AD9F13 /* NSURLSession+SynchronousTask.m in Sources */,
+				E8B122F91E81760900E9D69C /* UIResponder+FirstResponder.m in Sources */,
 				E8E946421E210B6D00EE98B0 /* UIDevice+NetWork.m in Sources */,
 				E8E946371E210B6D00EE98B0 /* UIButton+ClickEdgeInsets.m in Sources */,
 				E8E946381E210B6D00EE98B0 /* UIButton+CountDown.m in Sources */,
