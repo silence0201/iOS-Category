@@ -20,6 +20,7 @@
 
 #import "UITableView+Update.h"
 #import "UITableView+CellStyle.h"
+#import "UITableView+iOS7Style.h"
 
 #import "UIViewController+TopBarMessage.h"
 #import "UIViewController+MJPopupViewController.h"
