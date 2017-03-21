@@ -45,6 +45,9 @@
 #import "UIControl+Delay.h"
 #import "UIControl+Sound.h"
 
+#import "UIResponder+Chain.h"
+#import "UIResponder+FirstResponder.h"
+
 #import "UILabel+ContenSize.h"
 #import "UILabel+Space.h"
 
