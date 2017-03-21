@@ -43,6 +43,7 @@
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
 		E8B122EF1E81706300E9D69C /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EE1E81706300E9D69C /* UITextField+PlaceHolder.m */; };
+		E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F11E81720C00E9D69C /* UIColor+Random.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -293,6 +294,8 @@
 		E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Frame.m"; sourceTree = "<group>"; };
 		E8B122ED1E81706300E9D69C /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
 		E8B122EE1E81706300E9D69C /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
+		E8B122F01E81720C00E9D69C /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		E8B122F11E81720C00E9D69C /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1278,6 +1281,8 @@
 				E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */,
 				E8DD4B531E51C63E008B6BDF /* UIColor+CSSColors.h */,
 				E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */,
+				E8B122F01E81720C00E9D69C /* UIColor+Random.h */,
+				E8B122F11E81720C00E9D69C /* UIColor+Random.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -1733,6 +1738,7 @@
 				E854CE4A1E7D570500AD9F13 /* NSIndexPath+Offset.m in Sources */,
 				E8E9463E1E210B6D00EE98B0 /* UIControl+Delay.m in Sources */,
 				E8E9464E1E210B6D00EE98B0 /* UIImage+Merge.m in Sources */,
+				E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */,
 				E854CE461E7D558200AD9F13 /* NSDictionary+XML.m in Sources */,
 				E854CE601E7D5E1800AD9F13 /* NSDate+Cupertino.m in Sources */,
 				E8E9464B1E210B6D00EE98B0 /* UIImage+Fix.m in Sources */,
