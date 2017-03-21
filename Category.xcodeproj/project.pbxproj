@@ -41,6 +41,7 @@
 		E88B47B61E15363E0074A53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B41E15363E0074A53A /* Main.storyboard */; };
 		E88B47B81E15363E0074A53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B71E15363E0074A53A /* Assets.xcassets */; };
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
+		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -287,6 +288,8 @@
 		E88B47B71E15363E0074A53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88B47BA1E15363E0074A53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E88B47BC1E15363E0074A53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B122EA1E816ECB00E9D69C /* UIScrollView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Frame.h"; sourceTree = "<group>"; };
+		E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Frame.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1408,6 +1411,8 @@
 				E8E945D91E210B6D00EE98B0 /* UIScrollView+PageNumber.m */,
 				E8E945DA1E210B6D00EE98B0 /* UIScrollView+SimpleScroll.h */,
 				E8E945DB1E210B6D00EE98B0 /* UIScrollView+SimpleScroll.m */,
+				E8B122EA1E816ECB00E9D69C /* UIScrollView+Frame.h */,
+				E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */,
 			);
 			path = UIScrollView;
 			sourceTree = "<group>";
@@ -1728,6 +1733,7 @@
 				E8E9464B1E210B6D00EE98B0 /* UIImage+Fix.m in Sources */,
 				E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */,
 				E8E946541E210B6D00EE98B0 /* UINavigationController+Stack.m in Sources */,
+				E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */,
 				E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */,
 				E8E9462F1E210B6D00EE98B0 /* NSTimer+Block.m in Sources */,
 				E854CE371E7D514900AD9F13 /* NSData+Base64.m in Sources */,
