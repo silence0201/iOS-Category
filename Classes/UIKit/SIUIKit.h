@@ -28,6 +28,7 @@
 #import "UIScrollView+Amplification.h"
 #import "UIScrollView+SimpleScroll.h"
 #import "UIScrollView+PageNumber.h"
+#import "UIScrollView+Frame.h"
 
 #import "UIButton+BackgroundColor.h"
 #import "UIButton+Block.h"
@@ -86,6 +87,9 @@
 #import "UIColor+FPBrandColor.h"
 #import "UIColor+CSSColors.h"
 
+#import "UITextField+PlaceHolder.h"
+#import "UITextField+Select.h"
+#import "UITextField+InputLimit.h"
 
 #import "UIDevice+Device.h"
 #import "UIDevice+NetWork.h"
