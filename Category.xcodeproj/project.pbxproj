@@ -41,6 +41,7 @@
 		E88B47B61E15363E0074A53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B41E15363E0074A53A /* Main.storyboard */; };
 		E88B47B81E15363E0074A53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B71E15363E0074A53A /* Assets.xcassets */; };
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
+		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
 		E8B122EF1E81706300E9D69C /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EE1E81706300E9D69C /* UITextField+PlaceHolder.m */; };
 		E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F11E81720C00E9D69C /* UIColor+Random.m */; };
@@ -293,6 +294,8 @@
 		E88B47B71E15363E0074A53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88B47BA1E15363E0074A53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E88B47BC1E15363E0074A53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
+		E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Segues.m"; sourceTree = "<group>"; };
 		E8B122EA1E816ECB00E9D69C /* UIScrollView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Frame.h"; sourceTree = "<group>"; };
 		E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Frame.m"; sourceTree = "<group>"; };
 		E8B122ED1E81706300E9D69C /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
@@ -1497,6 +1500,8 @@
 				E8E945FA1E210B6D00EE98B0 /* UIViewController+MJPopupViewController.m */,
 				E8E945FB1E210B6D00EE98B0 /* UIViewController+TopBarMessage.h */,
 				E8E945FC1E210B6D00EE98B0 /* UIViewController+TopBarMessage.m */,
+				E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */,
+				E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1699,6 +1704,7 @@
 				E8E946501E210B6D00EE98B0 /* UIImage+Rotate.m in Sources */,
 				E854CE731E7D673900AD9F13 /* UIWindow+Hierarchy.m in Sources */,
 				E854CE591E7D5C1D00AD9F13 /* NSURLRequest+Upload.m in Sources */,
+				E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */,
 				E8E9462B1E210B6D00EE98B0 /* NSString+QRcode.m in Sources */,
 				E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */,
 				E8E946561E210B6D00EE98B0 /* UIScreen+Info.m in Sources */,
