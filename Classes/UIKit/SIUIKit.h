@@ -43,7 +43,6 @@
 #import "UIGestureRecognizer+ALActionBlocks.h"
 
 #import "UIControl+ALActionBlocks.h"
-#import "UIControl+Delay.h"
 #import "UIControl+Sound.h"
 
 #import "UIResponder+Chain.h"

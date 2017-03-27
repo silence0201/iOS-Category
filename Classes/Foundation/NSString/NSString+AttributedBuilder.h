@@ -103,6 +103,6 @@
 -(void)insert:(NSInteger)pos attrBuilder:(SIAttributedStringBuilder *)attrBuilder;
 
 /// 构造好的attributedString
--(NSAttributedString *)attributedString;
+-(NSAttributedString *)commit;
 
 @end

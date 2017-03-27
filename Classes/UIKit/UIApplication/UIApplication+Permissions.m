@@ -92,6 +92,8 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 -(SIPermissionAccess)hasAccessToLocation {
     switch ([CLLocationManager authorizationStatus]) {
         case kCLAuthorizationStatusAuthorized:
@@ -112,6 +114,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }
     return SIPermissionAccessUnknown;
 }
+#pragma clang diagnostic pop
 
 -(SIPermissionAccess)hasAccessToPhotos {
     switch ([ALAssetsLibrary authorizationStatus]) {
@@ -267,6 +270,8 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
 
 
 #pragma mark - Location manager delegate
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     if (status == kCLAuthorizationStatusAuthorized) {
         self.locationSuccessCallbackProperty();
@@ -274,6 +279,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
         self.locationFailureCallbackProperty();
     }
 }
+#pragma clang diagnostic pop
 
 @end
 

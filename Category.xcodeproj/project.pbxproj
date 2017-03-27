@@ -143,7 +143,6 @@
 		E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945921E210B6D00EE98B0 /* UIButton+Submitting.m */; };
 		E8E9463C1E210B6D00EE98B0 /* UIColor+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945971E210B6D00EE98B0 /* UIColor+Make.m */; };
 		E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9459A1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m */; };
-		E8E9463E1E210B6D00EE98B0 /* UIControl+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9459C1E210B6D00EE98B0 /* UIControl+Delay.m */; };
 		E8E9463F1E210B6D00EE98B0 /* UIDevice+CPU.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9459F1E210B6D00EE98B0 /* UIDevice+CPU.m */; };
 		E8E946401E210B6D00EE98B0 /* UIDevice+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945A11E210B6D00EE98B0 /* UIDevice+Device.m */; };
 		E8E946411E210B6D00EE98B0 /* UIDevice+Disk.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945A31E210B6D00EE98B0 /* UIDevice+Disk.m */; };
@@ -516,8 +515,6 @@
 		E8E945971E210B6D00EE98B0 /* UIColor+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Make.m"; sourceTree = "<group>"; };
 		E8E945991E210B6D00EE98B0 /* UIControl+ALActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ALActionBlocks.h"; sourceTree = "<group>"; };
 		E8E9459A1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ALActionBlocks.m"; sourceTree = "<group>"; };
-		E8E9459B1E210B6D00EE98B0 /* UIControl+Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Delay.h"; sourceTree = "<group>"; };
-		E8E9459C1E210B6D00EE98B0 /* UIControl+Delay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Delay.m"; sourceTree = "<group>"; };
 		E8E9459E1E210B6D00EE98B0 /* UIDevice+CPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CPU.h"; sourceTree = "<group>"; };
 		E8E9459F1E210B6D00EE98B0 /* UIDevice+CPU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CPU.m"; sourceTree = "<group>"; };
 		E8E945A01E210B6D00EE98B0 /* UIDevice+Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Device.h"; sourceTree = "<group>"; };
@@ -1316,8 +1313,6 @@
 			children = (
 				E8E945991E210B6D00EE98B0 /* UIControl+ALActionBlocks.h */,
 				E8E9459A1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m */,
-				E8E9459B1E210B6D00EE98B0 /* UIControl+Delay.h */,
-				E8E9459C1E210B6D00EE98B0 /* UIControl+Delay.m */,
 				E854CE6A1E7D642A00AD9F13 /* UIControl+Sound.h */,
 				E854CE6B1E7D642A00AD9F13 /* UIControl+Sound.m */,
 			);
@@ -1766,7 +1761,6 @@
 				E8E9461A1E210B6D00EE98B0 /* NSObject+Block.m in Sources */,
 				E8E946221E210B6D00EE98B0 /* NSObject+Runtime.m in Sources */,
 				E854CE4A1E7D570500AD9F13 /* NSIndexPath+Offset.m in Sources */,
-				E8E9463E1E210B6D00EE98B0 /* UIControl+Delay.m in Sources */,
 				E8E9464E1E210B6D00EE98B0 /* UIImage+Merge.m in Sources */,
 				E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */,
 				E854CE461E7D558200AD9F13 /* NSDictionary+XML.m in Sources */,

@@ -324,7 +324,7 @@
         return nil;
     paragraphIndex = 0;
     NSString *str = attrString.string;
-    NSRange range ;
+    NSRange range = NSMakeRange(0, 0) ;
     NSInteger i;
     for (i = paragraphIndex; i < str.length; i++){
         unichar uc = [str characterAtIndex:i];
@@ -349,7 +349,7 @@
     NSString *str = attrString.string;
     if (paragraphIndex >= str.length)
         return nil;
-    NSRange range ;
+    NSRange range =  NSMakeRange(0, 0) ;
     NSInteger i;
     for (i = paragraphIndex; i < str.length; i++){
         unichar uc = [str characterAtIndex:i];
