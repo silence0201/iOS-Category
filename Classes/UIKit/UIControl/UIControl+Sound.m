@@ -15,7 +15,10 @@ static char const * const SoundsKey = "SoundsKey";
 
 - (void)setSoundNamed:(NSString *)name forControlEvent:(UIControlEvents)controlEvent{
     // Remove the old UI sound.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wformat"
     NSString *oldSoundKey = [NSString stringWithFormat:@"%lu", controlEvent];
+#pragma clang diagnostic pop
     AVAudioPlayer *oldSound = [self sounds][oldSoundKey];
     [self removeTarget:oldSound action:@selector(play) forControlEvents:controlEvent];
     
@@ -28,7 +31,10 @@ static char const * const SoundsKey = "SoundsKey";
     NSError *error = nil;
     
     AVAudioPlayer *tapSound = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:&error];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wformat"
     NSString *controlEventKey = [NSString stringWithFormat:@"%lu", controlEvent];
+#pragma clang diagnostic pop
     NSMutableDictionary *sounds = [self sounds];
     [sounds setObject:tapSound forKey:controlEventKey];
     [tapSound prepareToPlay];
