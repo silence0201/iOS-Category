@@ -26,6 +26,7 @@
 #import "UIViewController+MJPopupViewController.h"
 #import "UIViewController+Alert.h"
 #import "UIViewController+Segues.h"
+#import "UIViewController+Visible.h"
 
 #import "UIScrollView+Amplification.h"
 #import "UIScrollView+SimpleScroll.h"
