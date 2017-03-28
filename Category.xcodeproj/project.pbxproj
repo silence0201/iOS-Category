@@ -37,6 +37,8 @@
 		E83465E61E8AB98000F1F757 /* UINavigationItem+Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E51E8AB98000F1F757 /* UINavigationItem+Lock.m */; };
 		E83465E91E8ABA2600F1F757 /* UINavigationItem+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */; };
 		E83465EC1E8ABA8B00F1F757 /* UINavigationItem+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465EB1E8ABA8B00F1F757 /* UINavigationItem+Margin.m */; };
+		E83465F01E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465EF1E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m */; };
+		E83465F31E8ABBDB00F1F757 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465F21E8ABBDB00F1F757 /* UIButton+Badge.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -307,6 +309,10 @@
 		E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Loading.m"; sourceTree = "<group>"; };
 		E83465EA1E8ABA8B00F1F757 /* UINavigationItem+Margin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Margin.h"; sourceTree = "<group>"; };
 		E83465EB1E8ABA8B00F1F757 /* UINavigationItem+Margin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Margin.m"; sourceTree = "<group>"; };
+		E83465EE1E8ABB4A00F1F757 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		E83465EF1E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		E83465F11E8ABBDB00F1F757 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		E83465F21E8ABBDB00F1F757 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -797,6 +803,15 @@
 				E83465E51E8AB98000F1F757 /* UINavigationItem+Lock.m */,
 			);
 			path = UINavigationItem;
+			sourceTree = "<group>";
+		};
+		E83465ED1E8ABB2A00F1F757 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				E83465EE1E8ABB4A00F1F757 /* UIBarButtonItem+Badge.h */,
+				E83465EF1E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m */,
+			);
+			path = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
 		E854CE471E7D56F000AD9F13 /* NSIndexPath */ = {
@@ -1390,6 +1405,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E9457B1E210B6D00EE98B0 /* SIUIKit.h */,
+				E83465ED1E8ABB2A00F1F757 /* UIBarButtonItem */,
 				E83465E31E8AB94D00F1F757 /* UINavigationItem */,
 				E83465CA1E8AAE4B00F1F757 /* UIImageView */,
 				E83465A51E8AA3B200F1F757 /* UIWebView */,
@@ -1453,6 +1469,8 @@
 				E8E945921E210B6D00EE98B0 /* UIButton+Submitting.m */,
 				E854CE741E7D67FA00AD9F13 /* UIButton+ImagePosition.h */,
 				E854CE751E7D67FA00AD9F13 /* UIButton+ImagePosition.m */,
+				E83465F11E8ABBDB00F1F757 /* UIButton+Badge.h */,
+				E83465F21E8ABBDB00F1F757 /* UIButton+Badge.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -1987,6 +2005,7 @@
 				E8E8A4D91E56A41F00E64E54 /* EXTSafeCategory.m in Sources */,
 				E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */,
 				E8E946201E210B6D00EE98B0 /* NSObject+QuickCopy.m in Sources */,
+				E83465F01E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m in Sources */,
 				E8E9462D1E210B6D00EE98B0 /* NSString+Size.m in Sources */,
 				E8E9462C1E210B6D00EE98B0 /* NSString+Regex.m in Sources */,
 				E8E9465D1E210B6D00EE98B0 /* UIView+BlockGesture.m in Sources */,
@@ -1998,6 +2017,7 @@
 				E8E946451E210B6D00EE98B0 /* UIFont+Traits.m in Sources */,
 				E8E946301E210B6D00EE98B0 /* NSURL+QueryDictionary.m in Sources */,
 				E8E946331E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m in Sources */,
+				E83465F31E8ABBDB00F1F757 /* UIButton+Badge.m in Sources */,
 				E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */,
 				E8E9460B1E210B6D00EE98B0 /* NSDictionary+Block.m in Sources */,
 				E8E8A55C1E59508500E64E54 /* NSArray+Contains.m in Sources */,
