@@ -103,4 +103,7 @@
 
 #import "UIWindow+Hierarchy.h"
 
+#import "UIBezierPath+Length.h"
+#import "UIBezierPath+BasicShapes.h"
+
 #endif

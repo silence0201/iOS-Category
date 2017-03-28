@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
+		E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465861E8A998300F1F757 /* UIBezierPath+Length.m */; };
+		E834658A1E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -221,6 +223,10 @@
 /* Begin PBXFileReference section */
 		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
 		E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Hash.m"; sourceTree = "<group>"; };
+		E83465851E8A998300F1F757 /* UIBezierPath+Length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Length.h"; sourceTree = "<group>"; };
+		E83465861E8A998300F1F757 /* UIBezierPath+Length.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Length.m"; sourceTree = "<group>"; };
+		E83465881E8A9A5600F1F757 /* UIBezierPath+BasicShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+BasicShapes.h"; sourceTree = "<group>"; };
+		E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+BasicShapes.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -637,6 +643,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E83465841E8A996700F1F757 /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				E83465851E8A998300F1F757 /* UIBezierPath+Length.h */,
+				E83465861E8A998300F1F757 /* UIBezierPath+Length.m */,
+				E83465881E8A9A5600F1F757 /* UIBezierPath+BasicShapes.h */,
+				E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
 		E854CE471E7D56F000AD9F13 /* NSIndexPath */ = {
 			isa = PBXGroup;
 			children = (
@@ -1230,6 +1247,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E9457B1E210B6D00EE98B0 /* SIUIKit.h */,
+				E83465841E8A996700F1F757 /* UIBezierPath */,
 				E8B122F61E8175EC00E9D69C /* UIResponder */,
 				E854CE771E7D68E500AD9F13 /* UITextField */,
 				E854CE701E7D672000AD9F13 /* UIWindow */,
@@ -1656,6 +1674,7 @@
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
 				E854CE401E7D53A600AD9F13 /* NSData+DataCache.m in Sources */,
 				E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */,
+				E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */,
 				E8E946161E210B6D00EE98B0 /* NSNumber+Display.m in Sources */,
 				E8E946621E210B6D00EE98B0 /* UIView+Frame.m in Sources */,
 				E8E9465E1E210B6D00EE98B0 /* UIView+Border.m in Sources */,
@@ -1741,6 +1760,7 @@
 				E8E9465B1E210B6D00EE98B0 /* UITableView+Update.m in Sources */,
 				E8E946441E210B6D00EE98B0 /* UIFont+Make.m in Sources */,
 				E8E946401E210B6D00EE98B0 /* UIDevice+Device.m in Sources */,
+				E834658A1E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m in Sources */,
 				E854CE311E7D4EFB00AD9F13 /* NSString+Trims.m in Sources */,
 				E8E946021E210B6D00EE98B0 /* NSArray+SafeAccess.m in Sources */,
 				E854CE6C1E7D642A00AD9F13 /* UIControl+Sound.m in Sources */,
