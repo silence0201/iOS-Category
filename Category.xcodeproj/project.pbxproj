@@ -31,6 +31,7 @@
 		E83465D31E8AB07C00F1F757 /* UIView+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D21E8AB07C00F1F757 /* UIView+NIB.m */; };
 		E83465D61E8AB16C00F1F757 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D51E8AB16C00F1F757 /* UIView+Shake.m */; };
 		E83465D91E8AB20000F1F757 /* UIView+draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D81E8AB20000F1F757 /* UIView+draggable.m */; };
+		E83465DC1E8AB3E800F1F757 /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465DB1E8AB3E800F1F757 /* UIView+Recursion.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -289,6 +290,8 @@
 		E83465D51E8AB16C00F1F757 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
 		E83465D71E8AB20000F1F757 /* UIView+draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+draggable.h"; sourceTree = "<group>"; };
 		E83465D81E8AB20000F1F757 /* UIView+draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+draggable.m"; sourceTree = "<group>"; };
+		E83465DA1E8AB3E800F1F757 /* UIView+Recursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Recursion.h"; sourceTree = "<group>"; };
+		E83465DB1E8AB3E800F1F757 /* UIView+Recursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Recursion.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -1632,6 +1635,8 @@
 				E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */,
 				E83465D11E8AB07C00F1F757 /* UIView+NIB.h */,
 				E83465D21E8AB07C00F1F757 /* UIView+NIB.m */,
+				E83465DA1E8AB3E800F1F757 /* UIView+Recursion.h */,
+				E83465DB1E8AB3E800F1F757 /* UIView+Recursion.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1810,6 +1815,7 @@
 				E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */,
 				E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */,
 				E8E946161E210B6D00EE98B0 /* NSNumber+Display.m in Sources */,
+				E83465DC1E8AB3E800F1F757 /* UIView+Recursion.m in Sources */,
 				E8E946621E210B6D00EE98B0 /* UIView+Frame.m in Sources */,
 				E8E9465E1E210B6D00EE98B0 /* UIView+Border.m in Sources */,
 				E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */,

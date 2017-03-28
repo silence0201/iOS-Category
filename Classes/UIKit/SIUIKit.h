@@ -68,6 +68,7 @@
 #import "UIView+NIB.h"
 #import "UIView+Shake.h"
 #import "UIView+draggable.h"
+#import "UIView+Recursion.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"
