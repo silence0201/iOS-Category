@@ -18,6 +18,8 @@
 #import "UINavigationController+Stack.h"
 #import "UINavigationController+Hide.h"
 
+#import "UINavigationItem+Lock.h"
+
 #import "UITableView+Update.h"
 #import "UITableView+CellStyle.h"
 #import "UITableView+iOS7Style.h"
