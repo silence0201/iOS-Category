@@ -113,4 +113,7 @@
 
 #import "UITableViewCell+NIB.h"
 
+#import "UIWebView+MetaParser.h"
+#import "UIWebView+SwipeGesture.h"
+
 #endif
