@@ -1,21 +1,21 @@
 //
-//  UITextField+PlaceHolder.m
+//  UITextView+PlaceHolder.m
 //  Category
 //
-//  Created by 杨晴贺 on 2017/3/21.
+//  Created by 杨晴贺 on 2017/3/28.
 //  Copyright © 2017年 silence. All rights reserved.
 //
 
-#import "UITextField+PlaceHolder.h"
+#import "UITextView+PlaceHolder.h"
 #import <objc/runtime.h>
 
-@implementation UITextField (PlaceHolder)
-
+static const char *si_placeHolderTextView = "si_placeHolderTextView";
+@implementation UITextView (PlaceHolder)
 - (UITextView *)placeHolderTextView {
-    return objc_getAssociatedObject(self, @selector(placeHolderTextView));
+    return objc_getAssociatedObject(self, si_placeHolderTextView);
 }
 - (void)setPlaceHolderTextView:(UITextView *)placeHolderTextView {
-    objc_setAssociatedObject(self, @selector(placeHolderTextView), placeHolderTextView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, si_placeHolderTextView, placeHolderTextView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 
@@ -50,6 +50,7 @@
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
 
 
 @end
