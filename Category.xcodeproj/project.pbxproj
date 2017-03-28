@@ -22,6 +22,7 @@
 		E83465B41E8AA61400F1F757 /* UIWebView+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465B31E8AA61400F1F757 /* UIWebView+Load.m */; };
 		E83465B71E8AA6AB00F1F757 /* UIWebView+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465B61E8AA6AB00F1F757 /* UIWebView+JavaScript.m */; };
 		E83465BA1E8AA7CC00F1F757 /* UIWebView+WebStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465B91E8AA7CC00F1F757 /* UIWebView+WebStorage.m */; };
+		E83465BD1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465BC1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -262,6 +263,8 @@
 		E83465B61E8AA6AB00F1F757 /* UIWebView+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JavaScript.m"; sourceTree = "<group>"; };
 		E83465B81E8AA7CC00F1F757 /* UIWebView+WebStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+WebStorage.h"; sourceTree = "<group>"; };
 		E83465B91E8AA7CC00F1F757 /* UIWebView+WebStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+WebStorage.m"; sourceTree = "<group>"; };
+		E83465BB1E8AA9E800F1F757 /* UILabel+AutomaticWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutomaticWriting.h"; sourceTree = "<group>"; };
+		E83465BC1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutomaticWriting.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -1487,6 +1490,8 @@
 		E8E945C51E210B6D00EE98B0 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				E83465BB1E8AA9E800F1F757 /* UILabel+AutomaticWriting.h */,
+				E83465BC1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m */,
 				E8E945C61E210B6D00EE98B0 /* UILabel+ContenSize.h */,
 				E8E945C71E210B6D00EE98B0 /* UILabel+ContenSize.m */,
 				E8E945C81E210B6D00EE98B0 /* UILabel+Space.h */,
@@ -1747,6 +1752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8E8A4D61E56A3EB00E64E54 /* EXTScope.m in Sources */,
+				E83465BD1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m in Sources */,
 				E8E946651E210B6D00EE98B0 /* UIView+Toast.m in Sources */,
 				E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */,
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,

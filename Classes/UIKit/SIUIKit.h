@@ -50,6 +50,7 @@
 
 #import "UILabel+ContenSize.h"
 #import "UILabel+Space.h"
+#import "UILabel+AutomaticWriting.h"
 
 #import "UIScreen+Info.h"
 
