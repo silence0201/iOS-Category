@@ -118,5 +118,6 @@
 #import "UIWebView+Style.h"
 #import "UIWebView+Load.h"
 #import "UIWebView+JavaScript.h"
+#import "UIWebView+WebStorage.h"
 
 #endif
