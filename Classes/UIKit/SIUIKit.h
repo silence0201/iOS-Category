@@ -19,6 +19,7 @@
 #import "UINavigationController+Hide.h"
 
 #import "UINavigationItem+Lock.h"
+#import "UINavigationItem+Loading.h"
 
 #import "UITableView+Update.h"
 #import "UITableView+CellStyle.h"

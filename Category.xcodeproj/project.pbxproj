@@ -35,6 +35,7 @@
 		E83465DF1E8AB5B200F1F757 /* UIViewController+Visible.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465DE1E8AB5B200F1F757 /* UIViewController+Visible.m */; };
 		E83465E21E8AB64200F1F757 /* UIViewController+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */; };
 		E83465E61E8AB98000F1F757 /* UINavigationItem+Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E51E8AB98000F1F757 /* UINavigationItem+Lock.m */; };
+		E83465E91E8ABA2600F1F757 /* UINavigationItem+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -301,6 +302,8 @@
 		E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RecursiveDescription.m"; sourceTree = "<group>"; };
 		E83465E41E8AB98000F1F757 /* UINavigationItem+Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Lock.h"; sourceTree = "<group>"; };
 		E83465E51E8AB98000F1F757 /* UINavigationItem+Lock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Lock.m"; sourceTree = "<group>"; };
+		E83465E71E8ABA2600F1F757 /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Loading.h"; sourceTree = "<group>"; };
+		E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Loading.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -783,6 +786,8 @@
 		E83465E31E8AB94D00F1F757 /* UINavigationItem */ = {
 			isa = PBXGroup;
 			children = (
+				E83465E71E8ABA2600F1F757 /* UINavigationItem+Loading.h */,
+				E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */,
 				E83465E41E8AB98000F1F757 /* UINavigationItem+Lock.h */,
 				E83465E51E8AB98000F1F757 /* UINavigationItem+Lock.m */,
 			);
@@ -1870,6 +1875,7 @@
 				E8E946031E210B6D00EE98B0 /* NSBundle+AppInfo.m in Sources */,
 				E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */,
 				E8E946461E210B6D00EE98B0 /* UIGestureRecognizer+ALActionBlocks.m in Sources */,
+				E83465E91E8ABA2600F1F757 /* UINavigationItem+Loading.m in Sources */,
 				E83465D91E8AB20000F1F757 /* UIView+draggable.m in Sources */,
 				E83465A41E8AA1FA00F1F757 /* UITableViewCell+NIB.m in Sources */,
 				E83465AB1E8AA42800F1F757 /* UIWebView+SwipeGesture.m in Sources */,
