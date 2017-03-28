@@ -82,6 +82,7 @@
 #import "UIImage+FileName.h"
 
 #import "UIImageView+Reflect.h"
+#import "UIImageView+GeometryConversion.h"
 
 #import "UIFont+Traits.h"
 #import "UIFont+Make.h"
