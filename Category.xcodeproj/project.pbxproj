@@ -11,7 +11,6 @@
 		E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465861E8A998300F1F757 /* UIBezierPath+Length.m */; };
 		E834658A1E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */; };
 		E834658D1E8A9B2500F1F757 /* UIBezierPath+SVGString.m in Sources */ = {isa = PBXBuildFile; fileRef = E834658C1E8A9B2500F1F757 /* UIBezierPath+SVGString.m */; };
-		E83465961E8A9D3600F1F757 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465951E8A9D3600F1F757 /* UITextField+Shake.m */; };
 		E834659A1E8A9E6200F1F757 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465991E8A9E6200F1F757 /* UITextView+PlaceHolder.m */; };
 		E834659D1E8A9FB100F1F757 /* UITextView+InputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = E834659C1E8A9FB100F1F757 /* UITextView+InputLimit.m */; };
 		E83465A01E8AA08D00F1F757 /* UITextView+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = E834659F1E8AA08D00F1F757 /* UITextView+Select.m */; };
@@ -31,6 +30,7 @@
 		E83465D01E8AAEDB00F1F757 /* UIImageView+GeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465CF1E8AAEDB00F1F757 /* UIImageView+GeometryConversion.m */; };
 		E83465D31E8AB07C00F1F757 /* UIView+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D21E8AB07C00F1F757 /* UIView+NIB.m */; };
 		E83465D61E8AB16C00F1F757 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D51E8AB16C00F1F757 /* UIView+Shake.m */; };
+		E83465D91E8AB20000F1F757 /* UIView+draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D81E8AB20000F1F757 /* UIView+draggable.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -249,8 +249,6 @@
 		E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+BasicShapes.m"; sourceTree = "<group>"; };
 		E834658B1E8A9B2500F1F757 /* UIBezierPath+SVGString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SVGString.h"; sourceTree = "<group>"; };
 		E834658C1E8A9B2500F1F757 /* UIBezierPath+SVGString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+SVGString.m"; sourceTree = "<group>"; };
-		E83465941E8A9D3600F1F757 /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
-		E83465951E8A9D3600F1F757 /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 		E83465981E8A9E6200F1F757 /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
 		E83465991E8A9E6200F1F757 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		E834659B1E8A9FB100F1F757 /* UITextView+InputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+InputLimit.h"; sourceTree = "<group>"; };
@@ -289,6 +287,8 @@
 		E83465D21E8AB07C00F1F757 /* UIView+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NIB.m"; sourceTree = "<group>"; };
 		E83465D41E8AB16C00F1F757 /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
 		E83465D51E8AB16C00F1F757 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
+		E83465D71E8AB20000F1F757 /* UIView+draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+draggable.h"; sourceTree = "<group>"; };
+		E83465D81E8AB20000F1F757 /* UIView+draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+draggable.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -818,8 +818,6 @@
 		E854CE771E7D68E500AD9F13 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
-				E83465941E8A9D3600F1F757 /* UITextField+Shake.h */,
-				E83465951E8A9D3600F1F757 /* UITextField+Shake.m */,
 				E854CE781E7D692900AD9F13 /* UITextField+Select.h */,
 				E854CE791E7D692900AD9F13 /* UITextField+Select.m */,
 				E854CE7B1E7D699500AD9F13 /* UITextField+InputLimit.h */,
@@ -1608,6 +1606,8 @@
 		E8E945E11E210B6D00EE98B0 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				E83465D71E8AB20000F1F757 /* UIView+draggable.h */,
+				E83465D81E8AB20000F1F757 /* UIView+draggable.m */,
 				E83465D41E8AB16C00F1F757 /* UIView+Shake.h */,
 				E83465D51E8AB16C00F1F757 /* UIView+Shake.m */,
 				E8E945E21E210B6D00EE98B0 /* UIView+Animation.h */,
@@ -1841,6 +1841,7 @@
 				E8E946031E210B6D00EE98B0 /* NSBundle+AppInfo.m in Sources */,
 				E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */,
 				E8E946461E210B6D00EE98B0 /* UIGestureRecognizer+ALActionBlocks.m in Sources */,
+				E83465D91E8AB20000F1F757 /* UIView+draggable.m in Sources */,
 				E83465A41E8AA1FA00F1F757 /* UITableViewCell+NIB.m in Sources */,
 				E83465AB1E8AA42800F1F757 /* UIWebView+SwipeGesture.m in Sources */,
 				E8E946291E210B6D00EE98B0 /* NSString+Path.m in Sources */,
@@ -1953,7 +1954,6 @@
 				E8E8A4CC1E56A33500E64E54 /* NSMethodSignature+EXT.m in Sources */,
 				E8E946101E210B6D00EE98B0 /* NSDictionary+URL.m in Sources */,
 				E8E946451E210B6D00EE98B0 /* UIFont+Traits.m in Sources */,
-				E83465961E8A9D3600F1F757 /* UITextField+Shake.m in Sources */,
 				E8E946301E210B6D00EE98B0 /* NSURL+QueryDictionary.m in Sources */,
 				E8E946331E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m in Sources */,
 				E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */,

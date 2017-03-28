@@ -67,6 +67,7 @@
 #import "UIView+ViewController.h"
 #import "UIView+NIB.h"
 #import "UIView+Shake.h"
+#import "UIView+draggable.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"
@@ -104,7 +105,6 @@
 
 #import "UITextField+Select.h"
 #import "UITextField+InputLimit.h"
-#import "UITextField+Shake.h"
 
 #import "UITextView+PlaceHolder.h"
 #import "UITextView+InputLimit.h"
