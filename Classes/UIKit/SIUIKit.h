@@ -117,5 +117,6 @@
 #import "UIWebView+SwipeGesture.h"
 #import "UIWebView+Style.h"
 #import "UIWebView+Load.h"
+#import "UIWebView+JavaScript.h"
 
 #endif

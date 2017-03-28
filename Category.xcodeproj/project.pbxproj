@@ -20,6 +20,7 @@
 		E83465AB1E8AA42800F1F757 /* UIWebView+SwipeGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465AA1E8AA42800F1F757 /* UIWebView+SwipeGesture.m */; };
 		E83465B11E8AA56A00F1F757 /* UIWebView+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465B01E8AA56A00F1F757 /* UIWebView+Style.m */; };
 		E83465B41E8AA61400F1F757 /* UIWebView+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465B31E8AA61400F1F757 /* UIWebView+Load.m */; };
+		E83465B71E8AA6AB00F1F757 /* UIWebView+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465B61E8AA6AB00F1F757 /* UIWebView+JavaScript.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -256,6 +257,8 @@
 		E83465B01E8AA56A00F1F757 /* UIWebView+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Style.m"; sourceTree = "<group>"; };
 		E83465B21E8AA61400F1F757 /* UIWebView+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Load.h"; sourceTree = "<group>"; };
 		E83465B31E8AA61400F1F757 /* UIWebView+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Load.m"; sourceTree = "<group>"; };
+		E83465B51E8AA6AB00F1F757 /* UIWebView+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JavaScript.h"; sourceTree = "<group>"; };
+		E83465B61E8AA6AB00F1F757 /* UIWebView+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JavaScript.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -716,6 +719,8 @@
 				E83465B01E8AA56A00F1F757 /* UIWebView+Style.m */,
 				E83465B21E8AA61400F1F757 /* UIWebView+Load.h */,
 				E83465B31E8AA61400F1F757 /* UIWebView+Load.m */,
+				E83465B51E8AA6AB00F1F757 /* UIWebView+JavaScript.h */,
+				E83465B61E8AA6AB00F1F757 /* UIWebView+JavaScript.m */,
 			);
 			path = UIWebView;
 			sourceTree = "<group>";
@@ -1877,6 +1882,7 @@
 				E8E9462D1E210B6D00EE98B0 /* NSString+Size.m in Sources */,
 				E8E9462C1E210B6D00EE98B0 /* NSString+Regex.m in Sources */,
 				E8E9465D1E210B6D00EE98B0 /* UIView+BlockGesture.m in Sources */,
+				E83465B71E8AA6AB00F1F757 /* UIWebView+JavaScript.m in Sources */,
 				E8E946311E210B6D00EE98B0 /* UIApplication+AppInfo.m in Sources */,
 				E8E946131E210B6D00EE98B0 /* LogUnicode.m in Sources */,
 				E8E8A4CC1E56A33500E64E54 /* NSMethodSignature+EXT.m in Sources */,
