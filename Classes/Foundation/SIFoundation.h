@@ -50,6 +50,7 @@
 #import "NSData+Gzip.h"
 #import "NSData+APNSToken.h"
 #import "NSData+DataCache.h"
+#import "NSData+zlib.h"
 
 #import "NSObject+Property.h"
 #import "NSObject+Block.h"
