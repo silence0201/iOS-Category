@@ -81,6 +81,8 @@
 #import "UIImage+BetterFace.h"
 #import "UIImage+FileName.h"
 
+#import "UIImageView+Reflect.h"
+
 #import "UIFont+Traits.h"
 #import "UIFont+Make.h"
 #import "UIFont+Load.h"
