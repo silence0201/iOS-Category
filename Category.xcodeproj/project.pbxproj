@@ -30,6 +30,7 @@
 		E83465CD1E8AAE5D00F1F757 /* UIImageView+Reflect.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465CC1E8AAE5D00F1F757 /* UIImageView+Reflect.m */; };
 		E83465D01E8AAEDB00F1F757 /* UIImageView+GeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465CF1E8AAEDB00F1F757 /* UIImageView+GeometryConversion.m */; };
 		E83465D31E8AB07C00F1F757 /* UIView+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D21E8AB07C00F1F757 /* UIView+NIB.m */; };
+		E83465D61E8AB16C00F1F757 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D51E8AB16C00F1F757 /* UIView+Shake.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -286,6 +287,8 @@
 		E83465CF1E8AAEDB00F1F757 /* UIImageView+GeometryConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GeometryConversion.m"; sourceTree = "<group>"; };
 		E83465D11E8AB07C00F1F757 /* UIView+NIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NIB.h"; sourceTree = "<group>"; };
 		E83465D21E8AB07C00F1F757 /* UIView+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NIB.m"; sourceTree = "<group>"; };
+		E83465D41E8AB16C00F1F757 /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		E83465D51E8AB16C00F1F757 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -1605,6 +1608,8 @@
 		E8E945E11E210B6D00EE98B0 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				E83465D41E8AB16C00F1F757 /* UIView+Shake.h */,
+				E83465D51E8AB16C00F1F757 /* UIView+Shake.m */,
 				E8E945E21E210B6D00EE98B0 /* UIView+Animation.h */,
 				E8E945E31E210B6D00EE98B0 /* UIView+Animation.m */,
 				E8E945E41E210B6D00EE98B0 /* UIView+BlockGesture.h */,
@@ -1959,6 +1964,7 @@
 				E83465C31E8AABCB00F1F757 /* UIImage+Alpha.m in Sources */,
 				E8E946571E210B6D00EE98B0 /* UIScrollView+Amplification.m in Sources */,
 				E854CE531E7D5B4800AD9F13 /* NSFileHandle+ReadLine.m in Sources */,
+				E83465D61E8AB16C00F1F757 /* UIView+Shake.m in Sources */,
 				E8E9460C1E210B6D00EE98B0 /* NSDictionary+JSONEncode.m in Sources */,
 				E8E2836B1E781B6F006815EA /* NSString+AttributedBuilder.m in Sources */,
 				E8E946491E210B6D00EE98B0 /* UIImage+Compress.m in Sources */,

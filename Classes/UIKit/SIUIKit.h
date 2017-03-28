@@ -66,6 +66,7 @@
 #import "UIView+Radius.h"
 #import "UIView+ViewController.h"
 #import "UIView+NIB.h"
+#import "UIView+Shake.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"
