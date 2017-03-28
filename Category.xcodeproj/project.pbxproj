@@ -11,6 +11,7 @@
 		E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465861E8A998300F1F757 /* UIBezierPath+Length.m */; };
 		E834658A1E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */; };
 		E834658D1E8A9B2500F1F757 /* UIBezierPath+SVGString.m in Sources */ = {isa = PBXBuildFile; fileRef = E834658C1E8A9B2500F1F757 /* UIBezierPath+SVGString.m */; };
+		E83465961E8A9D3600F1F757 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465951E8A9D3600F1F757 /* UITextField+Shake.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -230,6 +231,8 @@
 		E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+BasicShapes.m"; sourceTree = "<group>"; };
 		E834658B1E8A9B2500F1F757 /* UIBezierPath+SVGString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SVGString.h"; sourceTree = "<group>"; };
 		E834658C1E8A9B2500F1F757 /* UIBezierPath+SVGString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+SVGString.m"; sourceTree = "<group>"; };
+		E83465941E8A9D3600F1F757 /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
+		E83465951E8A9D3600F1F757 /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -709,6 +712,8 @@
 		E854CE771E7D68E500AD9F13 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
+				E83465941E8A9D3600F1F757 /* UITextField+Shake.h */,
+				E83465951E8A9D3600F1F757 /* UITextField+Shake.m */,
 				E854CE781E7D692900AD9F13 /* UITextField+Select.h */,
 				E854CE791E7D692900AD9F13 /* UITextField+Select.m */,
 				E854CE7B1E7D699500AD9F13 /* UITextField+InputLimit.h */,
@@ -1812,6 +1817,7 @@
 				E8E8A4CC1E56A33500E64E54 /* NSMethodSignature+EXT.m in Sources */,
 				E8E946101E210B6D00EE98B0 /* NSDictionary+URL.m in Sources */,
 				E8E946451E210B6D00EE98B0 /* UIFont+Traits.m in Sources */,
+				E83465961E8A9D3600F1F757 /* UITextField+Shake.m in Sources */,
 				E8E946301E210B6D00EE98B0 /* NSURL+QueryDictionary.m in Sources */,
 				E8E946331E210B6D00EE98B0 /* UIApplication+KeyboardFrame.m in Sources */,
 				E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */,

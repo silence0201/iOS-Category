@@ -95,6 +95,7 @@
 #import "UITextField+PlaceHolder.h"
 #import "UITextField+Select.h"
 #import "UITextField+InputLimit.h"
+#import "UITextField+Shake.h"
 
 #import "UIDevice+Device.h"
 #import "UIDevice+NetWork.h"
