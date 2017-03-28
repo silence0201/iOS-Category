@@ -98,6 +98,7 @@
 
 #import "UITextView+PlaceHolder.h"
 #import "UITextView+InputLimit.h"
+#import "UITextView+Select.h"
 
 #import "UIDevice+Device.h"
 #import "UIDevice+NetWork.h"
