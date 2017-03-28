@@ -33,6 +33,7 @@
 		E83465D91E8AB20000F1F757 /* UIView+draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465D81E8AB20000F1F757 /* UIView+draggable.m */; };
 		E83465DC1E8AB3E800F1F757 /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465DB1E8AB3E800F1F757 /* UIView+Recursion.m */; };
 		E83465DF1E8AB5B200F1F757 /* UIViewController+Visible.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465DE1E8AB5B200F1F757 /* UIViewController+Visible.m */; };
+		E83465E21E8AB64200F1F757 /* UIViewController+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -295,6 +296,8 @@
 		E83465DB1E8AB3E800F1F757 /* UIView+Recursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Recursion.m"; sourceTree = "<group>"; };
 		E83465DD1E8AB5B200F1F757 /* UIViewController+Visible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Visible.h"; sourceTree = "<group>"; };
 		E83465DE1E8AB5B200F1F757 /* UIViewController+Visible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Visible.m"; sourceTree = "<group>"; };
+		E83465E01E8AB64200F1F757 /* UIViewController+RecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RecursiveDescription.h"; sourceTree = "<group>"; };
+		E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RecursiveDescription.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -1657,6 +1660,8 @@
 				E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */,
 				E83465DD1E8AB5B200F1F757 /* UIViewController+Visible.h */,
 				E83465DE1E8AB5B200F1F757 /* UIViewController+Visible.m */,
+				E83465E01E8AB64200F1F757 /* UIViewController+RecursiveDescription.h */,
+				E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1987,6 +1992,7 @@
 				E8E946641E210B6D00EE98B0 /* UIView+Screenshot.m in Sources */,
 				E8E946041E210B6D00EE98B0 /* NSData+Cache.m in Sources */,
 				E8E946211E210B6D00EE98B0 /* NSObject+Reflect.m in Sources */,
+				E83465E21E8AB64200F1F757 /* UIViewController+RecursiveDescription.m in Sources */,
 				E8E945FD1E210B6D00EE98B0 /* NSKeyedArchiver+Key.m in Sources */,
 				E8E946551E210B6D00EE98B0 /* UINavigationController+Transitions.m in Sources */,
 				E8E946681E210B6D00EE98B0 /* UIViewController+TopBarMessage.m in Sources */,

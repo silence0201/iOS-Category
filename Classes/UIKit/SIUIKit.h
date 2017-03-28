@@ -27,6 +27,7 @@
 #import "UIViewController+Alert.h"
 #import "UIViewController+Segues.h"
 #import "UIViewController+Visible.h"
+#import "UIViewController+RecursiveDescription.h"
 
 #import "UIScrollView+Amplification.h"
 #import "UIScrollView+SimpleScroll.h"
