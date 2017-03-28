@@ -96,6 +96,7 @@
 
 #import "UIImageView+Reflect.h"
 #import "UIImageView+GeometryConversion.h"
+#import "UIImageView+Letters.h"
 
 #import "UIFont+Traits.h"
 #import "UIFont+Make.h"
