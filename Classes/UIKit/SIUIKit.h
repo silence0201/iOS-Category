@@ -20,6 +20,7 @@
 
 #import "UINavigationItem+Lock.h"
 #import "UINavigationItem+Loading.h"
+#import "UINavigationItem+Margin.h"
 
 #import "UITableView+Update.h"
 #import "UITableView+CellStyle.h"

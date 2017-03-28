@@ -36,6 +36,7 @@
 		E83465E21E8AB64200F1F757 /* UIViewController+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */; };
 		E83465E61E8AB98000F1F757 /* UINavigationItem+Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E51E8AB98000F1F757 /* UINavigationItem+Lock.m */; };
 		E83465E91E8ABA2600F1F757 /* UINavigationItem+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */; };
+		E83465EC1E8ABA8B00F1F757 /* UINavigationItem+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465EB1E8ABA8B00F1F757 /* UINavigationItem+Margin.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -304,6 +305,8 @@
 		E83465E51E8AB98000F1F757 /* UINavigationItem+Lock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Lock.m"; sourceTree = "<group>"; };
 		E83465E71E8ABA2600F1F757 /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Loading.h"; sourceTree = "<group>"; };
 		E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Loading.m"; sourceTree = "<group>"; };
+		E83465EA1E8ABA8B00F1F757 /* UINavigationItem+Margin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Margin.h"; sourceTree = "<group>"; };
+		E83465EB1E8ABA8B00F1F757 /* UINavigationItem+Margin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Margin.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -786,6 +789,8 @@
 		E83465E31E8AB94D00F1F757 /* UINavigationItem */ = {
 			isa = PBXGroup;
 			children = (
+				E83465EA1E8ABA8B00F1F757 /* UINavigationItem+Margin.h */,
+				E83465EB1E8ABA8B00F1F757 /* UINavigationItem+Margin.m */,
 				E83465E71E8ABA2600F1F757 /* UINavigationItem+Loading.h */,
 				E83465E81E8ABA2600F1F757 /* UINavigationItem+Loading.m */,
 				E83465E41E8AB98000F1F757 /* UINavigationItem+Lock.h */,
@@ -1962,6 +1967,7 @@
 				E8E946241E210B6D00EE98B0 /* NSString+Contains.m in Sources */,
 				E8E945FF1E210B6D00EE98B0 /* NSArray+Block.m in Sources */,
 				E8E9461A1E210B6D00EE98B0 /* NSObject+Block.m in Sources */,
+				E83465EC1E8ABA8B00F1F757 /* UINavigationItem+Margin.m in Sources */,
 				E8E946221E210B6D00EE98B0 /* NSObject+Runtime.m in Sources */,
 				E854CE4A1E7D570500AD9F13 /* NSIndexPath+Offset.m in Sources */,
 				E8E9464E1E210B6D00EE98B0 /* UIImage+Merge.m in Sources */,
