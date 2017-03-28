@@ -1737,6 +1737,7 @@
 		E8FF5EAD1E5B241100859425 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				E8FB93851E6080C100B77407 /* SIManager.h */,
 				E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */,
 				E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */,
 				E8FF5EAE1E5B244F00859425 /* SIAuthorizationManager.h */,
@@ -1753,7 +1754,6 @@
 				E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */,
 				E8FB93821E607CE700B77407 /* SIAppVersionManager.h */,
 				E8FB93831E607CE700B77407 /* SIAppVersionManager.m */,
-				E8FB93851E6080C100B77407 /* SIManager.h */,
 				E875049F1E618D870097F41E /* SIDownloadManager.h */,
 				E87504A01E618D870097F41E /* SIDownloadManager.m */,
 			);
