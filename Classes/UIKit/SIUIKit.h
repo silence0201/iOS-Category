@@ -115,5 +115,6 @@
 
 #import "UIWebView+MetaParser.h"
 #import "UIWebView+SwipeGesture.h"
+#import "UIWebView+Style.h"
 
 #endif
