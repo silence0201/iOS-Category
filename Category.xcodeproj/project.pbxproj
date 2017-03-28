@@ -24,6 +24,7 @@
 		E83465BA1E8AA7CC00F1F757 /* UIWebView+WebStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465B91E8AA7CC00F1F757 /* UIWebView+WebStorage.m */; };
 		E83465BD1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465BC1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m */; };
 		E83465C01E8AAA7200F1F757 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465BF1E8AAA7200F1F757 /* UILabel+AutoSize.m */; };
+		E83465C31E8AABCB00F1F757 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465C21E8AABCB00F1F757 /* UIImage+Alpha.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -268,6 +269,8 @@
 		E83465BC1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutomaticWriting.m"; sourceTree = "<group>"; };
 		E83465BE1E8AAA7200F1F757 /* UILabel+AutoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoSize.h"; sourceTree = "<group>"; };
 		E83465BF1E8AAA7200F1F757 /* UILabel+AutoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoSize.m"; sourceTree = "<group>"; };
+		E83465C11E8AABCB00F1F757 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		E83465C21E8AABCB00F1F757 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -1486,6 +1489,8 @@
 				E8E945C41E210B6D00EE98B0 /* UIImage+Rotate.m */,
 				E8E2836C1E782C53006815EA /* UIImage+Video.h */,
 				E8E2836D1E782C53006815EA /* UIImage+Video.m */,
+				E83465C11E8AABCB00F1F757 /* UIImage+Alpha.h */,
+				E83465C21E8AABCB00F1F757 /* UIImage+Alpha.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1914,6 +1919,7 @@
 				E8E8A55C1E59508500E64E54 /* NSArray+Contains.m in Sources */,
 				E8E9463F1E210B6D00EE98B0 /* UIDevice+CPU.m in Sources */,
 				E8E9464A1E210B6D00EE98B0 /* UIImage+Effect.m in Sources */,
+				E83465C31E8AABCB00F1F757 /* UIImage+Alpha.m in Sources */,
 				E8E946571E210B6D00EE98B0 /* UIScrollView+Amplification.m in Sources */,
 				E854CE531E7D5B4800AD9F13 /* NSFileHandle+ReadLine.m in Sources */,
 				E8E9460C1E210B6D00EE98B0 /* NSDictionary+JSONEncode.m in Sources */,

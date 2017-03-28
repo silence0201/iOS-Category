@@ -77,6 +77,7 @@
 #import "UIImage+Effect.h"
 #import "UIImage+Modify.h"
 #import "UIImage+Video.h"
+#import "UIImage+Alpha.h"
 
 #import "UIFont+Traits.h"
 #import "UIFont+Make.h"
