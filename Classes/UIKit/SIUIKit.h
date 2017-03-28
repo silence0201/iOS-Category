@@ -105,5 +105,6 @@
 
 #import "UIBezierPath+Length.h"
 #import "UIBezierPath+BasicShapes.h"
+#import "UIBezierPath+SVGString.h"
 
 #endif
