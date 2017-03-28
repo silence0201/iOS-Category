@@ -13,6 +13,7 @@
 		E834658D1E8A9B2500F1F757 /* UIBezierPath+SVGString.m in Sources */ = {isa = PBXBuildFile; fileRef = E834658C1E8A9B2500F1F757 /* UIBezierPath+SVGString.m */; };
 		E83465961E8A9D3600F1F757 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465951E8A9D3600F1F757 /* UITextField+Shake.m */; };
 		E834659A1E8A9E6200F1F757 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465991E8A9E6200F1F757 /* UITextView+PlaceHolder.m */; };
+		E834659D1E8A9FB100F1F757 /* UITextView+InputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = E834659C1E8A9FB100F1F757 /* UITextView+InputLimit.m */; };
 		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
 		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
@@ -235,6 +236,8 @@
 		E83465951E8A9D3600F1F757 /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 		E83465981E8A9E6200F1F757 /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
 		E83465991E8A9E6200F1F757 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
+		E834659B1E8A9FB100F1F757 /* UITextView+InputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+InputLimit.h"; sourceTree = "<group>"; };
+		E834659C1E8A9FB100F1F757 /* UITextView+InputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+InputLimit.m"; sourceTree = "<group>"; };
 		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
 		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
 		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
@@ -667,6 +670,8 @@
 			children = (
 				E83465981E8A9E6200F1F757 /* UITextView+PlaceHolder.h */,
 				E83465991E8A9E6200F1F757 /* UITextView+PlaceHolder.m */,
+				E834659B1E8A9FB100F1F757 /* UITextView+InputLimit.h */,
+				E834659C1E8A9FB100F1F757 /* UITextView+InputLimit.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -1809,6 +1814,7 @@
 				E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */,
 				E8E946541E210B6D00EE98B0 /* UINavigationController+Stack.m in Sources */,
 				E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */,
+				E834659D1E8A9FB100F1F757 /* UITextView+InputLimit.m in Sources */,
 				E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */,
 				E8E9462F1E210B6D00EE98B0 /* NSTimer+Block.m in Sources */,
 				E854CE371E7D514900AD9F13 /* NSData+Base64.m in Sources */,

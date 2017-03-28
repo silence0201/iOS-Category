@@ -96,6 +96,9 @@
 #import "UITextField+InputLimit.h"
 #import "UITextField+Shake.h"
 
+#import "UITextView+PlaceHolder.h"
+#import "UITextView+InputLimit.h"
+
 #import "UIDevice+Device.h"
 #import "UIDevice+NetWork.h"
 #import "UIDevice+Disk.h"
