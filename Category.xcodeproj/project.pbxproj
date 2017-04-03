@@ -67,7 +67,6 @@
 		E854CE7A1E7D692900AD9F13 /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE791E7D692900AD9F13 /* UITextField+Select.m */; };
 		E854CE7D1E7D699500AD9F13 /* UITextField+InputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */; };
 		E865E2611E925E51009E7377 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E865E2601E925E51009E7377 /* UIImage+Sprite.m */; };
-		E865E2651E926046009E7377 /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E865E2641E926046009E7377 /* NSLayoutConstraint+Extensions.m */; };
 		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
@@ -82,6 +81,7 @@
 		E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F41E81751E00E9D69C /* UITableView+iOS7Style.m */; };
 		E8B122F91E81760900E9D69C /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */; };
 		E8B122FC1E81768300E9D69C /* UIResponder+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */; };
+		E8BD93741E92631200322F8B /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93731E92631200322F8B /* NSLayoutConstraint+Extensions.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -373,8 +373,6 @@
 		E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+InputLimit.m"; sourceTree = "<group>"; };
 		E865E25F1E925E51009E7377 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		E865E2601E925E51009E7377 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
-		E865E2631E926046009E7377 /* NSLayoutConstraint+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Extensions.h"; sourceTree = "<group>"; };
-		E865E2641E926046009E7377 /* NSLayoutConstraint+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Extensions.m"; sourceTree = "<group>"; };
 		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
 		E87504A01E618D870097F41E /* SIDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDownloadManager.m; sourceTree = "<group>"; };
 		E87504A51E61AA770097F41E /* SIRuntimeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIRuntimeMacro.h; sourceTree = "<group>"; };
@@ -409,6 +407,8 @@
 		E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		E8B122FA1E81768300E9D69C /* UIResponder+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Chain.h"; sourceTree = "<group>"; };
 		E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Chain.m"; sourceTree = "<group>"; };
+		E8BD93721E92631200322F8B /* NSLayoutConstraint+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Extensions.h"; sourceTree = "<group>"; };
+		E8BD93731E92631200322F8B /* NSLayoutConstraint+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Extensions.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -886,15 +886,6 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
-		E865E2621E926010009E7377 /* NSLayoutConstraint */ = {
-			isa = PBXGroup;
-			children = (
-				E865E2631E926046009E7377 /* NSLayoutConstraint+Extensions.h */,
-				E865E2641E926046009E7377 /* NSLayoutConstraint+Extensions.m */,
-			);
-			path = NSLayoutConstraint;
-			sourceTree = "<group>";
-		};
 		E876E9FA1E75806000129BAF /* UISlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -965,6 +956,15 @@
 				E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */,
 			);
 			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		E8BD93711E92631200322F8B /* NSLayoutConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				E8BD93721E92631200322F8B /* NSLayoutConstraint+Extensions.h */,
+				E8BD93731E92631200322F8B /* NSLayoutConstraint+Extensions.m */,
+			);
+			path = NSLayoutConstraint;
 			sourceTree = "<group>";
 		};
 		E8DD4B421E51C29F008B6BDF /* CategoryTests */ = {
@@ -1169,7 +1169,6 @@
 		E8E945031E210B6D00EE98B0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				E865E2621E926010009E7377 /* NSLayoutConstraint */,
 				E854CE5A1E7D5CE300AD9F13 /* NSURLSession */,
 				E854CE501E7D5B4800AD9F13 /* NSFileHandle */,
 				E854CE4F1E7D5B3300AD9F13 /* NSURLRequest */,
@@ -1431,6 +1430,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E9457B1E210B6D00EE98B0 /* SIUIKit.h */,
+				E8BD93711E92631200322F8B /* NSLayoutConstraint */,
 				E83465ED1E8ABB2A00F1F757 /* UIBarButtonItem */,
 				E83465E31E8AB94D00F1F757 /* UINavigationItem */,
 				E83465CA1E8AAE4B00F1F757 /* UIImageView */,
@@ -1934,7 +1934,7 @@
 				E8E946291E210B6D00EE98B0 /* NSString+Path.m in Sources */,
 				E8E946511E210B6D00EE98B0 /* UILabel+ContenSize.m in Sources */,
 				E8E9460D1E210B6D00EE98B0 /* NSDictionary+Merge.m in Sources */,
-				E865E2651E926046009E7377 /* NSLayoutConstraint+Extensions.m in Sources */,
+				E8BD93741E92631200322F8B /* NSLayoutConstraint+Extensions.m in Sources */,
 				E8E946281E210B6D00EE98B0 /* NSString+MIME.m in Sources */,
 				E8E946171E210B6D00EE98B0 /* NSNumber+Roman.m in Sources */,
 				E8E946531E210B6D00EE98B0 /* UINavigationBar+Appear.m in Sources */,
