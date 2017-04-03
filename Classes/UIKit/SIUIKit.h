@@ -93,6 +93,7 @@
 #import "UIImage+Alpha.h"
 #import "UIImage+BetterFace.h"
 #import "UIImage+FileName.h"
+#import "UIImage+Sprite.h"
 
 #import "UIImageView+Reflect.h"
 #import "UIImageView+GeometryConversion.h"
