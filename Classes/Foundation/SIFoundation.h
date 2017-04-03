@@ -42,6 +42,8 @@
 
 #import "NSBundle+AppInfo.h"
 
+#import "NSDateFormatter+Make.h"
+
 #import "NSData+Hash.h"
 #import "NSData+Encrypt.h"
 #import "NSData+Code.h"

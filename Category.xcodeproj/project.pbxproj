@@ -84,6 +84,7 @@
 		E8BD93741E92631200322F8B /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93731E92631200322F8B /* NSLayoutConstraint+Extensions.m */; };
 		E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93761E92654B00322F8B /* NSDate+Show.m */; };
 		E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */; };
+		E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -415,6 +416,8 @@
 		E8BD93761E92654B00322F8B /* NSDate+Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Show.m"; sourceTree = "<group>"; };
 		E8BD937B1E9283CB00322F8B /* NSLayoutConstraint+Refer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Refer.h"; sourceTree = "<group>"; };
 		E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Refer.m"; sourceTree = "<group>"; };
+		E8BD937F1E92862D00322F8B /* NSDateFormatter+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Make.h"; sourceTree = "<group>"; };
+		E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Make.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -975,6 +978,15 @@
 			path = NSLayoutConstraint;
 			sourceTree = "<group>";
 		};
+		E8BD937E1E92860C00322F8B /* NSDateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				E8BD937F1E92862D00322F8B /* NSDateFormatter+Make.h */,
+				E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */,
+			);
+			path = NSDateFormatter;
+			sourceTree = "<group>";
+		};
 		E8DD4B421E51C29F008B6BDF /* CategoryTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1186,6 +1198,7 @@
 				E8E945091E210B6D00EE98B0 /* NSArray */,
 				E8E945121E210B6D00EE98B0 /* NSBundle */,
 				E8E945151E210B6D00EE98B0 /* NSData */,
+				E8BD937E1E92860C00322F8B /* NSDateFormatter */,
 				E8E9451E1E210B6D00EE98B0 /* NSDate */,
 				E8E945251E210B6D00EE98B0 /* NSDictionary */,
 				E8E945321E210B6D00EE98B0 /* NSFileManager */,
@@ -2028,6 +2041,7 @@
 				E8E946241E210B6D00EE98B0 /* NSString+Contains.m in Sources */,
 				E8E945FF1E210B6D00EE98B0 /* NSArray+Block.m in Sources */,
 				E8E9461A1E210B6D00EE98B0 /* NSObject+Block.m in Sources */,
+				E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */,
 				E83465EC1E8ABA8B00F1F757 /* UINavigationItem+Margin.m in Sources */,
 				E8E946221E210B6D00EE98B0 /* NSObject+Runtime.m in Sources */,
 				E854CE4A1E7D570500AD9F13 /* NSIndexPath+Offset.m in Sources */,
