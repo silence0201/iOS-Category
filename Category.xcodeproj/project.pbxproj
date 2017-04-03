@@ -82,6 +82,7 @@
 		E8B122F91E81760900E9D69C /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F81E81760900E9D69C /* UIResponder+FirstResponder.m */; };
 		E8B122FC1E81768300E9D69C /* UIResponder+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */; };
 		E8BD93741E92631200322F8B /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93731E92631200322F8B /* NSLayoutConstraint+Extensions.m */; };
+		E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93761E92654B00322F8B /* NSDate+Show.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -409,6 +410,8 @@
 		E8B122FB1E81768300E9D69C /* UIResponder+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Chain.m"; sourceTree = "<group>"; };
 		E8BD93721E92631200322F8B /* NSLayoutConstraint+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Extensions.h"; sourceTree = "<group>"; };
 		E8BD93731E92631200322F8B /* NSLayoutConstraint+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Extensions.m"; sourceTree = "<group>"; };
+		E8BD93751E92654B00322F8B /* NSDate+Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Show.h"; sourceTree = "<group>"; };
+		E8BD93761E92654B00322F8B /* NSDate+Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Show.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1266,6 +1269,8 @@
 				E8E945241E210B6D00EE98B0 /* NSDate+Formatter.m */,
 				E854CE5E1E7D5E1800AD9F13 /* NSDate+Cupertino.h */,
 				E854CE5F1E7D5E1800AD9F13 /* NSDate+Cupertino.m */,
+				E8BD93751E92654B00322F8B /* NSDate+Show.h */,
+				E8BD93761E92654B00322F8B /* NSDate+Show.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -1954,6 +1959,7 @@
 				E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */,
 				E8E946561E210B6D00EE98B0 /* UIScreen+Info.m in Sources */,
 				E8E9465A1E210B6D00EE98B0 /* UITableView+CellStyle.m in Sources */,
+				E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */,
 				E8E8A4DC1E56A43900E64E54 /* EXTNil.m in Sources */,
 				E8FF5EB91E5B342500859425 /* SIBluetoothManager.m in Sources */,
 				E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */,
