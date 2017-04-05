@@ -7,7 +7,6 @@
 //
 
 
-#import "SIKeyboardShortcutManager.h"
 #import "SIAuthorizationManager.h"
 #import "SIAppVersionManager.h"
 #import "SIKeyboardManager.h"

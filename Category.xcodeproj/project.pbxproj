@@ -227,7 +227,6 @@
 		E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */; };
 		E8FB93841E607CE700B77407 /* SIAppVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FB93831E607CE700B77407 /* SIAppVersionManager.m */; };
 		E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */; };
-		E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */; };
 		E8FF5EB61E5B250200859425 /* SITouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB51E5B250200859425 /* SITouchIDManager.m */; };
 		E8FF5EB91E5B342500859425 /* SIBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */; };
 /* End PBXBuildFile section */
@@ -721,8 +720,6 @@
 		E8FB93851E6080C100B77407 /* SIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIManager.h; sourceTree = "<group>"; };
 		E8FF5EAE1E5B244F00859425 /* SIAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAuthorizationManager.h; sourceTree = "<group>"; };
 		E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAuthorizationManager.m; sourceTree = "<group>"; };
-		E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardShortcutManager.h; sourceTree = "<group>"; };
-		E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeyboardShortcutManager.m; sourceTree = "<group>"; };
 		E8FF5EB41E5B250200859425 /* SITouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITouchIDManager.h; sourceTree = "<group>"; };
 		E8FF5EB51E5B250200859425 /* SITouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITouchIDManager.m; sourceTree = "<group>"; };
 		E8FF5EB71E5B342500859425 /* SIBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBluetoothManager.h; sourceTree = "<group>"; };
@@ -1779,8 +1776,6 @@
 			isa = PBXGroup;
 			children = (
 				E8FB93851E6080C100B77407 /* SIManager.h */,
-				E8FF5EB11E5B246600859425 /* SIKeyboardShortcutManager.h */,
-				E8FF5EB21E5B246600859425 /* SIKeyboardShortcutManager.m */,
 				E8FF5EAE1E5B244F00859425 /* SIAuthorizationManager.h */,
 				E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */,
 				E8FF5EB41E5B250200859425 /* SITouchIDManager.h */,
@@ -1948,7 +1943,6 @@
 				E8E946661E210B6D00EE98B0 /* UIViewController+Alert.m in Sources */,
 				E8E946181E210B6D00EE98B0 /* NSNumber+Round.m in Sources */,
 				E8E946031E210B6D00EE98B0 /* NSBundle+AppInfo.m in Sources */,
-				E8FF5EB31E5B246600859425 /* SIKeyboardShortcutManager.m in Sources */,
 				E8E946461E210B6D00EE98B0 /* UIGestureRecognizer+ALActionBlocks.m in Sources */,
 				E83465E91E8ABA2600F1F757 /* UINavigationItem+Loading.m in Sources */,
 				E83465D91E8AB20000F1F757 /* UIView+draggable.m in Sources */,
