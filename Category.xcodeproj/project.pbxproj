@@ -86,6 +86,8 @@
 		E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */; };
 		E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */; };
 		E8D91AC61EADEF9D0072AF6A /* CALayer+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC51EADEF9D0072AF6A /* CALayer+Border.m */; };
+		E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */; };
+		E8D91ACD1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91ACC1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m */; };
 		E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */; };
 		E8DD4B4C1E51C2C2008B6BDF /* NSStringColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */; };
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
@@ -420,6 +422,10 @@
 		E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Make.m"; sourceTree = "<group>"; };
 		E8D91AC41EADEF9D0072AF6A /* CALayer+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Border.h"; sourceTree = "<group>"; };
 		E8D91AC51EADEF9D0072AF6A /* CALayer+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Border.m"; sourceTree = "<group>"; };
+		E8D91AC71EADF1500072AF6A /* CALayer+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Frame.h"; sourceTree = "<group>"; };
+		E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Frame.m"; sourceTree = "<group>"; };
+		E8D91ACB1EADF2250072AF6A /* CATransaction+AnimateWithDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+AnimateWithDuration.h"; sourceTree = "<group>"; };
+		E8D91ACC1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+AnimateWithDuration.m"; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -990,6 +996,7 @@
 		E8D91AC21EADEF560072AF6A /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				E8D91ACA1EADF20F0072AF6A /* CATransaction */,
 				E8D91AC31EADEF7A0072AF6A /* CALayer */,
 			);
 			path = QuartzCore;
@@ -1000,8 +1007,19 @@
 			children = (
 				E8D91AC41EADEF9D0072AF6A /* CALayer+Border.h */,
 				E8D91AC51EADEF9D0072AF6A /* CALayer+Border.m */,
+				E8D91AC71EADF1500072AF6A /* CALayer+Frame.h */,
+				E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		E8D91ACA1EADF20F0072AF6A /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				E8D91ACB1EADF2250072AF6A /* CATransaction+AnimateWithDuration.h */,
+				E8D91ACC1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m */,
+			);
+			path = CATransaction;
 			sourceTree = "<group>";
 		};
 		E8DD4B421E51C29F008B6BDF /* CategoryTests */ = {
@@ -1955,6 +1973,7 @@
 				E8FB93841E607CE700B77407 /* SIAppVersionManager.m in Sources */,
 				E854CE691E7D620E00AD9F13 /* UIApplication+Permissions.m in Sources */,
 				E83465B11E8AA56A00F1F757 /* UIWebView+Style.m in Sources */,
+				E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */,
 				E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */,
 				E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */,
 				E8E946431E210B6D00EE98B0 /* UIFont+Load.m in Sources */,
@@ -2021,6 +2040,7 @@
 				E8E946321E210B6D00EE98B0 /* UIApplication+Authority.m in Sources */,
 				E8E946521E210B6D00EE98B0 /* UILabel+Space.m in Sources */,
 				E854CE7A1E7D692900AD9F13 /* UITextField+Select.m in Sources */,
+				E8D91ACD1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m in Sources */,
 				E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */,
 				E8E9460F1E210B6D00EE98B0 /* NSDictionary+SafeAccess.m in Sources */,
 				E8E9461B1E210B6D00EE98B0 /* NSObject+GCD.m in Sources */,
