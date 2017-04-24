@@ -144,84 +144,6 @@
     return @"";
 }
 
-- (NSString *)timeInfo {
-    return [NSDate timeInfoWithDate:self];
-}
-
-+ (NSString *)timeInfoWithDate:(NSDate *)date {
-    NSDate *curentDate = [NSDate date];
-    NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDateComponents *other = [gregorian components:(NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitWeekday) fromDate:date];
-    NSDateComponents *curent = [gregorian components:(NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitWeekday) fromDate:curentDate];
-    NSTimeInterval time =  [curentDate timeIntervalSinceDate:date];
-    
-    int month = (int)([curent month] - [other month]);
-    int year = (int)([curent year] - [other year]);
-    int day = (int)([curent day] - [other day]);
-    
-    NSTimeInterval retTime = 1.0;
-    if (time < 3600) { // 小于一小时
-        retTime = time / 60;
-        retTime = retTime <= 0.0 ? 1.0 : retTime;
-        return [NSString stringWithFormat:@"%.0f分钟前", retTime];
-    } else if (time < 3600 * 24) { // 小于一天，也就是今天
-        retTime = time / 3600;
-        retTime = retTime <= 0.0 ? 1.0 : retTime;
-        return [NSString stringWithFormat:@"%.0f小时前", retTime];
-    } else if (time < 3600 * 24 * 2) {
-        return @"昨天";
-    }
-    // 第一个条件是同年，且相隔时间在一个月内
-    // 第二个条件是隔年，对于隔年，只能是去年12月与今年1月这种情况
-    else if ((abs(year) == 0 && abs(month) <= 1)
-             || (abs(year) == 1 && [curent month] == 1 && [other month] == 12)) {
-        int retDay = 0;
-        if (year == 0) { // 同年
-            if (month == 0) { // 同月
-                retDay = day;
-            }
-        }
-        
-        if (retDay <= 0) {
-            // 获取发布日期中，该月有多少天
-            int totalDays = 30 ;
-            switch (month) {
-                case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-                    totalDays = 31;
-                    break;
-                case 2:{
-                    if ((year % 4  == 0 && year % 100 != 0) || year % 400 == 0) {
-                        totalDays = 29 ;
-                    }else{
-                        totalDays = 28 ;
-                    }
-                    break;
-                }
-            }
-            // 当前天数 + （发布日期月中的总天数-发布日期月中发布日，即等于距离今天的天数）
-            retDay = (int)[curent day] + (totalDays - (int)[other day]);
-        }
-        
-        return [NSString stringWithFormat:@"%d天前", (abs)(retDay)];
-    } else  {
-        if (abs(year) <= 1) {
-            if (year == 0) { // 同年
-                return [NSString stringWithFormat:@"%d个月前", abs(month)];
-            }
-            // 隔年
-            int month = (int)[curent month];
-            int preMonth = (int)[other month];
-            if (month == 12 && preMonth == 12) {// 隔年，但同月，就作为满一年来计算
-                return @"1年前";
-            }
-            return [NSString stringWithFormat:@"%d个月前", (abs)(12 - preMonth + month)];
-        }
-        
-        return [NSString stringWithFormat:@"%d年前", abs(year)];
-    }
-    return @"1小时前";
-}
 
 - (NSString *)ymdFormat {
     return [self _stringWithFormat:[NSDate ymdFormat]];
@@ -265,6 +187,46 @@
     [formatter setDateFormat:format];
     [formatter setLocale:[NSLocale currentLocale]];
     return [formatter stringFromDate:self];
+}
+
++ (NSString *)chineseCalendarWithDate:(NSDate *)date{
+    NSArray *chineseYears = [NSArray arrayWithObjects:
+                             @"甲子", @"乙丑", @"丙寅",	@"丁卯",	@"戊辰",	@"己巳",	@"庚午",	@"辛未",	@"壬申",	@"癸酉",
+                             @"甲戌",	@"乙亥",	@"丙子",	@"丁丑", @"戊寅",	@"己卯",	@"庚辰",	@"辛己",	@"壬午",	@"癸未",
+                             @"甲申",	@"乙酉",	@"丙戌",	@"丁亥",	@"戊子",	@"己丑",	@"庚寅",	@"辛卯",	@"壬辰",	@"癸巳",
+                             @"甲午",	@"乙未",	@"丙申",	@"丁酉",	@"戊戌",	@"己亥",	@"庚子",	@"辛丑",	@"壬寅",	@"癸丑",
+                             @"甲辰",	@"乙巳",	@"丙午",	@"丁未",	@"戊申",	@"己酉",	@"庚戌",	@"辛亥",	@"壬子",	@"癸丑",
+                             @"甲寅",	@"乙卯",	@"丙辰",	@"丁巳",	@"戊午",	@"己未",	@"庚申",	@"辛酉",	@"壬戌",	@"癸亥", nil];
+    
+    NSArray *chineseMonths=[NSArray arrayWithObjects:
+                            @"正月", @"二月", @"三月", @"四月", @"五月", @"六月", @"七月", @"八月",
+                            @"九月", @"十月", @"冬月", @"腊月", nil];
+    
+    
+    NSArray *chineseDays=[NSArray arrayWithObjects:
+                          @"初一", @"初二", @"初三", @"初四", @"初五", @"初六", @"初七", @"初八", @"初九", @"初十",
+                          @"十一", @"十二", @"十三", @"十四", @"十五", @"十六", @"十七", @"十八", @"十九", @"二十",
+                          @"廿一", @"廿二", @"廿三", @"廿四", @"廿五", @"廿六", @"廿七", @"廿八", @"廿九", @"三十",  nil];
+    
+    
+    NSCalendar *localeCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
+    
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay;
+    
+    NSDateComponents *localeComp = [localeCalendar components:unitFlags fromDate:date];
+    
+    if(date){
+        NSString *y_str = [chineseYears objectAtIndex:localeComp.year-1];
+        NSString *m_str = [chineseMonths objectAtIndex:localeComp.month-1];
+        NSString *d_str = [chineseDays objectAtIndex:localeComp.day-1];
+        NSString *chineseCal_str =[NSString stringWithFormat: @"%@年%@%@",y_str,m_str,d_str];
+        return chineseCal_str;
+    }
+    return @"请重选一次";
+}
+
+- (NSString *)chineseCalendar {
+    return [NSDate chineseCalendarWithDate:self];
 }
 
 

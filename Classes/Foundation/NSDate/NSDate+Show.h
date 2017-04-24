@@ -21,6 +21,10 @@
 @property (nonatomic, readonly) NSString *longDateString;
 @property (nonatomic, readonly) NSString *longTimeString;
 
+/// 根据 date 获取 农历
+- (NSString *)chineseCalendar ;
++ (NSString *)chineseCalendarWithDate:(NSDate *)date;
+
 ///使用dateStyle timeStyle格式化时间
 - (NSString *)stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle;
 
@@ -61,13 +65,6 @@
 - (NSString *)monthString;
 + (NSString *)monthStringFromDate:(NSDate *)month;
 
-/**
- * 返回x分钟前/x小时前/昨天/x天前/x个月前/x年前
- */
-- (NSString *)timeInfo;
-+ (NSString *)timeInfoWithDate:(NSDate *)date;
-
-
 /// 获取yyyy-MM-dd格式化时间字符串
 - (NSString *)ymdFormat;
 + (NSString *)ymdFormatWithDate:(NSDate *)date;
@@ -86,7 +83,6 @@
 + (NSString *)hmsFormat;
 /// 获取yyyy-MM-dd HH:mm:ss的字符串
 + (NSString *)ymdHmsFormat;
-
 
 
 @end

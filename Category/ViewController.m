@@ -24,7 +24,7 @@
     NSLog(@"%@",[NSBundle version]) ;
     NSString *Str = @"测试" ;
     NSLog(@"%@",[Str pinyin]) ;
-    
+    NSLog(@"%@",[[NSDate date] chineseCalendar]);
 }
 
 

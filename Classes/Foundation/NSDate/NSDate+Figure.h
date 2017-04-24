@@ -75,4 +75,17 @@
 /**通过数字返回星期几*/
 + (NSString *)getWeekStringFromInteger:(NSInteger)week ;
 
+#pragma mark ---------------------------------------------------------------
+/**计算上次日期距离现在多久 返回的是 多少多少分钟以前*/
++ (NSString *)timeIntervalFromLastTime:(NSString *)lastTime
+                        lastTimeFormat:(NSString *)format1
+                         ToCurrentTime:(NSString *)currentTime
+                     currentTimeFormat:(NSString *)format2;
+
+/**计算两段时间间隔多久返回 多少多少秒*/
++ (NSInteger)calculateTimeFromLastTime:(NSString *)lastTime
+                         lasTimeFormat:(NSString *)format1
+                         toCurrentTime:(NSString *)currentTime
+                     currentTimeFormat:(NSString *)format2;
+
 @end
