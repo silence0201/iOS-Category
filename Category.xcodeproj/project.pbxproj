@@ -435,6 +435,7 @@
 		E8D91AD41EADF37C0072AF6A /* CAAnimation+EasingEquations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+EasingEquations.m"; sourceTree = "<group>"; };
 		E8D91AD71EADF4000072AF6A /* CAMediaTimingFunction+AdditionalEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+AdditionalEquations.h"; sourceTree = "<group>"; };
 		E8D91AD81EADF4000072AF6A /* CAMediaTimingFunction+AdditionalEquations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAMediaTimingFunction+AdditionalEquations.m"; sourceTree = "<group>"; };
+		E8D91ADA1EADF4A20072AF6A /* SIQuartzCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIQuartzCore.h; sourceTree = "<group>"; };
 		E8DD4B3A1E51B82E008B6BDF /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		E8DD4B3B1E51B82E008B6BDF /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
 		E8DD4B411E51C29F008B6BDF /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1010,6 +1011,7 @@
 				E8D91ACE1EADF2930072AF6A /* CAShapeLayer */,
 				E8D91ACA1EADF20F0072AF6A /* CATransaction */,
 				E8D91AC31EADEF7A0072AF6A /* CALayer */,
+				E8D91ADA1EADF4A20072AF6A /* SIQuartzCore.h */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";

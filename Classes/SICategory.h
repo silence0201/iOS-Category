@@ -14,5 +14,6 @@
 #import "SIMacros.h"
 #import "EXTObjc.h"
 #import "SIManager.h"
+#import "SIQuartzCore.h"
 
 #endif
