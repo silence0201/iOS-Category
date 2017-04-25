@@ -9,7 +9,6 @@
 #ifndef SIQuartzCore_h
 #define SIQuartzCore_h
 
-#import "CALayer+Border.h"
 #import "CALayer+Frame.h"
 
 #import "CATransaction+AnimateWithDuration.h"

@@ -85,7 +85,6 @@
 		E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93761E92654B00322F8B /* NSDate+Show.m */; };
 		E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */; };
 		E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */; };
-		E8D91AC61EADEF9D0072AF6A /* CALayer+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC51EADEF9D0072AF6A /* CALayer+Border.m */; };
 		E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */; };
 		E8D91ACD1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91ACC1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m */; };
 		E8D91AD11EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AD01EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m */; };
@@ -423,8 +422,6 @@
 		E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Refer.m"; sourceTree = "<group>"; };
 		E8BD937F1E92862D00322F8B /* NSDateFormatter+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Make.h"; sourceTree = "<group>"; };
 		E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Make.m"; sourceTree = "<group>"; };
-		E8D91AC41EADEF9D0072AF6A /* CALayer+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Border.h"; sourceTree = "<group>"; };
-		E8D91AC51EADEF9D0072AF6A /* CALayer+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Border.m"; sourceTree = "<group>"; };
 		E8D91AC71EADF1500072AF6A /* CALayer+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Frame.h"; sourceTree = "<group>"; };
 		E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Frame.m"; sourceTree = "<group>"; };
 		E8D91ACB1EADF2250072AF6A /* CATransaction+AnimateWithDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+AnimateWithDuration.h"; sourceTree = "<group>"; };
@@ -1019,8 +1016,6 @@
 		E8D91AC31EADEF7A0072AF6A /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
-				E8D91AC41EADEF9D0072AF6A /* CALayer+Border.h */,
-				E8D91AC51EADEF9D0072AF6A /* CALayer+Border.m */,
 				E8D91AC71EADF1500072AF6A /* CALayer+Frame.h */,
 				E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */,
 			);
@@ -2035,7 +2030,6 @@
 				E8BD93741E92631200322F8B /* NSLayoutConstraint+Extensions.m in Sources */,
 				E8E946281E210B6D00EE98B0 /* NSString+MIME.m in Sources */,
 				E8E946171E210B6D00EE98B0 /* NSNumber+Roman.m in Sources */,
-				E8D91AC61EADEF9D0072AF6A /* CALayer+Border.m in Sources */,
 				E8E946531E210B6D00EE98B0 /* UINavigationBar+Appear.m in Sources */,
 				E8DD4B521E51C598008B6BDF /* UIColor+FPBrandColor.m in Sources */,
 				E83465A81E8AA3BE00F1F757 /* UIWebView+MetaParser.m in Sources */,
