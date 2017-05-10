@@ -65,6 +65,7 @@
 #import "NSObject+QuickAssociated.h"
 #import "NSObject+Runtime.h"
 #import "NSObject+Parse.h"
+#import "NSObject+AutoCoding.h"
 
 #import "NSString+AppInfo.h"
 #import "NSString+Hash.h"
