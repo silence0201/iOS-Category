@@ -95,6 +95,7 @@
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
 		E8DD4B521E51C598008B6BDF /* UIColor+FPBrandColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */; };
 		E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */; };
+		E8E057171EC2BD5000B06DC1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */; };
 		E8E2836B1E781B6F006815EA /* NSString+AttributedBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */; };
 		E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836D1E782C53006815EA /* UIImage+Video.m */; };
 		E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */; };
@@ -444,6 +445,8 @@
 		E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FPBrandColor.m"; sourceTree = "<group>"; };
 		E8DD4B531E51C63E008B6BDF /* UIColor+CSSColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CSSColors.h"; sourceTree = "<group>"; };
 		E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CSSColors.m"; sourceTree = "<group>"; };
+		E8E057151EC2BD5000B06DC1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
+		E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
 		E8E283691E781B6F006815EA /* NSString+AttributedBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedBuilder.h"; sourceTree = "<group>"; };
 		E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedBuilder.m"; sourceTree = "<group>"; };
 		E8E2836C1E782C53006815EA /* UIImage+Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Video.h"; sourceTree = "<group>"; };
@@ -1456,6 +1459,8 @@
 				E8E945591E210B6D00EE98B0 /* NSObject+Runtime.m */,
 				E8E8A5511E594ABA00E64E54 /* NSObject+Parse.h */,
 				E8E8A5521E594ABA00E64E54 /* NSObject+Parse.m */,
+				E8E057151EC2BD5000B06DC1 /* NSObject+AutoCoding.h */,
+				E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -2155,6 +2160,7 @@
 				E83465E61E8AB98000F1F757 /* UINavigationItem+Lock.m in Sources */,
 				E8E9463F1E210B6D00EE98B0 /* UIDevice+CPU.m in Sources */,
 				E8E9464A1E210B6D00EE98B0 /* UIImage+Effect.m in Sources */,
+				E8E057171EC2BD5000B06DC1 /* NSObject+AutoCoding.m in Sources */,
 				E83465C31E8AABCB00F1F757 /* UIImage+Alpha.m in Sources */,
 				E8E946571E210B6D00EE98B0 /* UIScrollView+Amplification.m in Sources */,
 				E854CE531E7D5B4800AD9F13 /* NSFileHandle+ReadLine.m in Sources */,
