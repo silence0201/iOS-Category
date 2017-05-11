@@ -13,6 +13,15 @@
 
 @end
 
+@interface Person : NSObject
+
+@property (nonatomic,strong) NSString *name ;
+@property (nonatomic,assign) NSInteger age ;
+
+@end
+@implementation Person
+@end
+
 @implementation ViewController
 
 
@@ -25,6 +34,16 @@
     NSString *Str = @"测试" ;
     NSLog(@"%@",[Str pinyin]) ;
     NSLog(@"%@",[[NSDate date] chineseCalendar]);
+    
+    Person *person = [[Person alloc] init] ;
+    person.name = @"小明" ;
+    person.age = 11 ;
+    NSLog(@"%@",[Person codableProperties]);
+    [person writeToFile:[NSString filePathAtDocumentsWithFileName:@"person"] atomically:YES] ;
+    
+    Person *p = [Person objectWithContentsOfFile:[NSString filePathAtDocumentsWithFileName:@"person"]] ;
+    NSLog(@"%ld",p.age) ;
+    
 }
 
 
