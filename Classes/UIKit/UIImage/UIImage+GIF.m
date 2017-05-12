@@ -169,3 +169,115 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
 }
 
 @end
+
+@implementation GifFrame
+@end
+
+@interface GifDecoder()
+
+@property (nonatomic, assign, readwrite) NSUInteger loopCount;
+
+@end
+
+@implementation GifDecoder{
+    CGImageSourceRef _source;
+    NSUInteger _frameCount; //!<动画帧数
+}
+
++ (instancetype)decoderWithGIFNamed:(NSString *)name{
+    CGFloat scale = [UIScreen mainScreen].scale;
+    if (scale > 1.0f) {
+        NSString *retinaPath = [[NSBundle mainBundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
+        NSData *data = [NSData dataWithContentsOfFile:retinaPath];
+        if (data) {
+            return [GifDecoder decoderWithData:data];
+        }
+    }
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    return [GifDecoder decoderWithData:data];
+}
+
++ (instancetype)decoderWithData:(NSData *)data{
+    if ( !data ) return nil;
+    
+    GifDecoder *decoder = [[GifDecoder alloc] init];
+    [decoder _decoderPrepareWithData:data];
+    return decoder;
+}
+
+- (void)dealloc{
+    CFRelease(_source);
+}
+
+- (void)_decoderPrepareWithData:(NSData *)data{
+    _source = CGImageSourceCreateWithData((__bridge CFDataRef)data, NULL);
+    _frameCount = CGImageSourceGetCount(_source);
+    
+    CFDictionaryRef properties = CGImageSourceCopyProperties(_source, NULL);
+    CFDictionaryRef gifProperties = CFDictionaryGetValue(properties, kCGImagePropertyGIFDictionary);
+    CFTypeRef loop = CFDictionaryGetValue(gifProperties, kCGImagePropertyGIFLoopCount);
+    if (loop) CFNumberGetValue(loop, kCFNumberNSIntegerType, &_loopCount);
+    CFRelease(properties);
+}
+
+- (GifFrame *)frameAtIndex:(NSUInteger)index{
+    if ( index >= _frameCount ) return nil;
+    
+    GifFrame *frame = [[GifFrame alloc] init];
+    frame.index = index;
+    
+    NSTimeInterval duration = 0;
+    CFDictionaryRef frameProperties = CGImageSourceCopyPropertiesAtIndex(_source, index, NULL);
+    CFDictionaryRef gifFrameProperties = CFDictionaryGetValue(frameProperties, kCGImagePropertyGIFDictionary);
+    CFTypeRef delayTime = CFDictionaryGetValue(gifFrameProperties, kCGImagePropertyGIFDelayTime);
+    if(delayTime) CFNumberGetValue(delayTime, kCFNumberDoubleType, &duration);
+    CFRelease(frameProperties);
+    frame.duration = duration;
+    
+    CGImageRef cgImage = CGImageSourceCreateImageAtIndex(_source, index, NULL);
+    UIImage *image = [UIImage imageWithCGImage:cgImage];
+    frame.image = image;
+    CFRelease(cgImage);
+    
+    return frame;
+}
+
+- (NSArray<GifFrame*>*)contentImages{
+    if (!_source) {
+        return nil;
+    }
+    
+    NSMutableArray *images = [NSMutableArray arrayWithCapacity:_frameCount];
+    for (NSInteger i=0; i<_frameCount; i++) {
+        GifFrame *gifFrame = [self frameAtIndex:i];
+        [images addObject:gifFrame];
+    }
+    return images;
+}
+
+
+#pragma mark - views
+- (UIImage *)gifImage{
+    if (!_source) {
+        return nil;
+    }
+    
+    NSTimeInterval duration = 0;
+    NSMutableArray *images = [NSMutableArray arrayWithCapacity:_frameCount];
+    for (NSInteger i=0; i<_frameCount; i++) {
+        GifFrame *gifFrame = [self frameAtIndex:i];
+        [images addObject:gifFrame.image];
+        
+        duration += gifFrame.duration;
+    }
+    
+    UIImage *gifImage = [UIImage animatedImageWithImages:images duration:duration];
+    return gifImage;
+}
+
+
+
+
+@end
