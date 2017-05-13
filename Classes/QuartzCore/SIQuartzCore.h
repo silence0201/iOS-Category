@@ -10,6 +10,7 @@
 #define SIQuartzCore_h
 
 #import "CALayer+Frame.h"
+#import "CALayer+Property.h"
 
 #import "CATransaction+AnimateWithDuration.h"
 
