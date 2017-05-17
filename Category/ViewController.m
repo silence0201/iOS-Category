@@ -44,7 +44,6 @@
     Person *p = [Person objectWithContentsOfFile:[NSString filePathAtDocumentsWithFileName:@"person"]] ;
     NSLog(@"%ld",p.age) ;
     NSLog(@"%@",p.dictionaryRepresentation) ;
-    
 }
 
 
