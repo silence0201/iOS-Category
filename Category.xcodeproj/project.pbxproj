@@ -86,6 +86,7 @@
 		E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93761E92654B00322F8B /* NSDate+Show.m */; };
 		E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */; };
 		E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */; };
+		E8CF8DB01ED6BA66002B9AC6 /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */; };
 		E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */; };
 		E8D91ACD1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91ACC1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m */; };
 		E8D91AD11EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AD01EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m */; };
@@ -426,6 +427,8 @@
 		E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Refer.m"; sourceTree = "<group>"; };
 		E8BD937F1E92862D00322F8B /* NSDateFormatter+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Make.h"; sourceTree = "<group>"; };
 		E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Make.m"; sourceTree = "<group>"; };
+		E8CF8DAE1ED6BA66002B9AC6 /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
+		E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
 		E8D91AC71EADF1500072AF6A /* CALayer+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Frame.h"; sourceTree = "<group>"; };
 		E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Frame.m"; sourceTree = "<group>"; };
 		E8D91ACB1EADF2250072AF6A /* CATransaction+AnimateWithDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+AnimateWithDuration.h"; sourceTree = "<group>"; };
@@ -1466,6 +1469,8 @@
 				E8E8A5521E594ABA00E64E54 /* NSObject+Parse.m */,
 				E8E057151EC2BD5000B06DC1 /* NSObject+AutoCoding.h */,
 				E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */,
+				E8CF8DAE1ED6BA66002B9AC6 /* NSObject+Dealloc.h */,
+				E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -2180,6 +2185,7 @@
 				E8E946151E210B6D00EE98B0 /* NSNotificationCenter+Thread.m in Sources */,
 				E8E946641E210B6D00EE98B0 /* UIView+Screenshot.m in Sources */,
 				E8E946041E210B6D00EE98B0 /* NSData+Cache.m in Sources */,
+				E8CF8DB01ED6BA66002B9AC6 /* NSObject+Dealloc.m in Sources */,
 				E8E946211E210B6D00EE98B0 /* NSObject+Reflect.m in Sources */,
 				E83465E21E8AB64200F1F757 /* UIViewController+RecursiveDescription.m in Sources */,
 				E8D91AD11EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m in Sources */,
