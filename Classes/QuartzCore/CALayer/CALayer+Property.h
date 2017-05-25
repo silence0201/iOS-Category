@@ -23,6 +23,8 @@ extern NSString * const kLayerScaleX;
 extern NSString * const kLayerScale;
 extern NSString * const kLayerScaleY;
 extern NSString * const kLayerSize;
+extern NSString * const kLayerWidth;
+extern NSString * const kLayerHeight;
 extern NSString * const kLayerTranslationX;
 extern NSString * const kLayerTranslationXY;
 extern NSString * const kLayerTranslationY;
