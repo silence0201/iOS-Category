@@ -75,6 +75,7 @@
 		E88B47B61E15363E0074A53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B41E15363E0074A53A /* Main.storyboard */; };
 		E88B47B81E15363E0074A53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B71E15363E0074A53A /* Assets.xcassets */; };
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
+		E88DB6AD1ED97FFD003A7310 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6AC1ED97FFD003A7310 /* SIKeychainManager.m */; };
 		E892FCCD1EC7045E00E2F630 /* CALayer+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
@@ -405,6 +406,8 @@
 		E88B47B71E15363E0074A53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88B47BA1E15363E0074A53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E88B47BC1E15363E0074A53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88DB6AB1ED97FFD003A7310 /* SIKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeychainManager.h; sourceTree = "<group>"; };
+		E88DB6AC1ED97FFD003A7310 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
 		E892FCCB1EC7045E00E2F630 /* CALayer+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Property.h"; sourceTree = "<group>"; };
 		E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Property.m"; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
@@ -1882,6 +1885,8 @@
 				E8FB93831E607CE700B77407 /* SIAppVersionManager.m */,
 				E875049F1E618D870097F41E /* SIDownloadManager.h */,
 				E87504A01E618D870097F41E /* SIDownloadManager.m */,
+				E88DB6AB1ED97FFD003A7310 /* SIKeychainManager.h */,
+				E88DB6AC1ED97FFD003A7310 /* SIKeychainManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -2062,6 +2067,7 @@
 				E834658D1E8A9B2500F1F757 /* UIBezierPath+SVGString.m in Sources */,
 				E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */,
 				E8E946561E210B6D00EE98B0 /* UIScreen+Info.m in Sources */,
+				E88DB6AD1ED97FFD003A7310 /* SIKeychainManager.m in Sources */,
 				E8E9465A1E210B6D00EE98B0 /* UITableView+CellStyle.m in Sources */,
 				E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */,
 				E8E8A4DC1E56A43900E64E54 /* EXTNil.m in Sources */,
