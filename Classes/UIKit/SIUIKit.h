@@ -108,6 +108,7 @@
 #import "UIApplication+Authority.h"
 #import "UIApplication+KeyboardFrame.h"
 #import "UIApplication+Permissions.h"
+#import "UIApplication+UIDebug.h"
 
 #import "UIColor+Make.h"
 #import "UIColor+FlatColors.h"
