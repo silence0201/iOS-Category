@@ -67,6 +67,7 @@
 		E854CE7A1E7D692900AD9F13 /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE791E7D692900AD9F13 /* UITextField+Select.m */; };
 		E854CE7D1E7D699500AD9F13 /* UITextField+InputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */; };
 		E86298CA1EDC58B300D5017C /* UIBezierPath+Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298C91EDC58B300D5017C /* UIBezierPath+Symbol.m */; };
+		E86298CD1EDC59C200D5017C /* UIBezierPath+TextPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298CC1EDC59C200D5017C /* UIBezierPath+TextPaths.m */; };
 		E865E2611E925E51009E7377 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E865E2601E925E51009E7377 /* UIImage+Sprite.m */; };
 		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
@@ -385,6 +386,8 @@
 		E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+InputLimit.m"; sourceTree = "<group>"; };
 		E86298C81EDC58B300D5017C /* UIBezierPath+Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Symbol.h"; sourceTree = "<group>"; };
 		E86298C91EDC58B300D5017C /* UIBezierPath+Symbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Symbol.m"; sourceTree = "<group>"; };
+		E86298CB1EDC59C200D5017C /* UIBezierPath+TextPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+TextPaths.h"; sourceTree = "<group>"; };
+		E86298CC1EDC59C200D5017C /* UIBezierPath+TextPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+TextPaths.m"; sourceTree = "<group>"; };
 		E865E25F1E925E51009E7377 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		E865E2601E925E51009E7377 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
@@ -787,6 +790,8 @@
 				E834658C1E8A9B2500F1F757 /* UIBezierPath+SVGString.m */,
 				E86298C81EDC58B300D5017C /* UIBezierPath+Symbol.h */,
 				E86298C91EDC58B300D5017C /* UIBezierPath+Symbol.m */,
+				E86298CB1EDC59C200D5017C /* UIBezierPath+TextPaths.h */,
+				E86298CC1EDC59C200D5017C /* UIBezierPath+TextPaths.m */,
 			);
 			path = UIBezierPath;
 			sourceTree = "<group>";
@@ -2152,6 +2157,7 @@
 				E8E9464B1E210B6D00EE98B0 /* UIImage+Fix.m in Sources */,
 				E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */,
 				E8E946541E210B6D00EE98B0 /* UINavigationController+Stack.m in Sources */,
+				E86298CD1EDC59C200D5017C /* UIBezierPath+TextPaths.m in Sources */,
 				E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */,
 				E834659D1E8A9FB100F1F757 /* UITextView+InputLimit.m in Sources */,
 				E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */,

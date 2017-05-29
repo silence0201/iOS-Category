@@ -134,6 +134,7 @@
 #import "UIBezierPath+BasicShapes.h"
 #import "UIBezierPath+SVGString.h"
 #import "UIBezierPath+Symbol.h"
+#import "UIBezierPath+TextPaths.h"
 
 #import "UITableViewCell+NIB.h"
 
