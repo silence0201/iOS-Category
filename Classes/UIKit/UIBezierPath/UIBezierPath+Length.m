@@ -8,14 +8,14 @@
 
 #import "UIBezierPath+Length.h"
 
-typedef struct JKBezierSubpath {
+typedef struct BezierSubpath {
     CGPoint startPoint;
     CGPoint controlPoint1;
     CGPoint controlPoint2;
     CGPoint endPoint;
     CGFloat length;
     CGPathElementType type;
-} JKBezierSubpath;
+} BezierSubpath;
 
 typedef void(^BezierSubpathEnumerator)(const CGPathElement *element);
 
@@ -45,7 +45,7 @@ static void bezierSubpathFunction(void *info, CGPathElement const *element) {
     return count;
 }
 
-- (void)extractSubpaths:(JKBezierSubpath*)subpathArray
+- (void)extractSubpaths:(BezierSubpath*)subpathArray
 {
     __block CGPoint currentPoint = CGPointZero;
     __block NSUInteger i = 0;
@@ -57,7 +57,7 @@ static void bezierSubpathFunction(void *info, CGPathElement const *element) {
         CGFloat subLength = 0.0f;
         CGPoint endPoint = CGPointZero;
         
-        JKBezierSubpath subpath;
+        BezierSubpath subpath;
         subpath.type = type;
         subpath.startPoint = currentPoint;
         
@@ -120,7 +120,7 @@ static void bezierSubpathFunction(void *info, CGPathElement const *element) {
     }
 }
 
-- (CGPoint)pointAtPercent:(CGFloat)t ofSubpath:(JKBezierSubpath)subpath {
+- (CGPoint)pointAtPercent:(CGFloat)t ofSubpath:(BezierSubpath)subpath {
     
     CGPoint p = CGPointZero;
     switch (subpath.type) {
@@ -144,7 +144,7 @@ static void bezierSubpathFunction(void *info, CGPathElement const *element) {
 - (CGFloat)length {
     
     NSUInteger subpathCount = [self countSubpaths];
-    JKBezierSubpath subpaths[subpathCount];
+    BezierSubpath subpaths[subpathCount];
     [self extractSubpaths:subpaths];
     
     CGFloat length = 0.0f;
@@ -163,7 +163,7 @@ static void bezierSubpathFunction(void *info, CGPathElement const *element) {
     }
     
     NSUInteger subpathCount = [self countSubpaths];
-    JKBezierSubpath subpaths[subpathCount];
+    BezierSubpath subpaths[subpathCount];
     [self extractSubpaths:subpaths];
     
     CGFloat length = 0.0f;
@@ -173,7 +173,7 @@ static void bezierSubpathFunction(void *info, CGPathElement const *element) {
     
     CGFloat pointLocationInPath = length * percent;
     CGFloat currentLength = 0;
-    JKBezierSubpath subpathContainingPoint;
+    BezierSubpath subpathContainingPoint;
     for (NSUInteger i = 0; i < subpathCount; i++) {
         if (currentLength + subpaths[i].length >= pointLocationInPath) {
             subpathContainingPoint = subpaths[i];
