@@ -13,10 +13,10 @@
 #define kDefaultDimissDelay 3.0f
 
 
-NSString * const kDXTopBarBackgroundColor = @"dx.kDXTopBarBackgroundColor";
-NSString * const kDXTopBarTextColor = @"dx.kDXTopBarTextColor";
-NSString * const kDXTopBarTextFont = @"dx.kDXTopBarTextFont";
-NSString * const kDXTopBarIcon = @"dx.kDXTopBarIcon";
+NSString * const kTopBarBackgroundColor = @"kTopBarBackgroundColor";
+NSString * const kTopBarTextColor = @"kTopBarTextColor";
+NSString * const kTopBarTextFont = @"kTopBarTextFont";
+NSString * const kTopBarIcon = @"kTopBarIcon";
 
 
 static NSMutableDictionary *__defaultTopMessageConfig = nil;
@@ -65,13 +65,13 @@ static NSMutableDictionary *__defaultTopMessageConfig = nil;
 - (void)resetViews
 {
     if (!__defaultTopMessageConfig) {
-        __defaultTopMessageConfig = [@{kDXTopBarBackgroundColor : [UIColor colorWithRed:0.64 green:0.65 blue:0.66 alpha:0.96], kDXTopBarTextColor : [UIColor whiteColor], kDXTopBarTextFont : [UIFont fontWithName:@"HelveticaNeue-Medium" size:17.0]} mutableCopy];
+        __defaultTopMessageConfig = [@{kTopBarBackgroundColor : [UIColor colorWithRed:0.64 green:0.65 blue:0.66 alpha:0.96], kTopBarTextColor : [UIColor whiteColor], kTopBarTextFont : [UIFont fontWithName:@"HelveticaNeue-Medium" size:17.0]} mutableCopy];
     }
     
-    self.iconIgv.image = __defaultTopMessageConfig[kDXTopBarIcon];
-    self.backgroundColor = __defaultTopMessageConfig[kDXTopBarBackgroundColor];
-    self.label.textColor = __defaultTopMessageConfig[kDXTopBarTextColor];
-    self.label.font = __defaultTopMessageConfig[kDXTopBarTextFont];
+    self.iconIgv.image = __defaultTopMessageConfig[kTopBarIcon];
+    self.backgroundColor = __defaultTopMessageConfig[kTopBarBackgroundColor];
+    self.label.textColor = __defaultTopMessageConfig[kTopBarTextColor];
+    self.label.font = __defaultTopMessageConfig[kTopBarTextFont];
 }
 
 - (void)layoutSubviews
@@ -101,23 +101,10 @@ static NSMutableDictionary *__defaultTopMessageConfig = nil;
     }
 }
 
-- (void)dismiss
-{
-//    CGRect selfFrame = self.frame;
-//    selfFrame.origin.y -= CGRectGetHeight(selfFrame);
-//    
-//    [UIView animateWithDuration:0.25f animations:^{
-//        self.frame = selfFrame;
-//        self.alpha = 0.3;
-//    } completion:^(BOOL finished) {
-//        [self removeFromSuperview];
-//    }];
-    
-//#warning mark - 视图恢复到原来位置
+- (void)dismiss{
     [UIView animateWithDuration:0.25 animations:^{
         self.superview.transform = CGAffineTransformIdentity;
         [self removeFromSuperview];
-        
     }];
 }
 
@@ -143,7 +130,6 @@ static NSMutableDictionary *__defaultTopMessageConfig = nil;
         [self.dimissTimer invalidate];
         self.dimissTimer = nil;
 
-//#warning mark - 修改
         if (self.dimissDelay > 0) {
             self.dimissTimer = [NSTimer scheduledTimerWithTimeInterval:MAX(self.dimissDelay, kDefaultDimissDelay) target:self selector:@selector(dismiss) userInfo:nil repeats:0];
         }
@@ -171,24 +157,24 @@ static char TopWarningKey;
         __defaultTopMessageConfig = [NSMutableDictionary dictionary];
     }
     if (apperance) {
-        UIColor *bgColor = apperance[kDXTopBarBackgroundColor];
+        UIColor *bgColor = apperance[kTopBarBackgroundColor];
         if (bgColor && [bgColor isKindOfClass:[UIColor class]]) {
-            __defaultTopMessageConfig[kDXTopBarBackgroundColor] = bgColor;
+            __defaultTopMessageConfig[kTopBarBackgroundColor] = bgColor;
         }
         
-        UIColor *textColor = apperance[kDXTopBarTextColor];
+        UIColor *textColor = apperance[kTopBarTextColor];
         if (textColor && [textColor isKindOfClass:[UIColor class]]) {
-            __defaultTopMessageConfig[kDXTopBarTextColor] = textColor;
+            __defaultTopMessageConfig[kTopBarTextColor] = textColor;
         }
         
-        UIImage *icon = apperance[kDXTopBarIcon];
+        UIImage *icon = apperance[kTopBarIcon];
         if (icon && [icon isKindOfClass:[UIImage class]]) {
-            __defaultTopMessageConfig[kDXTopBarIcon] = icon;
+            __defaultTopMessageConfig[kTopBarIcon] = icon;
         }
         
-        UIFont *font = apperance[kDXTopBarTextFont];
+        UIFont *font = apperance[kTopBarTextFont];
         if (font && [font isKindOfClass:[UIFont class]]) {
-            __defaultTopMessageConfig[kDXTopBarTextFont] = font;
+            __defaultTopMessageConfig[kTopBarTextFont] = font;
         }
     }
 }
@@ -198,7 +184,6 @@ static char TopWarningKey;
     [self showTopMessage:message topBarConfig:nil mode:TopBarMessageModeOverlay  dismissDelay:kDefaultDimissDelay withTapBlock:nil];
 }
 
-//- (void)showTopMessage:(NSString *)message topBarConfig:(NSDictionary *)config dismissDelay:(float)delay withTapBlock:(dispatch_block_t)tapHandler
 - (void)showTopMessage:(NSString *)message topBarConfig:(NSDictionary *)config mode:(TopBarMessageMode)messageMode dismissDelay:(float)delay withTapBlock:(dispatch_block_t)tapHandler
 {
     TopWarningView *topV = objc_getAssociatedObject(self, &TopWarningKey);
@@ -231,22 +216,22 @@ static char TopWarningKey;
     topV.dimissDelay = delay;
     
     if (config) {
-        UIColor *bgColor = config[kDXTopBarBackgroundColor];
+        UIColor *bgColor = config[kTopBarBackgroundColor];
         if (bgColor && [bgColor isKindOfClass:[UIColor class]]) {
             topV.backgroundColor = bgColor;
         }
         
-        UIColor *textColor = config[kDXTopBarTextColor];
+        UIColor *textColor = config[kTopBarTextColor];
         if (textColor && [textColor isKindOfClass:[UIColor class]]) {
             topV.label.textColor = textColor;
         }
         
-        UIImage *icon = config[kDXTopBarIcon];
+        UIImage *icon = config[kTopBarIcon];
         if (icon && [icon isKindOfClass:[UIImage class]]) {
             topV.iconIgv.image = icon;
         }
         
-        UIFont *font = config[kDXTopBarTextFont];
+        UIFont *font = config[kTopBarTextFont];
         if (font && [font isKindOfClass:[UIFont class]]) {
             topV.label.font = font;
         }
@@ -256,8 +241,7 @@ static char TopWarningKey;
     }
     
     [self.view addSubview:topV];
-    
-//#warning mark -
+
     if (messageMode == TopBarMessageModeResize) {
         
         [UIView animateWithDuration:0.25f animations:^{
