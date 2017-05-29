@@ -68,6 +68,8 @@
 		E854CE7D1E7D699500AD9F13 /* UITextField+InputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE7C1E7D699500AD9F13 /* UITextField+InputLimit.m */; };
 		E86298CA1EDC58B300D5017C /* UIBezierPath+Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298C91EDC58B300D5017C /* UIBezierPath+Symbol.m */; };
 		E86298CD1EDC59C200D5017C /* UIBezierPath+TextPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298CC1EDC59C200D5017C /* UIBezierPath+TextPaths.m */; };
+		E86298D01EDC602200D5017C /* UIViewController+BackAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298CF1EDC602200D5017C /* UIViewController+BackAction.m */; };
+		E86298D31EDC636C00D5017C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298D21EDC636C00D5017C /* MineViewController.m */; };
 		E865E2611E925E51009E7377 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E865E2601E925E51009E7377 /* UIImage+Sprite.m */; };
 		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
@@ -388,6 +390,10 @@
 		E86298C91EDC58B300D5017C /* UIBezierPath+Symbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Symbol.m"; sourceTree = "<group>"; };
 		E86298CB1EDC59C200D5017C /* UIBezierPath+TextPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+TextPaths.h"; sourceTree = "<group>"; };
 		E86298CC1EDC59C200D5017C /* UIBezierPath+TextPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+TextPaths.m"; sourceTree = "<group>"; };
+		E86298CE1EDC602200D5017C /* UIViewController+BackAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackAction.h"; sourceTree = "<group>"; };
+		E86298CF1EDC602200D5017C /* UIViewController+BackAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackAction.m"; sourceTree = "<group>"; };
+		E86298D11EDC636C00D5017C /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		E86298D21EDC636C00D5017C /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		E865E25F1E925E51009E7377 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		E865E2601E925E51009E7377 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
@@ -987,6 +993,8 @@
 				E88B47B71E15363E0074A53A /* Assets.xcassets */,
 				E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */,
 				E88B47BC1E15363E0074A53A /* Info.plist */,
+				E86298D11EDC636C00D5017C /* MineViewController.h */,
+				E86298D21EDC636C00D5017C /* MineViewController.m */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -1856,6 +1864,8 @@
 				E83465DE1E8AB5B200F1F757 /* UIViewController+Visible.m */,
 				E83465E01E8AB64200F1F757 /* UIViewController+RecursiveDescription.h */,
 				E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */,
+				E86298CE1EDC602200D5017C /* UIViewController+BackAction.h */,
+				E86298CF1EDC602200D5017C /* UIViewController+BackAction.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -2121,6 +2131,7 @@
 				E8E9465B1E210B6D00EE98B0 /* UITableView+Update.m in Sources */,
 				E8E946441E210B6D00EE98B0 /* UIFont+Make.m in Sources */,
 				E8E946401E210B6D00EE98B0 /* UIDevice+Device.m in Sources */,
+				E86298D01EDC602200D5017C /* UIViewController+BackAction.m in Sources */,
 				E865E2611E925E51009E7377 /* UIImage+Sprite.m in Sources */,
 				E83465BA1E8AA7CC00F1F757 /* UIWebView+WebStorage.m in Sources */,
 				E834658A1E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m in Sources */,
@@ -2136,6 +2147,7 @@
 				E8E9461C1E210B6D00EE98B0 /* NSObject+KVO.m in Sources */,
 				E854CE6F1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m in Sources */,
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
+				E86298D31EDC636C00D5017C /* MineViewController.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
 				E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */,
 				E8E283751E78302B006815EA /* NSTimer+Pause.m in Sources */,
