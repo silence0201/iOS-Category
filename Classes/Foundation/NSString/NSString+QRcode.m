@@ -7,6 +7,7 @@
 //
 
 #import "NSString+QRcode.h"
+#import <UIKit/UIKit.h>
 
 @implementation NSString (QRcode)
 
