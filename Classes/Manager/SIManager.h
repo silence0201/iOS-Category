@@ -15,4 +15,5 @@
 #import "SIIAppPurchaseManager.h"
 #import "SIBluetoothManager.h"
 #import "SIDownloadManager.h"
+#import "SISoundManager.h"
 
