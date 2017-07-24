@@ -16,4 +16,5 @@
 #import "SIBluetoothManager.h"
 #import "SIDownloadManager.h"
 #import "SISoundManager.h"
+#import "SIKeychainManager.h"
 
