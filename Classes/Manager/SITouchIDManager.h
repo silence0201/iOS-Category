@@ -34,7 +34,4 @@ typedef void(^PassFailBlock)(SITouchIDManager *,NSError *);
 @property (nonatomic,copy) PassSuccessBlock passSuccessBlock ;
 @property (nonatomic,copy) PassFailBlock passFailBlock ;
 
-
-
-
 @end
