@@ -82,6 +82,7 @@
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
 		E88DB6D61ED9C961003A7310 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6D51ED9C961003A7310 /* UIApplication+UIDebug.m */; };
 		E892FCCD1EC7045E00E2F630 /* CALayer+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */; };
+		E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
 		E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F11E81720C00E9D69C /* UIColor+Random.m */; };
@@ -426,6 +427,8 @@
 		E88DB6D51ED9C961003A7310 /* UIApplication+UIDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIDebug.m"; sourceTree = "<group>"; };
 		E892FCCB1EC7045E00E2F630 /* CALayer+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Property.h"; sourceTree = "<group>"; };
 		E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Property.m"; sourceTree = "<group>"; };
+		E89CCAC81F263A6700D33D11 /* SIKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeychainManager.h; sourceTree = "<group>"; };
+		E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
 		E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Segues.m"; sourceTree = "<group>"; };
 		E8B122EA1E816ECB00E9D69C /* UIScrollView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Frame.h"; sourceTree = "<group>"; };
@@ -1917,6 +1920,8 @@
 				E87504A01E618D870097F41E /* SIDownloadManager.m */,
 				E849ADD61EE14B0700BF9D31 /* SISoundManager.h */,
 				E849ADD71EE14B0700BF9D31 /* SISoundManager.m */,
+				E89CCAC81F263A6700D33D11 /* SIKeychainManager.h */,
+				E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -2027,6 +2032,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8E8A4D61E56A3EB00E64E54 /* EXTScope.m in Sources */,
+				E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */,
 				E83465BD1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m in Sources */,
 				E8E946651E210B6D00EE98B0 /* UIView+Toast.m in Sources */,
 				E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */,
