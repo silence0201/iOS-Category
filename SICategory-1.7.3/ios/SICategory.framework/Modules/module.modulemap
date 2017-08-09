@@ -1,0 +1,6 @@
+framework module SICategory {
+  umbrella header "SICategory.h"
+
+  export *
+  module * { export * }
+}
