@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-objc-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 [![CocoaPods](http://img.shields.io/cocoapods/v/SICategory.svg?style=flat)](http://cocoapods.org/?q=SICategory) 
-[![CocoaPods](http://img.shields.io/cocoapods/p/SICategory.svg?style=flat)](http://cocoapods.org/?q= SICategory)
+[![CocoaPods](http://img.shields.io/cocoapods/p/SICategory.svg?style=flat)](http://cocoapods.org/?q=SICategory)
 
 功能强大的iOS开发分类
 
