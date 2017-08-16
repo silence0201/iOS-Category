@@ -2,7 +2,7 @@
 //  UIView+Animation.m
 //  Category
 //  https://github.com/r3econ/UIView-Animation-Extensions
-//  Created by 杨晴贺 on 02/01/2017.
+//  Created by Silence on 02/01/2017.
 //  Copyright © 2017 silence. All rights reserved.
 //
 

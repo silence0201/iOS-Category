@@ -2,7 +2,7 @@
 //  UIApplication+UIDebug.m
 //  Category
 //
-//  Created by 杨晴贺 on 2017/5/27.
+//  Created by Silence on 2017/5/27.
 //  Copyright © 2017年 silence. All rights reserved.
 //
 

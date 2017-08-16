@@ -2,7 +2,7 @@
 //  SIKeyboardManager.m
 //  Category
 //  YYKeyboardManager <https://github.com/ibireme/YYKeyboardManager>
-//  Created by 杨晴贺 on 23/02/2017.
+//  Created by Silence on 23/02/2017.
 //  Copyright © 2017 silence. All rights reserved.
 //
 

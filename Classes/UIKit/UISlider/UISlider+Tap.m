@@ -2,7 +2,7 @@
 //  UISlider+Tap.m
 //  Category
 //
-//  Created by 杨晴贺 on 2017/3/12.
+//  Created by Silence on 2017/3/12.
 //  Copyright © 2017年 silence. All rights reserved.
 //
 

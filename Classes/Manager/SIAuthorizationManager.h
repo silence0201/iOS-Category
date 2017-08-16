@@ -2,7 +2,7 @@
 //  AuthorizationManager.h
 //  AuthorizationManagerDemo
 //
-//  Created by 杨晴贺 on 09/02/2017.
+//  Created by Silence on 09/02/2017.
 //  Copyright © 2017 Silence. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  SICollectionMacro.h
 //  Category
 //
-//  Created by 杨晴贺 on 25/02/2017.
+//  Created by Silence on 25/02/2017.
 //  Copyright © 2017 silence. All rights reserved.
 //
 

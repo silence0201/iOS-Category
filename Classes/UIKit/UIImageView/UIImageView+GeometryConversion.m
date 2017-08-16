@@ -2,7 +2,7 @@
 //  UIImageView+GeometryConversion.m
 //  Category
 //
-//  Created by 杨晴贺 on 2017/3/28.
+//  Created by Silence on 2017/3/28.
 //  Copyright © 2017年 silence. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  NSData+Figure.m
 //  Category
 //
-//  Created by 杨晴贺 on 03/11/2016.
+//  Created by Silence on 03/11/2016.
 //  Copyright © 2016 silence. All rights reserved.
 //
 

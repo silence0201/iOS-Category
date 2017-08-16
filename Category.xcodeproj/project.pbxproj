@@ -83,6 +83,7 @@
 		E88DB6D61ED9C961003A7310 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6D51ED9C961003A7310 /* UIApplication+UIDebug.m */; };
 		E892FCCD1EC7045E00E2F630 /* CALayer+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */; };
 		E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */; };
+		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
 		E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F11E81720C00E9D69C /* UIColor+Random.m */; };
@@ -429,6 +430,8 @@
 		E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Property.m"; sourceTree = "<group>"; };
 		E89CCAC81F263A6700D33D11 /* SIKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeychainManager.h; sourceTree = "<group>"; };
 		E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
+		E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
+		E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
 		E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Segues.m"; sourceTree = "<group>"; };
 		E8B122EA1E816ECB00E9D69C /* UIScrollView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Frame.h"; sourceTree = "<group>"; };
@@ -1856,6 +1859,8 @@
 				E83465D21E8AB07C00F1F757 /* UIView+NIB.m */,
 				E83465DA1E8AB3E800F1F757 /* UIView+Recursion.h */,
 				E83465DB1E8AB3E800F1F757 /* UIView+Recursion.m */,
+				E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */,
+				E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2173,6 +2178,7 @@
 				E8E945FF1E210B6D00EE98B0 /* NSArray+Block.m in Sources */,
 				E8E9461A1E210B6D00EE98B0 /* NSObject+Block.m in Sources */,
 				E8D91AD51EADF37C0072AF6A /* CAAnimation+EasingEquations.m in Sources */,
+				E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */,
 				E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */,
 				E83465EC1E8ABA8B00F1F757 /* UINavigationItem+Margin.m in Sources */,
 				E8E946221E210B6D00EE98B0 /* NSObject+Runtime.m in Sources */,
