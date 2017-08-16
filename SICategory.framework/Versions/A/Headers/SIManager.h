@@ -2,7 +2,7 @@
 //  SIManager.h
 //  Category
 //
-//  Created by 杨晴贺 on 24/02/2017.
+//  Created by Silence on 24/02/2017.
 //  Copyright © 2017 silence. All rights reserved.
 //
 
@@ -16,4 +16,5 @@
 #import "SIBluetoothManager.h"
 #import "SIDownloadManager.h"
 #import "SISoundManager.h"
+#import "SIKeychainManager.h"
 

@@ -2,7 +2,7 @@
 //  UITabBarController+Hide.h
 //  HIdeDemo
 //
-//  Created by 杨晴贺 on 17/01/2017.
+//  Created by Silence on 17/01/2017.
 //  Copyright © 2017 Silence. All rights reserved.
 //
 

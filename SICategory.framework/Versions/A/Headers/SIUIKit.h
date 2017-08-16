@@ -2,7 +2,7 @@
 //  SIUIKit.h
 //  Category
 //
-//  Created by 杨晴贺 on 07/01/2017.
+//  Created by Silence on 07/01/2017.
 //  Copyright © 2017 silence. All rights reserved.
 //
 
@@ -79,6 +79,7 @@
 #import "UIView+Shake.h"
 #import "UIView+draggable.h"
 #import "UIView+Recursion.h"
+#import "UIView+Badge.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"

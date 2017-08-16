@@ -2,7 +2,7 @@
 //  SITouchIDManager.h
 //  Category
 //
-//  Created by 杨晴贺 on 20/02/2017.
+//  Created by Silence on 20/02/2017.
 //  Copyright © 2017 silence. All rights reserved.
 //
 
@@ -33,8 +33,5 @@ typedef void(^PassFailBlock)(SITouchIDManager *,NSError *);
 @property (nonatomic,copy) TouchIDAllowBlock touchIDAllowBlock ;
 @property (nonatomic,copy) PassSuccessBlock passSuccessBlock ;
 @property (nonatomic,copy) PassFailBlock passFailBlock ;
-
-
-
 
 @end
