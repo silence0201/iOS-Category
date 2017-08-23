@@ -2,7 +2,7 @@
 //  NSObject+PerformSelector.h
 //  Category
 //
-//  Created by 杨晴贺 on 2017/8/23.
+//  Created by Silence on 2017/8/23.
 //  Copyright © 2017年 silence. All rights reserved.
 //
 
@@ -10,6 +10,6 @@
 
 @interface NSObject (PerformSelector)
 
-- (id)performSelector:(SEL)aSelector withObjects:(NSArray*)objects;
+- (id)performSelector:(SEL)aSelector withObjects:(NSArray *)objects;
 
 @end
