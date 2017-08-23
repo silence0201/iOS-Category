@@ -66,6 +66,7 @@
 #import "NSObject+Runtime.h"
 #import "NSObject+Parse.h"
 #import "NSObject+AutoCoding.h"
+#import "NSObject+PerformSelector.h"
 
 #import "NSString+AppInfo.h"
 #import "NSString+Hash.h"
