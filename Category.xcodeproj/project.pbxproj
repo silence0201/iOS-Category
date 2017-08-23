@@ -83,6 +83,7 @@
 		E88DB6D61ED9C961003A7310 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6D51ED9C961003A7310 /* UIApplication+UIDebug.m */; };
 		E892FCCD1EC7045E00E2F630 /* CALayer+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */; };
 		E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */; };
+		E8A41DF11F4DC33D00680E46 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */; };
 		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
@@ -430,6 +431,8 @@
 		E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Property.m"; sourceTree = "<group>"; };
 		E89CCAC81F263A6700D33D11 /* SIKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeychainManager.h; sourceTree = "<group>"; };
 		E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
+		E8A41DEF1F4DC33D00680E46 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
+		E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelector.m"; sourceTree = "<group>"; };
 		E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
@@ -1504,6 +1507,8 @@
 				E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */,
 				E8CF8DAE1ED6BA66002B9AC6 /* NSObject+Dealloc.h */,
 				E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */,
+				E8A41DEF1F4DC33D00680E46 /* NSObject+PerformSelector.h */,
+				E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -2187,6 +2192,7 @@
 				E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */,
 				E854CE461E7D558200AD9F13 /* NSDictionary+XML.m in Sources */,
 				E88DB6D61ED9C961003A7310 /* UIApplication+UIDebug.m in Sources */,
+				E8A41DF11F4DC33D00680E46 /* NSObject+PerformSelector.m in Sources */,
 				E854CE601E7D5E1800AD9F13 /* NSDate+Cupertino.m in Sources */,
 				E8E9464B1E210B6D00EE98B0 /* UIImage+Fix.m in Sources */,
 				E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */,
