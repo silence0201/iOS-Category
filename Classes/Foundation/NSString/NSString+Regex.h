@@ -126,7 +126,7 @@
  *  最后是8个数字(\d{8})
  */
 #pragma mark --- March
-- (NSArray *)matchWithRegex:(NSString *)regex;
+- (NSArray<NSString *> *)matchWithRegex:(NSString *)regex;
 
 - (NSString *)matchWithRegex:(NSString *)regex atIndex:(NSUInteger)index;
 

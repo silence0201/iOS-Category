@@ -290,7 +290,7 @@
 }
 
 #pragma mark --- Match
-- (NSArray *)matchWithRegex:(NSString *)regex{
+- (NSArray<NSString *> *)matchWithRegex:(NSString *)regex{
     NSTextCheckingResult *result = [self firstMatchedResultWithRegex:regex];
     NSMutableArray *mArray = [[NSMutableArray alloc] initWithCapacity:[result numberOfRanges]];
     for (int i = 0 ; i < [result numberOfRanges]; i ++ ) {
