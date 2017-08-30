@@ -315,5 +315,10 @@
     return [regexExpression firstMatchInString:self options:(NSMatchingOptions)0 range:range];
 }
 
+- (NSArray<NSTextCheckingResult *> *)matchedResultWithRegex:(NSString *)regex{
+    NSRegularExpression *regexExpression = [NSRegularExpression regularExpressionWithPattern:regex options:(NSRegularExpressionOptions)0 error:NULL];
+    NSRange range = {0, self.length};
+    return [regexExpression matchesInString:self options:(NSMatchingOptions)0 range:range];
+}
 
 @end

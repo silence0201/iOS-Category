@@ -134,5 +134,7 @@
 
 - (NSTextCheckingResult *)firstMatchedResultWithRegex:(NSString *)regex;
 
+- (NSArray<NSTextCheckingResult *> *)matchedResultWithRegex:(NSString *)regex;
+
 
 @end
