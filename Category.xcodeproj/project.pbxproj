@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */; };
 		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
 		E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465861E8A998300F1F757 /* UIBezierPath+Length.m */; };
 		E834658A1E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */; };
@@ -273,6 +274,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E8173C8A1FBC7BFD00417E4B /* NSString+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
+		E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
 		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
 		E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Hash.m"; sourceTree = "<group>"; };
 		E83465851E8A998300F1F757 /* UIBezierPath+Length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Length.h"; sourceTree = "<group>"; };
@@ -1552,6 +1555,8 @@
 				E854CE621E7D5F4A00AD9F13 /* NSString+HTML.m */,
 				E8CFC1AF1F1A5895000B7782 /* NSString+Segmentation.h */,
 				E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */,
+				E8173C8A1FBC7BFD00417E4B /* NSString+AES.h */,
+				E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2046,6 +2051,7 @@
 				E83465BD1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m in Sources */,
 				E8E946651E210B6D00EE98B0 /* UIView+Toast.m in Sources */,
 				E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */,
+				E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */,
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
 				E854CE401E7D53A600AD9F13 /* NSData+DataCache.m in Sources */,
