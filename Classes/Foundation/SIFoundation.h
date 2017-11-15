@@ -86,6 +86,7 @@
 #import "NSString+XML.h"
 #import "NSString+HTML.h"
 #import "NSString+Segmentation.h"
+#import "NSString+AES.h"
 
 #import "NSURLRequest+Params.h"
 #import "NSURLRequest+Upload.h"
