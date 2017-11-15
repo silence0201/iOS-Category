@@ -18,8 +18,8 @@
 #import <CoreMotion/CoreMotion.h>
 #import <EventKit/EventKit.h>
 
-typedef void (^SILocationSuccessCallback)();
-typedef void (^SILocationFailureCallback)();
+typedef void (^SILocationSuccessCallback)(void);
+typedef void (^SILocationFailureCallback)(void);
 
 static char SIPermissionsLocationManagerPropertyKey;
 static char SIPermissionsLocationBlockSuccessPropertyKey;
@@ -159,7 +159,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
 
 
 #pragma mark - Request permissions
--(void)requestAccessToCalendarWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToCalendarWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     EKEventStore *eventStore = [[EKEventStore alloc] init];
     [eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -172,7 +172,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)requestAccessToContactsWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToContactsWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
     ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     if(addressBook) {
         ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
@@ -187,7 +187,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }
 }
 
--(void)requestAccessToMicrophoneWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToMicrophoneWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
     AVAudioSession *session = [[AVAudioSession alloc] init];
     [session requestRecordPermission:^(BOOL granted) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -200,7 +200,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)requestAccessToMotionWithSuccess:(void(^)())accessGranted {
+-(void)requestAccessToMotionWithSuccess:(void(^)(void))accessGranted {
     CMMotionActivityManager *motionManager = [[CMMotionActivityManager alloc] init];
     NSOperationQueue *motionQueue = [[NSOperationQueue alloc] init];
     [motionManager startActivityUpdatesToQueue:motionQueue withHandler:^(CMMotionActivity *activity) {
@@ -209,7 +209,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)requestAccessToPhotosWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToPhotosWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
     ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
     [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         accessGranted();
