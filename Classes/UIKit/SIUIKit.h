@@ -80,6 +80,7 @@
 #import "UIView+draggable.h"
 #import "UIView+Recursion.h"
 #import "UIView+Badge.h"
+#import "UIView+RelativeLayout.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"
