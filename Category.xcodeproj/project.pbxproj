@@ -83,6 +83,7 @@
 		E88B47BB1E15363E0074A53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B47B91E15363E0074A53A /* LaunchScreen.storyboard */; };
 		E88DB6D61ED9C961003A7310 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6D51ED9C961003A7310 /* UIApplication+UIDebug.m */; };
 		E892FCCD1EC7045E00E2F630 /* CALayer+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */; };
+		E898B6DC1FC7128900E4051B /* UIView+RelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E898B6DB1FC7128900E4051B /* UIView+RelativeLayout.m */; };
 		E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */; };
 		E8A41DF11F4DC33D00680E46 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */; };
 		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
@@ -432,6 +433,8 @@
 		E88DB6D51ED9C961003A7310 /* UIApplication+UIDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIDebug.m"; sourceTree = "<group>"; };
 		E892FCCB1EC7045E00E2F630 /* CALayer+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Property.h"; sourceTree = "<group>"; };
 		E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Property.m"; sourceTree = "<group>"; };
+		E898B6DA1FC7128900E4051B /* UIView+RelativeLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RelativeLayout.h"; sourceTree = "<group>"; };
+		E898B6DB1FC7128900E4051B /* UIView+RelativeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RelativeLayout.m"; sourceTree = "<group>"; };
 		E89CCAC81F263A6700D33D11 /* SIKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeychainManager.h; sourceTree = "<group>"; };
 		E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
 		E8A41DEF1F4DC33D00680E46 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
@@ -1871,6 +1874,8 @@
 				E83465DB1E8AB3E800F1F757 /* UIView+Recursion.m */,
 				E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */,
 				E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */,
+				E898B6DA1FC7128900E4051B /* UIView+RelativeLayout.h */,
+				E898B6DB1FC7128900E4051B /* UIView+RelativeLayout.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2178,6 +2183,7 @@
 				E8E8A5531E594ABA00E64E54 /* NSObject+Parse.m in Sources */,
 				E8E9461C1E210B6D00EE98B0 /* NSObject+KVO.m in Sources */,
 				E854CE6F1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m in Sources */,
+				E898B6DC1FC7128900E4051B /* UIView+RelativeLayout.m in Sources */,
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
 				E86298D31EDC636C00D5017C /* MineViewController.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
