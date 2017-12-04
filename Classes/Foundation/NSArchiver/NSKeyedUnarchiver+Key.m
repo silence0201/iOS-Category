@@ -24,7 +24,7 @@
     return [self unarchiveObjectForKey:key WithPath:nil] ;
 }
 
-+ (id)unarchiveObjectForKey:(NSString *)key WithPath:(NSString *)path failure:(void (^)())failure{
++ (id)unarchiveObjectForKey:(NSString *)key WithPath:(NSString *)path failure:(void (^)(void))failure{
     id obj = [self unarchiveObjectForKey:key WithPath:path] ;
     if (obj == nil) {
         failure();
@@ -32,7 +32,7 @@
     return obj;
 }
 
-+ (id)unarchiveObjectForKey:(NSString *)key failure:(void (^)())failure{
++ (id)unarchiveObjectForKey:(NSString *)key failure:(void (^)(void))failure{
     return [self unarchiveObjectForKey:key WithPath:nil failure:failure] ;
 }
 

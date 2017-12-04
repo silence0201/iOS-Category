@@ -99,7 +99,7 @@
     NSUInteger days = [self numberOfDayInMonth];
     NSUInteger weeks = 0;
     if (weekday > 1) {
-        weeks += 1, days -= (7 - weekday + 1);
+        (void)(weeks += 1), days -= (7 - weekday + 1);
     }
     weeks += days / 7;
     weeks += (days % 7 > 0) ? 1 : 0;

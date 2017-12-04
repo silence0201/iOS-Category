@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^DeallocBlock)();
+typedef void(^DeallocBlock)(void);
 
 @interface NSObject (Dealloc)
 

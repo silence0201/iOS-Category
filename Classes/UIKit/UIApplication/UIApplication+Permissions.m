@@ -172,7 +172,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)requestAccessToContactsWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToContactsWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     if(addressBook) {
         ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
@@ -187,7 +187,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }
 }
 
--(void)requestAccessToMicrophoneWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToMicrophoneWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     AVAudioSession *session = [[AVAudioSession alloc] init];
     [session requestRecordPermission:^(BOOL granted) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -209,7 +209,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)requestAccessToPhotosWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToPhotosWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
     [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         accessGranted();
@@ -218,7 +218,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)requestAccessToRemindersWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToRemindersWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     EKEventStore *eventStore = [[EKEventStore alloc] init];
     [eventStore requestAccessToEntityType:EKEntityTypeReminder completion:^(BOOL granted, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -233,7 +233,7 @@ static char SIPermissionsLocationBlockFailurePropertyKey;
 
 
 #pragma mark - Needs investigating
--(void)requestAccessToLocationWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)requestAccessToLocationWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     self.permissionsLocationManager = [[CLLocationManager alloc] init];
     self.permissionsLocationManager.delegate = self;
     

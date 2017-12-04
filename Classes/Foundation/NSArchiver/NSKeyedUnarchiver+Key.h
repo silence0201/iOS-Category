@@ -36,7 +36,7 @@
  @param failure 失败的回调
  @return 解档的对象
  */
-+ (id)unarchiveObjectForKey:(NSString*)key WithPath:(NSString *)path failure:(void(^)())failure;
++ (id)unarchiveObjectForKey:(NSString*)key WithPath:(NSString *)path failure:(void(^)(void))failure;
 
 /**
  解档对象,默认读取Document/DefaultArchive目录中
@@ -45,7 +45,7 @@
  @param failure 失败的回调
  @return 解档的对象
  */
-+ (id)unarchiveObjectForKey:(NSString*)key failure:(void(^)())failure ;
++ (id)unarchiveObjectForKey:(NSString*)key failure:(void(^)(void))failure ;
 
 
 @end
