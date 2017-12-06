@@ -49,6 +49,7 @@
 #import "UIButton+Badge.h"
 
 #import "UIBarButtonItem+Badge.h"
+#import "UIBarButtonItem+Create.h"
 
 #import "UIGestureRecognizer+ALActionBlocks.h"
 
