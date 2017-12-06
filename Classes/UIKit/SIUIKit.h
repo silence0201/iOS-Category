@@ -17,6 +17,7 @@
 #import "UINavigationController+Transitions.h"
 #import "UINavigationController+Stack.h"
 #import "UINavigationController+Hide.h"
+#import "UINavigationController+Appear.h"
 
 #import "UINavigationItem+Lock.h"
 #import "UINavigationItem+Loading.h"
