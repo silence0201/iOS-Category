@@ -86,6 +86,7 @@
 		E898B6DC1FC7128900E4051B /* UIView+RelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E898B6DB1FC7128900E4051B /* UIView+RelativeLayout.m */; };
 		E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */; };
 		E8A41DF11F4DC33D00680E46 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */; };
+		E8A4D4F01FD82FAD0072A870 /* UIBarButtonItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D4EF1FD82FAD0072A870 /* UIBarButtonItem+Create.m */; };
 		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
@@ -439,6 +440,8 @@
 		E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
 		E8A41DEF1F4DC33D00680E46 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
 		E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelector.m"; sourceTree = "<group>"; };
+		E8A4D4EE1FD82FAD0072A870 /* UIBarButtonItem+Create.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Create.h"; sourceTree = "<group>"; };
+		E8A4D4EF1FD82FAD0072A870 /* UIBarButtonItem+Create.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Create.m"; sourceTree = "<group>"; };
 		E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
@@ -895,6 +898,8 @@
 			children = (
 				E83465EE1E8ABB4A00F1F757 /* UIBarButtonItem+Badge.h */,
 				E83465EF1E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m */,
+				E8A4D4EE1FD82FAD0072A870 /* UIBarButtonItem+Create.h */,
+				E8A4D4EF1FD82FAD0072A870 /* UIBarButtonItem+Create.m */,
 			);
 			path = UIBarButtonItem;
 			sourceTree = "<group>";
@@ -2059,6 +2064,7 @@
 				E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */,
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
+				E8A4D4F01FD82FAD0072A870 /* UIBarButtonItem+Create.m in Sources */,
 				E854CE401E7D53A600AD9F13 /* NSData+DataCache.m in Sources */,
 				E83465C91E8AAD3D00F1F757 /* UIImage+FileName.m in Sources */,
 				E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */,
