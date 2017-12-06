@@ -42,9 +42,6 @@
 		E83465F31E8ABBDB00F1F757 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465F21E8ABBDB00F1F757 /* UIButton+Badge.m */; };
 		E83465F61E8ABE7500F1F757 /* NSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465F51E8ABE7500F1F757 /* NSData+zlib.m */; };
 		E83465FC1E8AC1EE00F1F757 /* UIImageView+Letters.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465FB1E8AC1EE00F1F757 /* UIImageView+Letters.m */; };
-		E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */; };
-		E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F13141E5F141200A43EBB /* SIKeyboardManager.m */; };
-		E849ADD81EE14B0700BF9D31 /* SISoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E849ADD71EE14B0700BF9D31 /* SISoundManager.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
 		E854CE311E7D4EFB00AD9F13 /* NSString+Trims.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE301E7D4EFB00AD9F13 /* NSString+Trims.m */; };
 		E854CE371E7D514900AD9F13 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE361E7D514900AD9F13 /* NSData+Base64.m */; };
@@ -73,7 +70,6 @@
 		E86298D01EDC602200D5017C /* UIViewController+BackAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298CF1EDC602200D5017C /* UIViewController+BackAction.m */; };
 		E86298D31EDC636C00D5017C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298D21EDC636C00D5017C /* MineViewController.m */; };
 		E865E2611E925E51009E7377 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E865E2601E925E51009E7377 /* UIImage+Sprite.m */; };
-		E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87504A01E618D870097F41E /* SIDownloadManager.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
@@ -84,9 +80,19 @@
 		E88DB6D61ED9C961003A7310 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB6D51ED9C961003A7310 /* UIApplication+UIDebug.m */; };
 		E892FCCD1EC7045E00E2F630 /* CALayer+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */; };
 		E898B6DC1FC7128900E4051B /* UIView+RelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E898B6DB1FC7128900E4051B /* UIView+RelativeLayout.m */; };
-		E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */; };
 		E8A41DF11F4DC33D00680E46 /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */; };
 		E8A4D4F01FD82FAD0072A870 /* UIBarButtonItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D4EF1FD82FAD0072A870 /* UIBarButtonItem+Create.m */; };
+		E8A4D4F41FD835310072A870 /* SIAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D4F21FD835310072A870 /* SIAuthorizationManager.m */; };
+		E8A4D5131FD835CD0072A870 /* SISoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D4F71FD835CC0072A870 /* SISoundManager.m */; };
+		E8A4D5151FD835CD0072A870 /* SITouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D4FD1FD835CC0072A870 /* SITouchIDManager.m */; };
+		E8A4D5161FD835CD0072A870 /* SIDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5001FD835CC0072A870 /* SIDownloadManager.m */; };
+		E8A4D5171FD835CD0072A870 /* SIBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5031FD835CC0072A870 /* SIBluetoothManager.m */; };
+		E8A4D5181FD835CD0072A870 /* SIAppVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5051FD835CC0072A870 /* SIAppVersionManager.m */; };
+		E8A4D5191FD835CD0072A870 /* SIKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5081FD835CC0072A870 /* SIKeychainManager.m */; };
+		E8A4D51A1FD835CD0072A870 /* SIMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D50C1FD835CD0072A870 /* SIMediatorManager.m */; };
+		E8A4D51B1FD835CD0072A870 /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D50E1FD835CD0072A870 /* SIKeyboardManager.m */; };
+		E8A4D51C1FD835CD0072A870 /* SIIAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5111FD835CD0072A870 /* SIIAppPurchaseManager.m */; };
+		E8A4D51F1FD8397D0072A870 /* UINavigationController+Appear.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */; };
 		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
@@ -245,11 +251,6 @@
 		E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */; };
 		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
 		E8FB937E1E606D3600B77407 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FB937D1E606D3600B77407 /* StoreKit.framework */; };
-		E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */; };
-		E8FB93841E607CE700B77407 /* SIAppVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FB93831E607CE700B77407 /* SIAppVersionManager.m */; };
-		E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */; };
-		E8FF5EB61E5B250200859425 /* SITouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB51E5B250200859425 /* SITouchIDManager.m */; };
-		E8FF5EB91E5B342500859425 /* SIBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,12 +347,6 @@
 		E83465F51E8ABE7500F1F757 /* NSData+zlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+zlib.m"; sourceTree = "<group>"; };
 		E83465FA1E8AC1EE00F1F757 /* UIImageView+Letters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Letters.h"; sourceTree = "<group>"; };
 		E83465FB1E8AC1EE00F1F757 /* UIImageView+Letters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Letters.m"; sourceTree = "<group>"; };
-		E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
-		E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
-		E83F13131E5F141200A43EBB /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
-		E83F13141E5F141200A43EBB /* SIKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeyboardManager.m; sourceTree = "<group>"; };
-		E849ADD61EE14B0700BF9D31 /* SISoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISoundManager.h; sourceTree = "<group>"; };
-		E849ADD71EE14B0700BF9D31 /* SISoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISoundManager.m; sourceTree = "<group>"; };
 		E84A41DA1E76F75B00CF24CF /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		E854CE2F1E7D4EFB00AD9F13 /* NSString+Trims.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trims.h"; sourceTree = "<group>"; };
@@ -408,8 +403,6 @@
 		E86298D21EDC636C00D5017C /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		E865E25F1E925E51009E7377 /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		E865E2601E925E51009E7377 /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
-		E875049F1E618D870097F41E /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
-		E87504A01E618D870097F41E /* SIDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDownloadManager.m; sourceTree = "<group>"; };
 		E87504A51E61AA770097F41E /* SIRuntimeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIRuntimeMacro.h; sourceTree = "<group>"; };
 		E87504A81E61AB320097F41E /* SIColorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIColorMacro.h; sourceTree = "<group>"; };
 		E87504AB1E61AB980097F41E /* SICollectionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICollectionMacro.h; sourceTree = "<group>"; };
@@ -436,12 +429,32 @@
 		E892FCCC1EC7045E00E2F630 /* CALayer+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Property.m"; sourceTree = "<group>"; };
 		E898B6DA1FC7128900E4051B /* UIView+RelativeLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RelativeLayout.h"; sourceTree = "<group>"; };
 		E898B6DB1FC7128900E4051B /* UIView+RelativeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RelativeLayout.m"; sourceTree = "<group>"; };
-		E89CCAC81F263A6700D33D11 /* SIKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeychainManager.h; sourceTree = "<group>"; };
-		E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
 		E8A41DEF1F4DC33D00680E46 /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
 		E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelector.m"; sourceTree = "<group>"; };
 		E8A4D4EE1FD82FAD0072A870 /* UIBarButtonItem+Create.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Create.h"; sourceTree = "<group>"; };
 		E8A4D4EF1FD82FAD0072A870 /* UIBarButtonItem+Create.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Create.m"; sourceTree = "<group>"; };
+		E8A4D4F21FD835310072A870 /* SIAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAuthorizationManager.m; sourceTree = "<group>"; };
+		E8A4D4F31FD835310072A870 /* SIAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAuthorizationManager.h; sourceTree = "<group>"; };
+		E8A4D4F61FD835CC0072A870 /* SISoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISoundManager.h; sourceTree = "<group>"; };
+		E8A4D4F71FD835CC0072A870 /* SISoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISoundManager.m; sourceTree = "<group>"; };
+		E8A4D4FC1FD835CC0072A870 /* SITouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITouchIDManager.h; sourceTree = "<group>"; };
+		E8A4D4FD1FD835CC0072A870 /* SITouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITouchIDManager.m; sourceTree = "<group>"; };
+		E8A4D4FF1FD835CC0072A870 /* SIDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDownloadManager.h; sourceTree = "<group>"; };
+		E8A4D5001FD835CC0072A870 /* SIDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDownloadManager.m; sourceTree = "<group>"; };
+		E8A4D5021FD835CC0072A870 /* SIBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBluetoothManager.h; sourceTree = "<group>"; };
+		E8A4D5031FD835CC0072A870 /* SIBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBluetoothManager.m; sourceTree = "<group>"; };
+		E8A4D5051FD835CC0072A870 /* SIAppVersionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAppVersionManager.m; sourceTree = "<group>"; };
+		E8A4D5061FD835CC0072A870 /* SIAppVersionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAppVersionManager.h; sourceTree = "<group>"; };
+		E8A4D5081FD835CC0072A870 /* SIKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeychainManager.m; sourceTree = "<group>"; };
+		E8A4D5091FD835CC0072A870 /* SIKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeychainManager.h; sourceTree = "<group>"; };
+		E8A4D50B1FD835CD0072A870 /* SIMediatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMediatorManager.h; sourceTree = "<group>"; };
+		E8A4D50C1FD835CD0072A870 /* SIMediatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMediatorManager.m; sourceTree = "<group>"; };
+		E8A4D50E1FD835CD0072A870 /* SIKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIKeyboardManager.m; sourceTree = "<group>"; };
+		E8A4D50F1FD835CD0072A870 /* SIKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIKeyboardManager.h; sourceTree = "<group>"; };
+		E8A4D5111FD835CD0072A870 /* SIIAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIIAppPurchaseManager.m; sourceTree = "<group>"; };
+		E8A4D5121FD835CD0072A870 /* SIIAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIIAppPurchaseManager.h; sourceTree = "<group>"; };
+		E8A4D51D1FD8397D0072A870 /* UINavigationController+Appear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appear.h"; sourceTree = "<group>"; };
+		E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appear.m"; sourceTree = "<group>"; };
 		E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
@@ -777,17 +790,7 @@
 		E8EB94381E2F1445000E4480 /* UITabBarController+Hide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Hide.h"; sourceTree = "<group>"; };
 		E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Hide.m"; sourceTree = "<group>"; };
 		E8FB937D1E606D3600B77407 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		E8FB937F1E606D5C00B77407 /* SIIAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIIAppPurchaseManager.h; sourceTree = "<group>"; };
-		E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIIAppPurchaseManager.m; sourceTree = "<group>"; };
-		E8FB93821E607CE700B77407 /* SIAppVersionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAppVersionManager.h; sourceTree = "<group>"; };
-		E8FB93831E607CE700B77407 /* SIAppVersionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAppVersionManager.m; sourceTree = "<group>"; };
 		E8FB93851E6080C100B77407 /* SIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIManager.h; sourceTree = "<group>"; };
-		E8FF5EAE1E5B244F00859425 /* SIAuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAuthorizationManager.h; sourceTree = "<group>"; };
-		E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAuthorizationManager.m; sourceTree = "<group>"; };
-		E8FF5EB41E5B250200859425 /* SITouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITouchIDManager.h; sourceTree = "<group>"; };
-		E8FF5EB51E5B250200859425 /* SITouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITouchIDManager.m; sourceTree = "<group>"; };
-		E8FF5EB71E5B342500859425 /* SIBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBluetoothManager.h; sourceTree = "<group>"; };
-		E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBluetoothManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1023,6 +1026,96 @@
 				E86298D21EDC636C00D5017C /* MineViewController.m */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		E8A4D4F11FD835310072A870 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D4F21FD835310072A870 /* SIAuthorizationManager.m */,
+				E8A4D4F31FD835310072A870 /* SIAuthorizationManager.h */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		E8A4D4F51FD835CC0072A870 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D4F61FD835CC0072A870 /* SISoundManager.h */,
+				E8A4D4F71FD835CC0072A870 /* SISoundManager.m */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		E8A4D4FB1FD835CC0072A870 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D4FC1FD835CC0072A870 /* SITouchIDManager.h */,
+				E8A4D4FD1FD835CC0072A870 /* SITouchIDManager.m */,
+			);
+			path = TouchID;
+			sourceTree = "<group>";
+		};
+		E8A4D4FE1FD835CC0072A870 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D4FF1FD835CC0072A870 /* SIDownloadManager.h */,
+				E8A4D5001FD835CC0072A870 /* SIDownloadManager.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		E8A4D5011FD835CC0072A870 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D5021FD835CC0072A870 /* SIBluetoothManager.h */,
+				E8A4D5031FD835CC0072A870 /* SIBluetoothManager.m */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		E8A4D5041FD835CC0072A870 /* AppVersion */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D5051FD835CC0072A870 /* SIAppVersionManager.m */,
+				E8A4D5061FD835CC0072A870 /* SIAppVersionManager.h */,
+			);
+			path = AppVersion;
+			sourceTree = "<group>";
+		};
+		E8A4D5071FD835CC0072A870 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D5081FD835CC0072A870 /* SIKeychainManager.m */,
+				E8A4D5091FD835CC0072A870 /* SIKeychainManager.h */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		E8A4D50A1FD835CD0072A870 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D50B1FD835CD0072A870 /* SIMediatorManager.h */,
+				E8A4D50C1FD835CD0072A870 /* SIMediatorManager.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		E8A4D50D1FD835CD0072A870 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D50E1FD835CD0072A870 /* SIKeyboardManager.m */,
+				E8A4D50F1FD835CD0072A870 /* SIKeyboardManager.h */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		E8A4D5101FD835CD0072A870 /* AppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4D5111FD835CD0072A870 /* SIIAppPurchaseManager.m */,
+				E8A4D5121FD835CD0072A870 /* SIIAppPurchaseManager.h */,
+			);
+			path = AppPurchase;
 			sourceTree = "<group>";
 		};
 		E8B122F61E8175EC00E9D69C /* UIResponder */ = {
@@ -1805,6 +1898,8 @@
 				E8E945CF1E210B6D00EE98B0 /* UINavigationController+Stack.m */,
 				E8E945D01E210B6D00EE98B0 /* UINavigationController+Transitions.h */,
 				E8E945D11E210B6D00EE98B0 /* UINavigationController+Transitions.m */,
+				E8A4D51D1FD8397D0072A870 /* UINavigationController+Appear.h */,
+				E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -1927,26 +2022,16 @@
 			isa = PBXGroup;
 			children = (
 				E8FB93851E6080C100B77407 /* SIManager.h */,
-				E8FF5EAE1E5B244F00859425 /* SIAuthorizationManager.h */,
-				E8FF5EAF1E5B244F00859425 /* SIAuthorizationManager.m */,
-				E8FF5EB41E5B250200859425 /* SITouchIDManager.h */,
-				E8FF5EB51E5B250200859425 /* SITouchIDManager.m */,
-				E8FF5EB71E5B342500859425 /* SIBluetoothManager.h */,
-				E8FF5EB81E5B342500859425 /* SIBluetoothManager.m */,
-				E83F13101E5F0D8200A43EBB /* SIMediatorManager.h */,
-				E83F13111E5F0D8200A43EBB /* SIMediatorManager.m */,
-				E83F13131E5F141200A43EBB /* SIKeyboardManager.h */,
-				E83F13141E5F141200A43EBB /* SIKeyboardManager.m */,
-				E8FB937F1E606D5C00B77407 /* SIIAppPurchaseManager.h */,
-				E8FB93801E606D5C00B77407 /* SIIAppPurchaseManager.m */,
-				E8FB93821E607CE700B77407 /* SIAppVersionManager.h */,
-				E8FB93831E607CE700B77407 /* SIAppVersionManager.m */,
-				E875049F1E618D870097F41E /* SIDownloadManager.h */,
-				E87504A01E618D870097F41E /* SIDownloadManager.m */,
-				E849ADD61EE14B0700BF9D31 /* SISoundManager.h */,
-				E849ADD71EE14B0700BF9D31 /* SISoundManager.m */,
-				E89CCAC81F263A6700D33D11 /* SIKeychainManager.h */,
-				E89CCAC91F263A6700D33D11 /* SIKeychainManager.m */,
+				E8A4D5101FD835CD0072A870 /* AppPurchase */,
+				E8A4D5041FD835CC0072A870 /* AppVersion */,
+				E8A4D4F11FD835310072A870 /* Authorization */,
+				E8A4D5011FD835CC0072A870 /* Bluetooth */,
+				E8A4D4FE1FD835CC0072A870 /* Download */,
+				E8A4D50D1FD835CD0072A870 /* Keyboard */,
+				E8A4D5071FD835CC0072A870 /* Keychain */,
+				E8A4D50A1FD835CD0072A870 /* Mediator */,
+				E8A4D4F51FD835CC0072A870 /* Sound */,
+				E8A4D4FB1FD835CC0072A870 /* TouchID */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -2057,17 +2142,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8E8A4D61E56A3EB00E64E54 /* EXTScope.m in Sources */,
-				E89CCACA1F263A6700D33D11 /* SIKeychainManager.m in Sources */,
 				E83465BD1E8AA9E800F1F757 /* UILabel+AutomaticWriting.m in Sources */,
 				E8E946651E210B6D00EE98B0 /* UIView+Toast.m in Sources */,
-				E87504A11E618D870097F41E /* SIDownloadManager.m in Sources */,
 				E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */,
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
 				E8A4D4F01FD82FAD0072A870 /* UIBarButtonItem+Create.m in Sources */,
 				E854CE401E7D53A600AD9F13 /* NSData+DataCache.m in Sources */,
 				E83465C91E8AAD3D00F1F757 /* UIImage+FileName.m in Sources */,
-				E8FF5EB01E5B244F00859425 /* SIAuthorizationManager.m in Sources */,
 				E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */,
 				E8E946161E210B6D00EE98B0 /* NSNumber+Display.m in Sources */,
 				E83465DC1E8AB3E800F1F757 /* UIView+Recursion.m in Sources */,
@@ -2076,10 +2158,11 @@
 				E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */,
 				E8E8A4D21E56A3C800E64E54 /* EXTSelectorChecking.m in Sources */,
 				E8E946611E210B6D00EE98B0 /* UIView+Find.m in Sources */,
+				E8A4D5191FD835CD0072A870 /* SIKeychainManager.m in Sources */,
 				E8E946001E210B6D00EE98B0 /* NSArray+JSONEncode.m in Sources */,
 				E8E946361E210B6D00EE98B0 /* UIButton+Block.m in Sources */,
 				E8E946051E210B6D00EE98B0 /* NSData+Code.m in Sources */,
-				E83F13151E5F141200A43EBB /* SIKeyboardManager.m in Sources */,
+				E8A4D5151FD835CD0072A870 /* SITouchIDManager.m in Sources */,
 				E8E946671E210B6D00EE98B0 /* UIViewController+MJPopupViewController.m in Sources */,
 				E8E9464D1E210B6D00EE98B0 /* UIImage+Make.m in Sources */,
 				E8E946121E210B6D00EE98B0 /* KKLog.m in Sources */,
@@ -2089,7 +2172,6 @@
 				E834659A1E8A9E6200F1F757 /* UITextView+PlaceHolder.m in Sources */,
 				E83465FC1E8AC1EE00F1F757 /* UIImageView+Letters.m in Sources */,
 				E83465B41E8AA61400F1F757 /* UIWebView+Load.m in Sources */,
-				E8FB93841E607CE700B77407 /* SIAppVersionManager.m in Sources */,
 				E854CE691E7D620E00AD9F13 /* UIApplication+Permissions.m in Sources */,
 				E83465B11E8AA56A00F1F757 /* UIWebView+Style.m in Sources */,
 				E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */,
@@ -2119,11 +2201,14 @@
 				E8E946061E210B6D00EE98B0 /* NSData+Encrypt.m in Sources */,
 				E854CE3A1E7D521C00AD9F13 /* NSData+Gzip.m in Sources */,
 				E854CE631E7D5F4A00AD9F13 /* NSString+HTML.m in Sources */,
+				E8A4D51F1FD8397D0072A870 /* UINavigationController+Appear.m in Sources */,
 				E8E946391E210B6D00EE98B0 /* UIButton+Indicator.m in Sources */,
 				E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */,
 				E8E946501E210B6D00EE98B0 /* UIImage+Rotate.m in Sources */,
+				E8A4D5171FD835CD0072A870 /* SIBluetoothManager.m in Sources */,
 				E854CE731E7D673900AD9F13 /* UIWindow+Hierarchy.m in Sources */,
 				E854CE591E7D5C1D00AD9F13 /* NSURLRequest+Upload.m in Sources */,
+				E8A4D5181FD835CD0072A870 /* SIAppVersionManager.m in Sources */,
 				E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */,
 				E8E9462B1E210B6D00EE98B0 /* NSString+QRcode.m in Sources */,
 				E8D91AD91EADF4000072AF6A /* CAMediaTimingFunction+AdditionalEquations.m in Sources */,
@@ -2133,14 +2218,12 @@
 				E8E9465A1E210B6D00EE98B0 /* UITableView+CellStyle.m in Sources */,
 				E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */,
 				E8E8A4DC1E56A43900E64E54 /* EXTNil.m in Sources */,
-				E8FF5EB91E5B342500859425 /* SIBluetoothManager.m in Sources */,
 				E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */,
 				E8E946411E210B6D00EE98B0 /* UIDevice+Disk.m in Sources */,
 				E8E946261E210B6D00EE98B0 /* NSString+Hash.m in Sources */,
 				E8E9464F1E210B6D00EE98B0 /* UIImage+Modify.m in Sources */,
 				E8E946091E210B6D00EE98B0 /* NSDate+Figure.m in Sources */,
 				E8E9462A1E210B6D00EE98B0 /* NSString+PinYin.m in Sources */,
-				E83F13121E5F0D8200A43EBB /* SIMediatorManager.m in Sources */,
 				E8E946591E210B6D00EE98B0 /* UIScrollView+SimpleScroll.m in Sources */,
 				E854CE661E7D615700AD9F13 /* UIFont+TTF.m in Sources */,
 				E8E8A4E01E56A4A400E64E54 /* EXTConcreteProtocol.m in Sources */,
@@ -2193,7 +2276,6 @@
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
 				E86298D31EDC636C00D5017C /* MineViewController.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
-				E8FB93811E606D5C00B77407 /* SIIAppPurchaseManager.m in Sources */,
 				E8E283751E78302B006815EA /* NSTimer+Pause.m in Sources */,
 				E8E946081E210B6D00EE98B0 /* NSDate+Extension.m in Sources */,
 				E8E946631E210B6D00EE98B0 /* UIView+Radius.m in Sources */,
@@ -2204,6 +2286,7 @@
 				E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */,
 				E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */,
 				E83465EC1E8ABA8B00F1F757 /* UINavigationItem+Margin.m in Sources */,
+				E8A4D51A1FD835CD0072A870 /* SIMediatorManager.m in Sources */,
 				E8E946221E210B6D00EE98B0 /* NSObject+Runtime.m in Sources */,
 				E854CE4A1E7D570500AD9F13 /* NSIndexPath+Offset.m in Sources */,
 				E8E9464E1E210B6D00EE98B0 /* UIImage+Merge.m in Sources */,
@@ -2223,12 +2306,10 @@
 				E8E9462F1E210B6D00EE98B0 /* NSTimer+Block.m in Sources */,
 				E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */,
 				E854CE371E7D514900AD9F13 /* NSData+Base64.m in Sources */,
-				E8FF5EB61E5B250200859425 /* SITouchIDManager.m in Sources */,
 				E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */,
 				E8E8A4D91E56A41F00E64E54 /* EXTSafeCategory.m in Sources */,
 				E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */,
 				E8E946201E210B6D00EE98B0 /* NSObject+QuickCopy.m in Sources */,
-				E849ADD81EE14B0700BF9D31 /* SISoundManager.m in Sources */,
 				E83465F01E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m in Sources */,
 				E8E9462D1E210B6D00EE98B0 /* NSString+Size.m in Sources */,
 				E8E9462C1E210B6D00EE98B0 /* NSString+Regex.m in Sources */,
@@ -2249,13 +2330,17 @@
 				E8E9463F1E210B6D00EE98B0 /* UIDevice+CPU.m in Sources */,
 				E8E9464A1E210B6D00EE98B0 /* UIImage+Effect.m in Sources */,
 				E8E057171EC2BD5000B06DC1 /* NSObject+AutoCoding.m in Sources */,
+				E8A4D5131FD835CD0072A870 /* SISoundManager.m in Sources */,
+				E8A4D51C1FD835CD0072A870 /* SIIAppPurchaseManager.m in Sources */,
 				E83465C31E8AABCB00F1F757 /* UIImage+Alpha.m in Sources */,
 				E8E946571E210B6D00EE98B0 /* UIScrollView+Amplification.m in Sources */,
 				E854CE531E7D5B4800AD9F13 /* NSFileHandle+ReadLine.m in Sources */,
 				E83465D61E8AB16C00F1F757 /* UIView+Shake.m in Sources */,
 				E8E9460C1E210B6D00EE98B0 /* NSDictionary+JSONEncode.m in Sources */,
 				E8E2836B1E781B6F006815EA /* NSString+AttributedBuilder.m in Sources */,
+				E8A4D51B1FD835CD0072A870 /* SIKeyboardManager.m in Sources */,
 				E8E946491E210B6D00EE98B0 /* UIImage+Compress.m in Sources */,
+				E8A4D4F41FD835310072A870 /* SIAuthorizationManager.m in Sources */,
 				E8E8A4CF1E56A36200E64E54 /* NSInvocation+EXT.m in Sources */,
 				E854CE3D1E7D531300AD9F13 /* NSData+APNSToken.m in Sources */,
 				E8E9460A1E210B6D00EE98B0 /* NSDate+Formatter.m in Sources */,
@@ -2278,6 +2363,7 @@
 				E8E946581E210B6D00EE98B0 /* UIScrollView+PageNumber.m in Sources */,
 				E854CE5D1E7D5CFC00AD9F13 /* NSURLSession+SynchronousTask.m in Sources */,
 				E8B122F91E81760900E9D69C /* UIResponder+FirstResponder.m in Sources */,
+				E8A4D5161FD835CD0072A870 /* SIDownloadManager.m in Sources */,
 				E8E946421E210B6D00EE98B0 /* UIDevice+NetWork.m in Sources */,
 				E8E946371E210B6D00EE98B0 /* UIButton+ClickEdgeInsets.m in Sources */,
 				E83465A01E8AA08D00F1F757 /* UITextView+Select.m in Sources */,
