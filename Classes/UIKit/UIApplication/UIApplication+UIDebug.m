@@ -95,6 +95,16 @@
 }
 
 @end
+
+@interface OverlayWindow : UIWindow
+- (UIGestureRecognizerState)state;
+@end
+
+@implementation OverlayWindow
+- (UIGestureRecognizerState)state {
+    return UIGestureRecognizerStateEnded;
+}
+@end
 #pragma clang diagnostic pop
 
 #endif
@@ -104,15 +114,24 @@
 + (void)showDebuggingInformationOverlay {
 #if DEBUG
     Class overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
-    SEL overlay = NSSelectorFromString(@"overlay");
-    SEL toggleVisibility = NSSelectorFromString(@"toggleVisibility") ;
     SEL prepareDebuggingOverlay = NSSelectorFromString(@"prepareDebuggingOverlay") ;
     if ([overlayClass respondsToSelector:prepareDebuggingOverlay]){
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [overlayClass performSelector:prepareDebuggingOverlay] ;
-        id obj = [overlayClass performSelector:overlay];
-        [obj performSelector:toggleVisibility] ;
+        if (@available(iOS 11.0, *)) {
+            // Simulate two finger click status bar events
+            // 模拟两个手指点击状态栏的事件
+            id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+            [overlayClass performSelector:NSSelectorFromString(@"overlay")];
+            id handlerClass = NSClassFromString(@"UIDebuggingInformationOverlayInvokeGestureHandler");
+            
+            id handler = [handlerClass performSelector:NSSelectorFromString(@"mainHandler")];
+            [handler performSelector:NSSelectorFromString(@"_handleActivationGesture:") withObject:[[OverlayWindow alloc] init]];
+        } else {
+            id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+            id overlay = [overlayClass performSelector:NSSelectorFromString(@"overlay")];
+            [overlay performSelector:NSSelectorFromString(@"toggleVisibility")];
+        }
 #pragma clang diagnostic pop
     }
     
