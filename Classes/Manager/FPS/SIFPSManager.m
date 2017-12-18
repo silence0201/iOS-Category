@@ -2,7 +2,7 @@
 //  SIFPSManager.m
 //  Category
 //
-//  Created by 杨晴贺 on 2017/12/6.
+//  Created by Silence on 2017/12/6.
 //  Copyright © 2017年 silence. All rights reserved.
 //
 
@@ -50,7 +50,7 @@
         [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
         
         _fpsTextLayer = [CATextLayer layer];
-        [_fpsTextLayer setFrame:CGRectMake(0, 3, self.bounds.size.width, self.bounds.size.height-3)];
+        [_fpsTextLayer setFrame:CGRectMake(20, 3, self.bounds.size.width-20, self.bounds.size.height-3)];
         [_fpsTextLayer setFontSize: 12.0f];
         [_fpsTextLayer setContentsScale: [UIScreen mainScreen].scale];
         [_fpsTextLayer setBackgroundColor:[UIColor clearColor].CGColor];
