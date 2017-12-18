@@ -17,4 +17,5 @@
 #import "SIDownloadManager.h"
 #import "SISoundManager.h"
 #import "SIKeychainManager.h"
+#import "SIFPSManager.h"
 

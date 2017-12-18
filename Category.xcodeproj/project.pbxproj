@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E81138D51FE2B6FB00882DA3 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138D41FE2B6FA00882DA3 /* UIApplication+UIDebug.m */; };
+		E81138DB1FE800C700882DA3 /* NSString+Append.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138DA1FE800C700882DA3 /* NSString+Append.m */; };
 		E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */; };
 		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
 		E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465861E8A998300F1F757 /* UIBezierPath+Length.m */; };
@@ -280,6 +281,8 @@
 /* Begin PBXFileReference section */
 		E81138D31FE2B6FA00882DA3 /* UIApplication+UIDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIDebug.h"; sourceTree = "<group>"; };
 		E81138D41FE2B6FA00882DA3 /* UIApplication+UIDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIDebug.m"; sourceTree = "<group>"; };
+		E81138D91FE800C700882DA3 /* NSString+Append.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Append.h"; sourceTree = "<group>"; };
+		E81138DA1FE800C700882DA3 /* NSString+Append.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Append.m"; sourceTree = "<group>"; };
 		E8173C8A1FBC7BFD00417E4B /* NSString+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
 		E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
 		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
@@ -1670,6 +1673,8 @@
 				E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */,
 				E8173C8A1FBC7BFD00417E4B /* NSString+AES.h */,
 				E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */,
+				E81138D91FE800C700882DA3 /* NSString+Append.h */,
+				E81138DA1FE800C700882DA3 /* NSString+Append.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2187,6 +2192,7 @@
 				E83465B41E8AA61400F1F757 /* UIWebView+Load.m in Sources */,
 				E854CE691E7D620E00AD9F13 /* UIApplication+Permissions.m in Sources */,
 				E83465B11E8AA56A00F1F757 /* UIWebView+Style.m in Sources */,
+				E81138DB1FE800C700882DA3 /* NSString+Append.m in Sources */,
 				E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */,
 				E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */,
 				E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */,
