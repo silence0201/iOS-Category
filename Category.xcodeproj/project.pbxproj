@@ -252,6 +252,7 @@
 		E8E946681E210B6D00EE98B0 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945FC1E210B6D00EE98B0 /* UIViewController+TopBarMessage.m */; };
 		E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */; };
 		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
+		E8EF86701FEAAEC60074210F /* UITableView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF866F1FEAAEC60074210F /* UITableView+Placeholder.m */; };
 		E8FB937E1E606D3600B77407 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FB937D1E606D3600B77407 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -795,6 +796,8 @@
 		E8EB94321E2F1253000E4480 /* UINavigationController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Hide.m"; sourceTree = "<group>"; };
 		E8EB94381E2F1445000E4480 /* UITabBarController+Hide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Hide.h"; sourceTree = "<group>"; };
 		E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Hide.m"; sourceTree = "<group>"; };
+		E8EF866E1FEAAEC60074210F /* UITableView+Placeholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Placeholder.h"; sourceTree = "<group>"; };
+		E8EF866F1FEAAEC60074210F /* UITableView+Placeholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Placeholder.m"; sourceTree = "<group>"; };
 		E8FB937D1E606D3600B77407 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E8FB93851E6080C100B77407 /* SIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1954,6 +1957,8 @@
 				E8E945E01E210B6D00EE98B0 /* UITableView+Update.m */,
 				E8B122F31E81751E00E9D69C /* UITableView+iOS7Style.h */,
 				E8B122F41E81751E00E9D69C /* UITableView+iOS7Style.m */,
+				E8EF866E1FEAAEC60074210F /* UITableView+Placeholder.h */,
+				E8EF866F1FEAAEC60074210F /* UITableView+Placeholder.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -2260,6 +2265,7 @@
 				E8B122FC1E81768300E9D69C /* UIResponder+Chain.m in Sources */,
 				E8E9462E1E210B6D00EE98B0 /* NSString+URLEncode.m in Sources */,
 				E8E946321E210B6D00EE98B0 /* UIApplication+Authority.m in Sources */,
+				E8EF86701FEAAEC60074210F /* UITableView+Placeholder.m in Sources */,
 				E8E946521E210B6D00EE98B0 /* UILabel+Space.m in Sources */,
 				E854CE7A1E7D692900AD9F13 /* UITextField+Select.m in Sources */,
 				E8D91ACD1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m in Sources */,
