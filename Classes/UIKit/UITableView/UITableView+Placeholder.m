@@ -89,7 +89,7 @@ static force_inline void swizzMethod(SEL oriSel, SEL newSel) {
         }
         if (rowCount == 0) {
             if (self.placeholderCustomView) {
-                self.backgroundView = [self placeholderCustomView];
+                self.backgroundView = [self defaultCustomView];
             } else
                 self.backgroundView = [self defaultNoDataView];
         } else {
@@ -171,6 +171,13 @@ static force_inline void swizzMethod(SEL oriSel, SEL newSel) {
     return imageView;
 }
 
+- (UIView *)defaultCustomView {
+    UIView *v = [[UIView alloc]initWithFrame:self.frame];
+    self.placeholderCustomView.center = v.center;
+    [v addSubview:self.placeholderCustomView];
+    return v;
+}
+
 - (UIView *)defaultNoDataView {
     if (self.noDataView) return self.noDataView;
     self.noDataView = ({
@@ -222,3 +229,4 @@ static force_inline void swizzMethod(SEL oriSel, SEL newSel) {
 }
 
 @end
+
