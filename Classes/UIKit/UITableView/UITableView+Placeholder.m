@@ -217,4 +217,8 @@ static force_inline void swizzMethod(SEL oriSel, SEL newSel) {
     [self layoutDefaultView:self.defaultNoDataView];
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 @end
