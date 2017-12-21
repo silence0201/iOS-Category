@@ -9,7 +9,94 @@
 #import "UITableView+Placeholder.h"
 #import <objc/runtime.h>
 
+#define force_inline __inline__ __attribute__((always_inline))
+
+static force_inline void swizzMethod(SEL oriSel, SEL newSel) {
+    Class class = [UITableView class];
+    Method oriMethod = class_getInstanceMethod(class, oriSel);
+    Method newMethod = class_getInstanceMethod(class, newSel);
+    
+    BOOL success = class_addMethod(class, oriSel, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));
+    if (success) {
+        class_replaceMethod(class, newSel, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+    } else {
+        method_exchangeImplementations(oriMethod, newMethod);
+    }
+}
+
 @implementation UITableView (Placeholder)
+
++ (void)load {
+    SEL selectors[] = {
+        @selector(reloadData),
+        @selector(insertSections:withRowAnimation:),
+        @selector(deleteSections:withRowAnimation:),
+        @selector(reloadSections:withRowAnimation:),
+        @selector(insertRowsAtIndexPaths:withRowAnimation:),
+        @selector(deleteRowsAtIndexPaths:withRowAnimation:),
+        @selector(reloadRowsAtIndexPaths:withRowAnimation:),
+    };
+    
+    for (NSUInteger index = 0; index < sizeof(selectors) / sizeof(SEL); ++index) {
+        SEL originalSelector = selectors[index];
+        SEL swizzledSelector = NSSelectorFromString([@"si_" stringByAppendingString:NSStringFromSelector(originalSelector)]);
+        swizzMethod(originalSelector, swizzledSelector);
+    }
+}
+
+#pragma mark -- 替换方法
+- (void)si_reloadData {
+    [self showPlaceholderAction];
+    [self si_reloadData];
+}
+
+- (void)si_insertSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation {
+    [self showPlaceholderAction];
+    [self si_insertSections:sections withRowAnimation:animation];
+}
+
+- (void)si_deleteSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation {
+    [self showPlaceholderAction];
+    [self si_deleteSections:sections withRowAnimation:animation];
+}
+
+- (void)si_reloadSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation {
+    [self showPlaceholderAction];
+    [self si_reloadSections:sections withRowAnimation:animation];
+}
+
+- (void)si_insertRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation {
+    [self showPlaceholderAction];
+    [self si_insertRowsAtIndexPaths:indexPaths withRowAnimation:animation];
+}
+
+- (void)si_deleteRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation {
+    [self showPlaceholderAction];
+    [self si_deleteRowsAtIndexPaths:indexPaths withRowAnimation:animation];
+}
+
+- (void)si_reloadRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation {
+    [self showPlaceholderAction];
+    [self si_reloadRowsAtIndexPaths:indexPaths withRowAnimation:animation];
+}
+
+- (void)showPlaceholderAction{
+    if (self.showPlaceholder) {
+        NSInteger sectionCount = self.numberOfSections;
+        NSInteger rowCount = 0;
+        for (int i = 0; i < sectionCount; i++) {
+            rowCount += [self.dataSource tableView:self numberOfRowsInSection:i];
+        }
+        if (rowCount == 0) {
+            if (self.placeholderCustomView) {
+                self.backgroundView = [self placeholderCustomView];
+            } else
+                self.backgroundView = [self defaultNoDataView];
+        } else {
+            self.backgroundView = [[UIView alloc] init];
+        }
+    }
+}
 
 #pragma mark - setter && getter
 - (void)setShowPlaceholder:(BOOL)showPlaceholder {
@@ -52,6 +139,14 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
+- (UIView *)noDataView {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setNoDataView:(UIView *)noDataView {
+    objc_setAssociatedObject(self, @selector(noDataView), noDataView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 #pragma mark -- View
 - (UILabel *)placeholderLabel {
     UILabel *label = objc_getAssociatedObject(self, _cmd);
@@ -74,6 +169,52 @@
         objc_setAssociatedObject(self, _cmd, imageView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     return imageView;
+}
+
+- (UIView *)defaultNoDataView {
+    if (self.noDataView) return self.noDataView;
+    self.noDataView = ({
+        UIView *view = [[UIView alloc] initWithFrame:self.bounds];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(si_tapDefalutNoDataView:)];
+        [view addGestureRecognizer:tap];
+        
+        [view addSubview:[self placeholderImageView]];
+        [view addSubview:[self placeholderLabel]];
+        
+        [self layoutDefaultView:view];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onDeviceOrientationChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
+        view;
+    });
+    
+    return self.defaultNoDataView;
+}
+
+- (void)layoutDefaultView:(UIView *)defaultView {
+    UIImageView *imageView = [self placeholderImageView];
+    UIImage *image = self.placeholderImage;
+    imageView.image = image;
+    CGFloat X = (self.bounds.size.width - image.size.width - self.contentInset.left - self.contentInset.right) / 2;
+    CGFloat Y = (self.bounds.size.height - image.size.height - self.contentInset.top - self.contentInset.bottom) / 2 - 20;
+    imageView.frame = CGRectMake(X, Y, image.size.width, image.size.height);
+    
+    UILabel *label = [self placeholderLabel];
+    label.text = self.placeholderText;
+    label.frame = CGRectMake(0, imageView.frame.origin.y + imageView.bounds.size.height + 10, self.bounds.size.width, 30);
+}
+
+- (void)si_tapDefalutNoDataView:(UITapGestureRecognizer *)tap {
+    if (self.placeholderClickBlock) {
+        self.placeholderClickBlock([self noDataView]);
+    }
+}
+
+#pragma mark - notifications
+- (void)onDeviceOrientationChange:(NSNotification *)noti {
+    if (self.placeholderCustomView || !self.showPlaceholder) {
+        return;
+    }
+    [self layoutDefaultView:self.defaultNoDataView];
 }
 
 @end
