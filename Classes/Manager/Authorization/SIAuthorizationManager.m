@@ -7,57 +7,21 @@
 //
 
 #import "SIAuthorizationManager.h"
-#import <UIKit/UIKit.h>
-#import <AssetsLibrary/AssetsLibrary.h>
-#import <CoreLocation/CoreLocation.h>
-#import <AddressBook/AddressBook.h>
-#import <AVFoundation/AVFoundation.h>
 #import <Photos/Photos.h>
+#import <AVFoundation/AVFoundation.h>
+#import <EventKit/EventKit.h>
+#import <Contacts/Contacts.h>
+#import <Speech/Speech.h>
+#import <HealthKit/HealthKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <UserNotifications/UserNotifications.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import <CoreLocation/CoreLocation.h>
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
-@interface AuthorizationAlter: UIAlertView<UIAlertViewDelegate>
-
-+ (void)showAuthorizationAlertWithTitle:(NSString *)content;
-
-@end
-
-@implementation AuthorizationAlter
-
-- (instancetype)initWithTitle:(NSString *)content{
-    self = [super initWithTitle:content
-                        message:nil
-                       delegate:self
-              cancelButtonTitle:@"取消"
-              otherButtonTitles:@"去设置", nil] ;
-    return self ;
-}
-
-+ (void)showAuthorizationAlertWithTitle:(NSString *)content{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        AuthorizationAlter *alter = [[AuthorizationAlter alloc]initWithTitle:content] ;
-        [alter show] ;
-    }) ;
-}
-
-#pragma mark --- UIAlertViewDelegate
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    if (alertView.cancelButtonIndex != buttonIndex) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{} completionHandler:nil] ;
-    }
-}
-
-@end
-
-@interface SIAuthorizationManager ()<CLLocationManagerDelegate>
-
-@end
-
-@implementation SIAuthorizationManager{
-    NSString *_appDisplayName ;
-    CLLocationManager *_locationManager ;
-}
+@implementation SIAuthorizationManager
 
 /// 单例
 + (instancetype)sharedManager{
@@ -69,150 +33,265 @@
     return manager ;
 }
 
-- (instancetype)init{
-    if(self = [super init]){
-        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary] ;
-        _appDisplayName = [infoDictionary objectForKey:@"CFBundleName"] ;
-        _locationManager = [[CLLocationManager alloc] init];
-        _locationManager.delegate = self;
-    }
-    return self ;
-}
-
-- (BOOL)requestAuthorizationType:(SIAuthorizationType)type{
+- (void)requestAuthorizationType:(SIAuthorizationType)type completion:(void (^)(BOOL, SIAuthorizationStatus))completion{
     switch (type) {
-        case SIAuthorizationTypePhotoLibrary:
-            return [self requestAuthorizationPhotoLibrary] ;
+        case SIAuthorizationTypePhoto:
+            [self requestAuthorizationTypePhotoCompletion:completion];
             break;
-        case SIAuthorizationTypeLocationAlways:
-            return [self requestAuthorizationLocationAlways] ;
-            break ;
-        case SIAuthorizationTypeLocationUse:
-            return [self requestAuthorizationLocationUse] ;
-            break ;
-        case SIAuthorizationTypeAddressBook:
-            return [self requestAuthorizationAddressBook] ;
-            break ;
-        case SIAuthorizationTypeAudio:
-            return [self requestAuthorizationAudio] ;
-            break ;
         case SIAuthorizationTypeCamera:
-            return [self requestAuthorizationCamera] ;
-            break ;
+            [self requestAuthorizationTypeCameraCompletion:completion];
+            break;
+        case SIAuthorizationTypeMedia:
+            [self requestAuthorizationTypeMediaCompletion:completion];
+            break;
+        case SIAuthorizationTypeMicrophone:
+            [self requestAuthorizationTypeMicrophoneCompletion:completion];
+            break;
+        case SIAuthorizationTypeLocation:
+            [self requestAuthorizationTypeLocationCompletion:completion];
+            break;
+        case SIAuthorizationTypeBluetooth:
+            [self requestAuthorizationTypeBluetoothCompletion:completion];
+            break;
+        case SIAuthorizationTypePushNotification:
+            [self requestAuthorizationTypePushNotificationCompletion:completion];
+            break;
+        case SIAuthorizationTypeSpeech:
+            [self requestAuthorizationTypeSpeechCompletion:completion];
+            break;
+        case SIAuthorizationTypeEvent:
+            [self requestAuthorizationTypeEventCompletion:completion];
+            break;
+        case SIAuthorizationTypeContact:
+            [self requestAuthorizationType:SIAuthorizationTypeContact completion:completion];
+            break;
+        case SIAuthorizationTypeReminder:
+            [self requestAuthorizationTypeReminderCompletion:completion];
+            break;
+        case SIAuthorizationTypeHealth:
+            [self requestAuthorizationTypeHealthCompletion:completion];
+            break;
         default:
             break;
     }
-    
-    return NO ;
 }
 
-- (BOOL)requestAuthorizationPhotoLibrary{
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]){
-        PHAuthorizationStatus authStatus = [PHPhotoLibrary   authorizationStatus];
-        if (authStatus == PHAuthorizationStatusNotDetermined) {
-            __block BOOL canPh = YES;
-            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-                canPh = status == PHAuthorizationStatusAuthorized ;
-            }] ;
-            return canPh ;
-        }else if (authStatus != PHAuthorizationStatusAuthorized){
-            NSString *content = [NSString stringWithFormat:@"请在iPhone的”设置-隐私-相册“选项中，允许%@访问你的手机相册",_appDisplayName];
-            [AuthorizationAlter showAuthorizationAlertWithTitle:content] ;
+- (void)requestAuthorizationTypePhotoCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion{
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        if (status == PHAuthorizationStatusDenied) {
+            completion(NO,SIAuthorizationStatusDenied);
+        } else if (status == PHAuthorizationStatusNotDetermined) {
+            completion(NO,SIAuthorizationStatusNotDetermined);
+        } else if (status == PHAuthorizationStatusRestricted) {
+            completion(NO,SIAuthorizationStatusRestricted);
+        } else if (status == PHAuthorizationStatusAuthorized) {
+            completion(YES,SIAuthorizationStatusAuthorized);
         }
-    }else{
-        UIAlertView *alter = [[UIAlertView alloc]initWithTitle:@"设备不支持" message:nil delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil] ;
-        [alter show] ;
-        return NO ;
-    }
-    return YES ;
+    }];
 }
 
-- (BOOL)requestAuthorizationLocationAlways{
-    CLAuthorizationStatus authStatus = [CLLocationManager authorizationStatus] ;
-    if (authStatus == kCLAuthorizationStatusNotDetermined){
-        if([_locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-            [_locationManager requestAlwaysAuthorization];  // 永久授权
+- (void)requestAuthorizationTypeCameraCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+        AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        if (granted) {
+            completion(YES,SIAuthorizationStatusAuthorized);
+        } else {
+            if (status == AVAuthorizationStatusDenied) {
+                completion(NO,SIAuthorizationStatusDenied);
+            } else if (status == AVAuthorizationStatusNotDetermined) {
+                completion(NO,SIAuthorizationStatusNotDetermined);
+            } else if (status == AVAuthorizationStatusRestricted) {
+                completion(NO,SIAuthorizationStatusRestricted);
+            }
         }
-    }else if(authStatus == !kCLAuthorizationStatusAuthorizedAlways){
-        NSString *content = [NSString stringWithFormat:@"请在iPhone的”设置-隐私-定位“选项中，允许%@访问你的总是定位",_appDisplayName];
-        [AuthorizationAlter showAuthorizationAlertWithTitle:content] ;
-        return NO ;
-    }
-    
-    return YES ;
+    }];
 }
 
-- (BOOL)requestAuthorizationLocationUse{
-    CLAuthorizationStatus authStatus = [CLLocationManager authorizationStatus] ;
-    if (authStatus == kCLAuthorizationStatusNotDetermined){
-        if([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-            [_locationManager requestWhenInUseAuthorization];  // 使用时授权
+- (void)requestAuthorizationTypeMediaCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion{
+    [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus status) {
+        if (status == MPMediaLibraryAuthorizationStatusDenied) {
+            completion(NO,SIAuthorizationStatusDenied);
+        } else if (status == MPMediaLibraryAuthorizationStatusNotDetermined) {
+            completion(NO,SIAuthorizationStatusNotDetermined);
+        } else if (status == MPMediaLibraryAuthorizationStatusRestricted) {
+            completion(NO,SIAuthorizationStatusRestricted);
+        } else if (status == MPMediaLibraryAuthorizationStatusAuthorized) {
+            completion(YES,SIAuthorizationStatusAuthorized);
         }
-    }else if(authStatus == !kCLAuthorizationStatusAuthorizedWhenInUse){
-        NSString *content = [NSString stringWithFormat:@"请在iPhone的”设置-隐私-定位“选项中，允许%@访问你的使用时定位",_appDisplayName];
-        [AuthorizationAlter showAuthorizationAlertWithTitle:content] ;
-        return NO ;
-    }
-    return YES ;
+    }];
 }
 
-- (BOOL)requestAuthorizationAddressBook{
-    ABAuthorizationStatus authStatus = ABAddressBookGetAuthorizationStatus() ;
-    if (authStatus == kABAuthorizationStatusNotDetermined){
-        __block BOOL canAdd = YES;
-        ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
-        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
-            canAdd = granted ;
-        });
-        CFRelease(addressBook);
-        return canAdd ;
-    }else if(authStatus != kABAuthorizationStatusAuthorized){
-        NSString *content = [NSString stringWithFormat:@"请在iPhone的”设置-隐私-联系人“选项中，允许%@访问你的手机通讯录",_appDisplayName];
-        [AuthorizationAlter showAuthorizationAlertWithTitle:content] ;
-        return NO ;
-    }
-    return YES ;
+- (void)requestAuthorizationTypeMicrophoneCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion{
+    [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {
+        AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio];
+        if (granted) {
+            completion(YES,SIAuthorizationStatusAuthorized);
+        } else {
+            if (status == AVAuthorizationStatusDenied) {
+                completion(NO,SIAuthorizationStatusDenied);
+            } else if (status == AVAuthorizationStatusNotDetermined) {
+                completion(NO,SIAuthorizationStatusNotDetermined);
+            } else if (status == AVAuthorizationStatusRestricted) {
+                completion(NO,SIAuthorizationStatusRestricted);
+            }
+        }
+    }];
 }
 
-- (BOOL)requestAuthorizationAudio{
-    __block BOOL canRecord = YES;
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    if ([audioSession respondsToSelector:@selector(requestRecordPermission:)]) {
-        [audioSession performSelector:@selector(requestRecordPermission:) withObject:^(BOOL granted) {
+- (void)requestAuthorizationTypeLocationCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    if ([CLLocationManager locationServicesEnabled]) {
+        CLLocationManager *locationManager = [[CLLocationManager alloc]init];
+        [locationManager requestAlwaysAuthorization];
+        [locationManager requestWhenInUseAuthorization];
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
+        locationManager.distanceFilter = 10;
+        [locationManager startUpdatingLocation];
+    }
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    if (status == kCLAuthorizationStatusAuthorizedAlways) {
+        completion(YES,SIAuthorizationStatusLocationAlways);
+    } else if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        completion(YES,SIAuthorizationStatusLocationWhenInUse);
+    } else if (status == kCLAuthorizationStatusDenied) {
+        completion(NO,SIAuthorizationStatusDenied);
+    } else if (status == kCLAuthorizationStatusNotDetermined) {
+        completion(NO,SIAuthorizationStatusNotDetermined);
+    } else if (status == kCLAuthorizationStatusRestricted) {
+        completion(NO,SIAuthorizationStatusRestricted);
+    }
+}
+
+- (void)requestAuthorizationTypeBluetoothCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    CBCentralManager *centralManager = [[CBCentralManager alloc] init];
+    CBManagerState state = [centralManager state];
+    if (state == CBManagerStateUnsupported || state == CBManagerStateUnauthorized || state == CBManagerStateUnknown) {
+        completion(NO,SIAuthorizationStatusDenied);
+    } else {
+        completion(YES,SIAuthorizationStatusAuthorized);
+    }
+}
+
+- (void)requestAuthorizationTypePushNotificationCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 10.0) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        UNAuthorizationOptions types=UNAuthorizationOptionBadge|UNAuthorizationOptionAlert|UNAuthorizationOptionSound;
+        [center requestAuthorizationWithOptions:types completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (granted) {
-                canRecord = YES;
+                [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+                }];
+                completion(YES,SIAuthorizationStatusAuthorized);
             } else {
-                NSString *content = [NSString stringWithFormat:@"请在iPhone的”设置-隐私-麦克风“选项中，允许%@访问你的麦克风",_appDisplayName];
-                [AuthorizationAlter showAuthorizationAlertWithTitle:content] ;
-                canRecord = NO;
+                [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@""} completionHandler:^(BOOL success) { }];
             }
         }];
+    }else if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0){
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge categories:nil]];
     }
-    return canRecord ;
 }
 
-- (BOOL)requestAuthorizationCamera{
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-        AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-        if (authStatus == ALAuthorizationStatusNotDetermined) {
-            __block BOOL grn = NO ;
-            [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-                grn = granted ;
-            }] ;
-            return grn ;
+- (void)requestAuthorizationTypeSpeechCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    [SFSpeechRecognizer requestAuthorization:^(SFSpeechRecognizerAuthorizationStatus status) {
+        if (status == SFSpeechRecognizerAuthorizationStatusDenied) {
+            completion(NO,SIAuthorizationStatusDenied);
+        } else if (status == SFSpeechRecognizerAuthorizationStatusNotDetermined) {
+            completion(NO,SIAuthorizationStatusNotDetermined);
+        } else if (status == SFSpeechRecognizerAuthorizationStatusRestricted) {
+            completion(NO,SIAuthorizationStatusRestricted);
+        } else if (status == SFSpeechRecognizerAuthorizationStatusAuthorized) {
+            completion(YES,SIAuthorizationStatusAuthorized);
         }
-        if(authStatus != ALAuthorizationStatusAuthorized){
-            NSString *content = [NSString stringWithFormat:@"请在iPhone的”设置-隐私-相机“选项中，允许%@访问你的手机相机",_appDisplayName]
-            ;
-            [AuthorizationAlter showAuthorizationAlertWithTitle:content] ;
-            return NO ;
+    }];
+}
+
+- (void)requestAuthorizationTypeEventCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    EKEventStore *store = [[EKEventStore alloc]init];
+    [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError * _Nullable error) {
+        EKAuthorizationStatus status = [EKEventStore  authorizationStatusForEntityType:EKEntityTypeEvent];
+        if (granted) {
+            completion(YES,SIAuthorizationStatusAuthorized);
+        } else {
+            if (status == EKAuthorizationStatusDenied) {
+                completion(NO,SIAuthorizationStatusDenied);
+            } else if (status == EKAuthorizationStatusNotDetermined) {
+                completion(NO,SIAuthorizationStatusNotDetermined);
+            } else if (status == EKAuthorizationStatusRestricted) {
+                completion(NO,SIAuthorizationStatusRestricted);
+            }
+        }
+    }];
+}
+
+- (void)requestAuthorizationTypeContactCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    CNContactStore *contactStore = [[CNContactStore alloc] init];
+    [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+        if (granted) {
+            completion(YES,SIAuthorizationStatusAuthorized);
+        } else {
+            if (status == CNAuthorizationStatusDenied) {
+                completion(NO,SIAuthorizationStatusDenied);
+            }else if (status == CNAuthorizationStatusRestricted){
+                completion(NO,SIAuthorizationStatusNotDetermined);
+            }else if (status == CNAuthorizationStatusNotDetermined){
+                completion(NO,SIAuthorizationStatusRestricted);
+            }
+        }
+    }];
+}
+
+- (void)requestAuthorizationTypeReminderCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    EKEventStore *eventStore = [[EKEventStore alloc]init];
+    [eventStore requestAccessToEntityType:EKEntityTypeReminder completion:^(BOOL granted, NSError * _Nullable error) {
+        EKAuthorizationStatus status = [EKEventStore  authorizationStatusForEntityType:EKEntityTypeEvent];
+        if (granted) {
+            completion(YES,SIAuthorizationStatusAuthorized);
+        } else {
+            if (status == EKAuthorizationStatusDenied) {
+                completion(NO,SIAuthorizationStatusDenied);
+            }else if (status == EKAuthorizationStatusNotDetermined){
+                completion(NO,SIAuthorizationStatusNotDetermined);
+            }else if (status == EKAuthorizationStatusRestricted){
+                completion(NO,SIAuthorizationStatusRestricted);
+            }
+        }
+    }];
+}
+
+- (void)requestAuthorizationTypeHealthCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
+    if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0) {
+        if (![HKHealthStore isHealthDataAvailable]) {
+            NSAssert([HKHealthStore isHealthDataAvailable],@"Device not support HealthKit");
+        }else{
+            HKHealthStore *store = [[HKHealthStore alloc] init];
+            NSSet *readObjectTypes = [self readObjectTypes];
+            NSSet *writeObjectTypes = [self writeObjectTypes];
+            [store requestAuthorizationToShareTypes:writeObjectTypes readTypes:readObjectTypes completion:^(BOOL success, NSError * _Nullable error) {
+                if (success == YES) {
+                    completion(YES,SIAuthorizationStatusAuthorized);
+                }else{
+                    completion(NO,SIAuthorizationStatusUnkonwn);
+                }
+            }];
         }
     }else{
-        UIAlertView *alter = [[UIAlertView alloc]initWithTitle:@"设备不支持相机" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] ;
-        [alter show] ;
-        return NO ;
+        NSAssert([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0, @"iOS8 below systems are not currently supported");
     }
-    return YES ;
+}
+
+
+-(NSSet *)readObjectTypes{
+    HKQuantityType *StepCount = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount];
+    HKQuantityType *DistanceWalkingRunning= [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceWalkingRunning];
+    HKObjectType *FlightsClimbed = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierFlightsClimbed];
+    
+    return [NSSet setWithObjects:StepCount,DistanceWalkingRunning,FlightsClimbed, nil];
+}
+-(NSSet *)writeObjectTypes{
+    HKQuantityType *StepCount = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount];
+    HKQuantityType *DistanceWalkingRunning= [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceWalkingRunning];
+    HKObjectType *FlightsClimbed = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierFlightsClimbed];
+    
+    return [NSSet setWithObjects:StepCount,DistanceWalkingRunning,FlightsClimbed, nil];
 }
 
 @end
