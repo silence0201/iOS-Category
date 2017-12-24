@@ -200,23 +200,28 @@ static SIPushNotificationManager *_instance = nil;
     UNNotificationSound *sound = [UNNotificationSound defaultSound];
     content.sound = sound;
     
-    NSData *graphicsData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
-    
-    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-
-    NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationGraphics.png"];
-    [graphicsData writeToFile:localPath atomically:YES];
-    
-    if (localPath && ![localPath isEqualToString:@""]) {
-        UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
-        if (attachment) {
-            content.attachments = @[attachment];
-        }
-    }
-    
-    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
-    
-    [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_async(queue, ^{
+        NSData *graphicsData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        
+        NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+        
+        NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationGraphics.png"];
+        [graphicsData writeToFile:localPath atomically:YES];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (localPath && ![localPath isEqualToString:@""]) {
+                UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
+                if (attachment) {
+                    content.attachments = @[attachment];
+                }
+            }
+            
+            UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
+            
+            [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+        });
+    });
 }
 
 #pragma mark 图像推送,可以通过链接下载,可设置自定义提示音
@@ -243,23 +248,28 @@ static SIPushNotificationManager *_instance = nil;
         content.sound = [UNNotificationSound defaultSound];
     }
     
-    NSData *graphicsData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
-    
-    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    
-    NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationGraphics.png"];
-    [graphicsData writeToFile:localPath atomically:YES];
-    
-    if (localPath && ![localPath isEqualToString:@""]) {
-        UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
-        if (attachment) {
-            content.attachments = @[attachment];
-        }
-    }
-    
-    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
-    
-    [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_async(queue, ^{
+        NSData *graphicsData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        
+        NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+        
+        NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationGraphics.png"];
+        [graphicsData writeToFile:localPath atomically:YES];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (localPath && ![localPath isEqualToString:@""]) {
+                UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
+                if (attachment) {
+                    content.attachments = @[attachment];
+                }
+            }
+            
+            UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
+            
+            [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+        });
+    });
 }
 
 #pragma mark 视频推送
@@ -348,23 +358,28 @@ static SIPushNotificationManager *_instance = nil;
     UNNotificationSound *sound = [UNNotificationSound defaultSound];
     content.sound = sound;
     
-    NSData *videoData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
-    
-    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    
-    NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationVideo.mp4"];
-    [videoData writeToFile:localPath atomically:YES];
-    
-    if (localPath && ![localPath isEqualToString:@""]) {
-        UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
-        if (attachment) {
-            content.attachments = @[attachment];
-        }
-    }
-    
-    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
-    
-    [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_async(queue, ^{
+        NSData *videoData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        
+        NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+        
+        NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationVideo.mp4"];
+        [videoData writeToFile:localPath atomically:YES];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (localPath && ![localPath isEqualToString:@""]) {
+                UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
+                if (attachment) {
+                    content.attachments = @[attachment];
+                }
+            }
+            
+            UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
+            
+            [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+        });
+    });
 }
 
 #pragma mark 视频推送,可以通过链接下载,可设置自定义提示音
@@ -391,23 +406,28 @@ static SIPushNotificationManager *_instance = nil;
         content.sound = [UNNotificationSound defaultSound];
     }
     
-    NSData *videoData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
-    
-    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    
-    NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationVideo.mp4"];
-    [videoData writeToFile:localPath atomically:YES];
-    
-    if (localPath && ![localPath isEqualToString:@""]) {
-        UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
-        if (attachment) {
-            content.attachments = @[attachment];
-        }
-    }
-    
-    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
-    
-    [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_async(queue, ^{
+        NSData *videoData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        
+        NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+        
+        NSString *localPath = [documentPath stringByAppendingPathComponent:@"PushNotificationVideo.mp4"];
+        [videoData writeToFile:localPath atomically:YES];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (localPath && ![localPath isEqualToString:@""]) {
+                UNNotificationAttachment *attachment = [UNNotificationAttachment attachmentWithIdentifier:identifier URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
+                if (attachment) {
+                    content.attachments = @[attachment];
+                }
+            }
+            
+            UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
+            
+            [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
+        });
+    });
 }
 
 #pragma mark 定时推送
