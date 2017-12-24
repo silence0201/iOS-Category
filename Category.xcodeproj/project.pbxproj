@@ -10,6 +10,7 @@
 		E81138D51FE2B6FB00882DA3 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138D41FE2B6FA00882DA3 /* UIApplication+UIDebug.m */; };
 		E81138DB1FE800C700882DA3 /* NSString+Append.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138DA1FE800C700882DA3 /* NSString+Append.m */; };
 		E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */; };
+		E820CD441FEFDA710085D218 /* SIPushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E820CD431FEFDA710085D218 /* SIPushNotificationManager.m */; };
 		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
 		E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465861E8A998300F1F757 /* UIBezierPath+Length.m */; };
 		E834658A1E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465891E8A9A5600F1F757 /* UIBezierPath+BasicShapes.m */; };
@@ -286,6 +287,8 @@
 		E81138DA1FE800C700882DA3 /* NSString+Append.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Append.m"; sourceTree = "<group>"; };
 		E8173C8A1FBC7BFD00417E4B /* NSString+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
 		E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
+		E820CD421FEFDA710085D218 /* SIPushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPushNotificationManager.h; sourceTree = "<group>"; };
+		E820CD431FEFDA710085D218 /* SIPushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPushNotificationManager.m; sourceTree = "<group>"; };
 		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
 		E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Hash.m"; sourceTree = "<group>"; };
 		E83465851E8A998300F1F757 /* UIBezierPath+Length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Length.h"; sourceTree = "<group>"; };
@@ -821,6 +824,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E820CD3E1FEFCCEC0085D218 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				E820CD421FEFDA710085D218 /* SIPushNotificationManager.h */,
+				E820CD431FEFDA710085D218 /* SIPushNotificationManager.m */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
 		E83465841E8A996700F1F757 /* UIBezierPath */ = {
 			isa = PBXGroup;
 			children = (
@@ -2044,6 +2056,7 @@
 			isa = PBXGroup;
 			children = (
 				E8FB93851E6080C100B77407 /* SIManager.h */,
+				E820CD3E1FEFCCEC0085D218 /* Push */,
 				E8A4D5201FD83F380072A870 /* FPS */,
 				E8A4D5101FD835CD0072A870 /* AppPurchase */,
 				E8A4D5041FD835CC0072A870 /* AppVersion */,
@@ -2325,6 +2338,7 @@
 				E86298CD1EDC59C200D5017C /* UIBezierPath+TextPaths.m in Sources */,
 				E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */,
 				E8CFC1B11F1A5895000B7782 /* NSString+Segmentation.m in Sources */,
+				E820CD441FEFDA710085D218 /* SIPushNotificationManager.m in Sources */,
 				E834659D1E8A9FB100F1F757 /* UITextView+InputLimit.m in Sources */,
 				E8E9463D1E210B6D00EE98B0 /* UIControl+ALActionBlocks.m in Sources */,
 				E8E9462F1E210B6D00EE98B0 /* NSTimer+Block.m in Sources */,

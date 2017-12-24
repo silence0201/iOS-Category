@@ -10,7 +10,7 @@
 
 @interface SIFPSManager : UIWindow
 
-+ (SIFPSManager *)sharedInstance;
++ (SIFPSManager *)sharedManager;
 
 - (void)open;
 - (void)close;

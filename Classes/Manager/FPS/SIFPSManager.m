@@ -15,7 +15,7 @@
     NSUInteger      _count;
 }
 
-+ (instancetype)sharedInstance {
++ (instancetype)sharedManager {
     static SIFPSManager *sharedInstance = nil;
     static dispatch_once_t once;
     dispatch_once(&once, ^{

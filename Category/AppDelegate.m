@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[SIFPSManager sharedInstance] open];
+    [[SIFPSManager sharedManager] open];
     return YES;
 }
 
