@@ -13,6 +13,9 @@
 
 +(instancetype)sharedInstance;
 
+/// 申请权限
+- (void)requestAuthorizationPushNotificationWithCompletion:(void (^)(BOOL))completion;
+
 /// 普通推送
 -(void)normalPushNotificationWithTitle:(NSString *)title
                               subTitle:(NSString *)subTitle
@@ -125,7 +128,6 @@
                                   hour:(NSString *)hour
                                 minute:(NSString *)minute
                                 second:(NSString *)second
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat;
 
@@ -139,7 +141,6 @@
                                 minute:(NSString *)minute
                                 second:(NSString *)second
                              soundName:(NSString *)soundName
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat;
 
@@ -154,7 +155,6 @@
                                   hour:(NSString *)hour
                                 minute:(NSString *)minute
                                 second:(NSString *)second
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat;
 
@@ -170,7 +170,6 @@
                                 minute:(NSString *)minute
                                 second:(NSString *)second
                              soundName:(NSString *)soundName
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat;
 
@@ -185,7 +184,6 @@
                                   body:(NSString *)body
                             identifier:(NSString *)identifier
                               fireDate:(NSDictionary *)fireDate
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat;
 
@@ -196,7 +194,6 @@
                             identifier:(NSString *)identifier
                               fireDate:(NSDictionary *)fireDate
                              soundName:(NSString *)soundName
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat;
 

@@ -78,6 +78,7 @@
 
 - (void)requestAuthorizationTypePhotoCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion{
     [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        if (!completion) return;
         if (status == PHAuthorizationStatusDenied) {
             completion(NO,SIAuthorizationStatusDenied);
         } else if (status == PHAuthorizationStatusNotDetermined) {
@@ -93,6 +94,7 @@
 - (void)requestAuthorizationTypeCameraCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
         AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        if (!completion) return;
         if (granted) {
             completion(YES,SIAuthorizationStatusAuthorized);
         } else {
@@ -109,6 +111,7 @@
 
 - (void)requestAuthorizationTypeMediaCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion{
     [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus status) {
+        if (!completion) return;
         if (status == MPMediaLibraryAuthorizationStatusDenied) {
             completion(NO,SIAuthorizationStatusDenied);
         } else if (status == MPMediaLibraryAuthorizationStatusNotDetermined) {
@@ -124,6 +127,7 @@
 - (void)requestAuthorizationTypeMicrophoneCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion{
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {
         AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio];
+        if (!completion) return;
         if (granted) {
             completion(YES,SIAuthorizationStatusAuthorized);
         } else {
@@ -148,6 +152,7 @@
         [locationManager startUpdatingLocation];
     }
     CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    if (!completion) return;
     if (status == kCLAuthorizationStatusAuthorizedAlways) {
         completion(YES,SIAuthorizationStatusLocationAlways);
     } else if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
@@ -164,6 +169,7 @@
 - (void)requestAuthorizationTypeBluetoothCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
     CBCentralManager *centralManager = [[CBCentralManager alloc] init];
     CBManagerState state = [centralManager state];
+    if (!completion) return;
     if (state == CBManagerStateUnsupported || state == CBManagerStateUnauthorized || state == CBManagerStateUnknown) {
         completion(NO,SIAuthorizationStatusDenied);
     } else {
@@ -176,6 +182,7 @@
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         UNAuthorizationOptions types=UNAuthorizationOptionBadge|UNAuthorizationOptionAlert|UNAuthorizationOptionSound;
         [center requestAuthorizationWithOptions:types completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if (!completion) return;
             if (granted) {
                 [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
                 }];
@@ -191,6 +198,7 @@
 
 - (void)requestAuthorizationTypeSpeechCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
     [SFSpeechRecognizer requestAuthorization:^(SFSpeechRecognizerAuthorizationStatus status) {
+        if (!completion) return;
         if (status == SFSpeechRecognizerAuthorizationStatusDenied) {
             completion(NO,SIAuthorizationStatusDenied);
         } else if (status == SFSpeechRecognizerAuthorizationStatusNotDetermined) {
@@ -206,6 +214,7 @@
 - (void)requestAuthorizationTypeEventCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
     EKEventStore *store = [[EKEventStore alloc]init];
     [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError * _Nullable error) {
+        if (!completion) return;
         EKAuthorizationStatus status = [EKEventStore  authorizationStatusForEntityType:EKEntityTypeEvent];
         if (granted) {
             completion(YES,SIAuthorizationStatusAuthorized);
@@ -224,6 +233,7 @@
 - (void)requestAuthorizationTypeContactCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
     CNContactStore *contactStore = [[CNContactStore alloc] init];
     [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (!completion) return;
         CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
         if (granted) {
             completion(YES,SIAuthorizationStatusAuthorized);
@@ -242,6 +252,7 @@
 - (void)requestAuthorizationTypeReminderCompletion:(void (^)(BOOL, SIAuthorizationStatus))completion {
     EKEventStore *eventStore = [[EKEventStore alloc]init];
     [eventStore requestAccessToEntityType:EKEntityTypeReminder completion:^(BOOL granted, NSError * _Nullable error) {
+        if (!completion) return;
         EKAuthorizationStatus status = [EKEventStore  authorizationStatusForEntityType:EKEntityTypeEvent];
         if (granted) {
             completion(YES,SIAuthorizationStatusAuthorized);
@@ -266,6 +277,7 @@
             NSSet *readObjectTypes = [self readObjectTypes];
             NSSet *writeObjectTypes = [self writeObjectTypes];
             [store requestAuthorizationToShareTypes:writeObjectTypes readTypes:readObjectTypes completion:^(BOOL success, NSError * _Nullable error) {
+                if (!completion) return;
                 if (success == YES) {
                     completion(YES,SIAuthorizationStatusAuthorized);
                 }else{

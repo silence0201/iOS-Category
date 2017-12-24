@@ -45,6 +45,23 @@ static SIPushNotificationManager *_instance = nil;
     return _instance;
 }
 
+#pragma mark 申请权限
+-(void)requestAuthorizationPushNotificationWithCompletion:(void (^)(BOOL))completion{
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    UNAuthorizationOptions types=UNAuthorizationOptionBadge|UNAuthorizationOptionAlert|UNAuthorizationOptionSound;
+    [center requestAuthorizationWithOptions:types completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (granted) {
+            [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+            }];
+            if (!completion) return;
+            completion(YES);
+        } else {
+            if (!completion) return;
+            completion(NO);
+        }
+    }];
+}
+
 #pragma mark 普通推送
 -(void)normalPushNotificationWithTitle:(NSString *)title
                               subTitle:(NSString *)subTitle
@@ -402,7 +419,6 @@ static SIPushNotificationManager *_instance = nil;
                                   hour:(NSString *)hour
                                 minute:(NSString *)minute
                                 second:(NSString *)second
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat
 {
@@ -435,7 +451,7 @@ static SIPushNotificationManager *_instance = nil;
     [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
 }
 
-#pragma mark - `push notification style of timing,provide a customized alert sound`->`定时推送,可设置自定义提示音`
+#pragma mark 定时推送,可设置自定义提示音
 -(void)timingPushNotificationWithTitle:(NSString *)title
                               subTitle:(NSString *)subTitle
                                   body:(NSString *)body
@@ -445,7 +461,6 @@ static SIPushNotificationManager *_instance = nil;
                                 minute:(NSString *)minute
                                 second:(NSString *)second
                              soundName:(NSString *)soundName
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat
 {
@@ -492,7 +507,6 @@ static SIPushNotificationManager *_instance = nil;
                                   hour:(NSString *)hour
                                 minute:(NSString *)minute
                                 second:(NSString *)second
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat
 {
@@ -545,7 +559,6 @@ static SIPushNotificationManager *_instance = nil;
                                 minute:(NSString *)minute
                                 second:(NSString *)second
                              soundName:(NSString *)soundName
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat
 {
@@ -595,7 +608,6 @@ static SIPushNotificationManager *_instance = nil;
                                   body:(NSString *)body
                             identifier:(NSString *)identifier
                               fireDate:(NSDictionary *)fireDate
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat
 {
@@ -647,7 +659,6 @@ static SIPushNotificationManager *_instance = nil;
                             identifier:(NSString *)identifier
                               fireDate:(NSDictionary *)fireDate
                              soundName:(NSString *)soundName
-                          timeInterval:(NSInteger)timeInterval
                               userInfo:(NSDictionary *)userInfo
                                 repeat:(BOOL)repeat
 {
@@ -796,7 +807,7 @@ static SIPushNotificationManager *_instance = nil;
     [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
 }
 
-#pragma mark @"intro.mp3"` ->`定点推送,可设置自定义提示音`
+#pragma mark 定点推送,可设置自定义提示音
 - (void)locationPushNotificationWithTitle:(NSString *)title
                                  subTitle:(NSString *)subTitle
                                      body:(NSString *)body
@@ -833,7 +844,7 @@ static SIPushNotificationManager *_instance = nil;
     [self registerPushNotificationWithIdentifier:identifier content:content trigger:trigger];
 }
 
-#pragma mark - `Register Push Notification`->添加推送
+#pragma mark - 添加推送
 - (void)registerPushNotificationWithIdentifier:(NSString *)identifier
                                        content:(UNMutableNotificationContent *)content
                                        trigger:(UNNotificationTrigger *)trigger{
@@ -846,7 +857,7 @@ static SIPushNotificationManager *_instance = nil;
         request = [UNNotificationRequest requestWithIdentifier:identifier content:content trigger:trigger];
     }
     
-    // `push notification` ->`发送推送`
+    // 发送推送
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
     [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
         if (error == nil) {
