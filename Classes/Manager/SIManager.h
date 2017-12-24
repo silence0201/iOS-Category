@@ -18,4 +18,5 @@
 #import "SISoundManager.h"
 #import "SIKeychainManager.h"
 #import "SIFPSManager.h"
+#import "SIPushNotificationManager.h"
 

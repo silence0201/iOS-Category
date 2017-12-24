@@ -1,5 +1,5 @@
 //
-//  SIPushNotificationManager.h
+//  SIPushNotificationManager.m
 //  Category
 //
 //  Created by Silence on 2017/12/24.
