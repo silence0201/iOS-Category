@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 
-
-
 @interface SIPushNotificationManager : NSObject
 
 +(instancetype)sharedInstance;
