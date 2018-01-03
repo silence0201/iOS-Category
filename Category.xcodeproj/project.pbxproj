@@ -95,7 +95,6 @@
 		E8A4D51B1FD835CD0072A870 /* SIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D50E1FD835CD0072A870 /* SIKeyboardManager.m */; };
 		E8A4D51C1FD835CD0072A870 /* SIIAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5111FD835CD0072A870 /* SIIAppPurchaseManager.m */; };
 		E8A4D51F1FD8397D0072A870 /* UINavigationController+Appear.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */; };
-		E8A4D5231FD83F4F0072A870 /* SIFPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5221FD83F4F0072A870 /* SIFPSManager.m */; };
 		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
@@ -119,6 +118,8 @@
 		E8DD4B4F1E51C51F008B6BDF /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B4E1E51C51F008B6BDF /* UIColor+FlatColors.m */; };
 		E8DD4B521E51C598008B6BDF /* UIColor+FPBrandColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */; };
 		E8DD4B551E51C63E008B6BDF /* UIColor+CSSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */; };
+		E8DDD77A1FFD089A003D4A8F /* SIFPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DDD7771FFD089A003D4A8F /* SIFPSManager.m */; };
+		E8DDD77D1FFD090F003D4A8F /* SIConsoleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DDD77C1FFD090F003D4A8F /* SIConsoleManager.m */; };
 		E8E057171EC2BD5000B06DC1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */; };
 		E8E2836B1E781B6F006815EA /* NSString+AttributedBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836A1E781B6F006815EA /* NSString+AttributedBuilder.m */; };
 		E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836D1E782C53006815EA /* UIImage+Video.m */; };
@@ -463,8 +464,6 @@
 		E8A4D5121FD835CD0072A870 /* SIIAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIIAppPurchaseManager.h; sourceTree = "<group>"; };
 		E8A4D51D1FD8397D0072A870 /* UINavigationController+Appear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appear.h"; sourceTree = "<group>"; };
 		E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appear.m"; sourceTree = "<group>"; };
-		E8A4D5211FD83F4F0072A870 /* SIFPSManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIFPSManager.h; sourceTree = "<group>"; };
-		E8A4D5221FD83F4F0072A870 /* SIFPSManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIFPSManager.m; sourceTree = "<group>"; };
 		E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
@@ -513,6 +512,10 @@
 		E8DD4B511E51C598008B6BDF /* UIColor+FPBrandColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FPBrandColor.m"; sourceTree = "<group>"; };
 		E8DD4B531E51C63E008B6BDF /* UIColor+CSSColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CSSColors.h"; sourceTree = "<group>"; };
 		E8DD4B541E51C63E008B6BDF /* UIColor+CSSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CSSColors.m"; sourceTree = "<group>"; };
+		E8DDD7771FFD089A003D4A8F /* SIFPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIFPSManager.m; sourceTree = "<group>"; };
+		E8DDD7781FFD089A003D4A8F /* SIFPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFPSManager.h; sourceTree = "<group>"; };
+		E8DDD77B1FFD090F003D4A8F /* SIConsoleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIConsoleManager.h; sourceTree = "<group>"; };
+		E8DDD77C1FFD090F003D4A8F /* SIConsoleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIConsoleManager.m; sourceTree = "<group>"; };
 		E8E057151EC2BD5000B06DC1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
 		E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
 		E8E283691E781B6F006815EA /* NSString+AttributedBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedBuilder.h"; sourceTree = "<group>"; };
@@ -1139,15 +1142,6 @@
 			path = AppPurchase;
 			sourceTree = "<group>";
 		};
-		E8A4D5201FD83F380072A870 /* FPS */ = {
-			isa = PBXGroup;
-			children = (
-				E8A4D5211FD83F4F0072A870 /* SIFPSManager.h */,
-				E8A4D5221FD83F4F0072A870 /* SIFPSManager.m */,
-			);
-			path = FPS;
-			sourceTree = "<group>";
-		};
 		E8B122F61E8175EC00E9D69C /* UIResponder */ = {
 			isa = PBXGroup;
 			children = (
@@ -1271,6 +1265,33 @@
 				E8DD4B4B1E51C2C2008B6BDF /* NSStringColorTests.m */,
 			);
 			path = CategoryTests;
+			sourceTree = "<group>";
+		};
+		E8DDD7751FFD089A003D4A8F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				E8DDD7761FFD089A003D4A8F /* FPS */,
+				E8DDD7791FFD089A003D4A8F /* Console */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		E8DDD7761FFD089A003D4A8F /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				E8DDD7771FFD089A003D4A8F /* SIFPSManager.m */,
+				E8DDD7781FFD089A003D4A8F /* SIFPSManager.h */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		E8DDD7791FFD089A003D4A8F /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				E8DDD77B1FFD090F003D4A8F /* SIConsoleManager.h */,
+				E8DDD77C1FFD090F003D4A8F /* SIConsoleManager.m */,
+			);
+			path = Console;
 			sourceTree = "<group>";
 		};
 		E8E2836F1E782EE7006815EA /* NSUserDefaults */ = {
@@ -2056,8 +2077,8 @@
 			isa = PBXGroup;
 			children = (
 				E8FB93851E6080C100B77407 /* SIManager.h */,
+				E8DDD7751FFD089A003D4A8F /* Debug */,
 				E820CD3E1FEFCCEC0085D218 /* Push */,
-				E8A4D5201FD83F380072A870 /* FPS */,
 				E8A4D5101FD835CD0072A870 /* AppPurchase */,
 				E8A4D5041FD835CC0072A870 /* AppVersion */,
 				E8A4D4F11FD835310072A870 /* Authorization */,
@@ -2240,6 +2261,7 @@
 				E854CE631E7D5F4A00AD9F13 /* NSString+HTML.m in Sources */,
 				E8A4D51F1FD8397D0072A870 /* UINavigationController+Appear.m in Sources */,
 				E8E946391E210B6D00EE98B0 /* UIButton+Indicator.m in Sources */,
+				E8DDD77D1FFD090F003D4A8F /* SIConsoleManager.m in Sources */,
 				E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */,
 				E8E946501E210B6D00EE98B0 /* UIImage+Rotate.m in Sources */,
 				E8A4D5171FD835CD0072A870 /* SIBluetoothManager.m in Sources */,
@@ -2349,7 +2371,6 @@
 				E8E8A4D91E56A41F00E64E54 /* EXTSafeCategory.m in Sources */,
 				E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */,
 				E8E946201E210B6D00EE98B0 /* NSObject+QuickCopy.m in Sources */,
-				E8A4D5231FD83F4F0072A870 /* SIFPSManager.m in Sources */,
 				E83465F01E8ABB4A00F1F757 /* UIBarButtonItem+Badge.m in Sources */,
 				E8E9462D1E210B6D00EE98B0 /* NSString+Size.m in Sources */,
 				E8E9462C1E210B6D00EE98B0 /* NSString+Regex.m in Sources */,
@@ -2407,6 +2428,7 @@
 				E8E946421E210B6D00EE98B0 /* UIDevice+NetWork.m in Sources */,
 				E8E946371E210B6D00EE98B0 /* UIButton+ClickEdgeInsets.m in Sources */,
 				E83465A01E8AA08D00F1F757 /* UITextView+Select.m in Sources */,
+				E8DDD77A1FFD089A003D4A8F /* SIFPSManager.m in Sources */,
 				E8E946381E210B6D00EE98B0 /* UIButton+CountDown.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
