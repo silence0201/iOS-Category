@@ -106,6 +106,7 @@
 		E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93761E92654B00322F8B /* NSDate+Show.m */; };
 		E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */; };
 		E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */; };
+		E8C5DD1E1FFE75BD002475C1 /* UIView+Skeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C5DD1D1FFE75BC002475C1 /* UIView+Skeleton.m */; };
 		E8CF8DB01ED6BA66002B9AC6 /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */; };
 		E8CFC1B11F1A5895000B7782 /* NSString+Segmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */; };
 		E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */; };
@@ -486,6 +487,8 @@
 		E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Refer.m"; sourceTree = "<group>"; };
 		E8BD937F1E92862D00322F8B /* NSDateFormatter+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Make.h"; sourceTree = "<group>"; };
 		E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Make.m"; sourceTree = "<group>"; };
+		E8C5DD1C1FFE75BC002475C1 /* UIView+Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Skeleton.h"; sourceTree = "<group>"; };
+		E8C5DD1D1FFE75BC002475C1 /* UIView+Skeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Skeleton.m"; sourceTree = "<group>"; };
 		E8CF8DAE1ED6BA66002B9AC6 /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
 		E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
 		E8CFC1AF1F1A5895000B7782 /* NSString+Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Segmentation.h"; sourceTree = "<group>"; };
@@ -1999,6 +2002,8 @@
 		E8E945E11E210B6D00EE98B0 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				E8C5DD1C1FFE75BC002475C1 /* UIView+Skeleton.h */,
+				E8C5DD1D1FFE75BC002475C1 /* UIView+Skeleton.m */,
 				E83465D71E8AB20000F1F757 /* UIView+draggable.h */,
 				E83465D81E8AB20000F1F757 /* UIView+draggable.m */,
 				E83465D41E8AB16C00F1F757 /* UIView+Shake.h */,
@@ -2309,6 +2314,7 @@
 				E8E9461B1E210B6D00EE98B0 /* NSObject+GCD.m in Sources */,
 				E854CE561E7D5B7900AD9F13 /* NSURLRequest+Params.m in Sources */,
 				E88B47AD1E15363E0074A53A /* main.m in Sources */,
+				E8C5DD1E1FFE75BD002475C1 /* UIView+Skeleton.m in Sources */,
 				E8E9465F1E210B6D00EE98B0 /* UIView+Constraints.m in Sources */,
 				E83465F61E8ABE7500F1F757 /* NSData+zlib.m in Sources */,
 				E8E946141E210B6D00EE98B0 /* NSNotificationCenter+AutoRemove.m in Sources */,
