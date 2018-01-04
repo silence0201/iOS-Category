@@ -84,6 +84,7 @@
 #import "UIView+Recursion.h"
 #import "UIView+Badge.h"
 #import "UIView+RelativeLayout.h"
+#import "UIView+Skeleton.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"
