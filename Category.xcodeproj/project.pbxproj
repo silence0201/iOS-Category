@@ -109,6 +109,7 @@
 		E8C5DD1E1FFE75BD002475C1 /* UIView+Skeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C5DD1D1FFE75BC002475C1 /* UIView+Skeleton.m */; };
 		E8CF8DB01ED6BA66002B9AC6 /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */; };
 		E8CFC1B11F1A5895000B7782 /* NSString+Segmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */; };
+		E8D554EA2010D76900A19A9D /* NSDecimalNumber+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D554E92010D76900A19A9D /* NSDecimalNumber+Easy.m */; };
 		E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */; };
 		E8D91ACD1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91ACC1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m */; };
 		E8D91AD11EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AD01EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m */; };
@@ -493,6 +494,8 @@
 		E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
 		E8CFC1AF1F1A5895000B7782 /* NSString+Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Segmentation.h"; sourceTree = "<group>"; };
 		E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Segmentation.m"; sourceTree = "<group>"; };
+		E8D554E82010D76900A19A9D /* NSDecimalNumber+Easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+Easy.h"; sourceTree = "<group>"; };
+		E8D554E92010D76900A19A9D /* NSDecimalNumber+Easy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+Easy.m"; sourceTree = "<group>"; };
 		E8D91AC71EADF1500072AF6A /* CALayer+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Frame.h"; sourceTree = "<group>"; };
 		E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Frame.m"; sourceTree = "<group>"; };
 		E8D91ACB1EADF2250072AF6A /* CATransaction+AnimateWithDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+AnimateWithDuration.h"; sourceTree = "<group>"; };
@@ -1176,6 +1179,15 @@
 			path = NSDateFormatter;
 			sourceTree = "<group>";
 		};
+		E8D554E72010D74100A19A9D /* NSDecimalNumber */ = {
+			isa = PBXGroup;
+			children = (
+				E8D554E82010D76900A19A9D /* NSDecimalNumber+Easy.h */,
+				E8D554E92010D76900A19A9D /* NSDecimalNumber+Easy.m */,
+			);
+			path = NSDecimalNumber;
+			sourceTree = "<group>";
+		};
 		E8D91AC21EADEF560072AF6A /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -1466,6 +1478,7 @@
 		E8E945031E210B6D00EE98B0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E8D554E72010D74100A19A9D /* NSDecimalNumber */,
 				E854CE5A1E7D5CE300AD9F13 /* NSURLSession */,
 				E854CE501E7D5B4800AD9F13 /* NSFileHandle */,
 				E854CE4F1E7D5B3300AD9F13 /* NSURLRequest */,
@@ -2284,6 +2297,7 @@
 				E8E8A4DC1E56A43900E64E54 /* EXTNil.m in Sources */,
 				E8DD4B3C1E51B82E008B6BDF /* NSString+Color.m in Sources */,
 				E8E946411E210B6D00EE98B0 /* UIDevice+Disk.m in Sources */,
+				E8D554EA2010D76900A19A9D /* NSDecimalNumber+Easy.m in Sources */,
 				E8E946261E210B6D00EE98B0 /* NSString+Hash.m in Sources */,
 				E8E9464F1E210B6D00EE98B0 /* UIImage+Modify.m in Sources */,
 				E8E946091E210B6D00EE98B0 /* NSDate+Figure.m in Sources */,
