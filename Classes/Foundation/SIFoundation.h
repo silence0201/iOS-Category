@@ -88,6 +88,7 @@
 #import "NSString+Segmentation.h"
 #import "NSString+AES.h"
 #import "NSString+Append.h"
+#import "NSString+VersionCompare.h"
 
 #import "NSURLRequest+Params.h"
 #import "NSURLRequest+Upload.h"
