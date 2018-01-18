@@ -110,6 +110,7 @@
 		E8CF8DB01ED6BA66002B9AC6 /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */; };
 		E8CFC1B11F1A5895000B7782 /* NSString+Segmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */; };
 		E8D554EA2010D76900A19A9D /* NSDecimalNumber+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D554E92010D76900A19A9D /* NSDecimalNumber+Easy.m */; };
+		E8D554ED2010E0F000A19A9D /* NSString+VersionCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D554EC2010E0F000A19A9D /* NSString+VersionCompare.m */; };
 		E8D91AC91EADF1500072AF6A /* CALayer+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */; };
 		E8D91ACD1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91ACC1EADF2250072AF6A /* CATransaction+AnimateWithDuration.m */; };
 		E8D91AD11EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D91AD01EADF2A60072AF6A /* CAShapeLayer+UIBezierPath.m */; };
@@ -496,6 +497,8 @@
 		E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Segmentation.m"; sourceTree = "<group>"; };
 		E8D554E82010D76900A19A9D /* NSDecimalNumber+Easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+Easy.h"; sourceTree = "<group>"; };
 		E8D554E92010D76900A19A9D /* NSDecimalNumber+Easy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+Easy.m"; sourceTree = "<group>"; };
+		E8D554EB2010E0F000A19A9D /* NSString+VersionCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+VersionCompare.h"; sourceTree = "<group>"; };
+		E8D554EC2010E0F000A19A9D /* NSString+VersionCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+VersionCompare.m"; sourceTree = "<group>"; };
 		E8D91AC71EADF1500072AF6A /* CALayer+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Frame.h"; sourceTree = "<group>"; };
 		E8D91AC81EADF1500072AF6A /* CALayer+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Frame.m"; sourceTree = "<group>"; };
 		E8D91ACB1EADF2250072AF6A /* CATransaction+AnimateWithDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+AnimateWithDuration.h"; sourceTree = "<group>"; };
@@ -1727,6 +1730,8 @@
 				E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */,
 				E81138D91FE800C700882DA3 /* NSString+Append.h */,
 				E81138DA1FE800C700882DA3 /* NSString+Append.m */,
+				E8D554EB2010E0F000A19A9D /* NSString+VersionCompare.h */,
+				E8D554EC2010E0F000A19A9D /* NSString+VersionCompare.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2234,6 +2239,7 @@
 				E8E8A4D21E56A3C800E64E54 /* EXTSelectorChecking.m in Sources */,
 				E8E946611E210B6D00EE98B0 /* UIView+Find.m in Sources */,
 				E8A4D5191FD835CD0072A870 /* SIKeychainManager.m in Sources */,
+				E8D554ED2010E0F000A19A9D /* NSString+VersionCompare.m in Sources */,
 				E8E946001E210B6D00EE98B0 /* NSArray+JSONEncode.m in Sources */,
 				E8E946361E210B6D00EE98B0 /* UIButton+Block.m in Sources */,
 				E8E946051E210B6D00EE98B0 /* NSData+Code.m in Sources */,
