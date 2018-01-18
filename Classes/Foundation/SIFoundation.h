@@ -109,5 +109,7 @@
 
 #import "NSFileHandle+ReadLine.h"
 
+#import "NSDecimalNumber+Easy.h"
+
 #endif
 

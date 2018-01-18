@@ -2,7 +2,7 @@
 //  NSDecimalNumber+Easy.h
 //  Category
 //
-//  Created by 杨晴贺 on 2018/1/18.
+//  Created by Silence on 2018/1/18.
 //  Copyright © 2018年 silence. All rights reserved.
 //
 
