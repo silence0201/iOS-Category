@@ -17,6 +17,7 @@
 #import "UINavigationController+Transitions.h"
 #import "UINavigationController+Stack.h"
 #import "UINavigationController+Hide.h"
+#import "UINavigationController+Appear.h"
 
 #import "UINavigationItem+Lock.h"
 #import "UINavigationItem+Loading.h"
@@ -25,6 +26,7 @@
 #import "UITableView+Update.h"
 #import "UITableView+CellStyle.h"
 #import "UITableView+iOS7Style.h"
+#import "UITableView+Placeholder.h"
 
 #import "UIViewController+TopBarMessage.h"
 #import "UIViewController+MJPopupViewController.h"
@@ -49,6 +51,7 @@
 #import "UIButton+Badge.h"
 
 #import "UIBarButtonItem+Badge.h"
+#import "UIBarButtonItem+Create.h"
 
 #import "UIGestureRecognizer+ALActionBlocks.h"
 
@@ -80,6 +83,8 @@
 #import "UIView+draggable.h"
 #import "UIView+Recursion.h"
 #import "UIView+Badge.h"
+#import "UIView+RelativeLayout.h"
+#import "UIView+Skeleton.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"

@@ -9,31 +9,39 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger,SIAuthorizationType) {
-    SIAuthorizationTypePhotoLibrary,   /// 图库
-    SIAuthorizationTypeLocationAlways, /// 永久地理位置
-    SIAuthorizationTypeLocationUse,    /// 当使用地理位置
-    SIAuthorizationTypeAddressBook,    /// 通讯录
-    SIAuthorizationTypeAudio,          /// 语音
-    SIAuthorizationTypeCamera          /// 相机
+    SIAuthorizationTypePhoto = 0,
+    SIAuthorizationTypeCamera,
+    SIAuthorizationTypeMedia,
+    SIAuthorizationTypeMicrophone,
+    SIAuthorizationTypeLocation,
+    SIAuthorizationTypeBluetooth,
+    SIAuthorizationTypePushNotification,
+    SIAuthorizationTypeSpeech,
+    SIAuthorizationTypeEvent,
+    SIAuthorizationTypeContact,
+    SIAuthorizationTypeReminder,
+    SIAuthorizationTypeHealth,
 };
+
+typedef NS_ENUM(NSUInteger,SIAuthorizationStatus) {
+    SIAuthorizationStatusAuthorized = 0,
+    SIAuthorizationStatusDenied,
+    SIAuthorizationStatusNotDetermined,
+    SIAuthorizationStatusRestricted,
+    SIAuthorizationStatusLocationAlways,
+    SIAuthorizationStatusLocationWhenInUse,
+    SIAuthorizationStatusUnkonwn,
+};
+
 
 @interface SIAuthorizationManager : NSObject
 
 
-/**
-    单例对象
-
-    @return 对象
- */
+/// 单例对象
 + (instancetype)sharedManager ;
 
+- (void)requestAuthorizationType:(SIAuthorizationType)type
+                     completion:(void(^)(BOOL response,SIAuthorizationStatus status))completion;
 
-/**
-    申请授权
-
-    @param type 授权类型
-    @return 是否申请成功
- */
-- (BOOL)requestAuthorizationType:(SIAuthorizationType)type ;
 
 @end

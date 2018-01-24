@@ -66,6 +66,7 @@
 #import "NSObject+Runtime.h"
 #import "NSObject+Parse.h"
 #import "NSObject+AutoCoding.h"
+#import "NSObject+PerformSelector.h"
 
 #import "NSString+AppInfo.h"
 #import "NSString+Hash.h"
@@ -85,6 +86,9 @@
 #import "NSString+XML.h"
 #import "NSString+HTML.h"
 #import "NSString+Segmentation.h"
+#import "NSString+AES.h"
+#import "NSString+Append.h"
+#import "NSString+VersionCompare.h"
 
 #import "NSURLRequest+Params.h"
 #import "NSURLRequest+Upload.h"
@@ -105,6 +109,8 @@
 #import "NSIndexPath+Offset.h"
 
 #import "NSFileHandle+ReadLine.h"
+
+#import "NSDecimalNumber+Easy.h"
 
 #endif
 

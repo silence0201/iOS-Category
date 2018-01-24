@@ -14,7 +14,7 @@ typedef enum {
     TopBarMessageModeResize,        //视图下移
 }TopBarMessageMode;
 
-typedef void(^TapBlock)();
+typedef void(^TapBlock)(void);
 
 extern NSString * const kTopBarBackgroundColor ;
 extern NSString * const kTopBarTextColor ;

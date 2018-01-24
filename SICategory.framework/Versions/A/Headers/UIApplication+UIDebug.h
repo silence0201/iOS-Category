@@ -10,6 +10,7 @@
 
 @interface UIApplication (UIDebug)
 
+/// 显示系统自带的UI调试插件(UIDebuggingInformationOverlay)
 + (void)showDebuggingInformationOverlay ;
 
 @end

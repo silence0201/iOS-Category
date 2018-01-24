@@ -13,8 +13,8 @@
 typedef void(^PurchaseCompletionBlock)(SKPaymentTransaction *transaction);
 typedef void(^ProductsCompletionBlock)(NSArray *products);
 typedef void(^ErrorBlock)(NSError *error);
-typedef void(^PurchasedProductsChanged)();
-typedef void(^RestorePurchasesCompletionBlock)();
+typedef void(^PurchasedProductsChanged)(void);
+typedef void(^RestorePurchasesCompletionBlock)(void);
 
 @interface SIIAppPurchaseManager : NSObject
 

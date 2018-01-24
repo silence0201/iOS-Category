@@ -21,6 +21,6 @@
  */
 +(void)animateWithDuration:(NSTimeInterval)duration
                 animations:(nullable void (^)(void))animations
-                completion:(nullable void (^)())completion;
+                completion:(nullable void (^)(void))completion;
 
 @end
