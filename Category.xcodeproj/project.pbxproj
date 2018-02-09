@@ -106,6 +106,7 @@
 		E8BD93771E92654B00322F8B /* NSDate+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93761E92654B00322F8B /* NSDate+Show.m */; };
 		E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */; };
 		E8BD93811E92862D00322F8B /* NSDateFormatter+Make.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */; };
+		E8BD9C8E202DB8BB001D0F6B /* UIViewController+KeyboardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD9C8D202DB8BB001D0F6B /* UIViewController+KeyboardAnimation.m */; };
 		E8C5DD1E1FFE75BD002475C1 /* UIView+Skeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C5DD1D1FFE75BC002475C1 /* UIView+Skeleton.m */; };
 		E8CF8DB01ED6BA66002B9AC6 /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */; };
 		E8CFC1B11F1A5895000B7782 /* NSString+Segmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CFC1B01F1A5895000B7782 /* NSString+Segmentation.m */; };
@@ -489,6 +490,8 @@
 		E8BD937C1E9283CB00322F8B /* NSLayoutConstraint+Refer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Refer.m"; sourceTree = "<group>"; };
 		E8BD937F1E92862D00322F8B /* NSDateFormatter+Make.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Make.h"; sourceTree = "<group>"; };
 		E8BD93801E92862D00322F8B /* NSDateFormatter+Make.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Make.m"; sourceTree = "<group>"; };
+		E8BD9C8C202DB8BB001D0F6B /* UIViewController+KeyboardAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KeyboardAnimation.h"; sourceTree = "<group>"; };
+		E8BD9C8D202DB8BB001D0F6B /* UIViewController+KeyboardAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KeyboardAnimation.m"; sourceTree = "<group>"; };
 		E8C5DD1C1FFE75BC002475C1 /* UIView+Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Skeleton.h"; sourceTree = "<group>"; };
 		E8C5DD1D1FFE75BC002475C1 /* UIView+Skeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Skeleton.m"; sourceTree = "<group>"; };
 		E8CF8DAE1ED6BA66002B9AC6 /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
@@ -2075,6 +2078,8 @@
 				E83465E11E8AB64200F1F757 /* UIViewController+RecursiveDescription.m */,
 				E86298CE1EDC602200D5017C /* UIViewController+BackAction.h */,
 				E86298CF1EDC602200D5017C /* UIViewController+BackAction.m */,
+				E8BD9C8C202DB8BB001D0F6B /* UIViewController+KeyboardAnimation.h */,
+				E8BD9C8D202DB8BB001D0F6B /* UIViewController+KeyboardAnimation.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -2309,6 +2314,7 @@
 				E8E946091E210B6D00EE98B0 /* NSDate+Figure.m in Sources */,
 				E8E9462A1E210B6D00EE98B0 /* NSString+PinYin.m in Sources */,
 				E8E946591E210B6D00EE98B0 /* UIScrollView+SimpleScroll.m in Sources */,
+				E8BD9C8E202DB8BB001D0F6B /* UIViewController+KeyboardAnimation.m in Sources */,
 				E854CE661E7D615700AD9F13 /* UIFont+TTF.m in Sources */,
 				E8E8A4E01E56A4A400E64E54 /* EXTConcreteProtocol.m in Sources */,
 				E83465C61E8AACAC00F1F757 /* UIImage+BetterFace.m in Sources */,
