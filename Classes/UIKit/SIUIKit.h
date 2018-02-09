@@ -35,6 +35,7 @@
 #import "UIViewController+Visible.h"
 #import "UIViewController+RecursiveDescription.h"
 #import "UIViewController+BackAction.h"
+#import "UIViewController+KeyboardAnimation.h"
 
 #import "UIScrollView+Amplification.h"
 #import "UIScrollView+SimpleScroll.h"
