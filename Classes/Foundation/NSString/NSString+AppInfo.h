@@ -23,7 +23,7 @@
 
  @return version
  */
-+ (NSString *)version;
++ (NSString *)appVersion;
 
 
 /**
@@ -40,6 +40,13 @@
  @return identifier
  */
 + (NSString *)identifier;
+
+/**
+ displayName
+ 
+ @return displayName
+ */
++ (NSString *)displayName;
 
 /**
  currentLanguage

@@ -18,7 +18,13 @@
     return (__bridge_transfer NSString *)uuid;
 }
 
-+ (NSString *)version{
++ (NSString *)displayName{
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString * bundleIdentifier = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    return bundleIdentifier;
+}
+
++ (NSString *)appVersion{
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_Version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
     return app_Version;
