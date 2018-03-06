@@ -1001,6 +1001,9 @@ NSMutableDictionary *lunarToSolar(int _year, int _month, int _day) {
 
 
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wconversion"
+
 @implementation NSDate (Lunar)
 
 
@@ -1045,13 +1048,13 @@ NSMutableDictionary *lunarToSolar(int _year, int _month, int _day) {
 }
 
 + (NSDictionary *)solarToLunar:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
-    return solarToLunar(year, month, day)
+    return solarToLunar(year, month, day);
 }
 
 + (NSDictionary *)lunarToSolar:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
-    return lunarToSolar(year, month, day)
+    return lunarToSolar(year, month, day);
 }
 
-
-
 @end
+
+#pragma clang diagnostic pop
