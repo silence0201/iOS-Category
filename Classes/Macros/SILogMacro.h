@@ -39,7 +39,11 @@
 #endif
 
 // 重新定义日志输出
-#define GONLog(msg, ...)                                        GON_LOGGER(@"%@|%s|%d> %@", [[self class] description], sel_getName(_cmd), __LINE__, [NSString stringWithFormat:(msg), ##__VA_ARGS__]);
+#ifdef DEBUG
+#define SILog(...)      printf("\n***********************start****************************\n[%s] %s [第%d行]\n%s\n*********************end********************************\n", __TIME__ ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
+#else
+#define SILog(...)
+#endif
 
 // 打印View层级
 #define LOG_VIEW(view)                                          GON_LOGGER(@"%@", [view recursiveDescription]);

@@ -47,7 +47,9 @@
     
     NSLog(@"%@",[person.name pinyinWithPhoneticSymbol]);
     
-    
+    SILog(@"%@",[NSDate new].calendarInfo);
+    NSLog(@"%@",[NSDate new].lunarYearName);
+    NSLog(@"%@",[NSDate new].yearZodiac);
 }
 
 
