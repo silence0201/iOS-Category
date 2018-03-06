@@ -46,6 +46,8 @@
     NSLog(@"%@",p.dictionaryRepresentation) ;
     
     NSLog(@"%@",[person.name pinyinWithPhoneticSymbol]);
+    
+    
 }
 
 
