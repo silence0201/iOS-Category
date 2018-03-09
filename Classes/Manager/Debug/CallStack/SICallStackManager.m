@@ -101,10 +101,11 @@ static mach_port_t main_thread_id;
         return @"Fail to get information of all threads";
     }
     
-    NSMutableString *resultString = [NSMutableString stringWithFormat:@"\n ************** Call Backtrace of %u threads: **************\n", thread_count];
+    NSMutableString *resultString = [NSMutableString stringWithFormat:@"\n************** Total CallStack of %u threads **************\n", thread_count];
     for(int i = 0; i < thread_count; i++) {
         [resultString appendString:_bs_backtraceOfThread(threads[i])];
     }
+    [resultString appendFormat:@"\n************** Total CallStack of %u threads  **************\n",thread_count];
     return [resultString copy];
 }
 
@@ -112,7 +113,7 @@ static mach_port_t main_thread_id;
 NSString *_bs_backtraceOfThread(thread_t thread) {
     uintptr_t backtraceBuffer[50];
     int i = 0;
-    NSMutableString *resultString = [[NSMutableString alloc] initWithFormat:@"\n ************** Backtrace of Thread %u: **************\n", thread];
+    NSMutableString *resultString = [[NSMutableString alloc] initWithFormat:@"\n************** Start CallStack of Thread %u: **************\n", thread];
     
     _STRUCT_MCONTEXT machineContext;
     if(!bs_fillThreadStateIntoMachineContext(thread, &machineContext)) {
@@ -155,7 +156,7 @@ NSString *_bs_backtraceOfThread(thread_t thread) {
     for (int i = 0; i < backtraceLength; ++i) {
         [resultString appendFormat:@"%@", bs_logBacktraceEntry(i, backtraceBuffer[i], &symbolicated[i])];
     }
-    [resultString appendFormat:@"\n"];
+    [resultString appendFormat:@"************** End CallStack of Thread %u **************\n",thread];
     return [resultString copy];
 }
 

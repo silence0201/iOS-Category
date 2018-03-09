@@ -50,6 +50,9 @@
     SILog(@"%@",[NSDate new].calendarInfo);
     NSLog(@"%@",[NSDate new].lunarYearName);
     NSLog(@"%@",[NSDate new].yearZodiac);
+    
+    
+    CSLOG_ALL
 }
 
 
