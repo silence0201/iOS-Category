@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E808ADFF2052AD5A0040D14A /* SICallStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E808ADFE2052AD5A0040D14A /* SICallStackManager.m */; };
 		E81138D51FE2B6FB00882DA3 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138D41FE2B6FA00882DA3 /* UIApplication+UIDebug.m */; };
 		E81138DB1FE800C700882DA3 /* NSString+Append.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138DA1FE800C700882DA3 /* NSString+Append.m */; };
 		E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */; };
@@ -287,6 +288,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E808ADFD2052AD5A0040D14A /* SICallStackManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SICallStackManager.h; sourceTree = "<group>"; };
+		E808ADFE2052AD5A0040D14A /* SICallStackManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SICallStackManager.m; sourceTree = "<group>"; };
 		E81138D31FE2B6FA00882DA3 /* UIApplication+UIDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIDebug.h"; sourceTree = "<group>"; };
 		E81138D41FE2B6FA00882DA3 /* UIApplication+UIDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIDebug.m"; sourceTree = "<group>"; };
 		E81138D91FE800C700882DA3 /* NSString+Append.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Append.h"; sourceTree = "<group>"; };
@@ -842,6 +845,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E808ADFC2052AD410040D14A /* CallStack */ = {
+			isa = PBXGroup;
+			children = (
+				E808ADFD2052AD5A0040D14A /* SICallStackManager.h */,
+				E808ADFE2052AD5A0040D14A /* SICallStackManager.m */,
+			);
+			path = CallStack;
+			sourceTree = "<group>";
+		};
 		E820CD3E1FEFCCEC0085D218 /* Push */ = {
 			isa = PBXGroup;
 			children = (
@@ -1294,6 +1306,7 @@
 		E8DDD7751FFD089A003D4A8F /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				E808ADFC2052AD410040D14A /* CallStack */,
 				E8DDD7761FFD089A003D4A8F /* FPS */,
 				E8DDD7791FFD089A003D4A8F /* Console */,
 			);
@@ -2237,6 +2250,7 @@
 				E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */,
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
+				E808ADFF2052AD5A0040D14A /* SICallStackManager.m in Sources */,
 				E8A4D4F01FD82FAD0072A870 /* UIBarButtonItem+Create.m in Sources */,
 				E854CE401E7D53A600AD9F13 /* NSData+DataCache.m in Sources */,
 				E83465C91E8AAD3D00F1F757 /* UIImage+FileName.m in Sources */,
