@@ -58,4 +58,7 @@
 /**是否包含某个变量*/
 - (BOOL)hasIvarForKey:(NSString*)key;
 
++ (BOOL)isSystemClass;
+- (BOOL)isSystemClass;
+
 @end

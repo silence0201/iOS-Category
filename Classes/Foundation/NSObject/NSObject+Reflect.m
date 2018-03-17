@@ -27,6 +27,22 @@
     return NSStringFromClass([self superclass]);
 }
 
+- (BOOL)isSystemClass {
+    NSBundle *classBundle = [NSBundle bundleForClass:NSClassFromString([self className])];
+    if (classBundle != [NSBundle mainBundle]) {
+        return YES;
+    }
+    return NO;
+}
+
++ (BOOL)isSystemClass {
+    NSBundle *classBundle = [NSBundle bundleForClass:NSClassFromString([self className])];
+    if (classBundle != [NSBundle mainBundle]) {
+        return YES;
+    }
+    return NO;
+}
+
 -(NSDictionary *)propertyDictionary{
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     unsigned int outCount;
@@ -511,6 +527,8 @@
     }
     return result;
 }
+
+
 
 
 @end
