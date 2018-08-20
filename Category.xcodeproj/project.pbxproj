@@ -12,6 +12,7 @@
 		E81138DB1FE800C700882DA3 /* NSString+Append.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138DA1FE800C700882DA3 /* NSString+Append.m */; };
 		E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */; };
 		E820CD441FEFDA710085D218 /* SIPushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E820CD431FEFDA710085D218 /* SIPushNotificationManager.m */; };
+		E825DB47212B18220018AD7B /* UIView+Genie.m in Sources */ = {isa = PBXBuildFile; fileRef = E825DB45212B18220018AD7B /* UIView+Genie.m */; };
 		E8328E71204ED24A0092D58F /* NSDate+Lunar.m in Sources */ = {isa = PBXBuildFile; fileRef = E8328E70204ED24A0092D58F /* NSDate+Lunar.m */; };
 		E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E834099B1E507BFD00A924C6 /* NSFileManager+Hash.m */; };
 		E83465871E8A998300F1F757 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465861E8A998300F1F757 /* UIBezierPath+Length.m */; };
@@ -298,6 +299,8 @@
 		E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
 		E820CD421FEFDA710085D218 /* SIPushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPushNotificationManager.h; sourceTree = "<group>"; };
 		E820CD431FEFDA710085D218 /* SIPushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPushNotificationManager.m; sourceTree = "<group>"; };
+		E825DB45212B18220018AD7B /* UIView+Genie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Genie.m"; sourceTree = "<group>"; };
+		E825DB46212B18220018AD7B /* UIView+Genie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Genie.h"; sourceTree = "<group>"; };
 		E8328E6F204ED24A0092D58F /* NSDate+Lunar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Lunar.h"; sourceTree = "<group>"; };
 		E8328E70204ED24A0092D58F /* NSDate+Lunar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Lunar.m"; sourceTree = "<group>"; };
 		E834099A1E507BFD00A924C6 /* NSFileManager+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hash.h"; sourceTree = "<group>"; };
@@ -2041,6 +2044,8 @@
 		E8E945E11E210B6D00EE98B0 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				E825DB46212B18220018AD7B /* UIView+Genie.h */,
+				E825DB45212B18220018AD7B /* UIView+Genie.m */,
 				E8C5DD1C1FFE75BC002475C1 /* UIView+Skeleton.h */,
 				E8C5DD1D1FFE75BC002475C1 /* UIView+Skeleton.m */,
 				E83465D71E8AB20000F1F757 /* UIView+draggable.h */,
@@ -2419,6 +2424,7 @@
 				E81138D51FE2B6FB00882DA3 /* UIApplication+UIDebug.m in Sources */,
 				E8BD937D1E9283CB00322F8B /* NSLayoutConstraint+Refer.m in Sources */,
 				E854CE371E7D514900AD9F13 /* NSData+Base64.m in Sources */,
+				E825DB47212B18220018AD7B /* UIView+Genie.m in Sources */,
 				E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */,
 				E8E8A4D91E56A41F00E64E54 /* EXTSafeCategory.m in Sources */,
 				E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */,
