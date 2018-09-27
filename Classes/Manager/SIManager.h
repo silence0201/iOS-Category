@@ -21,4 +21,5 @@
 #import "SIPushNotificationManager.h"
 #import "SIConsoleManager.h"
 #import "SICallStackManager.h"
+#import "SIProxyManager.h"
 

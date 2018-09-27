@@ -11,6 +11,7 @@
 		E81138D51FE2B6FB00882DA3 /* UIApplication+UIDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138D41FE2B6FA00882DA3 /* UIApplication+UIDebug.m */; };
 		E81138DB1FE800C700882DA3 /* NSString+Append.m in Sources */ = {isa = PBXBuildFile; fileRef = E81138DA1FE800C700882DA3 /* NSString+Append.m */; };
 		E8173C8C1FBC7BFD00417E4B /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */; };
+		E818E35F215D0428004BC84C /* SIProxyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E818E35E215D0428004BC84C /* SIProxyManager.m */; };
 		E820CD441FEFDA710085D218 /* SIPushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E820CD431FEFDA710085D218 /* SIPushNotificationManager.m */; };
 		E825DB47212B18220018AD7B /* UIView+Genie.m in Sources */ = {isa = PBXBuildFile; fileRef = E825DB45212B18220018AD7B /* UIView+Genie.m */; };
 		E8328E71204ED24A0092D58F /* NSDate+Lunar.m in Sources */ = {isa = PBXBuildFile; fileRef = E8328E70204ED24A0092D58F /* NSDate+Lunar.m */; };
@@ -297,6 +298,8 @@
 		E81138DA1FE800C700882DA3 /* NSString+Append.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Append.m"; sourceTree = "<group>"; };
 		E8173C8A1FBC7BFD00417E4B /* NSString+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
 		E8173C8B1FBC7BFD00417E4B /* NSString+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
+		E818E35D215D0428004BC84C /* SIProxyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIProxyManager.h; sourceTree = "<group>"; };
+		E818E35E215D0428004BC84C /* SIProxyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIProxyManager.m; sourceTree = "<group>"; };
 		E820CD421FEFDA710085D218 /* SIPushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPushNotificationManager.h; sourceTree = "<group>"; };
 		E820CD431FEFDA710085D218 /* SIPushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPushNotificationManager.m; sourceTree = "<group>"; };
 		E825DB45212B18220018AD7B /* UIView+Genie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Genie.m"; sourceTree = "<group>"; };
@@ -855,6 +858,15 @@
 				E808ADFE2052AD5A0040D14A /* SICallStackManager.m */,
 			);
 			path = CallStack;
+			sourceTree = "<group>";
+		};
+		E818E35C215D03EB004BC84C /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				E818E35D215D0428004BC84C /* SIProxyManager.h */,
+				E818E35E215D0428004BC84C /* SIProxyManager.m */,
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 		E820CD3E1FEFCCEC0085D218 /* Push */ = {
@@ -2128,6 +2140,7 @@
 			isa = PBXGroup;
 			children = (
 				E8FB93851E6080C100B77407 /* SIManager.h */,
+				E818E35C215D03EB004BC84C /* Proxy */,
 				E8DDD7751FFD089A003D4A8F /* Debug */,
 				E820CD3E1FEFCCEC0085D218 /* Push */,
 				E8A4D5101FD835CD0072A870 /* AppPurchase */,
@@ -2194,7 +2207,6 @@
 				TargetAttributes = {
 					E88B47A71E15363E0074A53A = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = UKBBWVJH59;
 						ProvisioningStyle = Automatic;
 					};
 					E8DD4B401E51C29F008B6BDF = {
@@ -2349,6 +2361,7 @@
 				E8E946271E210B6D00EE98B0 /* NSString+JSONValue.m in Sources */,
 				E8EB94331E2F1253000E4480 /* UINavigationController+Hide.m in Sources */,
 				E88B47B31E15363E0074A53A /* ViewController.m in Sources */,
+				E818E35F215D0428004BC84C /* SIProxyManager.m in Sources */,
 				E8E946191E210B6D00EE98B0 /* NSObject+Aspect.m in Sources */,
 				E892FCCD1EC7045E00E2F630 /* CALayer+Property.m in Sources */,
 				E8E9461E1E210B6D00EE98B0 /* NSObject+QuickAssociated.m in Sources */,
@@ -2647,7 +2660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UKBBWVJH59;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Category/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2660,7 +2673,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UKBBWVJH59;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Category/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
