@@ -87,6 +87,7 @@
 #import "UIView+RelativeLayout.h"
 #import "UIView+Skeleton.h"
 #import "UIView+Genie.h"
+#import "UIView+SubtractMask.h"
 
 #import "UIImage+Color.h"
 #import "UIImage+Capture.h"
