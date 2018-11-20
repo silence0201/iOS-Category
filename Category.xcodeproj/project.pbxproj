@@ -264,6 +264,7 @@
 		E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB94391E2F1445000E4480 /* UITabBarController+Hide.m */; };
 		E8EF86701FEAAEC60074210F /* UITableView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EF866F1FEAAEC60074210F /* UITableView+Placeholder.m */; };
 		E8FB937E1E606D3600B77407 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FB937D1E606D3600B77407 /* StoreKit.framework */; };
+		E8FC3DA021A44C7D008280F5 /* UIView+SubtractMask.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FC3D9F21A44C7D008280F5 /* UIView+SubtractMask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -830,6 +831,8 @@
 		E8EF866F1FEAAEC60074210F /* UITableView+Placeholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Placeholder.m"; sourceTree = "<group>"; };
 		E8FB937D1E606D3600B77407 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E8FB93851E6080C100B77407 /* SIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIManager.h; sourceTree = "<group>"; };
+		E8FC3D9E21A44C7D008280F5 /* UIView+SubtractMask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SubtractMask.h"; sourceTree = "<group>"; };
+		E8FC3D9F21A44C7D008280F5 /* UIView+SubtractMask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SubtractMask.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2092,6 +2095,8 @@
 				E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */,
 				E898B6DA1FC7128900E4051B /* UIView+RelativeLayout.h */,
 				E898B6DB1FC7128900E4051B /* UIView+RelativeLayout.m */,
+				E8FC3D9E21A44C7D008280F5 /* UIView+SubtractMask.h */,
+				E8FC3D9F21A44C7D008280F5 /* UIView+SubtractMask.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2268,6 +2273,7 @@
 				E8E9463A1E210B6D00EE98B0 /* UIButton+Submitting.m in Sources */,
 				E8E946111E210B6D00EE98B0 /* NSFileManager+Helper.m in Sources */,
 				E808ADFF2052AD5A0040D14A /* SICallStackManager.m in Sources */,
+				E8FC3DA021A44C7D008280F5 /* UIView+SubtractMask.m in Sources */,
 				E8A4D4F01FD82FAD0072A870 /* UIBarButtonItem+Create.m in Sources */,
 				E854CE401E7D53A600AD9F13 /* NSData+DataCache.m in Sources */,
 				E83465C91E8AAD3D00F1F757 /* UIImage+FileName.m in Sources */,
