@@ -49,6 +49,7 @@
 		E83465F31E8ABBDB00F1F757 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465F21E8ABBDB00F1F757 /* UIButton+Badge.m */; };
 		E83465F61E8ABE7500F1F757 /* NSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465F51E8ABE7500F1F757 /* NSData+zlib.m */; };
 		E83465FC1E8AC1EE00F1F757 /* UIImageView+Letters.m in Sources */ = {isa = PBXBuildFile; fileRef = E83465FB1E8AC1EE00F1F757 /* UIImageView+Letters.m */; };
+		E8497810225E4E7500D39D25 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = E849780E225E4E7500D39D25 /* UIImageView+CornerRadius.m */; };
 		E84A41DC1E76F75B00CF24CF /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */; };
 		E854CE311E7D4EFB00AD9F13 /* NSString+Trims.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE301E7D4EFB00AD9F13 /* NSString+Trims.m */; };
 		E854CE371E7D514900AD9F13 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E854CE361E7D514900AD9F13 /* NSData+Base64.m */; };
@@ -376,6 +377,8 @@
 		E83465F51E8ABE7500F1F757 /* NSData+zlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+zlib.m"; sourceTree = "<group>"; };
 		E83465FA1E8AC1EE00F1F757 /* UIImageView+Letters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Letters.h"; sourceTree = "<group>"; };
 		E83465FB1E8AC1EE00F1F757 /* UIImageView+Letters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Letters.m"; sourceTree = "<group>"; };
+		E849780E225E4E7500D39D25 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		E849780F225E4E7500D39D25 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
 		E84A41DA1E76F75B00CF24CF /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		E84A41DB1E76F75B00CF24CF /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		E854CE2F1E7D4EFB00AD9F13 /* NSString+Trims.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trims.h"; sourceTree = "<group>"; };
@@ -945,6 +948,8 @@
 		E83465CA1E8AAE4B00F1F757 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
+				E849780F225E4E7500D39D25 /* UIImageView+CornerRadius.h */,
+				E849780E225E4E7500D39D25 /* UIImageView+CornerRadius.m */,
 				E83465FA1E8AC1EE00F1F757 /* UIImageView+Letters.h */,
 				E83465FB1E8AC1EE00F1F757 /* UIImageView+Letters.m */,
 				E83465CB1E8AAE5D00F1F757 /* UIImageView+Reflect.h */,
@@ -2450,6 +2455,7 @@
 				E854CE371E7D514900AD9F13 /* NSData+Base64.m in Sources */,
 				E825DB47212B18220018AD7B /* UIView+Genie.m in Sources */,
 				E834099C1E507BFD00A924C6 /* NSFileManager+Hash.m in Sources */,
+				E8497810225E4E7500D39D25 /* UIImageView+CornerRadius.m in Sources */,
 				E8E8A4D91E56A41F00E64E54 /* EXTSafeCategory.m in Sources */,
 				E8B122F51E81751E00E9D69C /* UITableView+iOS7Style.m in Sources */,
 				E8E946201E210B6D00EE98B0 /* NSObject+QuickCopy.m in Sources */,
