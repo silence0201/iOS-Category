@@ -135,6 +135,7 @@
 		E8E2836E1E782C53006815EA /* UIImage+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2836D1E782C53006815EA /* UIImage+Video.m */; };
 		E8E283721E782F05006815EA /* NSUserDefaults+iCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */; };
 		E8E283751E78302B006815EA /* NSTimer+Pause.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E283741E78302B006815EA /* NSTimer+Pause.m */; };
+		E8E778A52268B8D600C0F449 /* SICaptivePortalCheckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E778A42268B8D600C0F449 /* SICaptivePortalCheckManager.m */; };
 		E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4C71E56A2DF00E64E54 /* EXTRuntimeExtensions.m */; };
 		E8E8A4CC1E56A33500E64E54 /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CB1E56A33500E64E54 /* NSMethodSignature+EXT.m */; };
 		E8E8A4CF1E56A36200E64E54 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8A4CE1E56A36200E64E54 /* NSInvocation+EXT.m */; };
@@ -557,6 +558,8 @@
 		E8E283711E782F05006815EA /* NSUserDefaults+iCloudSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+iCloudSync.m"; sourceTree = "<group>"; };
 		E8E283731E78302B006815EA /* NSTimer+Pause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Pause.h"; sourceTree = "<group>"; };
 		E8E283741E78302B006815EA /* NSTimer+Pause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Pause.m"; sourceTree = "<group>"; };
+		E8E778A32268B8D600C0F449 /* SICaptivePortalCheckManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SICaptivePortalCheckManager.h; sourceTree = "<group>"; };
+		E8E778A42268B8D600C0F449 /* SICaptivePortalCheckManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SICaptivePortalCheckManager.m; sourceTree = "<group>"; };
 		E8E8A4881E55CD0800E64E54 /* SIViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIViewMacro.h; sourceTree = "<group>"; };
 		E8E8A4891E55CD4C00E64E54 /* SIUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUtilsMacro.h; sourceTree = "<group>"; };
 		E8E8A48A1E55CDAE00E64E54 /* SIShortcutsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIShortcutsMacro.h; sourceTree = "<group>"; };
@@ -1366,6 +1369,15 @@
 			path = NSUserDefaults;
 			sourceTree = "<group>";
 		};
+		E8E778A22268B87B00C0F449 /* CaptivePortalCheck */ = {
+			isa = PBXGroup;
+			children = (
+				E8E778A32268B8D600C0F449 /* SICaptivePortalCheckManager.h */,
+				E8E778A42268B8D600C0F449 /* SICaptivePortalCheckManager.m */,
+			);
+			path = CaptivePortalCheck;
+			sourceTree = "<group>";
+		};
 		E8E8A4871E55CCA400E64E54 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
@@ -2155,6 +2167,7 @@
 			isa = PBXGroup;
 			children = (
 				E8FB93851E6080C100B77407 /* SIManager.h */,
+				E8E778A22268B87B00C0F449 /* CaptivePortalCheck */,
 				E818E35C215D03EB004BC84C /* Proxy */,
 				E8DDD7751FFD089A003D4A8F /* Debug */,
 				E820CD3E1FEFCCEC0085D218 /* Push */,
@@ -2383,6 +2396,7 @@
 				E8E9461E1E210B6D00EE98B0 /* NSObject+QuickAssociated.m in Sources */,
 				E8B122FC1E81768300E9D69C /* UIResponder+Chain.m in Sources */,
 				E8E9462E1E210B6D00EE98B0 /* NSString+URLEncode.m in Sources */,
+				E8E778A52268B8D600C0F449 /* SICaptivePortalCheckManager.m in Sources */,
 				E8E946321E210B6D00EE98B0 /* UIApplication+Authority.m in Sources */,
 				E8EF86701FEAAEC60074210F /* UITableView+Placeholder.m in Sources */,
 				E8E946521E210B6D00EE98B0 /* UILabel+Space.m in Sources */,
