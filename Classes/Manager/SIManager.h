@@ -22,4 +22,5 @@
 #import "SIConsoleManager.h"
 #import "SICallStackManager.h"
 #import "SIProxyManager.h"
+#import "SICaptivePortalCheckManager.h"
 
