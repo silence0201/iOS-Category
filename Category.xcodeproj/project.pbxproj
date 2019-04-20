@@ -79,6 +79,7 @@
 		E86298D31EDC636C00D5017C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E86298D21EDC636C00D5017C /* MineViewController.m */; };
 		E865E2611E925E51009E7377 /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E865E2601E925E51009E7377 /* UIImage+Sprite.m */; };
 		E876EA001E75808E00129BAF /* UISlider+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = E876E9FF1E75808E00129BAF /* UISlider+Tap.m */; };
+		E87CCF62226B797D004CE68C /* CountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87CCF61226B797D004CE68C /* CountDownManager.m */; };
 		E88B47AD1E15363E0074A53A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AC1E15363E0074A53A /* main.m */; };
 		E88B47B01E15363E0074A53A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47AF1E15363E0074A53A /* AppDelegate.m */; };
 		E88B47B31E15363E0074A53A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B47B21E15363E0074A53A /* ViewController.m */; };
@@ -446,6 +447,8 @@
 		E87504BA1E61B66A0097F41E /* SIAutoLayoutMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAutoLayoutMacro.h; sourceTree = "<group>"; };
 		E876E9FE1E75808E00129BAF /* UISlider+Tap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+Tap.h"; sourceTree = "<group>"; };
 		E876E9FF1E75808E00129BAF /* UISlider+Tap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+Tap.m"; sourceTree = "<group>"; };
+		E87CCF60226B797D004CE68C /* CountDownManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownManager.h; sourceTree = "<group>"; };
+		E87CCF61226B797D004CE68C /* CountDownManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownManager.m; sourceTree = "<group>"; };
 		E88B47A81E15363E0074A53A /* Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B47AC1E15363E0074A53A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E88B47AE1E15363E0074A53A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1052,6 +1055,15 @@
 				E876E9FF1E75808E00129BAF /* UISlider+Tap.m */,
 			);
 			path = UISlider;
+			sourceTree = "<group>";
+		};
+		E87CCF5F226B7964004CE68C /* CountDownManager */ = {
+			isa = PBXGroup;
+			children = (
+				E87CCF60226B797D004CE68C /* CountDownManager.h */,
+				E87CCF61226B797D004CE68C /* CountDownManager.m */,
+			);
+			path = CountDownManager;
 			sourceTree = "<group>";
 		};
 		E88B479F1E15363E0074A53A = {
@@ -2166,6 +2178,7 @@
 		E8FF5EAD1E5B241100859425 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				E87CCF5F226B7964004CE68C /* CountDownManager */,
 				E8FB93851E6080C100B77407 /* SIManager.h */,
 				E8E778A22268B87B00C0F449 /* CaptivePortalCheck */,
 				E818E35C215D03EB004BC84C /* Proxy */,
@@ -2414,6 +2427,7 @@
 				E8E9464C1E210B6D00EE98B0 /* UIImage+GIF.m in Sources */,
 				E83465C01E8AAA7200F1F757 /* UILabel+AutoSize.m in Sources */,
 				E8E9465B1E210B6D00EE98B0 /* UITableView+Update.m in Sources */,
+				E87CCF62226B797D004CE68C /* CountDownManager.m in Sources */,
 				E8E946441E210B6D00EE98B0 /* UIFont+Make.m in Sources */,
 				E8E946401E210B6D00EE98B0 /* UIDevice+Device.m in Sources */,
 				E86298D01EDC602200D5017C /* UIViewController+BackAction.m in Sources */,
