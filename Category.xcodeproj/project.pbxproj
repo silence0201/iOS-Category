@@ -103,6 +103,7 @@
 		E8A4D51C1FD835CD0072A870 /* SIIAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5111FD835CD0072A870 /* SIIAppPurchaseManager.m */; };
 		E8A4D51F1FD8397D0072A870 /* UINavigationController+Appear.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */; };
 		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
+		E8AD980D2270A70A002D71D8 /* SINetworkAccessibity.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AD980C2270A70A002D71D8 /* SINetworkAccessibity.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
 		E8B122F21E81720C00E9D69C /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122F11E81720C00E9D69C /* UIColor+Random.m */; };
@@ -493,6 +494,8 @@
 		E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appear.m"; sourceTree = "<group>"; };
 		E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
+		E8AD980B2270A70A002D71D8 /* SINetworkAccessibity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SINetworkAccessibity.h; sourceTree = "<group>"; };
+		E8AD980C2270A70A002D71D8 /* SINetworkAccessibity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SINetworkAccessibity.m; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
 		E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Segues.m"; sourceTree = "<group>"; };
 		E8B122EA1E816ECB00E9D69C /* UIScrollView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Frame.h"; sourceTree = "<group>"; };
@@ -1208,6 +1211,15 @@
 				E8A4D5121FD835CD0072A870 /* SIIAppPurchaseManager.h */,
 			);
 			path = AppPurchase;
+			sourceTree = "<group>";
+		};
+		E8AD980A2270A6E6002D71D8 /* NetAccessibity */ = {
+			isa = PBXGroup;
+			children = (
+				E8AD980B2270A70A002D71D8 /* SINetworkAccessibity.h */,
+				E8AD980C2270A70A002D71D8 /* SINetworkAccessibity.m */,
+			);
+			path = NetAccessibity;
 			sourceTree = "<group>";
 		};
 		E8B122F61E8175EC00E9D69C /* UIResponder */ = {
@@ -2178,20 +2190,21 @@
 		E8FF5EAD1E5B241100859425 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				E87CCF5F226B7964004CE68C /* CountDownManager */,
+				E8AD980A2270A6E6002D71D8 /* NetAccessibity */,
 				E8FB93851E6080C100B77407 /* SIManager.h */,
-				E8E778A22268B87B00C0F449 /* CaptivePortalCheck */,
-				E818E35C215D03EB004BC84C /* Proxy */,
-				E8DDD7751FFD089A003D4A8F /* Debug */,
-				E820CD3E1FEFCCEC0085D218 /* Push */,
 				E8A4D5101FD835CD0072A870 /* AppPurchase */,
 				E8A4D5041FD835CC0072A870 /* AppVersion */,
 				E8A4D4F11FD835310072A870 /* Authorization */,
 				E8A4D5011FD835CC0072A870 /* Bluetooth */,
+				E8E778A22268B87B00C0F449 /* CaptivePortalCheck */,
+				E87CCF5F226B7964004CE68C /* CountDownManager */,
+				E8DDD7751FFD089A003D4A8F /* Debug */,
 				E8A4D4FE1FD835CC0072A870 /* Download */,
 				E8A4D50D1FD835CD0072A870 /* Keyboard */,
 				E8A4D5071FD835CC0072A870 /* Keychain */,
 				E8A4D50A1FD835CD0072A870 /* Mediator */,
+				E818E35C215D03EB004BC84C /* Proxy */,
+				E820CD3E1FEFCCEC0085D218 /* Push */,
 				E8A4D4F51FD835CC0072A870 /* Sound */,
 				E8A4D4FB1FD835CC0072A870 /* TouchID */,
 			);
@@ -2320,6 +2333,7 @@
 				E8E9465E1E210B6D00EE98B0 /* UIView+Border.m in Sources */,
 				E8EB943A1E2F1445000E4480 /* UITabBarController+Hide.m in Sources */,
 				E8E8A4D21E56A3C800E64E54 /* EXTSelectorChecking.m in Sources */,
+				E8AD980D2270A70A002D71D8 /* SINetworkAccessibity.m in Sources */,
 				E8E946611E210B6D00EE98B0 /* UIView+Find.m in Sources */,
 				E8A4D5191FD835CD0072A870 /* SIKeychainManager.m in Sources */,
 				E8D554ED2010E0F000A19A9D /* NSString+VersionCompare.m in Sources */,
