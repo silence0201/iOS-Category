@@ -140,8 +140,6 @@
 #import "UIDevice+Disk.h"
 #import "UIDevice+CPU.h"
 
-#import "UIWindow+Hierarchy.h"
-
 #import "UIBezierPath+Length.h"
 #import "UIBezierPath+BasicShapes.h"
 #import "UIBezierPath+SVGString.h"
