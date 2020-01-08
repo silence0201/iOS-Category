@@ -57,6 +57,18 @@ NSLog(@"\n");\
 NSLog(@"-------------------------------");\
 }  while(0)
 
+// 信号量
+#define SemaphoreBegin \
+static dispatch_semaphore_t semaphore; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+semaphore = dispatch_semaphore_create(1); \
+}); \
+dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+
+#define SemaphoreEnd \
+dispatch_semaphore_signal(semaphore);
+
 // 类型判断
 #define isKindOf(x, cls)                [(x) isKindOfClass:[cls class]]         // 判断实例类型(含父类)
 #define isMemberOf(x, cls)              [(x) isMemberOfClass:[cls class]]       // 判断实例类型(不含父类)
