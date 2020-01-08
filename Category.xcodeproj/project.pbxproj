@@ -104,6 +104,7 @@
 		E8A4D51C1FD835CD0072A870 /* SIIAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D5111FD835CD0072A870 /* SIIAppPurchaseManager.m */; };
 		E8A4D51F1FD8397D0072A870 /* UINavigationController+Appear.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */; };
 		E8A99CC51F448FD8004F7CC8 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */; };
+		E8ABC6E623C61DA8005ABAAA /* NSObject+Semaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ABC6E523C61DA8005ABAAA /* NSObject+Semaphore.m */; };
 		E8AD980D2270A70A002D71D8 /* SINetworkAccessibity.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AD980C2270A70A002D71D8 /* SINetworkAccessibity.m */; };
 		E8AF8BE41E822E630057C74A /* UIViewController+Segues.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF8BE31E822E630057C74A /* UIViewController+Segues.m */; };
 		E8B122EC1E816ECB00E9D69C /* UIScrollView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B122EB1E816ECB00E9D69C /* UIScrollView+Frame.m */; };
@@ -497,6 +498,8 @@
 		E8A4D51E1FD8397D0072A870 /* UINavigationController+Appear.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appear.m"; sourceTree = "<group>"; };
 		E8A99CC31F448FD8004F7CC8 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		E8A99CC41F448FD8004F7CC8 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
+		E8ABC6E423C61DA8005ABAAA /* NSObject+Semaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Semaphore.h"; sourceTree = "<group>"; };
+		E8ABC6E523C61DA8005ABAAA /* NSObject+Semaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Semaphore.m"; sourceTree = "<group>"; };
 		E8AD980B2270A70A002D71D8 /* SINetworkAccessibity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SINetworkAccessibity.h; sourceTree = "<group>"; };
 		E8AD980C2270A70A002D71D8 /* SINetworkAccessibity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SINetworkAccessibity.m; sourceTree = "<group>"; };
 		E8AF8BE21E822E630057C74A /* UIViewController+Segues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segues.h"; sourceTree = "<group>"; };
@@ -1760,6 +1763,8 @@
 				E8CF8DAF1ED6BA66002B9AC6 /* NSObject+Dealloc.m */,
 				E8A41DEF1F4DC33D00680E46 /* NSObject+PerformSelector.h */,
 				E8A41DF01F4DC33D00680E46 /* NSObject+PerformSelector.m */,
+				E8ABC6E423C61DA8005ABAAA /* NSObject+Semaphore.h */,
+				E8ABC6E523C61DA8005ABAAA /* NSObject+Semaphore.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -2462,6 +2467,7 @@
 				E86298D31EDC636C00D5017C /* MineViewController.m in Sources */,
 				E8E8A4C81E56A2DF00E64E54 /* EXTRuntimeExtensions.m in Sources */,
 				E8E283751E78302B006815EA /* NSTimer+Pause.m in Sources */,
+				E8ABC6E623C61DA8005ABAAA /* NSObject+Semaphore.m in Sources */,
 				E8E946081E210B6D00EE98B0 /* NSDate+Extension.m in Sources */,
 				E8E946631E210B6D00EE98B0 /* UIView+Radius.m in Sources */,
 				E8E946241E210B6D00EE98B0 /* NSString+Contains.m in Sources */,
