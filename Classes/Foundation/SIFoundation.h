@@ -68,6 +68,7 @@
 #import "NSObject+AutoCoding.h"
 #import "NSObject+PerformSelector.h"
 #import "NSObject+Semaphore.h"
+#import "NSObject+BlockTarget.h"
 
 #import "NSString+AppInfo.h"
 #import "NSString+Hash.h"
