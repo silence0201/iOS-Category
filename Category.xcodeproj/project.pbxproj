@@ -194,7 +194,6 @@
 		E8E946191E210B6D00EE98B0 /* NSObject+Aspect.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945471E210B6D00EE98B0 /* NSObject+Aspect.m */; };
 		E8E9461A1E210B6D00EE98B0 /* NSObject+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945491E210B6D00EE98B0 /* NSObject+Block.m */; };
 		E8E9461B1E210B6D00EE98B0 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9454B1E210B6D00EE98B0 /* NSObject+GCD.m */; };
-		E8E9461C1E210B6D00EE98B0 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9454D1E210B6D00EE98B0 /* NSObject+KVO.m */; };
 		E8E9461D1E210B6D00EE98B0 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E9454F1E210B6D00EE98B0 /* NSObject+Property.m */; };
 		E8E9461E1E210B6D00EE98B0 /* NSObject+QuickAssociated.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945511E210B6D00EE98B0 /* NSObject+QuickAssociated.m */; };
 		E8E9461F1E210B6D00EE98B0 /* NSObject+QuickCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E945531E210B6D00EE98B0 /* NSObject+QuickCode.m */; };
@@ -696,8 +695,6 @@
 		E8E945491E210B6D00EE98B0 /* NSObject+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Block.m"; sourceTree = "<group>"; };
 		E8E9454A1E210B6D00EE98B0 /* NSObject+GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCD.h"; sourceTree = "<group>"; };
 		E8E9454B1E210B6D00EE98B0 /* NSObject+GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCD.m"; sourceTree = "<group>"; };
-		E8E9454C1E210B6D00EE98B0 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
-		E8E9454D1E210B6D00EE98B0 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 		E8E9454E1E210B6D00EE98B0 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		E8E9454F1E210B6D00EE98B0 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		E8E945501E210B6D00EE98B0 /* NSObject+QuickAssociated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QuickAssociated.h"; sourceTree = "<group>"; };
@@ -1744,8 +1741,6 @@
 				E8E945491E210B6D00EE98B0 /* NSObject+Block.m */,
 				E8E9454A1E210B6D00EE98B0 /* NSObject+GCD.h */,
 				E8E9454B1E210B6D00EE98B0 /* NSObject+GCD.m */,
-				E8E9454C1E210B6D00EE98B0 /* NSObject+KVO.h */,
-				E8E9454D1E210B6D00EE98B0 /* NSObject+KVO.m */,
 				E8E9454E1E210B6D00EE98B0 /* NSObject+Property.h */,
 				E8E9454F1E210B6D00EE98B0 /* NSObject+Property.m */,
 				E8E945501E210B6D00EE98B0 /* NSObject+QuickAssociated.h */,
@@ -2466,7 +2461,6 @@
 				E854CE761E7D67FA00AD9F13 /* UIButton+ImagePosition.m in Sources */,
 				E8E9461F1E210B6D00EE98B0 /* NSObject+QuickCode.m in Sources */,
 				E8E8A5531E594ABA00E64E54 /* NSObject+Parse.m in Sources */,
-				E8E9461C1E210B6D00EE98B0 /* NSObject+KVO.m in Sources */,
 				E854CE6F1E7D65DF00AD9F13 /* UINavigationBar+Awesome.m in Sources */,
 				E898B6DC1FC7128900E4051B /* UIView+RelativeLayout.m in Sources */,
 				E8E946351E210B6D00EE98B0 /* UIButton+BackgroundColor.m in Sources */,
