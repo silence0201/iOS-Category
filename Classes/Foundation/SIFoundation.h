@@ -96,6 +96,8 @@
 
 #import "NSURLSession+SynchronousTask.h"
 
+#import "NSURLProtocol+WKWebViewSupport.h"
+
 #import "NSDate+Figure.h"
 #import "NSDate+Extension.h"
 #import "NSDate+Formatter.h"
