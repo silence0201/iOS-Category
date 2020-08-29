@@ -572,6 +572,7 @@
 		E8DDD7781FFD089A003D4A8F /* SIFPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFPSManager.h; sourceTree = "<group>"; };
 		E8DDD77B1FFD090F003D4A8F /* SIConsoleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIConsoleManager.h; sourceTree = "<group>"; };
 		E8DDD77C1FFD090F003D4A8F /* SIConsoleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIConsoleManager.m; sourceTree = "<group>"; };
+		E8DEF26724FA7F1400FC67A6 /* SIChainMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIChainMacro.h; sourceTree = "<group>"; };
 		E8E057151EC2BD5000B06DC1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
 		E8E057161EC2BD5000B06DC1 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
 		E8E283691E781B6F006815EA /* NSString+AttributedBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedBuilder.h"; sourceTree = "<group>"; };
@@ -1434,6 +1435,7 @@
 				E87504B71E61B4E40097F41E /* SIExceptionMacro.h */,
 				E8E8A4921E55CF5800E64E54 /* SIMacros.h */,
 				E87504BA1E61B66A0097F41E /* SIAutoLayoutMacro.h */,
+				E8DEF26724FA7F1400FC67A6 /* SIChainMacro.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
